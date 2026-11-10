@@ -1,0 +1,42 @@
+name: Udrul til SiteGround
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Sitet ligger i mappen public_html på FTP-kontoen (midlertidigt domæne: frederikb9.sg-host.com).
+# Flyttes til et rigtigt domæne senere, kan SiteGround omdøbe mappen – ret så SITE_DIR her.
+env:
+  SITE_DIR: public_html
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Stop, hvis mappen ikke er en WordPress-installation – ellers ville vi uploade til en tom mappe.
+      - name: Tjek at mappen findes på serveren
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          if ! curl -sS -k --ssl-reqd --user "$FTP_USERNAME:$FTP_PASSWORD" --list-only \
+               "ftp://$FTP_SERVER:21/$SITE_DIR/" | grep -qx "wp-config.php"; then
+            echo "::error::Fandt ikke $SITE_DIR/wp-config.php på FTP-serveren. Mapper i roden:"
+            curl -sS -k --ssl-reqd --user "$FTP_USERNAME:$FTP_PASSWORD" --list-only "ftp://$FTP_SERVER:21/" || true
+            exit 1
+          fi
+
+      - name: Udrul temaet
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./wp-content/themes/simply-guiding/
+          server-dir: ${{ env.SITE_DIR }}/wp-content/themes/simply-guiding/
+          dangerous-clean-slate: false
