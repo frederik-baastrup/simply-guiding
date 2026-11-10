@@ -5,10 +5,10 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Sitet ligger i mappen public_html på FTP-kontoen (midlertidigt domæne: frederikb9.sg-host.com).
-# Flyttes til et rigtigt domæne senere, kan SiteGround omdøbe mappen – ret så SITE_DIR her.
+# Sitet ligger i mappen frederikb9.sg-host.com/public_html på FTP-kontoen (midlertidigt domæne).
+# Flyttes til et rigtigt domæne senere, omdøber SiteGround mappen – ret så SITE_DIR her.
 env:
-  SITE_DIR: public_html
+  SITE_DIR: frederikb9.sg-host.com/public_html
 jobs:
   deploy:
     runs-on: ubuntu-latest
