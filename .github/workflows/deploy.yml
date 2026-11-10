@@ -40,3 +40,21 @@ jobs:
           local-dir: ./wp-content/themes/simply-guiding/
           server-dir: ${{ env.SITE_DIR }}/wp-content/themes/simply-guiding/
           dangerous-clean-slate: false
+
+      # Must-use plugin der kan tømme SiteGrounds cache (se mu-plugins/sg-purge-on-deploy.php)
+      - name: Udrul mu-plugin til cache-tømning
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./mu-plugins/
+          server-dir: ${{ env.SITE_DIR }}/wp-content/mu-plugins/
+          dangerous-clean-slate: false
+
+      # Tøm SiteGrounds cache, så ændringerne er synlige med det samme (token matcher mu-plugins/sg-purge-on-deploy.php)
+      - name: Tøm cache
+        run: |
+          curl -sS "https://frederikb9.sg-host.com/?sg_deploy_purge=87d379a20b31f3d4a73f75c3f71f3140" || true
