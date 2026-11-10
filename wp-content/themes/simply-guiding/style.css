@@ -419,7 +419,9 @@ Text Domain: simply-guiding
     .sg-cards {
       height: auto; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
       scrollbar-width: none; margin-inline: calc(var(--sg-gutter) * -1); padding-inline: var(--sg-gutter);
-      scroll-padding-left: var(--sg-gutter); scroll-padding-right: var(--sg-gutter); /* uden denne snapper mandatory scroll-snap forbi venstre padding, så kortet starter helt ude i kanten */
+      /* Faste px-værdier (ikke var()) – ellers regner nogle browsere ikke scroll-padding rigtigt ud ved første indlæsning,
+         og kortet snapper forbi venstre padding, så det står helt ude i kanten. Skal matche --sg-gutter på hver bredde. */
+      scroll-padding-left: 26px; scroll-padding-right: 26px;
     }
     .sg-cards::-webkit-scrollbar { display: none; }
     .sg-card, .sg-card.is-active { flex: 0 0 82%; scroll-snap-align: start; scroll-snap-stop: always; }
@@ -432,6 +434,9 @@ Text Domain: simply-guiding
     .sg-cards__dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
     .sg-cards__dots span { width: 7px; height: 7px; border-radius: 50%; background: var(--sg-border); transition: background .25s, transform .25s; }
     .sg-cards__dots span.is-active { background: var(--sg-cta); transform: scale(1.3); }
+  }
+  @media (max-width: 569px) {
+    .sg-cards { scroll-padding-left: 18px; scroll-padding-right: 18px; }
   }
   @media (min-width: 861px) { .sg-cards__dots { display: none; } }
   @media (prefers-reduced-motion: reduce) {
