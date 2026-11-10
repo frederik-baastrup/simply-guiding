@@ -419,7 +419,7 @@ Text Domain: simply-guiding
     .sg-cards {
       height: auto; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
       scrollbar-width: none; margin-inline: calc(var(--sg-gutter) * -1); padding-inline: var(--sg-gutter);
-      scroll-padding-inline: var(--sg-gutter); /* uden denne snapper mandatory scroll-snap forbi venstre padding, så kortet starter helt ude i kanten */
+      scroll-padding-left: var(--sg-gutter); scroll-padding-right: var(--sg-gutter); /* uden denne snapper mandatory scroll-snap forbi venstre padding, så kortet starter helt ude i kanten */
     }
     .sg-cards::-webkit-scrollbar { display: none; }
     .sg-card, .sg-card.is-active { flex: 0 0 82%; scroll-snap-align: start; scroll-snap-stop: always; }
