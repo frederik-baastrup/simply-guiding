@@ -100,6 +100,7 @@ Text Domain: simply-guiding
   }
   @media (max-width: 960px) {
     .sg-topbar__links { display: none; }
+    .sg-topbar__contact { display: none; }
     .sg-burger { display: block; }
     .sg-nav {
       position: absolute; top: 64px; left: 0; right: 0;
@@ -158,7 +159,8 @@ Text Domain: simply-guiding
   @media (max-width: 960px) {
     .sg-header__inner { height: 80px; }
     .sg-header.is-scrolled .sg-header__inner { height: 64px; }
-    .sg-burger { background: #fff; border-radius: 6px; margin-right: 0; padding: 13px 12px; transition: box-shadow .35s; }
+    .sg-burger { width: 38px; height: 38px; background: #fff; border-radius: 6px; margin-right: 0; padding: 8px; transition: box-shadow .35s; }
+    .sg-burger span:nth-child(2) { opacity: 0; }
     .sg-nav {
       top: calc(100% - 6px); left: var(--sg-gutter); right: var(--sg-gutter); box-shadow: 0 12px 32px rgba(0,0,0,.12); height: auto; border-radius: 6px; border-top: 0;
       padding: 6px 20px 20px; gap: 0;
@@ -295,12 +297,15 @@ Text Domain: simply-guiding
     .sg-hero-bottom { background: #fff; }
     .sg-hero { border-radius: var(--sg-radius); }
     .sg-hero__stat--mobile { display: flex; }
+    .sg-hero__inner { text-align: center; }
+    .sg-hero__actions { justify-content: center; }
   }
 
   /* Overskrift + padding som på frederikb8.sg-host.com (Uncode) */
   @media (max-width: 1499px) { .sg-hero__inner { padding-top: 160px; } }
   @media (max-width: 959px) { .sg-hero h1 { font-size: 46.6667px; } .sg-hero__inner { padding-block: 130px 72px; } }
-  @media (max-width: 569px) { :root { --sg-gutter: 42px; } .sg-hero h1 { font-size: 35px; } .sg-hero__inner { padding-top: 116px; } }
+  @media (max-width: 960px) { :root { --sg-gutter: 26px; } }
+  @media (max-width: 569px) { :root { --sg-gutter: 18px; } .sg-hero h1 { font-size: 35px; } .sg-hero__inner { padding-top: 116px; } }
   @media (max-width: 320px) { .sg-hero h1 { font-size: 28px; } }
 
   /* ---------- Indsatser: ekspanderende kort ---------- */
@@ -396,15 +401,24 @@ Text Domain: simply-guiding
   }
   @media (max-width: 860px) {
     .sg-ind { padding-block: var(--sg-gap); }
-    .sg-cards { flex-direction: column; height: auto; }
-    .sg-card, .sg-card.is-active { flex: none; }
+    /* Karrusel: swipe med fingeren, kort 2 titter frem i højre side, prikker nedenunder viser hvor man er */
+    .sg-cards {
+      height: auto; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; margin-inline: calc(var(--sg-gutter) * -1); padding-inline: var(--sg-gutter);
+    }
+    .sg-cards::-webkit-scrollbar { display: none; }
+    .sg-card, .sg-card.is-active { flex: 0 0 82%; scroll-snap-align: start; scroll-snap-stop: always; }
     .sg-card { height: 480px; }
     .sg-card__img { transform: none; }
     .sg-card__copy { width: auto; }
     .sg-card__title { min-height: 0; }
     .sg-card__text { min-height: 0; }
     .sg-card__cta { opacity: 1; }
+    .sg-cards__dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+    .sg-cards__dots span { width: 7px; height: 7px; border-radius: 50%; background: var(--sg-border); transition: background .25s, transform .25s; }
+    .sg-cards__dots span.is-active { background: var(--sg-cta); transform: scale(1.3); }
   }
+  @media (min-width: 861px) { .sg-cards__dots { display: none; } }
   @media (prefers-reduced-motion: reduce) {
     .sg-card, .sg-card__img, .sg-card__cta, .sg-card__arrow { transition: none; }
   }

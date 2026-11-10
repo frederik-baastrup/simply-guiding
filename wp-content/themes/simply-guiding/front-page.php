@@ -142,6 +142,9 @@
         </div>
       </article>
     </div>
+    <div class="sg-cards__dots" id="sgCardsDots" aria-hidden="true">
+      <span class="is-active"></span><span></span><span></span><span></span>
+    </div>
   </div>
 </section>
 <section class="sg-quote" aria-labelledby="sgQuoteTitle">

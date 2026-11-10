@@ -86,6 +86,28 @@
         c.addEventListener('focusin', function () { setActive(c); });
       });
       // Det sidst valgte kort forbliver stort, når musen forlader kortene
+
+      // Mobil-karrusel: prikkerne nedenunder følger, hvilket kort man har swipet til
+      var dots = document.getElementById('sgCardsDots');
+      if (dots) {
+        var dotEls = [].slice.call(dots.children);
+        var setActiveDot = function (i) { dotEls.forEach(function (d, j) { d.classList.toggle('is-active', j === i); }); };
+        var scheduled = false;
+        var onCardsScroll = function () {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(function () {
+            scheduled = false;
+            var closest = 0, best = Infinity;
+            list.forEach(function (c, i) {
+              var d = Math.abs(c.offsetLeft - cards.scrollLeft);
+              if (d < best) { best = d; closest = i; }
+            });
+            setActiveDot(closest);
+          });
+        };
+        cards.addEventListener('scroll', onCardsScroll, { passive: true });
+      }
     }
 
     // FAQ: ét spørgsmål åbent ad gangen
