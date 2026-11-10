@@ -218,7 +218,7 @@ Text Domain: simply-guiding
 
 
   /* ---------- Hero ---------- */
-  :root { --sg-hero-ink: #DBE7DD; --sg-radius-sm: 16px; /* fælles radius for kort og bokse; hero beholder sin store */ --sg-hero-base: 6, 35, 31; --sg-notch-h: 64px; --sg-radius: 30px; }
+  :root { --sg-hero-ink: #DBE7DD; --sg-radius-sm: 12px; /* fælles radius for kort og bokse; hero beholder sin store */ --sg-hero-base: 6, 35, 31; --sg-notch-h: 64px; --sg-radius: 22px; }
   .sg-hero-wrap { padding-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); }
   .sg-hero {
     position: relative; overflow: hidden; border-radius: var(--sg-radius) var(--sg-radius) var(--sg-radius) 0;
@@ -289,7 +289,7 @@ Text Domain: simply-guiding
     .sg-hero__stat { font-size: 13.5px; }
   }
   @media (max-width: 1024px) {
-    :root { --sg-radius: 20px; }
+    :root { --sg-radius: 16px; }
     .sg-hero__inner { padding-block: 72px 72px; }
     .sg-hero__lead { font-size: 17px; }
     .sg-hero__notch { position: static; width: 100%; }
