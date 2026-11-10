@@ -131,7 +131,7 @@
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-academy.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Academy</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-academy.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Uddannelse</span></div>
         <a class="sg-card__link" href="/academy" aria-label="Læs om Academy"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
