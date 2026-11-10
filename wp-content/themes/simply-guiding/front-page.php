@@ -31,18 +31,12 @@
       <ul class="sg-nav__list">
         <li class="sg-nav__item has-sub">
           <a href="/omraade" aria-haspopup="true" aria-expanded="false">Områder <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <div class="sg-sub sg-sub--wide">
+          <div class="sg-sub">
             <div class="sg-sub__col">
               <p class="sg-sub__head">Vælg dit område</p>
               <a class="sg-sub__link" href="/omraade/jobcentre">Jobcentre</a>
               <a class="sg-sub__link" href="/omraade/boern-unge-familier">Børn, unge og familier</a>
               <a class="sg-sub__link" href="/omraade/forsikring-pension">Forsikring og pension</a>
-            </div>
-            <div class="sg-sub__col">
-              <p class="sg-sub__head">Din rolle</p>
-              <a class="sg-sub__link" href="/din-rolle/jobcenterchef">Jobcenterchef</a>
-              <a class="sg-sub__link" href="/din-rolle/sagsbehandler">Sagsbehandler</a>
-              <a class="sg-sub__link" href="/din-rolle/ungeraadgiver">Ungerådgiver</a>
             </div>
           </div>
         </li>
@@ -77,7 +71,6 @@
   <section class="sg-hero" aria-label="Introduktion">
     <video class="sg-hero__video" src="<?php echo get_template_directory_uri(); ?>/assets/hero.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
     <div class="sg-hero__inner">
-      <p class="sg-hero__eyebrow">IPS og Supported Employment siden 2015</p>
       <h1>Et nyt ståsted<br> i livet til mennesket<br> bag borgeren</h1>
       <p class="sg-hero__lead">Simply Guiding hjælper mennesker i en sårbar situation tilbage til fællesskabet, til jobbet eller i uddannelse.</p>
       <div class="sg-hero__actions">
@@ -105,6 +98,17 @@
     </div>
     <div class="sg-cards" id="sgCards">
       <article class="sg-card is-active">
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
+        <a class="sg-card__link" href="/indsatser/jobcentre" aria-label="Læs om indsatsen: Jobcentre"></a>
+        <div class="sg-card__body">
+          <div class="sg-card__copy">
+            <h3 class="sg-card__title">Jobcentre</h3>
+            <p class="sg-card__text">Målrettede forløb for borgere, som har brug for et nyt ståsted i livet.</p>
+          </div>
+          <div class="sg-card__foot" aria-hidden="true"><span class="sg-card__cta">Læs om indsatsen</span><span class="sg-card__arrow"><svg viewBox="-1 -1 39 27" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span></div>
+        </div>
+      </article>
+      <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
         <a class="sg-card__link" href="/indsatser/boern-unge-familier" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
@@ -127,14 +131,14 @@
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
-        <a class="sg-card__link" href="/indsatser/jobcentre" aria-label="Læs om indsatsen: Jobcentre"></a>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-academy.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Academy</span></div>
+        <a class="sg-card__link" href="/academy" aria-label="Læs om Academy"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
-            <h3 class="sg-card__title">Jobcentre</h3>
-            <p class="sg-card__text">Målrettede forløb for borgere, som har brug for et nyt ståsted i livet.</p>
+            <h3 class="sg-card__title">Academy</h3>
+            <p class="sg-card__text">Uddannelse og kurser, der klæder konsulenter og samarbejdspartnere på til IPS.</p>
           </div>
-          <div class="sg-card__foot" aria-hidden="true"><span class="sg-card__cta">Læs om indsatsen</span><span class="sg-card__arrow"><svg viewBox="-1 -1 39 27" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span></div>
+          <div class="sg-card__foot" aria-hidden="true"><span class="sg-card__cta">Læs om Academy</span><span class="sg-card__arrow"><svg viewBox="-1 -1 39 27" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span></div>
         </div>
       </article>
     </div>

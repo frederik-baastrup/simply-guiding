@@ -330,7 +330,7 @@ Text Domain: simply-guiding
   }
   .sg-card {
     --ease: cubic-bezier(.22, .7, .18, 1);
-    --text-w: calc((100cqw - 2 * var(--gap)) / (var(--grow) + 2) - 2 * var(--pad));
+    --text-w: calc((100cqw - 3 * var(--gap)) / (var(--grow) + 3) - 2 * var(--pad));
     position: relative; flex: 1 1 0; min-width: 0; overflow: hidden; border-radius: var(--sg-radius-sm);
     background: var(--sg-panel); color: #fff;
     display: flex; flex-direction: column; justify-content: flex-end;
