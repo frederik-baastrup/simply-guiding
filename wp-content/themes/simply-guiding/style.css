@@ -549,6 +549,7 @@ Text Domain: simply-guiding
     display: grid; grid-template-columns: 48px 1fr; gap: 28px; align-items: start;
     padding-block: 30px; border-bottom: 1px solid rgba(255,255,255,.12);
   }
+  .sg-step > div { min-width: 0; } /* uden denne kan lange overskrifter skubbe teksten ud over boksens kant */
   .sg-step__num {
     width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center;
     border: 1px solid rgba(255,255,255,.25); color: var(--sg-hero-ink);
@@ -566,6 +567,8 @@ Text Domain: simply-guiding
   @media (max-width: 900px) {
     .sg-method__inner { grid-template-columns: 1fr; padding-block: 72px; }
     .sg-method__media { min-height: 0; aspect-ratio: 4 / 3.6; max-width: 100%; }
+    .sg-method__label { align-self: center; }
+    .sg-method__title { text-align: center; }
   }
   @media (max-width: 560px) {
     .sg-step { grid-template-columns: 40px 1fr; gap: 18px; padding-block: 24px; }
