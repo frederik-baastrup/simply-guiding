@@ -135,6 +135,7 @@ Text Domain: simply-guiding
   .sg-header.is-scrolled .sg-header__inner { height: 72px; }
     .sg-header.is-on-light .sg-logo svg path[fill="#313131"] { fill: #313131; }
   .sg-header.is-on-light .sg-logo svg path[fill-opacity] { fill-opacity: .5; }
+  .sg-header.is-on-light.is-scrolled { background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,.06); }
   .sg-header.is-scrolled { box-shadow: none; }
   .sg-header__inner { height: 96px; }
   .sg-logo svg path[fill="#313131"] { fill: #fff; }
@@ -160,7 +161,8 @@ Text Domain: simply-guiding
     .sg-header__inner { height: 80px; }
     .sg-header.is-scrolled .sg-header__inner { height: 64px; }
     .sg-burger { width: 38px; height: 38px; background: #fff; border-radius: 6px; margin-right: 0; padding: 8px; transition: box-shadow .35s; }
-    .sg-burger span:nth-child(2) { opacity: 0; }
+    .sg-burger span:nth-child(2) { display: none; }
+    .sg-burger span + span { margin-top: 3px; }
     .sg-nav {
       top: calc(100% - 6px); left: var(--sg-gutter); right: var(--sg-gutter); box-shadow: 0 12px 32px rgba(0,0,0,.12); height: auto; border-radius: 6px; border-top: 0;
       padding: 6px 20px 20px; gap: 0;
@@ -298,7 +300,14 @@ Text Domain: simply-guiding
     .sg-hero { border-radius: var(--sg-radius); }
     .sg-hero__stat--mobile { display: flex; }
     .sg-hero__inner { text-align: center; }
-    .sg-hero__actions { justify-content: center; }
+    .sg-hero__actions { justify-content: center; gap: 10px; margin-top: 24px; }
+  }
+  @media (max-width: 860px) {
+    /* Ingen hvid ramme om hero: baggrunden går helt ud til kanten */
+    .sg-hero-wrap { padding-inline: 0; }
+    .sg-hero { border-radius: 0; }
+    /* Lidt luft, så kommune-logoerne ikke sidder helt op ad hero'en */
+    .sg-hero__notch-inner { padding-top: 34px; }
   }
 
   /* Overskrift + padding som på frederikb8.sg-host.com (Uncode) */
@@ -324,7 +333,12 @@ Text Domain: simply-guiding
     font-size: 28px; line-height: 1.1; letter-spacing: -.01em; color: var(--sg-text);
     text-wrap: balance; -webkit-font-smoothing: antialiased;
   }
-  @media (max-width: 600px) { .sg-ind__title { font-size: 24px; } .sg-ind__head::after { display: none; } }
+  @media (max-width: 600px) {
+    .sg-ind__title { font-size: 24px; }
+    .sg-ind__head::after { display: none; }
+    .sg-ind__head { justify-content: center; }
+    .sg-ind__title { text-align: center; }
+  }
 
   /* Kortene: flex-grow animeres; teksten har en FAST bredde (= det smalle korts indhold),
      så den aldrig ombrydes på ny, når et kort bliver bredere. */
