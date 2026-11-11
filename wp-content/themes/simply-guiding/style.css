@@ -2150,3 +2150,47 @@ Text Domain: simply-guiding
 .sg-steps--green .sg-steps__title span { color: rgba(219,231,221,.6); }
 .sg-steps--green + .sg-pdetail { margin-top: 0; }
 @media (max-width: 1000px) { .sg-steps__list--3 { grid-template-columns: 1fr; margin-top: 56px; } }
+
+/* =====================================================================
+   12-KOLONNE-GITTER (fælles for hele sitet, desktop > 960 px)
+   Alle to-kolonne-sektioner ligger nu i samme 12-kolonne-gitter med samme
+   kolonneafstand, så kanter flugter på tværs af sider. Mellemrummet mellem
+   tekst og billede er én tom kolonne.
+   Varianter:  5 | 1 | 6   (standard: billede/overskrift venstre, tekst højre)
+               6 | 1 | 5   (spejlet)
+               4 | 1 | 7   (lille billede/overskrift)
+               6 | 6       (halv/halv)
+               7 | 1 | 4   (tekst + smal boks/billede til højre)
+   ===================================================================== */
+:root { --sg-gut: 32px; }
+@media (min-width: 961px) {
+  .sg-mind3__grid, .sg-sol__grid, .sg-consult__grid, .sg-pdetail__grid, .sg-tablesec__head,
+  .sg-band2__head, .sg-cform__grid, .sg-sechead:not(:has(> :only-child)), .sg-why__grid, .sg-who__grid,
+  .sg-course__grid, .sg-faq__grid, .sg-band2--side .sg-band2__side, .sg-learn {
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important;
+  }
+  /* 5 | 1 | 6 */
+  .sg-mind3__media, .sg-sol__media, .sg-pdetail__side, .sg-cform__intro, .sg-why__grid > :first-child, .sg-who__side,
+  .sg-tablesec__head > :first-child, .sg-band2__head > :first-child, .sg-sechead:not(:has(> :only-child)) > :first-child { grid-column: 1 / span 5 !important; grid-row: 1; }
+  .sg-mind3__copy, .sg-sol__copy, .sg-pdetail__body, .sg-cform__box, .sg-why__grid > :last-child, .sg-who__cells,
+  .sg-tablesec__head > :last-child, .sg-band2__head > :last-child, .sg-sechead:not(:has(> :only-child)) > :last-child { grid-column: 7 / span 6 !important; grid-row: 1; }
+  /* Spejlet: 6 | 1 | 5 */
+  .sg-mind3--flip .sg-mind3__copy, .sg-sol--flip .sg-sol__copy, .sg-consult__copy { grid-column: 1 / span 6 !important; grid-row: 1; }
+  .sg-mind3--flip .sg-mind3__media, .sg-sol--flip .sg-sol__media, .sg-consult__media { grid-column: 8 / span 5 !important; grid-row: 1; }
+  /* Løsninger (billede 1/3): 4 | 1 | 7 */
+  .sg-sol--half .sg-sol__media { grid-column: 1 / span 4 !important; }
+  .sg-sol--half .sg-sol__copy { grid-column: 6 / span 7 !important; }
+  .sg-sol--half.sg-sol--flip .sg-sol__copy { grid-column: 1 / span 7 !important; }
+  .sg-sol--half.sg-sol--flip .sg-sol__media { grid-column: 9 / span 4 !important; }
+  /* Tekst + smal kolonne: 7 | 1 | 4 */
+  .sg-sol--small .sg-sol__copy, .sg-course__body { grid-column: 1 / span 7 !important; grid-row: 1; }
+  .sg-sol--small .sg-sol__media, .sg-course__side { grid-column: 9 / span 4 !important; grid-row: 1; }
+  /* FAQ: 4 | 1 | 7 */
+  .sg-faq__grid > :first-child { grid-column: 1 / span 4 !important; grid-row: 1; }
+  .sg-faq__grid > :last-child { grid-column: 6 / span 7 !important; grid-row: 1; }
+  /* Halv/halv: 6 | 6 */
+  .sg-band2--side .sg-band2__media { grid-column: 1 / span 6 !important; grid-row: 1; }
+  .sg-band2--side .sg-band2__head { grid-column: 7 / span 6 !important; grid-row: 1; display: block !important; }
+  /* Kortrækker følger samme kolonneafstand */
+  .sg-cards3__grid, .sg-tiles2__grid, .sg-team__grid, .sg-cols3, .sg-steps__list, .sg-kpis__grid, .sg-projects__grid, .sg-posts { column-gap: var(--sg-gut) !important; }
+}
