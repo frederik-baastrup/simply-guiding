@@ -106,6 +106,9 @@ $logo_list = function ($hidden) use ($u, $logos) {
   </div>
 </section>
 
+
+<?php get_template_part('template-parts/final-cta'); ?>
+
 <!-- Vil du vide mere? – afslutning: billede + tekst i lys boks -->
 <section class="sg-more2" aria-labelledby="sgMoreTitle">
   <div class="sg-wrap">
@@ -123,7 +126,6 @@ $logo_list = function ($hidden) use ($u, $logos) {
   </div>
 </section>
 
-<?php get_template_part('template-parts/final-cta'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 
 <?php get_footer(); ?>

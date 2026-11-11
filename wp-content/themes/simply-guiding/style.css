@@ -1361,3 +1361,4 @@ Text Domain: simply-guiding
     .sg-more2__box { grid-template-columns: 1fr; gap: 32px; }
     .sg-more2__copy { padding: 0; }
   }
+  .sg-final + .sg-more2 { padding-top: var(--sg-gap); }
