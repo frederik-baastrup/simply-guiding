@@ -2067,3 +2067,4 @@ Text Domain: simply-guiding
 .sg-post .sg-post__thumb img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--sg-radius-sm); }
 .sg-post .sg-story__inner { padding-top: 0; }
 @media (max-width: 760px) { .sg-hero--blog .sg-split__copy { padding: 120px 18px 120px; } .sg-post .sg-post__thumb { margin-top: -80px !important; } }
+.sg-story.sg-post { padding-top: 0; }
