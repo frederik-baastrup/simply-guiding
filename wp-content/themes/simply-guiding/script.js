@@ -236,3 +236,49 @@
       if (path && a.getAttribute('href') === path) a.setAttribute('aria-current', 'page');
     });
   })();
+
+  /* Løsninger: fold lang tekst til billedets højde og vis en "Vis mere"-knap */
+  (function () {
+    var secs = document.querySelectorAll('.sg-sol--half');
+    if (!secs.length) return;
+    var arrow = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>';
+    var items = [];
+    secs.forEach(function (sec, i) {
+      var copy = sec.querySelector('.sg-sol__copy'), media = sec.querySelector('.sg-sol__media');
+      if (!copy || !media) return;
+      var clip = document.createElement('div');
+      clip.className = 'sg-sol__clip'; clip.id = 'sgSolClip' + i;
+      while (copy.firstChild) clip.appendChild(copy.firstChild);
+      copy.appendChild(clip);
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'sg-btn sg-btn--lg sg-btn--outline sg-sol__more';
+      btn.setAttribute('aria-controls', clip.id); btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<span>Vis mere</span>' + arrow;
+      btn.hidden = true;
+      copy.appendChild(btn);
+      btn.addEventListener('click', function () {
+        var open = !copy.classList.contains('is-open');
+        copy.classList.toggle('is-open', open);
+        clip.style.maxHeight = open ? clip.scrollHeight + 'px' : '';
+        btn.setAttribute('aria-expanded', open);
+        btn.querySelector('span').textContent = open ? 'Vis mindre' : 'Vis mere';
+        if (!open) { var top = sec.getBoundingClientRect().top + window.scrollY - 100; if (window.scrollY > top) window.scrollTo({ top: top, behavior: 'smooth' }); }
+      });
+      items.push({ copy: copy, media: media, clip: clip, btn: btn });
+    });
+    function measure() {
+      items.forEach(function (it) {
+        var stacked = window.matchMedia('(max-width: 960px)').matches;
+        var limit = stacked ? 420 : it.media.getBoundingClientRect().height - 64;
+        var full = it.clip.scrollHeight;
+        var clamp = full > limit + 80;
+        it.copy.classList.toggle('is-clamped', clamp);
+        it.btn.hidden = !clamp;
+        it.copy.style.setProperty('--sg-clip', Math.max(limit, 200) + 'px');
+        if (it.copy.classList.contains('is-open')) it.clip.style.maxHeight = full + 'px';
+      });
+    }
+    measure();
+    window.addEventListener('load', measure);
+    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(measure, 150); });
+  })();

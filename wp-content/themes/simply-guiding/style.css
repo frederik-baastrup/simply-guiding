@@ -1747,3 +1747,13 @@ Text Domain: simply-guiding
 .sg-textlink a span { transition: transform .25s ease; }
 .sg-textlink a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .sg-textlink a:hover span { transform: translateX(3px); }
+/* Løsninger: billede 1/3, tekst 2/3; lang tekst foldes til billedets højde med "Vis mere" */
+.sg-sol--half .sg-sol__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); column-gap: 72px; }
+.sg-sol--flip.sg-sol--half .sg-sol__grid { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+.sg-sol__clip { position: relative; }
+.sg-sol__copy.is-clamped .sg-sol__clip { max-height: var(--sg-clip, 480px); overflow: hidden; transition: max-height .5s cubic-bezier(.2,.7,.2,1); }
+.sg-sol__copy.is-clamped .sg-sol__clip::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(rgba(255,255,255,0), #fff); pointer-events: none; transition: opacity .3s; }
+.sg-sol__copy.is-open .sg-sol__clip::after { opacity: 0; }
+.sg-sol__more { margin-top: 16px; }
+.sg-sol__more svg { width: 14px; height: 14px; margin-left: 8px; transition: transform .3s; }
+.sg-sol__copy.is-open .sg-sol__more svg { transform: rotate(180deg); }
