@@ -313,7 +313,9 @@ Text Domain: simply-guiding
     .sg-hero-wrap { padding-inline: 0; }
     .sg-hero { border-radius: 0; }
     /* Lidt luft, så kommune-logoerne ikke sidder helt op ad hero'en */
-    .sg-hero__notch-inner { padding-top: 34px; }
+    .sg-hero__notch-inner { padding-top: 56px; }
+    /* "Vi har samarbejdet med 25+ kommuner" fjernes på mobil */
+    .sg-hero__stat { display: none; }
   }
 
   /* Overskrift + padding som på frederikb8.sg-host.com (Uncode) */
