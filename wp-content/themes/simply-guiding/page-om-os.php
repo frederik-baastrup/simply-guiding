@@ -38,14 +38,19 @@ get_template_part('template-parts/page-hero', null, [
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejder i arbejde" width="1200" height="1800" loading="lazy"></div>
     <div class="sg-mind3__copy">
       <h2 class="sg-h2" id="sgFloorTitle">Når gulvet vipper, griber vi dig</h2>
-      <p class="sg-mind3__lead">Når et menneske mister fodfæstet, omdannes den personlige historie alt for ofte til en sag, en paragraf og en diagnose. Det er ikke af ond vilje.</p>
+      <p class="sg-meet__p sg-meet__p--first">Når et menneske mister fodfæstet, omdannes den personlige historie alt for ofte til en sag, en paragraf og en diagnose. Det er ikke af ond vilje.</p>
       <p class="sg-meet__p">Hos Simply Guiding tror vi på, at mennesker udvikler sig, når de mødes som dem, de er – summen af datid, nutid og drømme for fremtiden. Vi er optaget af den enkeltes situation, muligheder og ønsker. Det betyder, at vi for mange er den vejleder og guide, man kan læne sig op ad, når gulvet vipper.</p>
       <p class="sg-meet__p">Vi er dem, man kan komme til og spørge til råds, når tvivlen melder sig – og vi er dem, der hjælper mennesker i en sårbar situation tilbage til fællesskabet, til jobbet eller i uddannelse.</p>
-      <div class="sg-belief">
-        <h3 class="sg-belief__title">Tro kan ikke flytte bjerge alene</h3>
-        <p>Vi tror på, at alle mennesker har muligheder og potentiale. Vi begrænser os ikke af kassetænkning eller diagnoser. Vi tror også på, at det enkelte menneske nogle gange skal have et kærligt skub i den rigtige retning.</p>
-        <p>Men tro kan ikke flytte bjerge eller mennesker alene, og heldigvis for det. Troen skal ledsages af handling og faglighed. Intet sker af sig selv, og vi venter heller ikke på, at tiden heler alle sår.</p>
-      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sg-statement" aria-labelledby="sgBeliefTitle">
+  <div class="sg-wrap">
+    <h2 class="sg-statement__title" id="sgBeliefTitle">Tro kan ikke flytte bjerge alene</h2>
+    <div class="sg-statement__cols">
+      <p>Vi tror på, at alle mennesker har muligheder og potentiale. Vi begrænser os ikke af kassetænkning eller diagnoser. Vi tror også på, at det enkelte menneske nogle gange skal have et kærligt skub i den rigtige retning.</p>
+      <p>Men tro kan ikke flytte bjerge eller mennesker alene, og heldigvis for det. Troen skal ledsages af handling og faglighed. Intet sker af sig selv, og vi venter heller ikke på, at tiden heler alle sår.</p>
     </div>
   </div>
 </section>
