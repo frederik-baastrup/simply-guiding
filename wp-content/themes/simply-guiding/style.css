@@ -1680,3 +1680,10 @@ Text Domain: simply-guiding
     .sg-sol__media img { position: static; height: auto; aspect-ratio: 16 / 10; }
   }
   @media (max-width: 860px) { .sg-sol { margin-inline: 0; border-radius: 0; } }
+
+  /* Kort på mørk grøn: fast farve (ikke gennemsigtig) */
+  .sg-cols3 > div, .sg-principles8__grid li { background: #12443B; border: 0; }
+  /* Labels er aldrig bredere end deres tekst */
+  .sg-pill { width: fit-content; }
+  /* Undgå et enkelt ord alene på sidste linje */
+  p, li, blockquote { text-wrap: pretty; }
