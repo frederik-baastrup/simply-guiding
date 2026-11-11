@@ -1,3 +1,10 @@
+<?php
+/* Afsluttende CTA-boks med kontaktperson. Standard er Lars; en side kan give en anden person med som $args. */
+$p = wp_parse_args(isset($args) && is_array($args) ? $args : [], [
+  'name' => 'Lars Olaf Nielsen', 'role' => 'Ejer', 'img' => 'kontakt.png',
+  'tel' => '+4526344454', 'tel_txt' => '26 34 44 54', 'mail' => 'kontakt@simplyguiding.dk',
+]);
+?>
 <section class="sg-final" aria-labelledby="sgFinalTitle">
   <div class="sg-final__stage">
   <div class="sg-final__box">
@@ -16,11 +23,11 @@
       </div>
     </div>
   </div>
-  <img class="sg-final__person" src="<?php echo get_template_directory_uri(); ?>/assets/kontakt.png" alt="Lars Olaf Nielsen, ejer af Simply Guiding" loading="lazy">
-  <p class="sg-final__name"><b>Lars Olaf Nielsen</b><span>Ejer, Simply Guiding</span>
+  <img class="sg-final__person" src="<?php echo esc_url(get_template_directory_uri() . '/assets/' . $p['img']); ?>" alt="<?php echo esc_attr($p['name'] . ', ' . $p['role'] . ', Simply Guiding'); ?>" loading="lazy">
+  <p class="sg-final__name"><b><?php echo esc_html($p['name']); ?></b><span><?php echo esc_html($p['role']); ?>, Simply Guiding</span>
     <span class="sg-final__name-contact">
-      <a href="tel:+4526344454"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M497.4 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.7 370.7 0 0 1 130.6 204.1l60.6-49.6a23.9 23.9 0 0 0 6.9-28l-48-112A24.2 24.2 0 0 0 122.6.6l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.3 24.3 0 0 0-14-27.6z"/></svg>26 34 44 54</a>
-      <a href="mailto:kontakt@simplyguiding.dk"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>kontakt@simplyguiding.dk</a>
+      <a href="tel:<?php echo esc_attr($p['tel']); ?>"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M497.4 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.7 370.7 0 0 1 130.6 204.1l60.6-49.6a23.9 23.9 0 0 0 6.9-28l-48-112A24.2 24.2 0 0 0 122.6.6l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.3 24.3 0 0 0-14-27.6z"/></svg><?php echo esc_html($p['tel_txt']); ?></a>
+      <a href="mailto:<?php echo esc_attr($p['mail']); ?>"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg><?php echo esc_html($p['mail']); ?></a>
     </span>
   </p>
   </div>
