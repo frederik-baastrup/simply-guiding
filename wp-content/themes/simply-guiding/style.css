@@ -1066,8 +1066,10 @@ Text Domain: simply-guiding
   .sg-logobar { --lb-in: calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px); }
   .sg-logobar__tab {
     position: absolute; top: 0; height: 35px; background: #fff;
-    left: max(0px, calc(var(--lb-in) - 149px)); right: max(0px, calc(var(--lb-in) - 149px));
-    clip-path: polygon(0 100%, 115px 0, calc(100% - 115px) 0, 100% 100%);
+    /* Skråningen er 115 px bred, men kortere på smalle skærme, så den altid topper ca. 34 px før knappen */
+    --lb-slope: clamp(48px, calc(var(--lb-in) - 34px), 115px);
+    left: max(0px, calc(var(--lb-in) - 34px - var(--lb-slope))); right: max(0px, calc(var(--lb-in) - 34px - var(--lb-slope)));
+    clip-path: polygon(0 100%, var(--lb-slope) 0, calc(100% - var(--lb-slope)) 0, 100% 100%);
   }
   .sg-logobar__inner {
     position: absolute; inset: 0; display: flex; align-items: center;
