@@ -15,7 +15,7 @@ $cat = get_the_category();
 </div>
 <article class="sg-story sg-post">
   <div class="sg-story__inner">
-    <?php if (has_post_thumbnail()) : ?><figure class="sg-story__fig sg-post__thumb"><?php the_post_thumbnail('large'); ?></figure><?php elseif ($fb = sg_post_fallback_img()) : ?><figure class="sg-story__fig sg-post__thumb"><img src="<?php echo esc_url($fb); ?>" alt=""></figure><?php endif; ?>
+    <?php $th = get_the_post_thumbnail(null, 'large'); if ($th) : ?><figure class="sg-story__fig sg-post__thumb"><?php echo $th; ?></figure><?php elseif ($fb = sg_post_fallback_img()) : ?><figure class="sg-story__fig sg-post__thumb"><img src="<?php echo esc_url($fb); ?>" alt=""></figure><?php endif; ?>
     <div class="sg-post__content"><?php the_content(); ?></div>
     <p class="sg-post__back"><a class="sg-btn sg-btn--lg sg-btn--outline" href="/blog/">Se alle nyheder</a></p>
   </div>
