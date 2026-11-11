@@ -1853,19 +1853,19 @@ Text Domain: simply-guiding
 .sg-belief p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
 
 /* Tal på mørkt bånd */
-.sg-stats { border-radius: var(--sg-radius); padding-block: 96px 100px; color: #fff; background: url("assets/pattern.png") center / 601px repeat, #0A2F2A; }
-.sg-stats__title { max-width: 18em; }
-.sg-stats__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 56px; }
-.sg-stat { padding: 8px 40px 0 0; }
-.sg-stat + .sg-stat { padding-left: 40px; border-left: 1px solid rgba(255,255,255,.14); }
-.sg-stat__num { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: clamp(52px, 6vw, 88px); line-height: .95; letter-spacing: -.02em; color: var(--sg-hero-ink); font-variant-numeric: tabular-nums; }
-.sg-stat__label { margin: 14px 0 0; font-size: 16px; font-weight: 500; color: #fff; }
-.sg-stat__text { margin: 8px 0 0; font-size: 14.5px; line-height: 1.7; color: rgba(255,255,255,.72); max-width: 24em; }
+.sg-kpis { border-radius: var(--sg-radius); padding-block: 96px 100px; color: #fff; background: url("assets/pattern.png") center / 601px repeat, #0A2F2A; }
+.sg-kpis__title { max-width: 18em; }
+.sg-kpis__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 56px; }
+.sg-kpi { padding: 8px 40px 0 0; }
+.sg-kpi + .sg-kpi { padding-left: 40px; border-left: 1px solid rgba(255,255,255,.14); }
+.sg-kpi__num { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: clamp(52px, 6vw, 88px); line-height: .95; letter-spacing: -.02em; color: var(--sg-hero-ink); font-variant-numeric: tabular-nums; }
+.sg-kpi__label { margin: 14px 0 0; font-size: 16px; font-weight: 500; color: #fff; }
+.sg-kpi__text { margin: 8px 0 0; font-size: 14.5px; line-height: 1.7; color: rgba(255,255,255,.72); max-width: 24em; }
 @media (max-width: 860px) {
-  .sg-stats { border-radius: 0; padding-block: 72px; }
-  .sg-stats__grid { grid-template-columns: 1fr; gap: 32px; }
-  .sg-stat, .sg-stat + .sg-stat { padding: 0; border: 0; }
-  .sg-stat + .sg-stat { padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14); }
+  .sg-kpis { border-radius: 0; padding-block: 72px; }
+  .sg-kpis__grid { grid-template-columns: 1fr; gap: 32px; }
+  .sg-kpi, .sg-kpi + .sg-kpi { padding: 0; border: 0; }
+  .sg-kpi + .sg-kpi { padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14); }
 }
 
 /* Forløbstabel med tre kolonner */
@@ -1893,7 +1893,7 @@ Text Domain: simply-guiding
 /* Mørkt bånd med knap */
 .sg-band2__btn { margin: 32px 0 0; }
 .sg-band-wrap + .sg-cards3, .sg-band-wrap + .sg-tablesec { margin-top: 0; }
-.sg-band-wrap:has(.sg-stats) { margin-bottom: 0; }
+.sg-band-wrap:has(.sg-kpis) { margin-bottom: 0; }
 .sg-team .sg-sechead { margin-bottom: 40px; }
 .sg-mind3__copy .sg-meet__p { margin: 16px 0 0; padding: 0; border: 0; }
 .sg-mind3__copy .sg-meet__t, .sg-mind3__copy .sg-belief p, .sg-mind3__copy .sg-textlink { padding: 0; border: 0; }
