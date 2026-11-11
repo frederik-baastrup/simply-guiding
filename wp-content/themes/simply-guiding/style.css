@@ -2032,3 +2032,21 @@ Text Domain: simply-guiding
   .sg-index--compact .sg-index__row:hover { padding-left: 16px; }
 }
 .sg-mind3__media:has(video) { min-height: clamp(360px, 34vw, 500px); } .sg-mind3__grid:has(.sg-mind3__media video) { align-items: center; } @media (max-width: 960px) { .sg-mind3__media:has(video) { min-height: 0; } }
+/* Citat-modul: samme luft over og under */
+.sg-quote:has(.sg-quote__by--stack) { padding-top: 80px; padding-bottom: 56px; }
+
+/* Projekt-/case-kort: hele kortet er klikbart, og det kort musen er over, bliver grønt */
+.sg-project { position: relative; transition: background-color .25s, color .25s; }
+.sg-project__link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.sg-project:hover { color: #fff; background: url("assets/pattern.png") center / 601px repeat, #0A2F2A; }
+.sg-project:hover .sg-pill { color: rgba(255,255,255,.9); border-color: rgba(255,255,255,.28); }
+.sg-project:hover .sg-project__title { color: var(--sg-hero-ink); }
+.sg-project:hover .sg-project__text { color: rgba(255,255,255,.8); }
+.sg-project:hover .sg-project__link { color: var(--sg-hero-ink); }
+@media (hover: hover) {
+  .sg-projects__grid:hover .sg-project--active:not(:hover) { color: inherit; background: var(--sg-topbar); }
+  .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-pill { color: var(--sg-text); border-color: rgba(49,49,49,.22); }
+  .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-project__title { color: var(--sg-text); }
+  .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-project__text { color: var(--sg-muted); }
+  .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-project__link { color: var(--sg-cta); }
+}
