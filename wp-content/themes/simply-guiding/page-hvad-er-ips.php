@@ -75,6 +75,5 @@ $principles = [
 </section>
 
 <?php get_template_part('template-parts/final-cta'); ?>
-<?php get_template_part('template-parts/more', null, ['text' => 'Har du spørgsmål angående vores løsninger og indsatser? Så er vores konsulenter altid klar til at hjælpe. Du kan altid kontakte os på 26 34 44 54 eller skrive til os via nedenstående kontaktformular. Vi sidder klar til at hjælpe dig til at finde den perfekte løsning.']); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 <?php get_footer(); ?>

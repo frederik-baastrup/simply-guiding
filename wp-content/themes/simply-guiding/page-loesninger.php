@@ -113,7 +113,6 @@ $sol = [
 ]); ?>
 
 <?php get_template_part('template-parts/final-cta'); ?>
-<?php get_template_part('template-parts/more'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 
 <?php get_footer(); ?>
