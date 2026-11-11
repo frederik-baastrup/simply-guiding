@@ -3,46 +3,12 @@
 get_header();
 get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
-$logos = [
-  ['aalborg', 'Aalborg Kommune'], ['varde', 'Varde Kommune'], ['svendborg', 'Svendborg Kommune'], ['soenderborg', 'Sønderborg Kommune'],
-  ['koege', 'Køge Kommune'], ['faaborg-midtfyn', 'Faaborg-Midtfyn Kommune', 'is-tall'], ['gladsaxe', 'Gladsaxe Kommune'],
-];
-$logo_list = function ($hidden) use ($u, $logos) {
-  echo '<ul class="sg-logos__list"' . ($hidden ? ' aria-hidden="true"' : '') . '>';
-  foreach ($logos as $l) {
-    printf('<li><img src="%s/assets/%s.png" alt="%s"%s></li>', esc_url($u), $l[0], $hidden ? '' : esc_attr($l[1]), isset($l[2]) ? ' class="' . $l[2] . '"' : '');
-  }
-  echo '</ul>';
-};
 ?>
-<div class="sg-hero-wrap">
-  <section class="sg-hero sg-hero--split" aria-labelledby="sgPageTitle">
-    <div class="sg-split">
-      <div class="sg-split__copy">
-        <p class="sg-pill">Metode</p>
-        <h1 id="sgPageTitle">Sådan arbejder vi</h1>
-        <p class="sg-hero__lead">Simply Guidings medarbejdere uddannes og arbejder metodebaseret. For eksempel ud fra IPS, Supported Employment, og IPS UNG/Supported Education (SEd). Læs mere om vores metoder og processer her.</p>
-        <div class="sg-hero__actions">
-          <a class="sg-btn sg-btn--lg" href="/kontakt">Kontakt os og hør mere</a>
-          <a class="sg-btn sg-btn--lg sg-btn--ghost" href="#indhold">Læs mere</a>
-        </div>
-      </div>
-      <div class="sg-split__media">
-        <img src="<?php echo esc_url($u); ?>/assets/saadan-arbejder-vi.jpg" alt="Tre medarbejdere i arbejdstøj læsser udstyr ud af en varevogn" width="1600" height="1054" fetchpriority="high">
-      </div>
-    </div>
-  </section>
-  <!-- Logo-bar som på det gamle site: hvid fane med skrå sider op i hero'en, label + streg + logo-slider -->
-  <div class="sg-logobar">
-    <div class="sg-logobar__tab" aria-hidden="true"></div>
-    <div class="sg-logobar__inner">
-      <p class="sg-logobar__label">Vi har bl.a. samarbejdet med</p>
-      <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
-        <div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div>
-      </div>
-    </div>
-  </div>
-</div>
+<?php get_template_part('template-parts/page-hero', null, [
+  'label' => 'Metode', 'title' => 'Sådan arbejder vi',
+  'lead'  => 'Simply Guidings medarbejdere uddannes og arbejder metodebaseret. For eksempel ud fra IPS, Supported Employment, og IPS UNG/Supported Education (SEd). Læs mere om vores metoder og processer her.',
+  'img' => 'saadan-arbejder-vi.jpg', 'img_w' => 1600, 'img_h' => 1054, 'alt' => 'Tre medarbejdere i arbejdstøj læsser udstyr ud af en varevogn',
+]); ?>
 
 <div id="indhold"></div>
 
@@ -109,22 +75,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
 
 <?php get_template_part('template-parts/final-cta'); ?>
 
-<!-- Vil du vide mere? – afslutning: billede + tekst i lys boks -->
-<section class="sg-more2" aria-labelledby="sgMoreTitle">
-  <div class="sg-wrap">
-    <div class="sg-more2__box">
-      <div class="sg-more2__media"><img src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="Møde omkring et bord med tablets og kaffe" width="2000" height="1333" loading="lazy"></div>
-      <div class="sg-more2__copy">
-        <h2 class="sg-h2" id="sgMoreTitle">Vil du vide mere?</h2>
-        <p>Har du spørgsmål angående vores løsninger og indsatser? Så er vores konsulenter altid klar til at hjælpe. Du kan kontakte os på 26 34 44 54 eller skrive til os via nedenstående kontaktformular. Vi sidder klar til at hjælpe dig til at finde den perfekte løsning.</p>
-        <div class="sg-more2__actions">
-          <a class="sg-btn sg-btn--lg" href="tel:+4526344454">Ring på 26 34 44 54</a>
-          <a class="sg-btn sg-btn--lg sg-btn--outline" href="/kontakt">Udfyld vores kontaktformular</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('template-parts/more'); ?>
 
 <?php get_template_part('template-parts/site-footer'); ?>
 

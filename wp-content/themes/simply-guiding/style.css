@@ -1362,3 +1362,57 @@ Text Domain: simply-guiding
     .sg-more2__copy { padding: 0; }
   }
   .sg-final + .sg-more2 { padding-top: var(--sg-gap); }
+
+  /* ---------- Projekter ---------- */
+  .sg-mind3__media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  @media (max-width: 960px) { .sg-mind3__media video { position: static; height: auto; aspect-ratio: 16 / 9; } }
+
+  /* Oversigt: tre projektkort, det igangværende i mørk grøn */
+  .sg-projects { padding-block: 110px 40px; }
+  .sg-projects__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .sg-project {
+    display: flex; flex-direction: column; align-items: flex-start; min-height: 420px; padding: 36px 34px;
+    border-radius: var(--sg-radius-sm); background: var(--sg-topbar); color: var(--sg-text);
+  }
+  .sg-project .sg-pill { color: var(--sg-text); border-color: rgba(49, 49, 49, .22); }
+  .sg-project__title {
+    margin: 28px 0 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500;
+    font-size: 28px; line-height: 1.1; letter-spacing: -.01em; -webkit-font-smoothing: antialiased;
+  }
+  .sg-project__text { margin: 16px 0 32px; font-size: 15px; line-height: 1.75; color: var(--sg-muted); }
+  .sg-project__link {
+    margin-top: auto; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500;
+    color: var(--sg-cta); text-decoration: none;
+  }
+  .sg-project__link span { transition: transform .25s; }
+  .sg-project__link:hover span { transform: translateX(4px); }
+  .sg-project--active { color: #fff; background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F; }
+  .sg-project--active .sg-pill { color: rgba(255,255,255,.9); border-color: rgba(255,255,255,.28); }
+  .sg-project--active .sg-project__title { color: var(--sg-hero-ink); }
+  .sg-project--active .sg-project__text { color: rgba(255,255,255,.8); }
+  .sg-project--active .sg-project__link { color: var(--sg-hero-ink); }
+  @media (max-width: 1000px) { .sg-projects__grid { grid-template-columns: 1fr; } .sg-project { min-height: 0; } }
+  @media (max-width: 600px) { .sg-projects { padding-block: 72px 24px; } .sg-project { padding: 28px 24px; } }
+
+  /* Detaljer: titel + status står stille til venstre, tekst til højre */
+  .sg-pdetail { padding-block: 72px; scroll-margin-top: 90px; }
+  .sg-pdetail + .sg-pdetail .sg-pdetail__grid { border-top: 1px solid rgba(49, 49, 49, .12); padding-top: 72px; }
+  .sg-pdetail + .sg-pdetail { padding-top: 0; }
+  .sg-pdetail:last-of-type { padding-bottom: 110px; }
+  .sg-pdetail__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 0 96px; align-items: start; }
+  .sg-pdetail__side { position: sticky; top: 120px; }
+  .sg-pdetail__status { display: flex; align-items: center; gap: 8px; margin: 14px 0 0; font-size: 14px; color: var(--sg-muted); }
+  .sg-pdetail__status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #b9c2be; flex: none; }
+  .sg-pdetail__status.is-active::before { background: #1aa37a; box-shadow: 0 0 0 4px rgba(26, 163, 122, .15); }
+  .sg-pdetail__body > p { margin: 0 0 18px; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-pdetail__body .sg-mind3__h3 { margin: 32px 0 6px; }
+  .sg-pdetail__body .sg-principles { margin-bottom: 28px; }
+  .sg-pdetail__body .sg-principles li { align-items: flex-start; }
+  .sg-pdetail__body .sg-principles svg { margin-top: 3px; }
+  .sg-pdetail__actions { margin-top: 28px !important; }
+  @media (max-width: 960px) {
+    .sg-pdetail { padding-block: 56px; }
+    .sg-pdetail + .sg-pdetail .sg-pdetail__grid { padding-top: 56px; }
+    .sg-pdetail__grid { grid-template-columns: 1fr; gap: 24px; }
+    .sg-pdetail__side { position: static; }
+  }

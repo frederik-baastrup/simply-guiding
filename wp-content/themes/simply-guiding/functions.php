@@ -16,12 +16,17 @@ function sg_theme_setup() {
 }
 add_action('after_setup_theme', 'sg_theme_setup');
 
-// Siden "Sådan arbejder vi" skal findes i WordPress, før page-saadan-arbejder-vi.php bruges.
-// Oprettes én gang med samme adresse som på det gamle site (/saadan-arbejder-vi/).
+// Undersider med egen skabelon (page-<slug>.php) skal findes i WordPress. Oprettes én gang med samme adresse som på det gamle site.
 add_action('init', function () {
-    if (get_option('sg_page_saadan_created')) return;
-    if (!get_page_by_path('saadan-arbejder-vi')) {
-        wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Sådan arbejder vi', 'post_name' => 'saadan-arbejder-vi']);
+    $pages = ['saadan-arbejder-vi' => 'Sådan arbejder vi', 'projekter' => 'Projekter'];
+    $done = (array) get_option('sg_pages_created', []);
+    if (get_option('sg_page_saadan_created')) $done['saadan-arbejder-vi'] = 1;
+    foreach ($pages as $slug => $title) {
+        if (!empty($done[$slug])) continue;
+        if (!get_page_by_path($slug)) {
+            wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug]);
+        }
+        $done[$slug] = 1;
     }
-    update_option('sg_page_saadan_created', 1);
+    update_option('sg_pages_created', $done);
 });
