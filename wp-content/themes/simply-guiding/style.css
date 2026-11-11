@@ -541,7 +541,7 @@ Text Domain: simply-guiding
   .sg-method-wrap { padding-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); padding-bottom: 18px; }
   .sg-method {
     border-radius: var(--sg-radius); color: #fff;
-    background: rgb(var(--sg-hero-base)) url("assets/pattern.png") center / 601px repeat;
+    background: #0A2F2A url("assets/pattern.png") center / 601px repeat;
   }
   .sg-method__inner {
     max-width: var(--sg-max); margin: 0 auto;
@@ -687,7 +687,7 @@ Text Domain: simply-guiding
   .sg-final__box {
     position: relative; overflow: hidden; color: #fff; isolation: isolate;
     border-radius: 0 var(--sg-radius) var(--sg-radius) var(--sg-radius);
-    background: rgb(var(--sg-hero-base)) url("assets/pattern.png") center / 601px repeat;
+    background: #0A2F2A url("assets/pattern.png") center / 601px repeat;
   }
   /* Hvid "notch" med logoer i toppen – spejlvendt af hero'ens */
   .sg-final__notch {
@@ -1013,7 +1013,7 @@ Text Domain: simply-guiding
 
   /* ---------- Undersidehero: tekst på grønt mønster til venstre, billede til højre (Sådan arbejder vi m.fl.) ---------- */
   /* Grøn + mønster + 20 % sort overlay */
-  .sg-hero--split { background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F; }
+  .sg-hero--split { background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A; }
   .sg-hero--split::before { display: none; }
   .sg-split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); min-height: min(820px, 92vh); }
   .sg-split__copy {
@@ -1174,7 +1174,7 @@ Text Domain: simply-guiding
   .sg-band-wrap { padding-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); }
   .sg-band {
     border-radius: var(--sg-radius); padding-block: 110px; color: #fff;
-    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+    background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A;
   }
   .sg-band__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 0 96px; align-items: center; }
   .sg-band__title {
@@ -1246,7 +1246,7 @@ Text Domain: simply-guiding
   /* Borgere: mørkt bånd, overskrift + to spalter, bredt billede */
   .sg-band2 {
     border-radius: var(--sg-radius); padding-block: 96px 18px; color: #fff;
-    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+    background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A;
   }
   .sg-band2__head { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 32px 72px; align-items: start; }
   .sg-band2__head .sg-h2 { max-width: 12em; }
@@ -1386,7 +1386,7 @@ Text Domain: simply-guiding
   }
   .sg-project__link span { transition: transform .25s; }
   .sg-project__link:hover span { transform: translateX(4px); }
-  .sg-project--active { color: #fff; background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F; }
+  .sg-project--active { color: #fff; background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A; }
   .sg-project--active .sg-pill { color: rgba(255,255,255,.9); border-color: rgba(255,255,255,.28); }
   .sg-project--active .sg-project__title { color: var(--sg-hero-ink); }
   .sg-project--active .sg-project__text { color: rgba(255,255,255,.8); }
@@ -1520,7 +1520,7 @@ Text Domain: simply-guiding
   .sg-news-signup { padding-block: 24px 0; }
   .sg-news-signup__box {
     display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px 64px; align-items: center; padding: 56px; border-radius: var(--sg-radius);
-    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+    background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A;
   }
   .sg-news-signup .sg-signup { margin: 0; }
   @media (max-width: 900px) { .sg-news-signup__box { grid-template-columns: 1fr; padding: 36px 24px; } }
@@ -1575,7 +1575,7 @@ Text Domain: simply-guiding
   .sg-course__side { position: sticky; top: 120px; }
   .sg-course__card {
     padding: 36px 32px; border-radius: var(--sg-radius-sm); color: #fff;
-    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+    background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A;
   }
   .sg-course__cardtitle { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 26px; line-height: 1.1; color: var(--sg-hero-ink); -webkit-font-smoothing: antialiased; }
   .sg-course__card > p { margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.82); }
@@ -1624,7 +1624,7 @@ Text Domain: simply-guiding
   .sg-story__note { font-size: 14px !important; font-style: italic; color: var(--sg-muted) !important; }
   .sg-story__essence {
     margin: 56px 0 0; padding: 36px 36px 30px; border-radius: var(--sg-radius-sm); color: #fff;
-    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+    background: url("assets/pattern.png") center / 601px repeat; background-color: #0A2F2A;
   }
   .sg-story__essence h2 { margin: 0 0 8px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 22px; color: var(--sg-hero-ink); }
   .sg-story__essence .sg-principles li { color: rgba(255,255,255,.88); border-bottom-color: rgba(255,255,255,.1); align-items: flex-start; }
