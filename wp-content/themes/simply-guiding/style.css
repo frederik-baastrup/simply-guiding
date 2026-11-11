@@ -1595,3 +1595,12 @@ Text Domain: simply-guiding
   .sg-terms ul { margin: 10px 0 0; padding-left: 18px; font-size: 14.5px; line-height: 1.7; color: var(--sg-muted); }
   .sg-terms a { color: var(--sg-cta); }
   .sg-check a { color: var(--sg-cta); }
+  .sg-cols3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 56px; }
+  .sg-cols3 > div { padding: 30px 28px; border-radius: var(--sg-radius-sm); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
+  .sg-cols3 h3 { margin: 0 0 6px; font-size: 17px; font-weight: 500; color: var(--sg-hero-ink); }
+  .sg-cols3 p { margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.82); }
+  @media (max-width: 1000px) { .sg-cols3 { grid-template-columns: 1fr; } }
+  .sg-tiles2__grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (max-width: 1000px) { .sg-tiles2__grid--4 { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .sg-tiles2__grid--4 { grid-template-columns: 1fr; } }
+  .sg-band-wrap + .sg-intro { padding-top: 110px; }
