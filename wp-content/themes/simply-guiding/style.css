@@ -1029,8 +1029,9 @@ Text Domain: simply-guiding
   .sg-split__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% center; }
   /* Hvid strip med logoer: bue i begge sider, så hero'en har runde hjørner hele vejen rundt */
   .sg-hero--split { border-radius: var(--sg-radius); }
-  .sg-hero--split .sg-hero__notch { left: 160px; width: calc(100% - 320px); }
-  .sg-hero--split .sg-hero__curve { width: 160px; }
+  /* Den flade top går fra ca. 17 % til 83 % af bredden; buerne er lange og bløde ud til kanterne (26 % af stripens bredde = 17 % af hero'en) */
+  .sg-hero--split .sg-hero__notch { left: 17%; width: 66%; }
+  .sg-hero--split .sg-hero__curve { width: 25.8%; }
   .sg-hero__curve--left { left: auto; right: 100%; }
   .sg-hero--split .sg-hero__notch-inner { padding-left: 12px; padding-right: 12px; }
   .sg-hero__notch-label {
