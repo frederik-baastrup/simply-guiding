@@ -1961,3 +1961,7 @@ Text Domain: simply-guiding
   .sg-index__go { width: 44px; height: 44px; grid-column: 3; grid-row: 1; }
 }
 .sg-split__copy h1 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+/* Desktop: når man scroller, ligger menuen direkte på den hvide header uden kasse og skygge */
+@media (min-width: 961px) {
+  .sg-header.is-scrolled .sg-nav { box-shadow: none; background: transparent; }
+}
