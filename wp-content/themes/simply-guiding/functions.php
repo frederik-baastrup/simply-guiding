@@ -15,3 +15,13 @@ function sg_theme_setup() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'sg_theme_setup');
+
+// Siden "Sådan arbejder vi" skal findes i WordPress, før page-saadan-arbejder-vi.php bruges.
+// Oprettes én gang med samme adresse som på det gamle site (/saadan-arbejder-vi/).
+add_action('init', function () {
+    if (get_option('sg_page_saadan_created')) return;
+    if (!get_page_by_path('saadan-arbejder-vi')) {
+        wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Sådan arbejder vi', 'post_name' => 'saadan-arbejder-vi']);
+    }
+    update_option('sg_page_saadan_created', 1);
+});
