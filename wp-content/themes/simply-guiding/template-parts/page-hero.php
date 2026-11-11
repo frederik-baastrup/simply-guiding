@@ -18,7 +18,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
   <section class="sg-hero sg-hero--split<?php echo ($a['img'] || $a['video']) ? '' : ' sg-hero--noimg'; ?>" aria-labelledby="sgPageTitle">
     <div class="sg-split">
       <div class="sg-split__copy">
-        <p class="sg-pill"><?php echo esc_html($a['label']); ?></p>
+        <?php if ($a['label']) : ?><p class="sg-pill"><?php echo esc_html($a['label']); ?></p><?php endif; ?>
         <h1 id="sgPageTitle"><?php echo esc_html($a['title']); ?></h1>
         <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
         <div class="sg-hero__actions">
