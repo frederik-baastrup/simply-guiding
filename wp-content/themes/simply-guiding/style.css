@@ -2053,3 +2053,8 @@ Text Domain: simply-guiding
 .sg-about__title { font-weight: 500; }
 .sg-about__media img { object-position: 50% 30%; }
 .sg-quote:has(.sg-quote__by--stack) { padding-top: 54px; padding-bottom: 82px; }
+/* Header ved scroll: ingen hvid bjælke fra kant til kant – menuen beholder sin hvide boks som i toppen, og logoet skifter farve efter baggrunden */
+.sg-header.is-scrolled, .sg-header.is-on-light.is-scrolled { background: transparent; box-shadow: none; }
+@media (min-width: 961px) {
+  .sg-header.is-scrolled .sg-nav { background: #fff; box-shadow: 0 4px 18px rgba(16, 32, 28, .09), 0 0 0 1px rgba(16, 32, 28, .04); }
+}
