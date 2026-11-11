@@ -31,17 +31,19 @@ $logo_list = function ($hidden) use ($u, $logos) {
         <img src="<?php echo esc_url($u); ?>/assets/saadan-arbejder-vi.jpg" alt="Tre medarbejdere i arbejdstøj læsser udstyr ud af en varevogn" width="1600" height="1054" fetchpriority="high">
       </div>
     </div>
-  </section>
-  <!-- Logo-bar: hvid fane med bløde buer, der går op i hero'en (som på det gamle site) -->
-  <div class="sg-logobar">
-    <svg class="sg-logobar__tab" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C90 40 80 0 170 0 L830 0 C920 0 910 40 1000 40 Z" fill="#fff"/></svg>
-    <div class="sg-logobar__inner">
-      <p class="sg-logobar__label">Vi har bl.a. samarbejdet med</p>
-      <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
-        <div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div>
+    <div class="sg-hero-bottom">
+      <div class="sg-hero__notch">
+        <svg class="sg-hero__curve sg-hero__curve--left" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M200 0 C100 0 100 64 0 64 L200 64 Z" fill="#fff"/></svg>
+        <div class="sg-hero__notch-inner">
+          <p class="sg-hero__notch-label">Vi har bl.a. samarbejdet med</p>
+          <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
+            <div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div>
+          </div>
+        </div>
+        <svg class="sg-hero__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 
 <div id="indhold"></div>
