@@ -816,7 +816,7 @@ Text Domain: simply-guiding
   .sg-footer { padding: 0 max(18px, env(safe-area-inset-right, 0px)) 18px max(18px, env(safe-area-inset-left, 0px)); }
   .sg-footer__box {
     border-radius: var(--sg-radius); color: #fff;
-    background: rgb(var(--sg-hero-base)) url("assets/pattern.png") center / 601px repeat;
+    background: #0A2F2A url("assets/pattern.png") center / 601px repeat;
   }
   .sg-footer__inner {
     max-width: var(--sg-max); margin: 0 auto;
