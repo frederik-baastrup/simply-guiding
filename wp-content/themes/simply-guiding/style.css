@@ -1981,3 +1981,12 @@ Text Domain: simply-guiding
 .sg-mind3__copy .sg-mind3__lead--next { margin-top: 18px; }
 .sg-meet__list > div { row-gap: 0; } .sg-mind3__copy .sg-meet__t { margin-top: 4px; }
 .sg-split__copy h1 { hyphens: manual; -webkit-hyphens: manual; overflow-wrap: normal; }
+/* Overskrift med streg ud til kanten (genbrugelig) */
+.sg-headline { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+.sg-headline .sg-h2 { flex: none; max-width: 70%; }
+.sg-headline::after { content: ""; flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
+@media (max-width: 600px) { .sg-headline::after { display: none; } .sg-headline .sg-h2 { max-width: none; } }
+/* Praktisk information: større ikoner og titler */
+.sg-tile2__icon { width: 40px; height: 40px; margin-bottom: 26px; }
+.sg-tiles2__grid--4 .sg-tile2 h3 { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -.01em; }
+.sg-tiles2__grid--4 .sg-tile2 p { margin-top: 12px; }

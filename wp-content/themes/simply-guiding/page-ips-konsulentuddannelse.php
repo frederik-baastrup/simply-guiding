@@ -92,7 +92,7 @@ get_template_part('template-parts/page-hero', null, [
 
 <section class="sg-tiles2" aria-labelledby="sgPracTitle">
   <div class="sg-wrap">
-    <div class="sg-tablesec__head"><h2 class="sg-h2" id="sgPracTitle">Praktisk information om kurset</h2></div>
+    <div class="sg-headline"><h2 class="sg-h2" id="sgPracTitle">Praktisk information om kurset</h2></div>
     <div class="sg-tiles2__grid sg-tiles2__grid--4">
       <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg><h3>Varighed</h3><p>Uddannelsen løber typisk over 54 uger og består af i alt 15 undervisnings- og evalueringsdage. Undervisningsdagene planlægges med den enkelte afdeling.</p></div>
       <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg><h3>Betaling</h3><p>Betaling af kurset kan ske via almindelig fakturering, eller I kan også betale via EAN nummer.</p></div>
