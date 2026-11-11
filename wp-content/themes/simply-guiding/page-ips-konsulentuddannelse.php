@@ -65,13 +65,14 @@ get_template_part('template-parts/page-hero', null, [
 
 <section class="sg-pdetail sg-intro" aria-labelledby="sgWhyTitle">
   <div class="sg-wrap sg-pdetail__grid">
-    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgWhyTitle">Hvorfor Simply Guiding?</h2></div>
+    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgWhyTitle">Hvorfor Simply Guiding?</h2>
+      <p class="sg-pdetail__sidetext">Ønsker du, eller dit team at blive uddannede inden for IPS-metoden og kunne praktisere dette i jeres arbejde med borgere, kan I altid kontakte os for mere information.</p>
+      <p class="sg-pdetail__actions" style="display:flex;gap:14px;flex-wrap:wrap"><a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a><a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($u); ?>/assets/ips-konsulentuddannelse-folder.pdf" target="_blank" rel="noopener">Se folder</a></p>
+    </div>
     <div class="sg-pdetail__body">
       <p class="sg-intro__lead">Vi er den førende leverandør af den evidensbaserede IPS-metode, som hjælper psykisk sårbare tilbage til et stabilt og givende arbejdsliv. Vores kurser og uddannelser er rettet mod dig som arbejder i en kommune eller et jobcenter, der ønsker mere erfaringsbaseret og praksisnær viden om IPS eller vil uddanne dig til at arbejde med metoden.</p>
       <h3 class="sg-mind3__h3">Vores IPS-uddannelse er for dig, der:</h3>
       <?php $checks(['Ønsker at kunne arbejde selvstændigt med IPS-opgaver i hverdagen', 'Er kreativ og vedholdende i din problemløsning og ser muligheder – uanset borgerens forudsætninger', 'Har et ønske om at opnå indgående viden om IPS-metoden og tilgangen til jobskabelse', 'Vil oplæres i metoder som den motiverende samtale, den værdsættende samtale og andre relevante tilgange', 'Allerede arbejder med borgerrettede eller virksomhedsrettede aktiviteter i et jobcenter']); ?>
-      <p>Ønsker du, eller dit team at blive uddannede inden for IPS-metoden og kunne praktisere dette i jeres arbejde med borgere, kan I altid kontakte os for mere information.</p>
-      <p class="sg-pdetail__actions" style="display:flex;gap:14px;flex-wrap:wrap"><a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a><a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($u); ?>/assets/ips-konsulentuddannelse-folder.pdf" target="_blank" rel="noopener">Se folder</a></p>
     </div>
   </div>
 </section>

@@ -1687,3 +1687,9 @@ Text Domain: simply-guiding
   .sg-pill { width: fit-content; }
   /* Undgå et enkelt ord alene på sidste linje */
   p, li, blockquote { text-wrap: pretty; }
+
+  /* Samme kolonnedeling overalt (5/7), så teksten flugter mellem sektionerne */
+  .sg-pdetail__grid, .sg-tablesec__head, .sg-band2__head, .sg-cform__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: 96px; }
+  .sg-pdetail__sidetext { margin: 24px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-pdetail__side .sg-pdetail__actions { margin-top: 24px !important; }
+  @media (max-width: 1000px) { .sg-pdetail__grid, .sg-tablesec__head, .sg-band2__head, .sg-cform__grid { grid-template-columns: 1fr; } }
