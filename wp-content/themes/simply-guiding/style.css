@@ -2122,3 +2122,4 @@ Text Domain: simply-guiding
   .sg-reasons { grid-template-columns: 1fr; }
   .sg-reasons li, .sg-reasons li:nth-child(odd) { padding: 24px 0; border-right: 0; }
 }
+.sg-split__copy h1 { font-size: clamp(32px, 2.9vw, 44px); }
