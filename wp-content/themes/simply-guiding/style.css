@@ -1767,3 +1767,4 @@ Text Domain: simply-guiding
 .sg-mv__values li { padding: 8px 14px; border-radius: 100px; background: #fff; color: var(--sg-text); font-size: 14px; font-weight: 500; line-height: 1.2; }
 .sg-mv__actions { margin: 36px 0 0; }
 @media (max-width: 600px) { .sg-mv__list > div { grid-template-columns: 1fr; } }
+.sg-mv__list .sg-pill { color: var(--sg-text); border-color: rgba(49,49,49,.22); margin: 0; }
