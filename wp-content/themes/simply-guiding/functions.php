@@ -183,7 +183,7 @@ function sg_date_da($post = null) {
 /* Gamle adresser, der skal til forsiden (301) */
 add_action('template_redirect', function () {
     $path = trim((string) parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
-    if (in_array($path, ['postkort-26'], true)) {
+    if (in_array($path, ['postkort-26', 'postkort-2026'], true)) {
         wp_redirect(home_url('/'), 301);
         exit;
     }
