@@ -3,7 +3,7 @@ return [
   'label' => 'Børn, unge og familier',
   'title' => 'Ekstern aktør for børn- og familieafdelinger og ungeenheder',
   'lead' => 'Simply Guiding hjælper børn, unge og familier tilbage i trivsel, i skole og til et nyt ståsted i livet.',
-  'hero_img' => 'indsats-unge.jpg', 'hero_alt' => 'Familie samlet om køkkenbordet',
+  'hero_img' => 'borgere.jpg', 'hero_alt' => 'To unge mænd går og snakker på en sti i skoven',
   'btn1' => 'Henvis et barn eller en ung', 'btn2' => 'Se alle indsatser',
   'why_title' => 'Hvornår kontakter I Simply Guiding?',
   'why_intro' => 'Simply Guiding er en specialiseret aktør (anden aktør) på børn- og ungeområdet.',
