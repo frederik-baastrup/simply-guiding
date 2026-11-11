@@ -1328,3 +1328,21 @@ Text Domain: simply-guiding
   /* Grå flade med hvid ramme og afrundede hjørner, som de andre bokse */
   .sg-mind3 { margin-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); border-radius: var(--sg-radius); }
   @media (max-width: 860px) { .sg-mind3 { margin-inline: 0; border-radius: 0; } }
+
+  /* Konsulenter v2: kun overskrift + brødtekst (samme typografi som "Mindset og metoder"), billedet følger tekstens højde */
+  .sg-consult__grid { align-items: stretch; }
+  .sg-consult__media { position: relative; }
+  .sg-consult__media img { position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
+  .sg-consult__copy { padding-block: 8px; }
+  .sg-consult__lead { margin: 28px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-consult__sub { margin: 32px 0 0; padding-top: 28px; border-top: 1px solid rgba(49, 49, 49, .12); font-size: 15px; font-weight: 500; line-height: 1.3; color: var(--sg-text); }
+  .sg-principles { margin-top: 6px; }
+  .sg-principles li {
+    gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(49, 49, 49, .08);
+    font-family: inherit; font-weight: 400; font-size: 15.5px; line-height: 1.5; color: var(--sg-muted);
+  }
+  .sg-principles li:last-child { border-bottom: 0; }
+  .sg-principles svg { width: 18px; height: 18px; }
+  @media (max-width: 960px) {
+    .sg-consult__media img { position: static; height: auto; aspect-ratio: 4 / 3; }
+  }
