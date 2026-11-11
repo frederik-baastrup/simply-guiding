@@ -3,3 +3,4 @@
 https://simplyguiding.dk/wp-content/uploads/2024/09/70064248_2874114895992644_810166836459995136_n.jpg tools/old-assets/mindset-original.jpg
 https://simplyguiding.dk/wp-content/uploads/2024/09/IPS-UNG_Virksomhedsfolder_Aug2024.pdf wp-content/themes/simply-guiding/assets/ips-ung-virksomhedsfolder.pdf
 https://simplyguiding.dk/wp-content/uploads/2024/09/images.jpeg tools/old-assets/heidi-images.jpeg
+https://images.pexels.com/photos/4943621/pexels-photo-4943621.jpeg?auto=compress&cs=tinysrgb&w=1400 wp-content/themes/simply-guiding/assets/metode-samtale.jpg

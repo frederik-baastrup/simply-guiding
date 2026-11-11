@@ -2079,3 +2079,12 @@ Text Domain: simply-guiding
 .sg-course__incl { list-style: none; margin: 22px 0 28px; padding: 0; display: grid; gap: 10px; }
 .sg-course__incl li { display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: rgba(255,255,255,.88); }
 .sg-course__incl svg { width: 18px; height: 18px; flex: none; color: var(--sg-hero-ink); }
+/* Grundkursus: hvert afsnit (overskrift + liste) i sin egen lysegrønne boks */
+.sg-course__box { margin-top: 20px; padding: 30px 32px 28px; border-radius: 16px; background: var(--sg-topbar); }
+.sg-course__box:first-of-type { margin-top: 40px; }
+.sg-course__box .sg-course__h { margin-top: 0 !important; margin-bottom: 14px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 20px; font-weight: 500; }
+.sg-course__box .sg-principles li { border-bottom-color: rgba(49,49,49,.1); }
+.sg-course__box .sg-principles li:last-child { border-bottom: 0; }
+.sg-course__box > p { margin: 14px 0 0; }
+.sg-course__box > p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .sg-course__box { padding: 24px 20px; } }
