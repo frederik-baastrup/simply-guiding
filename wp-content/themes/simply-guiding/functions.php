@@ -152,3 +152,23 @@ add_action('init', function () {
     flush_rewrite_rules(false);
     update_option('sg_reading_set', 1);
 }, 30);
+
+/* Indlæg, hvis udvalgte billede ikke kom med i importen, får det samme billede som på det gamle site */
+function sg_post_fallback_img($post = null) {
+    $map = [
+        'uddannelsesprogram-for-kommunale-medarbejdere-der-arbejder-med-ungeloeft-initiativet' => 'uddannelse-integreret.jpg',
+        'evaluering-af-ips-ung' => 'ips-match.jpg',
+        'unges-stemme-i-eget-liv' => 'loesninger-beskaeftigelse.jpg',
+        'recharge-tilpasset-forloeb-for-12-17-aarige-med-sociale-og-psykiske-udfordringer' => 'loesninger-boern-unge.jpg',
+        'naar-ips-teamet-faar-professionel-hjaelp-bliver-resultaterne-endnu-bedre' => 'news/naar-ips-teamet.jpg',
+        '25-millioner-skal-sikre-at-psykisk-syge-kommer-i-arbejde' => 'ips-hero.jpg',
+    ];
+    $slug = get_post_field('post_name', $post);
+    return isset($map[$slug]) ? get_template_directory_uri() . '/assets/' . $map[$slug] : '';
+}
+/* Rester af WPBakery/Uncode-koder i importerede indlæg fjernes ved visning (teksten bevares) */
+add_filter('the_content', function ($c) {
+    if (!is_singular('post')) return $c;
+    $c = preg_replace('/\[vc_raw_html[^\]]*\].*?\[\/vc_raw_html\]/s', '', $c);
+    return preg_replace('/\[\/?(vc_|uncode)[^\]]*\]/', '', $c);
+}, 9);
