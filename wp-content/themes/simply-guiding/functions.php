@@ -18,7 +18,7 @@ add_action('after_setup_theme', 'sg_theme_setup');
 
 // Undersider med egen skabelon (page-<slug>.php) skal findes i WordPress. Oprettes én gang med samme adresse som på det gamle site.
 add_action('init', function () {
-    $pages = ['saadan-arbejder-vi' => 'Sådan arbejder vi', 'projekter' => 'Projekter'];
+    $pages = ['saadan-arbejder-vi' => 'Sådan arbejder vi', 'projekter' => 'Projekter', 'indsatser' => 'Indsatser', 'loesninger' => 'Løsninger', 'om-os' => 'Om os', 'kontakt' => 'Kontakt', 'tak' => 'Tak', 'hvad-er-ips' => 'Hvad er IPS?', 'grundkursus-i-ips' => 'Grundkursus i IPS', 'ips-konsulentuddannelse' => 'IPS-konsulentuddannelse', 'cases' => 'Cases', 'cookies-og-privatlivspolitik' => 'Cookies og privatlivspolitik', 'blog' => 'Blog'];
     $done = (array) get_option('sg_pages_created', []);
     if (get_option('sg_page_saadan_created')) $done['saadan-arbejder-vi'] = 1;
     foreach ($pages as $slug => $title) {
@@ -52,4 +52,27 @@ function sg_signup_response() {
     if (!$id || !function_exists('mc4wp_get_form')) return '';
     try { $form = mc4wp_get_form($id); } catch (Exception $e) { return ''; }
     return trim(wp_strip_all_tags($form->get_response_html('sgSignup')));
+}
+
+/* Tabel som responsivt gitter: første række er overskrifter; på mobil vises hver række som et kort med etiketter. */
+function sg_table($rows) {
+    $head = array_shift($rows);
+    echo '<div class="sg-table" role="table"><div class="sg-table__row sg-table__head" role="row">';
+    foreach ($head as $h) echo '<span role="columnheader">' . esc_html($h) . '</span>';
+    echo '</div>';
+    foreach ($rows as $r) {
+        echo '<div class="sg-table__row" role="row">';
+        foreach ($r as $i => $cell) {
+            if ($i === 0 && strpos($cell, ':') !== false) {
+                list($t, $sub) = array_map('trim', explode(':', $cell, 2));
+                echo '<span role="cell" class="sg-table__name"><b>' . esc_html($t) . ':</b> ' . esc_html($sub) . '</span>';
+            } elseif ($i === 0) {
+                echo '<span role="cell" class="sg-table__name"><b>' . esc_html($cell) . '</b></span>';
+            } else {
+                echo '<span role="cell" data-label="' . esc_attr($head[$i]) . '">' . esc_html($cell) . '</span>';
+            }
+        }
+        echo '</div>';
+    }
+    echo '</div>';
 }
