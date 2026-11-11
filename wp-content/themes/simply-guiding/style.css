@@ -2068,3 +2068,14 @@ Text Domain: simply-guiding
 .sg-post .sg-story__inner { padding-top: 0; }
 @media (max-width: 760px) { .sg-hero--blog .sg-split__copy { padding: 120px 18px 120px; } .sg-post .sg-post__thumb { margin-top: -80px !important; } }
 .sg-story.sg-post { padding-top: 0; }
+/* Grundkursus: prisboks med to prisrækker og "inkluderet"-liste */
+.sg-course__card { padding: 36px 34px; }
+.sg-course__card > p { margin-top: 8px; }
+.sg-course__tiers { margin: 26px 0 0; border-top: 1px solid rgba(255,255,255,.12); }
+.sg-course__tier { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.sg-course__who { font-size: 14.5px; line-height: 1.45; color: rgba(255,255,255,.82); max-width: 13em; }
+.sg-course__amount { flex: none; text-align: right; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 30px; line-height: 1; letter-spacing: -.01em; color: var(--sg-hero-ink); }
+.sg-course__amount small { display: block; margin-top: 6px; font-family: "General Sans", -apple-system, system-ui, sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0; color: rgba(255,255,255,.6); }
+.sg-course__incl { list-style: none; margin: 22px 0 28px; padding: 0; display: grid; gap: 10px; }
+.sg-course__incl li { display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: rgba(255,255,255,.88); }
+.sg-course__incl svg { width: 18px; height: 18px; flex: none; color: var(--sg-hero-ink); }

@@ -55,13 +55,15 @@ $faq = [
     <aside class="sg-course__side">
       <div class="sg-course__card">
         <h2 class="sg-course__cardtitle">Tilmeld dig kurset</h2>
-        <p>Klik på knappen for at reservere din plads på kurset.</p>
-        <div class="sg-course__price">
-          <h3>Pris</h3>
-          <p><b>6.900 kr.</b> ekskl. moms (offentlige og private arbejdsgivere)</p>
-          <p><b>4.900 kr.</b> ekskl. moms (ledige og selvbetalere)</p>
-          <p class="sg-course__note">Prisen inkluderer forplejning begge kursusdage samt kursusbevis.</p>
+        <p>Reservér din plads på kurset.</p>
+        <div class="sg-course__tiers">
+          <div class="sg-course__tier"><span class="sg-course__who">Offentlige og private arbejdsgivere</span><span class="sg-course__amount">6.900 kr.<small>ekskl. moms</small></span></div>
+          <div class="sg-course__tier"><span class="sg-course__who">Ledige og selvbetalere</span><span class="sg-course__amount">4.900 kr.<small>ekskl. moms</small></span></div>
         </div>
+        <ul class="sg-course__incl">
+          <li><?php echo sg_check_svg(); ?>Forplejning begge kursusdage</li>
+          <li><?php echo sg_check_svg(); ?>Kursusbevis</li>
+        </ul>
         <a class="sg-btn sg-btn--lg" href="#tilmelding">Gå til tilmelding</a>
       </div>
     </aside>
