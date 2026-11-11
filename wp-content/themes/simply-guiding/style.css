@@ -1991,3 +1991,12 @@ Text Domain: simply-guiding
 .sg-tiles2__grid--4 .sg-tile2 h3 { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -.01em; }
 .sg-tiles2__grid--4 .sg-tile2 p { margin-top: 12px; }
 .sg-why__lead { margin-bottom: 22px; } .sg-why__p { margin-bottom: 22px; }
+/* Luft mellem en indledende linje og en liste med flueben – overalt */
+.sg-sol__copy .sg-mind3__h3, .sg-mind3__h3 + .sg-principles, .sg-consult__sub + .sg-principles { margin-bottom: 0; }
+.sg-mind3__h3:has(+ ul), .sg-consult__sub { margin-bottom: 18px !important; }
+.sg-why__lead + .sg-checks, .sg-why__p + .sg-checks { margin-top: 0; }
+/* Sektionshoveder uden brødtekst får streg ud til kanten */
+.sg-sechead:has(> :only-child) { display: flex; align-items: center; gap: 24px; }
+.sg-sechead:has(> :only-child)::after { content: ""; flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
+.sg-sechead:has(> :only-child) .sg-h2 { flex: 0 1 auto; max-width: 70%; }
+@media (max-width: 600px) { .sg-sechead:has(> :only-child)::after { display: none; } .sg-sechead:has(> :only-child) .sg-h2 { max-width: none; } }
