@@ -91,7 +91,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip" aria-labelledby="sgDailyTitle">
+<section class="sg-sol sg-sol--flip sg-sol--small" aria-labelledby="sgDailyTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-integreret.jpg" alt="IPS-konsulent i samtale" loading="lazy"></div>
     <div class="sg-sol__copy">

@@ -2123,3 +2123,9 @@ Text Domain: simply-guiding
   .sg-reasons li, .sg-reasons li:nth-child(odd) { padding: 24px 0; border-right: 0; }
 }
 .sg-split__copy h1 { font-size: clamp(32px, 2.9vw, 44px); }
+/* Hero: overskrift på én linje, hvis der er plads */
+.sg-split__copy h1 { max-width: none; }
+/* IPS-konsulentuddannelse "IPS-metoden bliver …": mindre billede */
+.sg-sol--small .sg-sol__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.sg-sol--small .sg-sol__media { min-height: 0; aspect-ratio: 4 / 5; align-self: center; }
+@media (max-width: 960px) { .sg-sol--small .sg-sol__grid { grid-template-columns: 1fr; } .sg-sol--small .sg-sol__media { aspect-ratio: auto; } }
