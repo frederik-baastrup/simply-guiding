@@ -313,7 +313,10 @@ Text Domain: simply-guiding
     .sg-hero-wrap { padding-inline: 0; }
     .sg-hero { border-radius: 0; }
     /* Lidt luft, så kommune-logoerne ikke sidder helt op ad hero'en */
-    .sg-hero__notch-inner { padding-top: 56px; }
+    /* Højden må følge indholdet – ellers klemmer den faste notch-højde logo-slideren til 0 px */
+    .sg-hero__notch { height: auto; }
+    .sg-hero__notch-inner { height: auto; padding-block: 36px 8px; }
+    .sg-hero__notch .sg-logos { height: 48px; }
     /* "Vi har samarbejdet med 25+ kommuner" fjernes på mobil */
     .sg-hero__stat { display: none; }
   }
