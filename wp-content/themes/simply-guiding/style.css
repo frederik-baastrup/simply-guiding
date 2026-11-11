@@ -656,7 +656,7 @@ Text Domain: simply-guiding
     position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 48px;
     min-height: 440px; padding: 48px; border-radius: var(--sg-radius-sm);
   }
-  .sg-tile--dark { color: #fff; background: rgb(var(--sg-hero-base)) url("assets/pattern.png") center / 601px repeat; }
+  .sg-tile--dark { color: #fff; background: #0A2F2A url("assets/pattern.png") center / 601px repeat; }
   .sg-tile--light { background: var(--sg-topbar); color: var(--sg-text); }
   .sg-tile__mark { position: absolute; right: -40px; bottom: -36px; width: 300px; height: auto; pointer-events: none; }
   .sg-tile__mark path { fill: none; stroke: rgba(219, 231, 221, .14); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
