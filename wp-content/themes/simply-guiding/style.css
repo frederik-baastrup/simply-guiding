@@ -1157,3 +1157,11 @@ Text Domain: simply-guiding
   .sg-quote__by { margin-top: 40px; }
   @media (max-width: 1100px) { .sg-quote__card { max-width: none; } .sg-quote__text { width: auto; } }
   @media (max-width: 600px) { .sg-quote { padding-block: 88px; } .sg-quote::before { width: 520px; height: 520px; } }
+
+  /* ---------- Labels: ens overalt (samme som "Metode"-pillen) ---------- */
+  .sg-pill, .sg-card__tag, .sg-method__label, .sg-quote__stat-label, .sg-quote__tag, .sg-partner__eyebrow {
+    height: auto; padding: 3px 11px; border-radius: 100px;
+    font-family: "General Sans", -apple-system, system-ui, sans-serif; font-weight: 400; font-size: 12px !important;
+    line-height: 1.2; letter-spacing: .01em; text-transform: none;
+  }
+  .sg-card__tag, .sg-method__label, .sg-quote__stat-label { color: rgba(255,255,255,.9); border: 1px solid rgba(255,255,255,.28); }
