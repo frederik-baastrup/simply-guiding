@@ -35,9 +35,9 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-sol-intro" aria-labelledby="sgSolTitle"><div class="sg-wrap"><h2 class="sg-h2" id="sgSolTitle">Aktuelle løsninger</h2></div></section>
+<section class="sg-sol-intro" aria-labelledby="sgSolTitle"><div class="sg-wrap sg-sol-intro__head"><h2 class="sg-h2" id="sgSolTitle">Aktuelle løsninger</h2></div></section>
 
-<section class="sg-sol" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
+<section class="sg-sol sg-sol--half" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-beskaeftigelse.jpg" alt="Beskæftigelsesindsats hos Simply Guiding" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -50,7 +50,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip" id="ungeindsatser" aria-labelledby="sgSol2">
+<section class="sg-sol sg-sol--half sg-sol--flip" id="ungeindsatser" aria-labelledby="sgSol2">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-unge.jpg" alt="Ung i praktik" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -64,7 +64,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-sol" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
+<section class="sg-sol sg-sol--half" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -79,7 +79,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
+<section class="sg-sol sg-sol--half sg-sol--flip" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge.jpg" alt="Børne-, unge- og familieindsats" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -92,7 +92,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-sol" id="academy" aria-labelledby="sgSol5">
+<section class="sg-sol sg-sol--half" id="academy" aria-labelledby="sgSol5">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Undervisning i Simply Guiding Academy" loading="lazy"></div>
     <div class="sg-sol__copy">

@@ -1700,3 +1700,18 @@ Text Domain: simply-guiding
 
   /* Mørkt overlay på hero-billeder/-video, så lyse billeder ikke stikker ud */
   .sg-split__media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(6, 35, 31, .38) 0%, rgba(6, 35, 31, .22) 45%, rgba(6, 35, 31, .45) 100%); }
+
+/* Løsninger: overskrift med streg ud til kanten, billede 1:1 og tekst 50/50 */
+.sg-sol-intro__head { display: flex; align-items: center; gap: 24px; }
+.sg-sol-intro__head::after { content: ""; flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
+.sg-sol--half .sg-sol__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 80px; align-items: start; }
+.sg-sol--half .sg-sol__media { position: sticky; top: 120px; min-height: 0; aspect-ratio: 1 / 1; }
+.sg-sol--half .sg-sol__media img { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
+.sg-sol--half .sg-sol__copy { align-self: start; }
+.sg-sol--half .sg-sol__copy > .sg-h2:first-child { margin-top: 0; }
+@media (max-width: 960px) {
+  .sg-sol--half .sg-sol__grid { grid-template-columns: 1fr; row-gap: 28px; }
+  .sg-sol--half .sg-sol__media { position: relative; top: auto; }
+  .sg-sol--half.sg-sol--flip .sg-sol__media { order: 0; }
+}
+@media (max-width: 600px) { .sg-sol-intro__head::after { display: none; } }
