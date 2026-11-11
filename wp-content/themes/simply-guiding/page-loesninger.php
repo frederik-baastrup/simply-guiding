@@ -21,15 +21,14 @@ $sol = [
 
 <div id="indhold"></div>
 
-<section class="sg-index" aria-label="Løsninger">
+<section class="sg-index sg-index--compact" aria-label="Løsninger">
   <div class="sg-wrap">
     <ol class="sg-index__list">
       <?php foreach ($sol as $i => $s) : ?>
       <li>
         <a class="sg-index__row" href="#<?php echo esc_attr($s[0]); ?>">
           <span class="sg-index__num"><?php echo sprintf('%02d', $i + 1); ?></span>
-          <h2 class="sg-index__title"><?php echo esc_html($s[1]); ?></h2>
-          <p class="sg-index__text"><?php echo esc_html($s[2]); ?></p>
+          <h2 class="sg-index__title" title="<?php echo esc_attr($s[2]); ?>"><?php echo esc_html($s[1]); ?></h2>
           <span class="sg-index__go" aria-hidden="true"><?php echo sg_arrow(); ?></span>
         </a>
       </li>

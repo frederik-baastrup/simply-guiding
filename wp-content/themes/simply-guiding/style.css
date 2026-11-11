@@ -2009,3 +2009,25 @@ Text Domain: simply-guiding
 .sg-sol--plain .sg-sol__media { min-height: 0; aspect-ratio: 4 / 3; align-self: center; }
 @media (max-width: 960px) { .sg-sol--plain.sg-sol--flip .sg-sol__grid { grid-template-columns: 1fr; } .sg-sol--plain .sg-sol__media { aspect-ratio: auto; } }
 .sg-intro--roomy { padding-bottom: 120px; }
+/* Løsninger: kompakt genvejsrække – fem felter på én linje, uden beskrivelse */
+.sg-index--compact { padding-block: 72px 16px; }
+.sg-index--compact .sg-index__list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--sg-border); border-bottom: 1px solid var(--sg-border); }
+.sg-index--compact .sg-index__list li { border-bottom: 0; }
+.sg-index--compact .sg-index__list li + li { border-left: 1px solid var(--sg-border); }
+.sg-index--compact .sg-index__row { display: flex; flex-direction: column; align-items: flex-start; gap: 0; height: 100%; min-height: 150px; padding: 22px 22px 20px; border-radius: 0; transition: background .25s; }
+.sg-index--compact .sg-index__list li:first-child .sg-index__row { padding-left: 0; }
+.sg-index--compact .sg-index__row:hover { padding-left: 22px; background: var(--sg-topbar); }
+.sg-index--compact .sg-index__list li:first-child .sg-index__row:hover { padding-left: 0; }
+.sg-index--compact .sg-index__num { padding: 0; font-size: 13px; }
+.sg-index--compact .sg-index__title { margin-top: 12px; font-size: clamp(17px, 1.35vw, 20px); line-height: 1.2; hyphens: manual; }
+.sg-index--compact .sg-index__go { margin-top: auto; padding-top: 18px; width: auto; height: auto; border: 0; border-radius: 0; background: none !important; color: var(--sg-cta) !important; }
+.sg-index--compact .sg-index__go .sg-arrow { width: 26px; height: 13px; }
+.sg-index--compact .sg-index__row:hover .sg-arrow { transform: translateX(4px); }
+@media (max-width: 1000px) {
+  .sg-index--compact .sg-index__list { grid-template-columns: 1fr 1fr; }
+  .sg-index--compact .sg-index__list li + li { border-left: 0; }
+  .sg-index--compact .sg-index__list li:nth-child(even) { border-left: 1px solid var(--sg-border); }
+  .sg-index--compact .sg-index__list li:nth-child(n+3) { border-top: 1px solid var(--sg-border); }
+  .sg-index--compact .sg-index__row, .sg-index--compact .sg-index__list li:first-child .sg-index__row { min-height: 120px; padding: 18px 16px; }
+  .sg-index--compact .sg-index__row:hover { padding-left: 16px; }
+}
