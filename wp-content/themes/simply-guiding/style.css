@@ -2003,3 +2003,4 @@ Text Domain: simply-guiding
 /* Ens brødtekst: 15,5 px / 1,8 overalt (også når Løsninger-teksten er foldet ind i .sg-sol__clip) */
 .sg-sol__clip > p { margin: 18px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
 .sg-band2__cols p { font-size: 15.5px; line-height: 1.8; }
+.sg-meet__list .sg-mv__ico, .sg-meet__list > div:hover .sg-mv__ico { align-self: start; grid-row: span 2; background: #EEF2F0; color: var(--sg-cta); }
