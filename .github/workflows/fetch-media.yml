@@ -27,6 +27,7 @@ jobs:
       - name: Læg på grenen old-media
         run: |
           cd media
+          find . -type f -size +50M -print -delete   # GitHub tillader ikke filer over 100 MB (fx webinar-video)
           git init -q -b old-media
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
           git add -A && git commit -qm "Medier fra det gamle site"
