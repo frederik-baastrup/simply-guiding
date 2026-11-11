@@ -1697,3 +1697,6 @@ Text Domain: simply-guiding
   /* Konsulenter: billedet til højre, så billedsiden skifter ned gennem siden */
   .sg-consult__media { order: 2; }
   @media (max-width: 960px) { .sg-consult__media { order: 0; } }
+
+  /* Mørkt overlay på hero-billeder/-video, så lyse billeder ikke stikker ud */
+  .sg-split__media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(6, 35, 31, .38) 0%, rgba(6, 35, 31, .22) 45%, rgba(6, 35, 31, .45) 100%); }
