@@ -1658,3 +1658,6 @@ Text Domain: simply-guiding
   .sg-post__content blockquote { margin: 36px 0; padding: 0 0 0 24px; border-left: 3px solid var(--sg-cta); font-family: "Lora", Georgia, serif; font-size: 21px; line-height: 1.5; color: var(--sg-text); }
   .sg-post__content ul, .sg-post__content ol { padding-left: 22px; }
   .sg-post__back { margin-top: 48px; }
+  .sg-project { min-width: 0; }
+  .sg-project__title { hyphens: auto; overflow-wrap: break-word; }
+  @media (max-width: 600px) { .sg-project__title { font-size: 23px; } }
