@@ -20,7 +20,7 @@
     // får skygge, og logoet bliver mørkt når headeren er over hvid baggrund.
     var topbar = document.querySelector('.sg-topbar');
     var logoEl = document.querySelector('.sg-logo');
-    var DARK = '.sg-hero, .sg-card, .sg-method, .sg-tile--dark, .sg-final__box, .sg-footer__box';
+    var DARK = '.sg-hero, .sg-card, .sg-method, .sg-tile--dark, .sg-final__box, .sg-footer__box, .sg-band, .sg-more';
     // Hvad ligger bag logoet? Mørke flader giver lyst logo, alt andet mørkt logo.
     function logoOverDark() {
       if (!logoEl || !document.elementsFromPoint) return true;
