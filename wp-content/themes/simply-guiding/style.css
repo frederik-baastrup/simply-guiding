@@ -1012,15 +1012,16 @@ Text Domain: simply-guiding
   @media (max-width: 1024px) { .sg-hero-bottom { display: block; } }
 
   /* ---------- Undersidehero: tekst på grønt mønster til venstre, billede til højre (Sådan arbejder vi m.fl.) ---------- */
-  .sg-hero--split { background: #0A352F url("assets/pattern.png") center / 601px repeat; }
+  /* Grøn + mønster + 20 % sort overlay */
+  .sg-hero--split { background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F; }
   .sg-hero--split::before { display: none; }
   .sg-split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); min-height: min(820px, 92vh); }
   .sg-split__copy {
     display: flex; flex-direction: column; justify-content: center;
     /* Venstre kant flugter med logoet i headeren */
-    padding: 150px clamp(32px, 5vw, 90px) 110px calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
+    padding: 112px clamp(32px, 5vw, 90px) 128px calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) + 36px);
   }
-  .sg-split__copy h1 { margin-top: 30px; font-size: clamp(36px, 3.4vw, 50px); color: rgba(190, 206, 193, .7); }
+  .sg-split__copy h1 { margin-top: 30px; font-weight: 500; font-size: clamp(36px, 3.4vw, 50px); color: rgba(190, 206, 193, .7); }
   .sg-pill {
     align-self: flex-start; margin: 0; padding: 5px 14px; border: 1px solid rgba(255,255,255,.28); border-radius: 100px;
     font-size: 12px !important; line-height: 1.2; font-weight: 400; color: rgba(255,255,255,.9); letter-spacing: .01em;
@@ -1061,11 +1062,17 @@ Text Domain: simply-guiding
 
   /* ---------- Logo-bar under undersidehero (som på det gamle site) ---------- */
   .sg-logobar { position: relative; z-index: 2; height: 98px; margin-top: -35px; }
-  .sg-logobar__tab { position: absolute; left: 0; top: 0; display: block; width: 100%; height: 35px; }
+  /* Fanen: de skrå sider (115 px brede, 35 px høje) topper lige før knappen "Kontakt os og hør mere" – som på det gamle site */
+  .sg-logobar { --lb-in: calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px); }
+  .sg-logobar__tab {
+    position: absolute; top: 0; height: 35px; background: #fff;
+    left: max(0px, calc(var(--lb-in) - 95px)); right: max(0px, calc(var(--lb-in) - 95px));
+    clip-path: polygon(0 100%, 115px 0, calc(100% - 115px) 0, 100% 100%);
+  }
   .sg-logobar__inner {
     position: absolute; inset: 0; display: flex; align-items: center;
     /* Flugter med logoet i headeren */
-    padding-inline: calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
+    padding-inline: var(--lb-in);
   }
   .sg-logobar__label {
     flex: none; margin: 0 50px 0 0; padding-right: 50px; border-right: 1px solid var(--sg-border);
@@ -1092,8 +1099,8 @@ Text Domain: simply-guiding
   .sg-mind__media img { display: block; width: 100%; height: auto; aspect-ratio: 420 / 522; object-fit: cover; }
   .sg-mind__copy { max-width: 760px; }
   .sg-mind__title {
-    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600;
-    font-size: 26px; line-height: 1.15; letter-spacing: -.01em; color: var(--sg-text); -webkit-font-smoothing: antialiased;
+    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500;
+    font-size: 34px; line-height: 1.1; letter-spacing: -.01em; color: var(--sg-text); -webkit-font-smoothing: antialiased;
   }
   .sg-mind__copy p { margin: 18px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-text); }
   .sg-mind__copy a { color: var(--sg-muted); text-decoration: none; border-bottom: 1px solid currentColor; }
@@ -1124,3 +1131,26 @@ Text Domain: simply-guiding
   .sg-btn--outline { background: #fff; color: var(--sg-text); border-color: var(--sg-border); }
   .sg-btn--outline:hover { background: var(--sg-topbar); border-color: var(--sg-border); color: var(--sg-text); }
   @media (max-width: 600px) { .sg-partner { padding-block: 88px; } .sg-partner__actions { gap: 10px; } .sg-partner::before { width: 520px; height: 520px; } }
+
+  /* ---------- Forsidens kundecitat i samme stil som "Tæt samarbejde med landets jobcentre" ---------- */
+  .sg-quote { position: relative; overflow: hidden; isolation: isolate; padding-block: 140px; }
+  .sg-quote::before {
+    content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 760px; height: 760px; transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgba(49, 49, 49, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 49, 49, .07) 1px, transparent 1px);
+    background-size: 48px 48px; background-position: center;
+    -webkit-mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
+            mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
+  }
+  .sg-quote__card { max-width: 1000px; }
+  .sg-quote__tag {
+    padding: 0; border: 0; border-radius: 0; background: none; text-transform: none; letter-spacing: 0;
+    font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--sg-cta);
+  }
+  .sg-quote__text {
+    width: auto; max-width: 980px; margin-top: 22px; font-family: "Lora", Georgia, serif; font-weight: 400;
+    font-size: clamp(22px, 2.3vw, 31px); line-height: 1.32; letter-spacing: 0; color: var(--sg-text); text-wrap: balance;
+  }
+  .sg-quote__text em { font-style: normal; color: inherit; }
+  .sg-quote__by { margin-top: 40px; }
+  @media (max-width: 1100px) { .sg-quote__card { max-width: none; } .sg-quote__text { width: auto; } }
+  @media (max-width: 600px) { .sg-quote { padding-block: 88px; } .sg-quote::before { width: 520px; height: 520px; } }

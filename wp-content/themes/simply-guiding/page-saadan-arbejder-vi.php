@@ -34,7 +34,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
   </section>
   <!-- Logo-bar som på det gamle site: hvid fane med skrå sider op i hero'en, label + streg + logo-slider -->
   <div class="sg-logobar">
-    <svg class="sg-logobar__tab" viewBox="0 0 1000 35" preserveAspectRatio="none" aria-hidden="true"><path d="M34 35 L105 0 L901 0 L972 35 Z" fill="#fff"/></svg>
+    <div class="sg-logobar__tab" aria-hidden="true"></div>
     <div class="sg-logobar__inner">
       <p class="sg-logobar__label">Vi har bl.a. samarbejdet med</p>
       <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
