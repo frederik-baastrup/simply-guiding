@@ -113,6 +113,27 @@ $logo_list = function ($hidden) use ($u, $logos) {
 </div>
 
 <?php get_template_part('template-parts/final-cta'); ?>
+<?php
+// FAQ: svarene bygger kun på det, der står på siden ovenfor
+$faq = [
+  ['Hvilke metoder arbejder Simply Guiding ud fra?', 'Vores indsatser er tilrettelagt ud fra mindset, principper og redskaber fra Supported Employment og IPS-metoden. Medarbejderne arbejder metodebaseret, for eksempel ud fra IPS, Supported Employment og IPS UNG/Supported Education (SEd).'],
+  ['Hvordan sikrer I, at konsulenterne arbejder efter metoden?', 'Medarbejderne uddannes af certificerede undervisere og modtager supervision i vores metodegrundlag. Hver medarbejder har en individuel supervisor, og vi organiserer praktisk læring mellem medarbejder og supervisor, baseret på en tillidsfuld feedbackkultur.'],
+  ['Hvordan foregår et forløb for borgeren?', 'Borgeren får sin egen konsulent tilknyttet, og sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden. Der er altid ugentlig kontakt, og konsulenten kan inddrage pårørende, netværk eller andre relevante personer for at understøtte vejen mod job, uddannelse, bedre trivsel eller raskmelding.'],
+];
+?>
+<section class="sg-faq" aria-labelledby="sgFaqTitle">
+  <div class="sg-wrap sg-faq__grid">
+    <h2 class="sg-faq__title" id="sgFaqTitle">FAQ - ofte stillede spørgsmål</h2>
+    <ul class="sg-faq__list">
+      <?php foreach ($faq as $i => $f) : ?>
+      <li class="sg-faq__item">
+        <button class="sg-faq__q" id="faq-q<?php echo $i; ?>" aria-expanded="false" aria-controls="faq-a<?php echo $i; ?>"><?php echo esc_html($f[0]); ?><span class="sg-faq__icon" aria-hidden="true"></span></button>
+        <div class="sg-faq__a" id="faq-a<?php echo $i; ?>" role="region" aria-labelledby="faq-q<?php echo $i; ?>"><div><p><?php echo esc_html($f[1]); ?></p></div></div>
+      </li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+</section>
 <?php get_template_part('template-parts/site-footer'); ?>
 
 <?php get_footer(); ?>
