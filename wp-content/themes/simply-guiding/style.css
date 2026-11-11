@@ -2194,3 +2194,4 @@ Text Domain: simply-guiding
   /* Kortrækker følger samme kolonneafstand */
   .sg-cards3__grid, .sg-tiles2__grid, .sg-team__grid, .sg-cols3, .sg-stage__list, .sg-kpis__grid, .sg-projects__grid, .sg-posts { column-gap: var(--sg-gut) !important; }
 }
+.sg-statement__title { font-size: clamp(30px, 3vw, 44px); line-height: 1.08; }
