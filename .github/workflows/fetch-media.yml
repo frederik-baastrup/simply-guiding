@@ -1,0 +1,27 @@
+name: Hent alle medier fra det gamle site (artefakt)
+
+# Henter alle filer i tools/old-site-media.txt og lægger dem som et artefakt (ikke i repoet),
+# så de kan bearbejdes lokalt til temaets assets. Startes manuelt.
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hent filer
+        run: |
+          mkdir -p media
+          while read -r url; do
+            [ -z "$url" ] && continue
+            path="media/${url#https://simplyguiding.dk/wp-content/uploads/}"
+            mkdir -p "$(dirname "$path")"
+            curl -fsSL -A "Mozilla/5.0" -o "$path" "$url" || echo "fejl: $url"
+          done < tools/old-site-media.txt
+          du -sh media
+      - uses: actions/upload-artifact@v4
+        with:
+          name: old-media
+          path: media
+          retention-days: 7
