@@ -109,7 +109,7 @@
           <li class="sg-step"><span class="sg-step__num">3</span><div><h3 class="sg-step__title">Vi skaber holdbare løsninger</h3><p class="sg-step__text">Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.</p></div></li>
         </ol>
       </div>
-      <div class="sg-method__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/metode.jpg" alt="To kvinder i samtale på et lager" loading="lazy"></div>
+      <div class="sg-method__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/metode-samtale.jpg" alt="To kvinder i samtale ved et bord" loading="lazy"></div>
     </div>
   </section>
 </div>
