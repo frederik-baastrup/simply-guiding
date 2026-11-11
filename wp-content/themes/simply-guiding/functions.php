@@ -114,3 +114,26 @@ function sg_form_handle() {
 }
 add_action('admin_post_nopriv_sg_form', 'sg_form_handle');
 add_action('admin_post_sg_form', 'sg_form_handle');
+
+/* Succeshistorierne ligger under /cases/<slug>/ (som på det gamle site) og bruger alle page-case.php */
+add_filter('template_include', function ($t) {
+    if (is_page()) {
+        $p = get_queried_object();
+        if ($p && $p->post_parent && get_post_field('post_name', $p->post_parent) === 'cases') {
+            $case = locate_template('page-case.php');
+            if ($case) return $case;
+        }
+    }
+    return $t;
+});
+add_action('init', function () {
+    if (get_option('sg_cases_created')) return;
+    $parent = get_page_by_path('cases');
+    if (!$parent) return; // oprettes først, når /cases/ findes (næste sidevisning)
+    foreach (['sannes-historie' => 'Sanne', 'kadans-historie' => 'Kadan', 'sofies-historie' => 'Sofie', 'martins-historie' => 'Martin', 'annas-historie' => 'Anna', 'gunhilds-historie' => 'Gunhild'] as $slug => $title) {
+        if (!get_page_by_path('cases/' . $slug)) {
+            wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug, 'post_parent' => $parent->ID]);
+        }
+    }
+    update_option('sg_cases_created', 1);
+}, 20);
