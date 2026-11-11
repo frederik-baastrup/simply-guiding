@@ -1903,3 +1903,4 @@ Text Domain: simply-guiding
 .sg-textlink a, .sg-mind3__copy .sg-textlink a { border-bottom: 0; }
 .sg-mind3 + .sg-band-wrap, .sg-band-wrap + .sg-band-wrap { margin-top: 16px; }
 .sg-sol--plain { background: transparent; padding-block: 56px; margin-bottom: 0; } .sg-sol--plain:first-of-type, section + .sg-sol--plain { margin-top: 0; }
+.sg-hero--full .sg-split__copy h1:first-child { margin-top: 0; }

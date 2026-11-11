@@ -4,7 +4,6 @@ get_header();
 get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
 get_template_part('template-parts/page-hero', null, [
-  'label' => 'Om SG',
   'title' => 'Om Simply Guiding',
   'lead'  => 'Hos Simply Guiding sørger vi for, at historien ikke gentager sig. Sammen skaber vi et nyt ståsted i livet for mennesket bag borgeren.',
   'video' => 'om-os-hero.mp4', 'full' => true, 'poster' => 'om-os-hero.jpg',
