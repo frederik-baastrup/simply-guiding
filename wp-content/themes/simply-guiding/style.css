@@ -1974,3 +1974,7 @@ Text Domain: simply-guiding
 .sg-statement__cols p { margin: 0; padding-top: 24px; border-top: 1px solid var(--sg-border); font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
 @media (max-width: 760px) { .sg-statement { padding-block: 72px; } .sg-statement__cols { grid-template-columns: 1fr; gap: 24px; } }
 .sg-statement + .sg-band-wrap { margin-top: 0; }
+/* Ingen hover-animation på kort */
+.sg-mv__list > div, .sg-card3 { transition: none; }
+.sg-mv__list > div:hover, .sg-card3:hover { transform: none; box-shadow: none; }
+.sg-mv__list > div:hover .sg-mv__ico { background: #EEF2F0; color: var(--sg-cta); }
