@@ -23,13 +23,13 @@ Text Domain: simply-guiding
     --sg-topbar: #EEF2F0;
     --sg-border: #dde5e1;
     --sg-white: #ffffff;
-    --sg-max: 1540px; /* var 1404px – lidt mindre luft i kanterne (11. nov.) */
+    --sg-max: 1428px; /* indholdsbredde som på det gamle site (11. nov.) */
     /* Accent: varm sand fra den nuværende side + den klare grønne fra "fagligt"-markeringen */
     --sg-sand: #F5F4F2;
     --sg-sand-2: #EAE6DF;
     --sg-sand-line: #DFD9CF;
     --sg-green-mid: #11705A;
-    --sg-gutter: 46px; /* 18px hero-margin + 28px indre padding: logo og tekst flugter */
+    --sg-gutter: 54px; /* 18px hero-margin + 36px indre padding: logo og tekst flugter */
   }
   body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: #fff; }
   .sg-btn:focus-visible, .sg-nav__list a:focus-visible, .sg-burger:focus-visible { outline: 2px solid var(--sg-green); outline-offset: 3px; }
