@@ -1924,3 +1924,6 @@ Text Domain: simply-guiding
   .sg-who__cell, .sg-who__cell:nth-child(odd) { min-height: 0; padding: 28px 0; border-right: 0; }
   .sg-who__cell:nth-child(n+2) { border-top: 1px solid var(--sg-border); }
 }
+/* Konsulenter: luft under "Vi arbejder efter …" og hovederne med i billedet */
+.sg-consult__sub { margin-bottom: 18px; }
+.sg-consult__media img { object-position: 50% 12%; }
