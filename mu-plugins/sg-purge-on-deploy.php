@@ -31,3 +31,17 @@ add_action('init', function () {
     status_header(200);
     exit('no cache plugin found - nothing to purge');
 });
+
+/*
+ * Mens sitet kører på det midlertidige domæne (*.sg-host.com), må siderne slet ikke caches.
+ * Grunden: SiteGrounds bot-beskyttelse (sgcaptcha) blokerer GitHub Actions' tømme-kald ovenfor,
+ * så et udrul blev ellers ikke synligt. Fjern/ændr dette, når sitet flytter til simplyguiding.dk.
+ */
+add_action('send_headers', function () {
+    if (is_admin()) return;
+    $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+    if (substr($host, -strlen('.sg-host.com')) !== '.sg-host.com') return;
+    nocache_headers();
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('X-Cache-Enabled: False');
+});

@@ -29,3 +29,5 @@ Midlertidigt domæne: frederikb9.sg-host.com. Flyttes til rigtigt domæne senere
 ## Cache
 
 SiteGround cacher den udrullede HTML på serverniveau (`x-proxy-cache` header), uafhængigt af WordPress – et FTP-filskift trigger ikke selv en tømning. Derfor har `mu-plugins/sg-purge-on-deploy.php` en hemmelig URL (`?sg_deploy_purge=<token>`), som kalder SiteGrounds `sg_cachepress_purge_cache()`; `deploy.yml` udruller mu-plugin'et og kalder URL'en (med et unikt `&t=`, så selve kaldet aldrig caches) efter hvert push, så ændringer er synlige med det samme. Tokenet står i begge filer og skal være ens, hvis det nogensinde ændres.
+
+SiteGrounds bot-beskyttelse (sgcaptcha) blokerer dog ofte GitHub Actions' kald (svarer med en captcha-side i stedet for at køre PHP). Derfor sender mu-plugin'et også no-cache-headers på alle offentlige sider, så længe sitet ligger på `*.sg-host.com` – så er hvert udrul synligt med det samme. Når sitet flytter til simplyguiding.dk, skal der findes en anden løsning (fx tømning fra wp-admin).
