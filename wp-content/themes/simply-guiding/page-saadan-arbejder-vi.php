@@ -41,8 +41,8 @@ $u = get_template_directory_uri();
 
 <!-- Borgere: mørkt bånd med overskrift og to tekstspalter, bredt billede nedenunder -->
 <div class="sg-band-wrap">
-  <section class="sg-band2" aria-labelledby="sgCitizensTitle">
-    <div class="sg-wrap">
+  <section class="sg-band2 sg-band2--side" aria-labelledby="sgCitizensTitle">
+    <div class="sg-wrap sg-band2__side">
       <div class="sg-band2__head">
         <h2 class="sg-h2 sg-h2--light" id="sgCitizensTitle">Hvordan arbejder Simply Guiding med borgere?</h2>
         <div class="sg-band2__cols">
