@@ -2089,3 +2089,6 @@ Text Domain: simply-guiding
 .sg-course__box > p:last-child { margin-bottom: 0; }
 @media (max-width: 600px) { .sg-course__box { padding: 24px 20px; } }
 .sg-mind3--imgfull .sg-mind3__media { min-height: clamp(420px, 38vw, 580px); } .sg-mind3--imgfull .sg-mind3__grid { align-items: center; } .sg-mind3--imgfull .sg-mind3__media img { object-position: 50% 25%; } @media (max-width: 960px) { .sg-mind3--imgfull .sg-mind3__media { min-height: 0; } }
+/* Indledende tekster (lead) en anelse mindre overalt */
+.sg-mind3__copy .sg-mind3__lead, .sg-why__lead--big { font-size: clamp(17px, 1.3vw, 19px); line-height: 1.65; }
+.sg-intro__lead { font-size: clamp(17px, 1.3vw, 19px) !important; line-height: 1.65 !important; }
