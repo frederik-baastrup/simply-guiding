@@ -1325,3 +1325,6 @@ Text Domain: simply-guiding
   @media (max-width: 960px) {
     .sg-mind3__media img { position: static; height: auto; aspect-ratio: 4 / 3; }
   }
+  /* Grå flade med hvid ramme og afrundede hjørner, som de andre bokse */
+  .sg-mind3 { margin-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); border-radius: var(--sg-radius); }
+  @media (max-width: 860px) { .sg-mind3 { margin-inline: 0; border-radius: 0; } }
