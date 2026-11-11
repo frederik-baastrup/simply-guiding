@@ -8,7 +8,7 @@ $cat = get_the_category();
 <div class="sg-hero-wrap">
   <section class="sg-hero sg-hero--split sg-hero--noimg sg-hero--blog" aria-labelledby="sgPageTitle">
     <div class="sg-split"><div class="sg-split__copy">
-      <p class="sg-post-hero__meta"><?php if ($cat) : ?><a class="sg-pill" href="<?php echo esc_url(get_category_link($cat[0])); ?>"><?php echo esc_html($cat[0]->name); ?></a><?php endif; ?><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date('j. F Y')); ?></time></p>
+      <p class="sg-post-hero__meta"><?php if ($cat) : ?><a class="sg-pill" href="<?php echo esc_url(get_category_link($cat[0])); ?>"><?php echo esc_html($cat[0]->name); ?></a><?php endif; ?><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(sg_date_da()); ?></time></p>
       <h1 id="sgPageTitle"><?php the_title(); ?></h1>
     </div></div>
   </section>

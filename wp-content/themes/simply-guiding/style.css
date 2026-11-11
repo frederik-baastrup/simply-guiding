@@ -1719,3 +1719,8 @@ Text Domain: simply-guiding
 .sg-sol--half { background: #fff; padding-block: 56px; }
 .sg-sol--half:last-of-type { padding-bottom: 56px; }
 .sg-sol--half .sg-sol__media { position: relative; top: auto; }
+/* Seneste nyheder: streg mellem overskrift og knap */
+.sg-latest__head { align-items: center; flex-wrap: nowrap; }
+.sg-latest__rule { flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
+.sg-latest__head .sg-btn { flex: none; }
+@media (max-width: 700px) { .sg-latest__head { flex-wrap: wrap; } .sg-latest__rule { display: none; } }

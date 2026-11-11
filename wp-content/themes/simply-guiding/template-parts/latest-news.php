@@ -7,6 +7,7 @@ if (!$q->have_posts()) return;
   <div class="sg-wrap">
     <div class="sg-latest__head">
       <h2 class="sg-h2" id="sgLatestTitle">Seneste nyheder fra Simply Guiding</h2>
+      <span class="sg-latest__rule" aria-hidden="true"></span>
       <a class="sg-btn sg-btn--lg sg-btn--outline" href="/blog/">Se alle artikler</a>
     </div>
     <div class="sg-posts">

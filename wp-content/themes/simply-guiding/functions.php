@@ -172,3 +172,10 @@ add_filter('the_content', function ($c) {
     $c = preg_replace('/\[vc_raw_html[^\]]*\].*?\[\/vc_raw_html\]/s', '', $c);
     return preg_replace('/\[\/?(vc_|uncode)[^\]]*\]/', '', $c);
 }, 9);
+
+/* Dato på dansk uanset sidens sprogindstilling, fx "29. oktober 2025". */
+function sg_date_da($post = null) {
+    $ts = get_post_time('U', false, $post);
+    $m = ['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december'];
+    return date_i18n('j', $ts) . '. ' . $m[(int) date_i18n('n', $ts) - 1] . ' ' . date_i18n('Y', $ts);
+}
