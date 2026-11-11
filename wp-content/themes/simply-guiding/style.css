@@ -1550,3 +1550,16 @@ Text Domain: simply-guiding
   .sg-post-card__link:hover .sg-post-card__title { color: var(--sg-cta); }
   @media (max-width: 900px) { .sg-posts { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 560px) { .sg-posts { grid-template-columns: 1fr; } }
+
+  /* ---------- Hvad er IPS: de 8 principper ---------- */
+  .sg-principles8 { padding-bottom: 96px; }
+  .sg-principles8 .sg-wrap { padding-bottom: 0; }
+  .sg-principles8__intro { margin: 0; font-size: 15.5px; line-height: 1.8; color: rgba(255,255,255,.82); }
+  .sg-principles8__grid { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .sg-principles8__grid li { padding: 28px 26px 30px; border-radius: var(--sg-radius-sm); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
+  .sg-principles8__num { display: block; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 40px; line-height: 1; color: var(--sg-hero-ink); -webkit-font-smoothing: antialiased; }
+  .sg-principles8__grid p { margin: 18px 0 0; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); }
+  @media (max-width: 1100px) { .sg-principles8__grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .sg-principles8__grid { grid-template-columns: 1fr; } .sg-principles8 { padding-bottom: 56px; } }
+  .sg-intro + .sg-band-wrap { margin-top: 40px; }
+  .sg-band-wrap + .sg-sol { padding-top: 110px; }
