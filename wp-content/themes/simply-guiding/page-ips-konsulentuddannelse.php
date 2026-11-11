@@ -24,7 +24,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol" aria-labelledby="sgLearnTitle" style="margin-top:110px">
+<section class="sg-sol sg-sol--flip" aria-labelledby="sgLearnTitle" style="margin-top:110px">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-forskning.jpg" alt="Undervisning i IPS-metoden" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -36,7 +36,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip" aria-labelledby="sgFidTitle">
+<section class="sg-sol" aria-labelledby="sgFidTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-fidelity.jpg" alt="IPS-team til evaluering" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -77,7 +77,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol" aria-labelledby="sgDailyTitle">
+<section class="sg-sol sg-sol--flip" aria-labelledby="sgDailyTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-integreret.jpg" alt="IPS-konsulent i samtale" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -94,10 +94,10 @@ get_template_part('template-parts/page-hero', null, [
   <div class="sg-wrap">
     <div class="sg-tablesec__head"><h2 class="sg-h2" id="sgPracTitle">Praktisk information om kurset</h2></div>
     <div class="sg-tiles2__grid sg-tiles2__grid--4">
-      <div class="sg-tile2"><h3>Varighed</h3><p>Uddannelsen løber typisk over 54 uger og består af i alt 15 undervisnings- og evalueringsdage. Undervisningsdagene planlægges med den enkelte afdeling.</p></div>
-      <div class="sg-tile2"><h3>Betaling</h3><p>Betaling af kurset kan ske via almindelig fakturering, eller I kan også betale via EAN nummer.</p></div>
-      <div class="sg-tile2"><h3>Pris</h3><p>Ring til os for en nærmere drøftelse af indhold og pris for IPS-konsulentuddannelsen.</p></div>
-      <div class="sg-tile2"><h3>Booking</h3><p>Ring eller skriv til os for at høre nærmere om booking af IPS-konsulentuddannelsen.</p></div>
+      <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg><h3>Varighed</h3><p>Uddannelsen løber typisk over 54 uger og består af i alt 15 undervisnings- og evalueringsdage. Undervisningsdagene planlægges med den enkelte afdeling.</p></div>
+      <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg><h3>Betaling</h3><p>Betaling af kurset kan ske via almindelig fakturering, eller I kan også betale via EAN nummer.</p></div>
+      <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9-8-8z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg><h3>Pris</h3><p>Ring til os for en nærmere drøftelse af indhold og pris for IPS-konsulentuddannelsen.</p></div>
+      <div class="sg-tile2"><svg class="sg-tile2__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></svg><h3>Booking</h3><p>Ring eller skriv til os for at høre nærmere om booking af IPS-konsulentuddannelsen.</p></div>
     </div>
   </div>
 </section>

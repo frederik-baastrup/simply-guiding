@@ -1693,3 +1693,7 @@ Text Domain: simply-guiding
   .sg-pdetail__sidetext { margin: 24px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
   .sg-pdetail__side .sg-pdetail__actions { margin-top: 24px !important; }
   @media (max-width: 1000px) { .sg-pdetail__grid, .sg-tablesec__head, .sg-band2__head, .sg-cform__grid { grid-template-columns: 1fr; } }
+  .sg-tile2__icon { display: block; width: 30px; height: 30px; margin-bottom: 22px; color: var(--sg-cta); }
+  /* Konsulenter: billedet til højre, så billedsiden skifter ned gennem siden */
+  .sg-consult__media { order: 2; }
+  @media (max-width: 960px) { .sg-consult__media { order: 0; } }
