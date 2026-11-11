@@ -21,17 +21,20 @@ $sol = [
 
 <div id="indhold"></div>
 
-<section class="sg-projects sg-projects--five" aria-label="Løsninger">
+<section class="sg-index" aria-label="Løsninger">
   <div class="sg-wrap">
-    <div class="sg-projects__grid">
+    <ol class="sg-index__list">
       <?php foreach ($sol as $i => $s) : ?>
-      <article class="sg-project<?php echo $i === 0 ? ' sg-project--active' : ''; ?>">
-        <h2 class="sg-project__title" style="margin-top:0"><?php echo esc_html($s[1]); ?></h2>
-        <p class="sg-project__text"><?php echo esc_html($s[2]); ?></p>
-        <a class="sg-project__link" href="#<?php echo esc_attr($s[0]); ?>">Klik for at læse mere <span aria-hidden="true">→</span></a>
-      </article>
+      <li>
+        <a class="sg-index__row" href="#<?php echo esc_attr($s[0]); ?>">
+          <span class="sg-index__num"><?php echo sprintf('%02d', $i + 1); ?></span>
+          <h2 class="sg-index__title"><?php echo esc_html($s[1]); ?></h2>
+          <p class="sg-index__text"><?php echo esc_html($s[2]); ?></p>
+          <span class="sg-index__go" aria-hidden="true"><?php echo sg_arrow(); ?></span>
+        </a>
+      </li>
       <?php endforeach; ?>
-    </div>
+    </ol>
   </div>
 </section>
 

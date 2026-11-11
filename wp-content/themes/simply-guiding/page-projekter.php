@@ -40,19 +40,19 @@ get_template_part('template-parts/page-hero', null, [
         <p class="sg-pill">Igangværende projekter</p>
         <h2 class="sg-project__title">Recharge</h2>
         <p class="sg-project__text">En voksende gruppe børn og unge mellem 12 og 17 år oplever alvorlig mistrivsel, skoletræthed og manglende tilknytning til fællesskaber. Simply Guiding samarbejder med familieafdelingen i Herlev Kommune om at udvikle og implementere nye tilgange, der hjælper unge med at genfinde tilknytningen til skole, fritidsjob og fællesskaber.</p>
-        <a class="sg-project__link" href="#recharge">Læs mere Recharge <span aria-hidden="true">→</span></a>
+        <a class="sg-project__link" href="#recharge">Læs mere Recharge <?php echo sg_arrow(); ?></a>
       </article>
       <article class="sg-project">
         <p class="sg-pill">Afsluttede projekter</p>
         <h2 class="sg-project__title">IPS UNG</h2>
         <p class="sg-project__text">Simply Guiding arbejder sammen med Ungeenheden i Gladsaxe Kommune og SIND om et ungeprojekt, der bl.a. har fokus på at udvikle nye metoder til at inddrage de unge og give dem større beslutningskraft i forløbet. Der arbejdes også med at gå nye veje i involveringen af virksomheder i indsatsen.</p>
-        <a class="sg-project__link" href="#ipsung">Læs mere om IPS Ung <span aria-hidden="true">→</span></a>
+        <a class="sg-project__link" href="#ipsung">Læs mere om IPS Ung <?php echo sg_arrow(); ?></a>
       </article>
       <article class="sg-project">
         <p class="sg-pill">Afsluttede projekter</p>
         <h2 class="sg-project__title">Din vej i job</h2>
         <p class="sg-project__text">Aarhus Jobcenter, SIND Erhverv og Simply Guiding er gået sammen i et nyt socialt investeringsprojekt: ‘Din vej i job’. Målgruppen er borgere over 30 år på kontanthjælp, der lever med en psykisk sygdom. Formålet er, at flere borgere skal skifte en tilværelse på kontanthjælp ud med beskæftigelse eller uddannelse.</p>
-        <a class="sg-project__link" href="#dinvejijob">Læs mere Din vej i job <span aria-hidden="true">→</span></a>
+        <a class="sg-project__link" href="#dinvejijob">Læs mere Din vej i job <?php echo sg_arrow(); ?></a>
       </article>
     </div>
   </div>

@@ -37,7 +37,7 @@ $cases = [
         <p class="sg-pill"><?php echo esc_html($c[1]); ?></p>
         <h2 class="sg-project__title"><?php echo esc_html($c[2]); ?></h2>
         <p class="sg-project__text"><?php echo esc_html($c[3]); ?></p>
-        <a class="sg-project__link" href="/cases/<?php echo esc_attr($c[0]); ?>/"><?php echo esc_html($c[4]); ?> <span aria-hidden="true">→</span></a>
+        <a class="sg-project__link" href="/cases/<?php echo esc_attr($c[0]); ?>/"><?php echo esc_html($c[4]); ?> <?php echo sg_arrow(); ?></a>
       </article>
       <?php endforeach; ?>
     </div>

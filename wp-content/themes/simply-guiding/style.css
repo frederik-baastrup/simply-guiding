@@ -1934,3 +1934,29 @@ Text Domain: simply-guiding
 .sg-belief { margin-top: 36px; padding: 32px 0 0; border-radius: 0; background: none; border-top: 1px solid rgba(49,49,49,.12); }
 .sg-belief__title { margin: 0 0 4px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 22px; line-height: 1.25; letter-spacing: -.01em; color: var(--sg-text); }
 .sg-mind3__copy .sg-belief p, .sg-mind3__copy .sg-meet__p { font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+/* Tynd pil i tekstlinks */
+.sg-arrow { width: 26px; height: 13px; flex: none; transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.sg-textlink a { gap: 12px; }
+.sg-textlink a:hover .sg-arrow, .sg-project__link:hover .sg-arrow { transform: translateX(5px); }
+.sg-project__link { display: inline-flex; align-items: center; gap: 12px; }
+
+/* Løsninger: oversigt som nummereret indeks med tynde streger */
+.sg-index { padding-block: 96px 24px; }
+.sg-index__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--sg-border); }
+.sg-index__list li { border-bottom: 1px solid var(--sg-border); }
+.sg-index__row { display: grid; grid-template-columns: 64px minmax(0, 4fr) minmax(0, 5fr) 56px; column-gap: 40px; align-items: center; padding: 34px 20px 34px 0; text-decoration: none; color: inherit; transition: background .35s, padding .35s cubic-bezier(.2,.7,.2,1); border-radius: 14px; }
+.sg-index__num { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 15px; color: var(--sg-cta); padding-left: 4px; }
+.sg-index__title { margin: 0; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; line-height: 1.15; letter-spacing: -.01em; color: var(--sg-text); }
+.sg-index__text { margin: 0; font-size: 15px; line-height: 1.7; color: var(--sg-muted); }
+.sg-index__go { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--sg-border); color: var(--sg-text); transition: background .3s, border-color .3s, color .3s; }
+.sg-index__go .sg-arrow { width: 22px; height: 11px; }
+.sg-index__row:hover { background: var(--sg-topbar); padding-left: 20px; }
+.sg-index__row:hover .sg-index__go { background: var(--sg-cta); border-color: var(--sg-cta); color: #fff; }
+.sg-index__row:hover .sg-arrow { transform: translateX(3px); }
+@media (max-width: 900px) {
+  .sg-index { padding-block: 56px 8px; }
+  .sg-index__row { grid-template-columns: 40px minmax(0, 1fr) 44px; row-gap: 10px; padding: 26px 0; }
+  .sg-index__row:hover { padding-left: 0; background: none; }
+  .sg-index__text { grid-column: 2 / 3; grid-row: 2; }
+  .sg-index__go { width: 44px; height: 44px; grid-column: 3; grid-row: 1; }
+}
