@@ -24,7 +24,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip sg-sol--plain" aria-labelledby="sgLearnTitle">
+<section class="sg-sol sg-sol--plain" aria-labelledby="sgLearnTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-forskning.jpg" alt="Undervisning i IPS-metoden" loading="lazy"></div>
     <div class="sg-sol__copy">
