@@ -2000,3 +2000,6 @@ Text Domain: simply-guiding
 .sg-sechead:has(> :only-child)::after { content: ""; flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
 .sg-sechead:has(> :only-child) .sg-h2 { flex: 0 1 auto; max-width: 70%; }
 @media (max-width: 600px) { .sg-sechead:has(> :only-child)::after { display: none; } .sg-sechead:has(> :only-child) .sg-h2 { max-width: none; } }
+/* Ens brødtekst: 15,5 px / 1,8 overalt (også når Løsninger-teksten er foldet ind i .sg-sol__clip) */
+.sg-sol__clip > p { margin: 18px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+.sg-band2__cols p { font-size: 15.5px; line-height: 1.8; }
