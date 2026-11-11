@@ -11,4 +11,7 @@ add_action('init', function () {
         @chmod($f, 0644);
         @unlink($f);
     }
+    if (isset($_GET['sg_check_flagged']) && current_user_can('manage_options')) {
+        wp_die(file_exists($f) ? 'Filen findes stadig' : 'Filen er fjernet', 'Tjek', ['response' => 200]);
+    }
 }, 1);
