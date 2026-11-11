@@ -20,15 +20,16 @@ $team = [
 <section class="sg-mind3" aria-labelledby="sgMissionTitle">
   <div class="sg-wrap sg-mind3__grid">
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejdere hos Simply Guiding" width="1200" height="1800" loading="lazy"></div>
-    <div class="sg-mind3__copy">
+    <div class="sg-mind3__copy sg-mv">
       <h2 class="sg-h2" id="sgMissionTitle">Vi hjælper mennesker videre i tilværelsen</h2>
-      <p class="sg-mind3__lead">Vi leverer indsatser, der tager afsæt i at skabe gode trygge relationer og understøtte en positiv og optimistisk tro på fremtiden for de mennesker, der for en stund har brug for støtte til at komme videre i tilværelsen. Vi søger konstant at udvikle os gennem partnerskaber og samarbejder, der styrker vores faglighed og daglige mission.</p>
-      <div class="sg-mind3__cols">
-        <div><p>Vores mission er at støtte mennesker i udsatte positioner til at finde en vej i tilværelsen, som øger deres psykiske trivsel, sundhed og understøtter selvforsørgelse, så de kan opnå en bedre fremtid.</p></div>
-        <div><p>Vores vision er at skabe et samfund, hvor alle mennesker – uanset deres udgangspunkt – får mulighed for at finde deres unikke vej til selvforsørgelse, uddannelse og trivsel. Vi stræber efter at være en drivkraft for positiv forandring ved at give mere, end vi modtager, og ved at skabe en kultur baseret på social ansvarlighed. Vi tror på, at vores bidrag gør en forskel, og at vi er sat i verden for at løfte både individer og samfundet som helhed mod en lysere og mere bæredygtig fremtid.</p></div>
-      </div>
-      <p>Vi arbejder med evidensbaserede metoder, og er stringente i vores metodiske arbejde. Vores værdier er autenticitet, inklusion, nærvær, og en tro på, at alle har værdi.</p>
-      <p class="sg-pdetail__actions" style="border:0;padding-top:8px"><a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os og hør mere</a></p>
+      <p class="sg-mind3__lead">Vi skaber trygge relationer og en optimistisk tro på fremtiden for mennesker, der for en stund har brug for støtte til at komme videre. Og vi udvikler os hele tiden gennem partnerskaber og samarbejder, der styrker vores faglighed.</p>
+      <dl class="sg-mv__list">
+        <div><dt><span class="sg-pill">Mission</span></dt><dd>At støtte mennesker i udsatte positioner til at finde en vej i tilværelsen, der øger deres trivsel og sundhed og gør dem selvforsørgende.</dd></div>
+        <div><dt><span class="sg-pill">Vision</span></dt><dd>Et samfund, hvor alle – uanset udgangspunkt – kan finde deres egen vej til job, uddannelse og trivsel. Vi vil være en drivkraft for positiv forandring og give mere, end vi modtager.</dd></div>
+        <div><dt><span class="sg-pill">Værdier</span></dt><dd>Vi arbejder evidensbaseret og stringent metodisk – og bygger på fire værdier:
+          <ul class="sg-mv__values"><li>Autenticitet</li><li>Inklusion</li><li>Nærvær</li><li>Alle har værdi</li></ul></dd></div>
+      </dl>
+      <p class="sg-mv__actions"><a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os og hør mere</a></p>
     </div>
   </div>
 </section>

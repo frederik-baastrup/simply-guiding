@@ -1307,7 +1307,7 @@ Text Domain: simply-guiding
   .sg-mind3__copy p { margin: 0; padding-block: 28px; border-top: 1px solid rgba(49, 49, 49, .12); font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
   .sg-mind3__copy .sg-mind3__lead { margin-top: 28px; border-top: 0; padding-top: 0; font-size: clamp(18px, 1.5vw, 21px); line-height: 1.6; color: var(--sg-text); }
   .sg-mind3__copy p:last-child { padding-bottom: 0; }
-  .sg-mind3__copy a { color: var(--sg-cta); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .sg-mind3__copy a:not(.sg-btn) { color: var(--sg-cta); text-decoration: none; border-bottom: 1px solid currentColor; }
   @media (max-width: 960px) {
     .sg-mind3 { padding-block: 72px; }
     .sg-mind3__grid { grid-template-columns: 1fr; gap: 40px; }
@@ -1757,3 +1757,13 @@ Text Domain: simply-guiding
 .sg-sol__more { margin-top: 16px; }
 .sg-sol__more svg { width: 14px; height: 14px; margin-left: 8px; transition: transform .3s; }
 .sg-sol__copy.is-open .sg-sol__more svg { transform: rotate(180deg); }
+/* Om os: mission, vision og værdier som rolige rækker */
+.sg-mv__list { margin: 40px 0 0; }
+.sg-mv__list > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 8px 32px; padding: 24px 0; border-top: 1px solid rgba(49,49,49,.1); }
+.sg-mv__list > div:last-child { border-bottom: 1px solid rgba(49,49,49,.1); }
+.sg-mv__list dt { padding-top: 2px; }
+.sg-mv__list dd { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--sg-muted); }
+.sg-mv__values { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.sg-mv__values li { padding: 8px 14px; border-radius: 100px; background: #fff; color: var(--sg-text); font-size: 14px; font-weight: 500; line-height: 1.2; }
+.sg-mv__actions { margin: 36px 0 0; }
+@media (max-width: 600px) { .sg-mv__list > div { grid-template-columns: 1fr; } }

@@ -179,3 +179,12 @@ function sg_date_da($post = null) {
     $m = ['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december'];
     return date_i18n('j', $ts) . '. ' . $m[(int) date_i18n('n', $ts) - 1] . ' ' . date_i18n('Y', $ts);
 }
+
+/* Gamle adresser, der skal til forsiden (301) */
+add_action('template_redirect', function () {
+    $path = trim((string) parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    if (in_array($path, ['postkort-26'], true)) {
+        wp_redirect(home_url('/'), 301);
+        exit;
+    }
+}, 1);
