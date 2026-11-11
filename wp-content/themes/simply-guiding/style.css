@@ -2204,3 +2204,8 @@ Text Domain: simply-guiding
 .sg-statement__cols p:first-child { padding-top: 0; border-top: 0; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.65; color: var(--sg-text); }
 .sg-statement__cols p + p { padding-top: 20px; }
 @media (max-width: 960px) { .sg-statement__title, .sg-statement__cols { grid-column: 1 / -1; } .sg-statement__cols { margin-top: 28px; } }
+/* Ulige antal grunde: én række pr. grund, nummer til venstre */
+.sg-reasons--rows { grid-template-columns: 1fr; }
+.sg-reasons--rows li, .sg-reasons--rows li:nth-child(odd), .sg-reasons--rows li:last-child:nth-child(odd) { display: grid; grid-template-columns: 72px minmax(0, 1fr); align-items: baseline; padding: 26px 0; border-right: 0; grid-column: auto; }
+.sg-reasons--rows .sg-reasons__n { font-size: 28px; }
+.sg-reasons--rows p { margin: 0; max-width: none; font-size: 17px; }
