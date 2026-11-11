@@ -1,6 +1,6 @@
 <?php
 /* Undersidehero: tekst på grønt mønster + billede, med logo-bar under. Args: label, title, lead, img, img_w, img_h, alt */
-$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '']);
+$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '', 'video' => '', 'poster' => '']);
 $u = get_template_directory_uri();
 $logos = [
   ['aalborg', 'Aalborg Kommune'], ['varde', 'Varde Kommune'], ['svendborg', 'Svendborg Kommune'], ['soenderborg', 'Sønderborg Kommune'],
@@ -15,7 +15,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
 };
 ?>
 <div class="sg-hero-wrap">
-  <section class="sg-hero sg-hero--split<?php echo $a['img'] ? '' : ' sg-hero--noimg'; ?>" aria-labelledby="sgPageTitle">
+  <section class="sg-hero sg-hero--split<?php echo ($a['img'] || $a['video']) ? '' : ' sg-hero--noimg'; ?>" aria-labelledby="sgPageTitle">
     <div class="sg-split">
       <div class="sg-split__copy">
         <p class="sg-pill"><?php echo esc_html($a['label']); ?></p>
@@ -26,7 +26,9 @@ $logo_list = function ($hidden) use ($u, $logos) {
           <a class="sg-btn sg-btn--lg sg-btn--ghost" href="#indhold">Læs mere</a>
         </div>
       </div>
-      <?php if ($a['img']) : ?>
+      <?php if ($a['video']) : ?>
+      <div class="sg-split__media"><video src="<?php echo esc_url($u . '/assets/' . $a['video']); ?>" poster="<?php echo esc_url($u . '/assets/' . $a['poster']); ?>" autoplay muted loop playsinline aria-hidden="true"></video></div>
+      <?php elseif ($a['img']) : ?>
       <div class="sg-split__media">
         <img src="<?php echo esc_url($u . '/assets/' . $a['img']); ?>" alt="<?php echo esc_attr($a['alt']); ?>" width="<?php echo (int) $a['img_w']; ?>" height="<?php echo (int) $a['img_h']; ?>" fetchpriority="high">
       </div>

@@ -1514,3 +1514,4 @@ Text Domain: simply-guiding
 
   .sg-hero--msg .sg-split { min-height: min(620px, 78vh); }
   .sg-hero--msg + .sg-footer, .sg-hero-wrap + .sg-footer { margin-top: var(--sg-gap); }
+  .sg-split__media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
