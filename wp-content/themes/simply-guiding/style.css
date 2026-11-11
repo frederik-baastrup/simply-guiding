@@ -2196,3 +2196,11 @@ Text Domain: simply-guiding
 }
 .sg-statement__title { font-size: clamp(30px, 3vw, 44px); line-height: 1.08; }
 .sg-stage__bg { object-position: 50% 50%; } .sg-stage__list--3 { margin-top: 180px; }
+/* "Tro kan ikke flytte bjerge alene": venstrestillet i 12-kolonne-gitteret (5 | 1 | 6) */
+.sg-statement { text-align: left; }
+.sg-statement .sg-wrap { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--sg-gut); }
+.sg-statement__title { grid-column: 1 / span 5; margin: 0; max-width: none; }
+.sg-statement__cols { grid-column: 7 / span 6; display: grid; grid-template-columns: 1fr; gap: 20px; max-width: none; margin: 0; }
+.sg-statement__cols p:first-child { padding-top: 0; border-top: 0; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.65; color: var(--sg-text); }
+.sg-statement__cols p + p { padding-top: 20px; }
+@media (max-width: 960px) { .sg-statement__title, .sg-statement__cols { grid-column: 1 / -1; } .sg-statement__cols { margin-top: 28px; } }
