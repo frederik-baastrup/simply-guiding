@@ -2106,3 +2106,4 @@ Text Domain: simply-guiding
 .sg-steps__list p { margin: auto 0 0; padding-top: 24px; font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.85); }
 @media (max-width: 1000px) { .sg-steps__list { grid-template-columns: 1fr 1fr; margin-top: 64px; } }
 @media (max-width: 700px) { .sg-steps { margin-inline: 0; border-radius: 0; } .sg-steps__in { padding-block: 72px 48px; } .sg-steps__list { grid-template-columns: 1fr; } .sg-steps__list li { min-height: 0; } }
+.sg-steps::before { background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.32) 40%, rgba(0,0,0,.75)); } .sg-steps__title span { color: rgba(255,255,255,.6); }
