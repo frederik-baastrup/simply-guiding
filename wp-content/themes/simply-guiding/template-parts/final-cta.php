@@ -1,8 +1,8 @@
 <?php
-/* Afsluttende CTA-boks med kontaktperson. Standard er Lars; en side kan give en anden person med som $args. */
+/* Afsluttende CTA-boks med kontaktperson. Standard er Marlene; en side kan give en anden person med som $args. */
 $p = wp_parse_args(isset($args) && is_array($args) ? $args : [], [
-  'name' => 'Lars Olaf Nielsen', 'role' => 'Ejer', 'img' => 'kontakt.png',
-  'tel' => '+4526344454', 'tel_txt' => '26 34 44 54', 'mail' => 'kontakt@simplyguiding.dk',
+  'name' => 'Marlene Mohn Ishøi', 'role' => 'Driftsdirektør', 'img' => 'kontakt-marlene.webp',
+  'tel' => '+4551909603', 'tel_txt' => '51 90 96 03', 'mail' => 'marlene@simplyguiding.dk',
 ]);
 ?>
 <section class="sg-final" aria-labelledby="sgFinalTitle">

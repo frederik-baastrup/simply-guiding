@@ -107,7 +107,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
 </section>
 
 
-<?php get_template_part('template-parts/final-cta', null, ['name' => 'Marlene Mohn Ishøi', 'role' => 'Driftsdirektør', 'img' => 'kontakt-marlene.webp', 'tel' => '+4551909603', 'tel_txt' => '51 90 96 03', 'mail' => 'marlene@simplyguiding.dk']); ?>
+<?php get_template_part('template-parts/final-cta'); ?>
 
 <!-- Vil du vide mere? – afslutning: billede + tekst i lys boks -->
 <section class="sg-more2" aria-labelledby="sgMoreTitle">
