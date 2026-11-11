@@ -1165,3 +1165,49 @@ Text Domain: simply-guiding
     line-height: 1.2; letter-spacing: .01em; text-transform: none;
   }
   .sg-card__tag, .sg-method__label, .sg-quote__stat-label { color: rgba(255,255,255,.9); border: 1px solid rgba(255,255,255,.28); }
+
+  /* ---------- Undersider: mørkt bånd (tekst + billede) og "Vil du vide mere?" med fotobaggrund ---------- */
+  .sg-band-wrap { padding-inline: max(18px, env(safe-area-inset-left, 0px)) max(18px, env(safe-area-inset-right, 0px)); }
+  .sg-band {
+    border-radius: var(--sg-radius); padding-block: 110px; color: #fff;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+  }
+  .sg-band__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 0 96px; align-items: center; }
+  .sg-band__title {
+    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500;
+    font-size: 34px; line-height: 1.1; letter-spacing: -.01em; color: var(--sg-hero-ink); -webkit-font-smoothing: antialiased;
+  }
+  .sg-band__copy p { margin: 18px 0 0; max-width: 40em; font-size: 15.5px; line-height: 1.8; color: rgba(255,255,255,.82); }
+  .sg-band__media { border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-band__media img { display: block; width: 100%; height: auto; aspect-ratio: 520 / 400; object-fit: cover; }
+
+  .sg-mind--white { background: #fff; padding-block: 110px; }
+  .sg-mind__sub { margin: 32px 0 0; font-size: 15px; font-weight: 500; color: var(--sg-cta); }
+  .sg-checks { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+  .sg-checks li { display: flex; align-items: flex-start; gap: 12px; font-size: 15.5px; line-height: 1.5; color: var(--sg-text); }
+  .sg-checks svg { flex: none; width: 20px; height: 20px; margin-top: 1px; color: var(--sg-cta); }
+
+  .sg-more { position: relative; overflow: hidden; isolation: isolate; border-radius: var(--sg-radius); padding-block: 150px; color: #fff; text-align: center; }
+  .sg-more__bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+  .sg-more::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(6, 35, 31, .72); }
+  .sg-more__title {
+    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500;
+    font-size: clamp(34px, 3.4vw, 48px); line-height: 1.05; letter-spacing: -.01em; color: var(--sg-hero-ink); -webkit-font-smoothing: antialiased;
+  }
+  .sg-more p { margin: 22px auto 0; max-width: 46em; font-size: 16.5px; line-height: 1.7; color: rgba(255,255,255,.88); }
+  .sg-more__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 40px; }
+  .sg-more + * , .sg-band-wrap + .sg-final { margin-top: 0; }
+  .sg-band-wrap:has(.sg-more) { margin-bottom: var(--sg-gap); }
+
+  @media (max-width: 960px) {
+    .sg-band { padding-block: 72px; }
+    .sg-band__grid { grid-template-columns: 1fr; gap: 40px; }
+    .sg-band__media img { aspect-ratio: 16 / 10; }
+    .sg-mind--white { padding-block: 72px; }
+    .sg-more { padding-block: 96px; }
+  }
+  @media (max-width: 860px) {
+    .sg-band-wrap { padding-inline: 0; }
+    .sg-band, .sg-more { border-radius: 0; }
+  }
+  @media (max-width: 600px) { .sg-band__title { font-size: 28px; } .sg-more__actions { gap: 10px; } }

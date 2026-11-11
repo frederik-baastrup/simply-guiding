@@ -69,6 +69,49 @@ $logo_list = function ($hidden) use ($u, $logos) {
   </div>
 </section>
 
+<div class="sg-band-wrap">
+  <section class="sg-band" aria-labelledby="sgCitizensTitle">
+    <div class="sg-wrap sg-band__grid">
+      <div class="sg-band__copy">
+        <h2 class="sg-band__title" id="sgCitizensTitle">Hvordan arbejder Simply Guiding med borgere?</h2>
+        <p>Målet med vores støtte er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet, på lige fod med alle andre, uanset udfordringer. Vi tror på bæredygtige og trygge relationer. Hos Simply Guiding får borgeren derfor sin egen konsulent tilknyttet. Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.</p>
+        <p>Konsulenten har et tæt samarbejde med kandidaten og der er altid ugentligt kontakt. Vi er uddannet i at inddrage pårørende, netværk eller andre personer, som er relevante at inddrage for at understøtte kandidatens progression mod job, uddannelse, bedre trivsel, raskmelding, etc.</p>
+      </div>
+      <div class="sg-band__media"><img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" width="1200" height="715" loading="lazy"></div>
+    </div>
+  </section>
+</div>
+
+<section class="sg-mind sg-mind--white" aria-labelledby="sgConsultTitle">
+  <div class="sg-wrap sg-mind__grid">
+    <div class="sg-mind__media"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></div>
+    <div class="sg-mind__copy">
+      <h2 class="sg-mind__title" id="sgConsultTitle">Simply Guiding’s konsulenter</h2>
+      <p>Vores jobspecialister har en bred vifte af kompetencer og forskellige faglige baggrunde, der understøtter forløbet for den enkelte borger. Men det vigtigste er deres mindset, som vi løbende superviserer og træner dem i at bevare og udvikle, nemlig at de tror på borgeren og vedkommendes muligheder for fremtiden.</p>
+      <h3 class="sg-mind__sub">Vi arbejder efter følgende principper i Simply Guiding:</h3>
+      <ul class="sg-checks">
+        <?php foreach (['Suspender din forforståelse og mød mennesket hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på, og arbejder efter ”place then train” modellen'] as $pr) : ?>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.2 10.3l2.5 2.5 5-5.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><?php echo esc_html($pr); ?></li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="sg-band-wrap">
+  <section class="sg-more" aria-labelledby="sgMoreTitle">
+    <img class="sg-more__bg" src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="" width="2000" height="1333" loading="lazy">
+    <div class="sg-wrap sg-more__inner">
+      <h2 class="sg-more__title" id="sgMoreTitle">Vil du vide mere?</h2>
+      <p>Har du spørgsmål angående vores løsninger og indsatser? Så er vores konsulenter altid klar til at hjælpe. Du kan kontakte os på 26 34 44 54 eller skrive til os via vores kontaktformular. Vi sidder klar til at hjælpe dig til at finde den perfekte løsning.</p>
+      <div class="sg-more__actions">
+        <a class="sg-btn sg-btn--lg" href="tel:+4526344454">Ring på 26 34 44 54</a>
+        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/kontakt">Udfyld vores kontaktformular</a>
+      </div>
+    </div>
+  </section>
+</div>
+
 <?php get_template_part('template-parts/final-cta'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 
