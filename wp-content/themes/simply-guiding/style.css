@@ -1018,7 +1018,7 @@ Text Domain: simply-guiding
   .sg-split__copy {
     display: flex; flex-direction: column; justify-content: center;
     /* Venstre kant flugter med logoet i headeren */
-    padding: 150px clamp(32px, 5vw, 90px) calc(var(--sg-notch-h) + 36px) calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
+    padding: 150px clamp(32px, 5vw, 90px) 110px calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
   }
   .sg-split__copy h1 { margin-top: 30px; font-size: clamp(36px, 3.4vw, 50px); color: rgba(190, 206, 193, .7); }
   .sg-pill {
@@ -1059,8 +1059,34 @@ Text Domain: simply-guiding
     .sg-split__media { height: 300px; }
   }
 
+  /* ---------- Logo-bar under undersidehero (som på det gamle site) ---------- */
+  .sg-logobar { position: relative; z-index: 2; height: 98px; margin-top: -35px; }
+  .sg-logobar__tab { position: absolute; left: 0; top: 0; display: block; width: 100%; height: 35px; }
+  .sg-logobar__inner {
+    position: absolute; inset: 0; display: flex; align-items: center;
+    /* Flugter med logoet i headeren */
+    padding-inline: calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
+  }
+  .sg-logobar__label {
+    flex: none; margin: 0 50px 0 0; padding-right: 50px; border-right: 1px solid var(--sg-border);
+    font-size: 14px; line-height: 58px; color: var(--sg-text); white-space: nowrap;
+  }
+  .sg-logobar .sg-logos { flex: 1; min-width: 0; height: 58px; -webkit-mask-image: none; mask-image: none; }
+  .sg-logobar .sg-logos__list { gap: 70px; padding-right: 70px; }
+  .sg-logobar .sg-logos__list img { height: 32px; }
+  .sg-logobar .sg-logos__list img.is-tall { height: 44px; }
+  @media (max-width: 1024px) {
+    .sg-logobar { height: auto; margin-top: 0; }
+    .sg-logobar__tab { display: none; }
+    .sg-logobar__inner { position: static; flex-direction: column; padding: 32px 0 8px; }
+    .sg-logobar__label { margin: 0 0 4px; padding: 0; border: 0; line-height: 1.4; font-size: 13px; color: var(--sg-muted); }
+    .sg-logobar .sg-logos { flex: none; width: 100%; height: 48px; }
+    .sg-logobar .sg-logos__list img { height: 29px; }
+    .sg-logobar .sg-logos__list img.is-tall { height: 38px; }
+  }
+
   /* ---------- Mindset og metoder: billede + tekst på lysegrå flade ---------- */
-  .sg-mind { margin-top: var(--sg-gap-line); padding-block: 72px; background: var(--sg-topbar); }
+  .sg-mind { padding-block: 72px; background: var(--sg-topbar); }
   .sg-mind__grid { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 0 96px; align-items: center; }
   .sg-mind__media { border-radius: var(--sg-radius-sm); overflow: hidden; }
   .sg-mind__media img { display: block; width: 100%; height: auto; aspect-ratio: 420 / 522; object-fit: cover; }
