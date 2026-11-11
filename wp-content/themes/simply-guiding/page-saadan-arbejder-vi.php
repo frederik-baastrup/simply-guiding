@@ -33,6 +33,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
     </div>
     <div class="sg-hero-bottom">
       <div class="sg-hero__notch">
+        <svg class="sg-hero__curve sg-hero__curve--left" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M200 0 C100 0 100 64 0 64 L200 64 Z" fill="#fff"/></svg>
         <div class="sg-hero__notch-inner">
           <p class="sg-hero__notch-label">Vi har bl.a. samarbejdet med</p>
           <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
