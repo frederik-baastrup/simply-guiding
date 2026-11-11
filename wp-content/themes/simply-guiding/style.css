@@ -1310,3 +1310,6 @@ Text Domain: simply-guiding
     .sg-mind3__media { position: static; }
     .sg-mind3__media img { aspect-ratio: 4 / 3; }
   }
+  .sg-mind3__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(49, 49, 49, .12); }
+  .sg-mind3__copy .sg-mind3__cols p { padding: 0; border: 0; }
+  @media (max-width: 700px) { .sg-mind3__cols { grid-template-columns: 1fr; gap: 18px; } }
