@@ -1965,3 +1965,4 @@ Text Domain: simply-guiding
 @media (min-width: 961px) {
   .sg-header.is-scrolled .sg-nav { box-shadow: none; background: transparent; }
 }
+.sg-who__side { justify-content: flex-start; }

@@ -19,12 +19,11 @@ get_template_part('template-parts/page-hero', null, [
         <h2 class="sg-h2" id="sgWhoTitle">Hvem er Simply Guiding?</h2>
         <p class="sg-who__lead">Simply Guiding er en specialiseret beskæftigelsesaktør. Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer med fokus på det enkelte menneske.</p>
       </div>
-      <img class="sg-who__img" src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="Konsulenter fra Simply Guiding i møde" loading="lazy">
     </div>
     <div class="sg-who__cells">
       <?php foreach ([
         ['heart', 'Vores opgave', 'Vi hjælper mennesker i en sårbar position tilbage til fællesskabet, til jobbet eller i uddannelse.'],
-        ['handshake', 'Brobygger', 'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske.'],
+        ['people', 'Brobygger', 'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske.'],
         ['book', 'Evidensbaseret', 'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment.'],
         ['shield', 'Holdbare løsninger', 'Vi tror på holdbare løsninger frem for hurtige quickfixes.'],
       ] as $c) : ?>
