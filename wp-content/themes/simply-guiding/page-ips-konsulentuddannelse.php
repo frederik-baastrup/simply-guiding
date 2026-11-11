@@ -65,13 +65,13 @@ get_template_part('template-parts/page-hero', null, [
   <section class="sg-band2 sg-principles8" aria-labelledby="sgContentTitle">
     <div class="sg-wrap">
       <div class="sg-band2__head">
-        <div><p class="sg-pill">Indhold</p><h2 class="sg-h2 sg-h2--light" id="sgContentTitle" style="margin-top:20px">Hvad indeholder IPS-kurset?</h2></div>
+        <div><p class="sg-pill">Indhold</p><h2 class="sg-h2 sg-h2--light sg-h2--xl" id="sgContentTitle" style="margin-top:20px">Hvad indeholder IPS-kurset?</h2></div>
         <p class="sg-principles8__intro">Med IPS-konsulentuddannelsen vil du være i stand til selv at drive forløbene fra den indledende visitation og screening til den afsluttende rapportering. Her får du et kort overblik over de i alt 15 kursusdages indhold, samt praktisk information.</p>
       </div>
-      <div class="sg-cols3">
-        <div><h3>Teoretisk viden</h3><p>På IPS-konsulentuddannelsen vil du – til at begynde med – få en indgående forståelse for principperne og metoden bag IPS, samt hvordan du omsætter metodens mål og midler i det praktiske arbejde med kandidater, virksomheder og øvrige samarbejdspartnere.</p><p>Du vil blive undervist i IPS-manualen, de værktøjer der understøtter dine IPS-arbejdsopgaver, samt andet relevant undervisningsmateriale.</p><p>Derudover vil du få undervisning i komplementære teorier, der understøtter IPS-metoden.</p></div>
-        <div><h3>Praktiske øvelser</h3><p>Når teoridagene er gennemført, begynder du at arbejde med dine egne kandidater i din hverdag.</p><p>På de efterfølgende undervisningsdage vil vi gennemgå cases, der går i dybden med borgerforløb, så du nemmere kan omsætte din viden til praksis i dit arbejde som IPS-konsulent.</p><p>Du vil også løbende få feedback og konkrete råd til dine egne cases, så dine sager ikke går i stå.</p></div>
-        <div><h3>Rollespil</h3><p>Jo tættere vi kommer på virkeligheden, desto bedre rustet er du til opgaverne.</p><p>Derfor arbejder vi også med øvelser og rollespil, så du bliver trænet i de mange forskellige situationer, der kan opstå i et IPS-forløb.</p><p>Du lærer at screene potentielle kandidater til indsatsen og at arbejde tværfagligt med fokus på IPS-kandidaten.</p></div>
+      <div class="sg-cols3 sg-cols3--rich">
+        <div><span class="sg-cols3__ico"><?php echo sg_icon('book'); ?></span><h3>Teoretisk viden</h3><p>Du får en indgående forståelse for principperne og metoden bag IPS – og for, hvordan du omsætter dem i arbejdet med kandidater, virksomheder og samarbejdspartnere.</p><p>Undervisningen dækker IPS-manualen, de værktøjer der understøtter dine opgaver, og komplementære teorier.</p></div>
+        <div><span class="sg-cols3__ico"><?php echo sg_icon('people'); ?></span><h3>Praktiske øvelser</h3><p>Efter teoridagene arbejder du med dine egne kandidater i din hverdag.</p><p>På de efterfølgende undervisningsdage gennemgår vi cases i dybden, og du får løbende feedback og konkrete råd, så dine sager ikke går i stå.</p></div>
+        <div><span class="sg-cols3__ico"><?php echo sg_icon('handshake'); ?></span><h3>Rollespil</h3><p>Jo tættere vi kommer på virkeligheden, desto bedre rustet er du. Derfor træner vi de situationer, der kan opstå i et IPS-forløb.</p><p>Du lærer at screene potentielle kandidater og at arbejde tværfagligt med fokus på IPS-kandidaten.</p></div>
       </div>
     </div>
   </section>

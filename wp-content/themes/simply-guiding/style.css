@@ -2130,3 +2130,10 @@ Text Domain: simply-guiding
 .sg-sol--small .sg-sol__media { min-height: 0; aspect-ratio: 4 / 5; align-self: center; }
 @media (max-width: 960px) { .sg-sol--small .sg-sol__grid { grid-template-columns: 1fr; } .sg-sol--small .sg-sol__media { aspect-ratio: auto; } }
 .sg-sol--small .sg-sol__grid { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); } .sg-sol--small .sg-sol__media { aspect-ratio: 3 / 4; }
+/* "Hvad indeholder IPS-kurset?": større overskrift, ikoner og glaskort */
+.sg-h2--xl { font-size: clamp(34px, 3.4vw, 50px) !important; }
+.sg-cols3--rich > div { display: flex; flex-direction: column; padding: 34px 32px 36px; border-radius: 16px; background: rgba(255,255,255,.05) !important; border: 1px solid rgba(255,255,255,.12) !important; }
+.sg-cols3__ico { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: rgba(219,231,221,.12); color: var(--sg-hero-ink); margin-bottom: 26px; }
+.sg-cols3__ico svg { width: 24px; height: 24px; }
+.sg-cols3--rich h3 { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; font-size: 22px !important; font-weight: 500; letter-spacing: -.01em; color: var(--sg-hero-ink) !important; }
+.sg-cols3--rich p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.78); }
