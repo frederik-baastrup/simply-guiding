@@ -66,8 +66,8 @@ get_template_part('template-parts/cards3', null, [
   'text'  => 'Udvikling gennem stærke relationer og troen på det enkelte menneske. Så kort kan det siges, men der er heldigvis mere til historien.',
   'items' => [
     ['user', 'Det enkelte menneske', 'Vores fokus er at opbygge en tillidsfuld relation, der giver det enkelte menneske modet og redskaberne til at genvinde fodfæstet og opnå et nyt ståsted i livet.'],
-    ['puzzle', 'Indsatser, som passer til situationen', 'Du kan ikke købe en hyldevare hos Simply Guiding. Det ville være mod vores natur. Når vi møder et menneske, hvor det er, giver det ikke mening at putte vedkommende i en bås – og håbe på det bedste.'],
-    ['shield', 'Tæt kommunalt samarbejde og dokumenteret faglighed', 'Vores tværfaglige hold af konsulenter kombinerer dyb empati med en stærk beskæftigelsesfaglighed. Med afsæt i evidensbaserede metoder som IPS og Supported Employment er vi en stærk, gennemsigtig og resultatskabende medspiller for både kommuner, jobcentre og virksomheder.'],
+    ['puzzle', 'Indsatser, der passer', 'Du kan ikke købe en hyldevare hos Simply Guiding. Når vi møder et menneske, hvor det er, giver det ikke mening at putte vedkommende i en bås.'],
+    ['shield', 'Dokumenteret faglighed', 'Vores tværfaglige konsulenter kombinerer empati med beskæftigelsesfaglighed og evidensbaserede metoder som IPS og Supported Employment.'],
   ],
 ]);
 ?>
