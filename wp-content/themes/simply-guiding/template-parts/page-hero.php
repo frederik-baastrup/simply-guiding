@@ -1,6 +1,6 @@
 <?php
 /* Undersidehero: tekst på grønt mønster + billede, med logo-bar under. Args: label, title, lead, img, img_w, img_h, alt */
-$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '', 'video' => '', 'poster' => '']);
+$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '', 'video' => '', 'poster' => '', 'btn1' => 'Kontakt os og hør mere', 'btn1_href' => '/kontakt/', 'btn2' => 'Læs mere', 'btn2_href' => '#indhold']);
 $u = get_template_directory_uri();
 $logos = [
   ['aalborg', 'Aalborg Kommune'], ['varde', 'Varde Kommune'], ['svendborg', 'Svendborg Kommune'], ['soenderborg', 'Sønderborg Kommune'],
@@ -22,8 +22,8 @@ $logo_list = function ($hidden) use ($u, $logos) {
         <h1 id="sgPageTitle"><?php echo esc_html($a['title']); ?></h1>
         <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
         <div class="sg-hero__actions">
-          <a class="sg-btn sg-btn--lg" href="/kontakt">Kontakt os og hør mere</a>
-          <a class="sg-btn sg-btn--lg sg-btn--ghost" href="#indhold">Læs mere</a>
+          <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
+          <a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a>
         </div>
       </div>
       <?php if ($a['video']) : ?>

@@ -7,6 +7,7 @@ get_template_part('template-parts/page-hero', null, [
   'title' => 'Vi hjælper mennesker tilbage til arbejdslivet',
   'lead'  => 'Simply Guiding har siden 2015 haft som mission at hjælpe mennesker, der lever med sociale, psykiske og fysiske udfordringer, til et nyt ståsted i tilværelsen med fast grund under fødderne og en vej tilbage til arbejdslivet.',
   'video' => 'om-os-hero.mp4', 'poster' => 'om-os-hero.jpg',
+  'btn1' => 'Kontakt os for at høre mere', 'btn2' => 'Læs mere om os', 'btn2_href' => '#info',
 ]);
 $team = [
   ['team-lars.jpg', 'Lars Olaf Nielsen', 'Direktør', '+4551905606', '51 90 56 06', 'lars@simplyguiding.dk'],

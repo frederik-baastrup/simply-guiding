@@ -21,7 +21,7 @@ $principles = [
   'IPS-konsulenterne opbygger relationer til arbejdsgivere i lokalområdet, baseret på kandidaternes ønsker.',
 ];
 ?>
-<div id="info"></div>
+<div id="indhold"></div>
 
 <section class="sg-pdetail sg-intro" aria-labelledby="sgGoalTitle">
   <div class="sg-wrap sg-pdetail__grid">
