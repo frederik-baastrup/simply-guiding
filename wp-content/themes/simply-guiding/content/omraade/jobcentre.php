@@ -42,9 +42,9 @@ return [
   ],
   'how_title' => 'Sådan går vi til alle opgaver hos dit jobcenter',
   'how' => [
-    ['', 'Vi møder borgere, hvor de er', 'Vi møder det enkelte menneske med summen af sin datid, sin nutid og sine drømme om fremtiden.'],
-    ['', 'Vi tror på, at alle kan rykke sig', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
-    ['', 'Vi skaber holdbare løsninger for jer og borgeren', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
+    ['pin', 'Vi møder borgere, hvor de er', 'Vi møder det enkelte menneske med summen af sin datid, sin nutid og sine drømme om fremtiden.'],
+    ['bolt', 'Vi tror på, at alle kan rykke sig', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
+    ['anchor', 'Vi skaber holdbare løsninger for jer og borgeren', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
   ],
   'form_title' => 'Sådan kommer jeres borgere i gang hos Simply Guiding',
   'form_text' => 'Send os en besked eller ring på 26 34 44 54, så vender vi hurtigst muligt tilbage.',

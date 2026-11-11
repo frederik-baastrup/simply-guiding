@@ -56,7 +56,7 @@ get_template_part('template-parts/page-hero', null, [
 </section>
 
 <?php
-get_template_part('template-parts/cards3', null, ['title' => $c['how_title'], 'items' => $c['how'], 'numbered' => true]);
+get_template_part('template-parts/cards3', null, ['title' => $c['how_title'], 'items' => $c['how']]);
 get_template_part('template-parts/team', null, ['title' => 'Holdet bag Simply Guiding']);
 get_template_part('template-parts/contact-form', null, ['title' => $c['form_title'], 'text' => $c['form_text']]);
 get_template_part('template-parts/site-footer');

@@ -39,9 +39,9 @@ return [
   ],
   'how_title' => 'Sådan arbejder vi',
   'how' => [
-    ['', 'Det hele barn med hele historien', 'Vi møder det enkelte barn og den enkelte unge med summen af deres fortid, nutid og drømme om fremtiden.'],
-    ['', 'Tro, der følges af handling', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
-    ['', 'Holdbart frem for hurtigt', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
+    ['user', 'Det hele barn med hele historien', 'Vi møder det enkelte barn og den enkelte unge med summen af deres fortid, nutid og drømme om fremtiden.'],
+    ['bolt', 'Tro, der følges af handling', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
+    ['anchor', 'Holdbart frem for hurtigt', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
   ],
   'form_title' => 'Sådan kommer jeres børn og unge i gang hos Simply Guiding',
   'form_text' => 'Send os en besked eller ring på 26 34 44 54, så vender vi hurtigst muligt tilbage.',

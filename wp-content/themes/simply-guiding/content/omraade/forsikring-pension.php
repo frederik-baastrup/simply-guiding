@@ -38,9 +38,9 @@ return [
   ],
   'how_title' => 'Sådan arbejder vi',
   'how' => [
-    ['', 'Vi møder den sygemeldte, hvor vedkommende er', 'Vi møder det enkelte menneske med summen af sin fortid, nutid og drømme om fremtiden.'],
-    ['', 'Tro og handling går hånd i hånd', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
-    ['', 'Varigt frem for midlertidigt', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
+    ['pin', 'Vi møder den sygemeldte, hvor vedkommende er', 'Vi møder det enkelte menneske med summen af sin fortid, nutid og drømme om fremtiden.'],
+    ['bolt', 'Tro og handling går hånd i hånd', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
+    ['anchor', 'Varigt frem for midlertidigt', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
   ],
   'form_title' => 'Sådan kommer jeres kunder i gang hos Simply Guiding',
   'form_text' => 'Send os en besked eller ring på 26 34 44 54, så vender vi hurtigst muligt tilbage.',
