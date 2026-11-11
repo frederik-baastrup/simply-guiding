@@ -31,22 +31,44 @@ $logo_list = function ($hidden) use ($u, $logos) {
         <img src="<?php echo esc_url($u); ?>/assets/saadan-arbejder-vi.jpg" alt="Tre medarbejdere i arbejdstøj læsser udstyr ud af en varevogn" width="1600" height="1054" fetchpriority="high">
       </div>
     </div>
-    <div class="sg-hero-bottom">
-      <div class="sg-hero__notch">
-        <svg class="sg-hero__curve sg-hero__curve--left" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M200 0 C100 0 100 64 0 64 L200 64 Z" fill="#fff"/></svg>
-        <div class="sg-hero__notch-inner">
-          <p class="sg-hero__notch-label">Vi har bl.a. samarbejdet med</p>
-          <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
-            <div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div>
-          </div>
-        </div>
-        <svg class="sg-hero__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
+  </section>
+  <!-- Logo-bar: hvid fane med bløde buer, der går op i hero'en (som på det gamle site) -->
+  <div class="sg-logobar">
+    <svg class="sg-logobar__tab" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C90 40 80 0 170 0 L830 0 C920 0 910 40 1000 40 Z" fill="#fff"/></svg>
+    <div class="sg-logobar__inner">
+      <p class="sg-logobar__label">Vi har bl.a. samarbejdet med</p>
+      <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med">
+        <div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 <div id="indhold"></div>
+
+<section class="sg-mind" aria-labelledby="sgMindTitle">
+  <div class="sg-wrap sg-mind__grid">
+    <div class="sg-mind__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Konsulenter fra Simply Guiding i samtale" width="840" height="1050" loading="lazy"></div>
+    <div class="sg-mind__copy">
+      <h2 class="sg-mind__title" id="sgMindTitle">Mindset og metoder</h2>
+      <p>Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
+      <p>Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd).</p>
+      <p>Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor. Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sg-partner" aria-labelledby="sgPartnerTitle">
+  <div class="sg-wrap sg-partner__inner">
+    <h2 class="sg-partner__eyebrow" id="sgPartnerTitle">Tæt samarbejde med landets jobcentre</h2>
+    <p class="sg-partner__text">Samarbejdet med det enkelte jobcenter er funderet i et partnerskab, hvor vi tilbyder at inspirere med specifik viden og evt. undervisning til jobcentrets medarbejdere med den opnåede specialisterfaring, som Simply Guiding har erhvervet gennem årene.</p>
+    <div class="sg-partner__actions">
+      <a class="sg-btn sg-btn--lg" href="/kontakt">Kontakt os og hør mere</a>
+      <a class="sg-btn sg-btn--lg sg-btn--outline" href="/om-os/">Læs mere om os</a>
+    </div>
+  </div>
+</section>
+
 <?php get_template_part('template-parts/final-cta'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 

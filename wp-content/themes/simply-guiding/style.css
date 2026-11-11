@@ -1012,13 +1012,13 @@ Text Domain: simply-guiding
   @media (max-width: 1024px) { .sg-hero-bottom { display: block; } }
 
   /* ---------- Undersidehero: tekst på grønt mønster til venstre, billede til højre (Sådan arbejder vi m.fl.) ---------- */
-  .sg-hero--split { background: rgb(var(--sg-hero-base)) url("assets/pattern.png") center / 601px repeat; }
+  .sg-hero--split { background: #0A352F url("assets/pattern.png") center / 601px repeat; }
   .sg-hero--split::before { display: none; }
   .sg-split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); min-height: min(820px, 92vh); }
   .sg-split__copy {
     display: flex; flex-direction: column; justify-content: center;
     /* Venstre kant flugter med logoet i headeren */
-    padding: 150px clamp(32px, 5vw, 90px) calc(var(--sg-notch-h) + 36px) calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
+    padding: 150px clamp(32px, 5vw, 90px) 96px calc(max(0px, (100vw - 36px - var(--sg-max)) / 2) + var(--sg-gutter) - 18px);
   }
   .sg-split__copy h1 { margin-top: 30px; font-size: clamp(36px, 3.4vw, 50px); color: rgba(190, 206, 193, .7); }
   .sg-pill {
@@ -1058,3 +1058,71 @@ Text Domain: simply-guiding
     .sg-split__copy h1 { font-size: 34px; }
     .sg-split__media { height: 300px; }
   }
+
+  /* ---------- Logo-bar under undersidehero: hvid fane med bløde buer op i hero'en ---------- */
+  .sg-logobar { position: relative; z-index: 2; margin-top: -40px; }
+  .sg-logobar__tab { display: block; width: 100%; height: 40px; }
+  .sg-logobar__inner {
+    display: flex; align-items: center; margin-top: -26px; padding: 0 9% 26px;
+  }
+  .sg-logobar__label {
+    flex: none; margin: 0 40px 0 0; padding-right: 40px; border-right: 1px solid var(--sg-border);
+    font-size: 14px; line-height: 56px; color: var(--sg-text); white-space: nowrap;
+  }
+  .sg-logobar .sg-logos { flex: 1; min-width: 0; height: 56px; }
+  @media (min-width: 1025px) {
+    /* Desktop: logoerne står stille og fordeles jævnt (ingen slider) */
+    .sg-logobar .sg-logos { -webkit-mask-image: none; mask-image: none; }
+    .sg-logobar .sg-logos__track { width: 100%; transform: none !important; }
+    .sg-logobar .sg-logos__list { width: 100%; justify-content: space-between; gap: 24px; padding-right: 0; }
+    .sg-logobar .sg-logos__list + .sg-logos__list { display: none; }
+    .sg-logobar .sg-logos__list img { height: 30px; }
+    .sg-logobar .sg-logos__list img.is-tall { height: 40px; }
+  }
+  @media (max-width: 1024px) {
+    .sg-logobar { margin-top: 0; }
+    .sg-logobar__tab { display: none; }
+    .sg-logobar__inner { flex-direction: column; margin-top: 0; padding: 32px 0 8px; }
+    .sg-logobar__label { margin: 0 0 4px; padding: 0; border: 0; line-height: 1.4; font-size: 13px; color: var(--sg-muted); }
+    .sg-logobar .sg-logos { flex: none; width: 100%; height: 48px; }
+  }
+
+  /* ---------- Mindset og metoder: billede + tekst på lysegrå flade ---------- */
+  .sg-mind { margin-top: var(--sg-gap-line); padding-block: 72px; background: var(--sg-topbar); }
+  .sg-mind__grid { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 0 96px; align-items: center; }
+  .sg-mind__media { border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-mind__media img { display: block; width: 100%; height: auto; aspect-ratio: 420 / 522; object-fit: cover; }
+  .sg-mind__copy { max-width: 760px; }
+  .sg-mind__title {
+    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600;
+    font-size: 26px; line-height: 1.15; letter-spacing: -.01em; color: var(--sg-text); -webkit-font-smoothing: antialiased;
+  }
+  .sg-mind__copy p { margin: 18px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-text); }
+  .sg-mind__copy a { color: var(--sg-muted); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .sg-mind__copy a:hover { color: var(--sg-cta); }
+  @media (max-width: 900px) {
+    .sg-mind { padding-block: 56px; }
+    .sg-mind__grid { grid-template-columns: 1fr; gap: 36px; }
+    .sg-mind__media img { aspect-ratio: 4 / 3; }
+  }
+
+  /* ---------- Citat-agtig tekst i Lora på svagt ternet baggrund ---------- */
+  @font-face { font-family: "Lora"; src: url("assets/fonts/lora-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+  .sg-partner { position: relative; overflow: hidden; padding-block: 140px; isolation: isolate; }
+  .sg-partner::before {
+    content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 760px; height: 760px; transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgba(49, 49, 49, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 49, 49, .07) 1px, transparent 1px);
+    background-size: 48px 48px; background-position: center;
+    -webkit-mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
+            mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
+  }
+  .sg-partner__inner { text-align: center; }
+  .sg-partner__eyebrow { margin: 0; font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--sg-cta); }
+  .sg-partner__text {
+    margin: 22px auto 0; max-width: 31em; font-family: "Lora", Georgia, serif; font-weight: 400;
+    font-size: clamp(22px, 2.3vw, 31px); line-height: 1.32; color: var(--sg-text); text-wrap: balance;
+  }
+  .sg-partner__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 48px; }
+  .sg-btn--outline { background: #fff; color: var(--sg-text); border-color: var(--sg-border); }
+  .sg-btn--outline:hover { background: var(--sg-topbar); border-color: var(--sg-border); color: var(--sg-text); }
+  @media (max-width: 600px) { .sg-partner { padding-block: 88px; } .sg-partner__actions { gap: 10px; } .sg-partner::before { width: 520px; height: 520px; } }
