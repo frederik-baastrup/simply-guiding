@@ -314,3 +314,8 @@ if (!defined('RANK_MATH_VERSION')) {
         if ($d !== '') echo '<meta name="description" content="' . esc_attr($d) . '">' . "\n";
     }, 1);
 }
+
+/* Google Search Console-verifikation (overført fra det gamle site, hvor den lå i GDPR Cookie Compliance) */
+add_action('wp_head', function () {
+    echo '<meta name="google-site-verification" content="rI9cWHHXule_HqpSp0AMqRU5LfUoHfhlJy_925qK6_A" />' . "\n";
+}, 2);
