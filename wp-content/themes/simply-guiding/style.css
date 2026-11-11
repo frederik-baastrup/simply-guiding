@@ -1901,3 +1901,4 @@ Text Domain: simply-guiding
 .sg-mind3__copy .sg-belief p { margin: 10px 0 0; }
 .sg-mind3__copy .sg-textlink { margin-top: 20px; }
 .sg-textlink a, .sg-mind3__copy .sg-textlink a { border-bottom: 0; }
+.sg-mind3 + .sg-band-wrap, .sg-band-wrap + .sg-band-wrap { margin-top: 16px; }
