@@ -1,0 +1,3 @@
+# Billeder hentet fra det gamle site (simplyguiding.dk) ind i temaet.
+# Format: <url> <sti i repoet>   – køres af .github/workflows/fetch-assets.yml
+https://simplyguiding.dk/wp-content/uploads/2024/09/70064248_2874114895992644_810166836459995136_n.jpg wp-content/themes/simply-guiding/assets/mindset-original.jpg
