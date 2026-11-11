@@ -28,4 +28,4 @@ Midlertidigt domæne: frederikb9.sg-host.com. Flyttes til rigtigt domæne senere
 
 ## Cache
 
-SiteGround cacher den udrullede HTML på serverniveau (`x-proxy-cache` header), uafhængigt af WordPress – et FTP-filskift trigger ikke selv en tømning. Derfor har `mu-plugins/sg-purge-on-deploy.php` en hemmelig URL (`?sg_deploy_purge=<token>`), som kalder SiteGrounds `sg_cachepress_purge_cache()`; `deploy.yml` udruller mu-plugin'et og kalder URL'en efter hvert push, så ændringer er synlige med det samme. Tokenet står i begge filer og skal være ens, hvis det nogensinde ændres.
+SiteGround cacher den udrullede HTML på serverniveau (`x-proxy-cache` header), uafhængigt af WordPress – et FTP-filskift trigger ikke selv en tømning. Derfor har `mu-plugins/sg-purge-on-deploy.php` en hemmelig URL (`?sg_deploy_purge=<token>`), som kalder SiteGrounds `sg_cachepress_purge_cache()`; `deploy.yml` udruller mu-plugin'et og kalder URL'en (med et unikt `&t=`, så selve kaldet aldrig caches) efter hvert push, så ændringer er synlige med det samme. Tokenet står i begge filer og skal være ens, hvis det nogensinde ændres.

@@ -17,6 +17,11 @@ add_action('init', function () {
         exit('forbidden');
     }
 
+    // Svaret må aldrig selv caches – ellers serverer SiteGround "purged" fra cachen uden at køre PHP
+    nocache_headers();
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('X-Cache-Enabled: False');
+
     if (function_exists('sg_cachepress_purge_cache')) {
         sg_cachepress_purge_cache();
         status_header(200);

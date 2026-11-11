@@ -57,4 +57,5 @@ jobs:
       # Tøm SiteGrounds cache, så ændringerne er synlige med det samme (token matcher mu-plugins/sg-purge-on-deploy.php)
       - name: Tøm cache
         run: |
-          curl -sS "https://frederikb9.sg-host.com/?sg_deploy_purge=87d379a20b31f3d4a73f75c3f71f3140" || true
+          # Unik t= hver gang, så kaldet aldrig rammer en cachet udgave af sig selv
+          curl -sS -H "Cache-Control: no-cache" "https://frederikb9.sg-host.com/?sg_deploy_purge=87d379a20b31f3d4a73f75c3f71f3140&t=$(date +%s%N)" || true
