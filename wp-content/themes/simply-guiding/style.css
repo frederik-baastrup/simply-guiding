@@ -2137,3 +2137,4 @@ Text Domain: simply-guiding
 .sg-cols3__ico svg { width: 24px; height: 24px; }
 .sg-cols3--rich h3 { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; font-size: 22px !important; font-weight: 500; letter-spacing: -.01em; color: var(--sg-hero-ink) !important; }
 .sg-cols3--rich p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.78); }
+.sg-band-wrap + .sg-steps { margin-top: 16px; } .sg-steps__bg { object-position: 50% 40%; }
