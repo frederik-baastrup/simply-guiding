@@ -8,7 +8,7 @@ $checks = function ($items) use ($check) { echo '<ul class="sg-principles">'; fo
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'IPS-konsulentuddannelse',
   'lead'  => 'Tag Danmarks mest omfattende IPS-uddannelse og bliv klædt på til at arbejde som IPS-konsulent. Her kan du læse mere om, hvad du lærer på kurset.',
-  'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding',
+  'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding', 'img_pos' => '50% 0%',
 ]);
 ?>
 <div id="indhold"></div>
@@ -63,7 +63,7 @@ get_template_part('template-parts/page-hero', null, [
   </section>
 </div>
 
-<section class="sg-pdetail sg-intro" aria-labelledby="sgWhyTitle">
+<section class="sg-pdetail sg-intro sg-intro--roomy" aria-labelledby="sgWhyTitle">
   <div class="sg-wrap sg-pdetail__grid">
     <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgWhyTitle">Hvorfor Simply Guiding?</h2>
       <p class="sg-pdetail__sidetext">Ønsker du, eller dit team at blive uddannede inden for IPS-metoden og kunne praktisere dette i jeres arbejde med borgere, kan I altid kontakte os for mere information.</p>

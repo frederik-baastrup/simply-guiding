@@ -1,6 +1,6 @@
 <?php
 /* Undersidehero: tekst på grønt mønster + billede, med logo-bar under. Args: label, title, lead, img, img_w, img_h, alt */
-$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '', 'video' => '', 'poster' => '', 'btn1' => 'Kontakt os og hør mere', 'btn1_href' => '/kontakt/', 'btn2' => 'Læs mere', 'btn2_href' => '#indhold', 'full' => false]);
+$a = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['label' => '', 'title' => '', 'lead' => '', 'img' => '', 'img_w' => 1600, 'img_h' => 1054, 'alt' => '', 'video' => '', 'poster' => '', 'btn1' => 'Kontakt os og hør mere', 'btn1_href' => '/kontakt/', 'btn2' => 'Læs mere', 'btn2_href' => '#indhold', 'full' => false, 'img_pos' => '']);
 $u = get_template_directory_uri();
 $logos = [
   ['aalborg', 'Aalborg Kommune'], ['varde', 'Varde Kommune'], ['svendborg', 'Svendborg Kommune'], ['soenderborg', 'Sønderborg Kommune'],
@@ -30,7 +30,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
       <div class="sg-split__media"><video src="<?php echo esc_url($u . '/assets/' . $a['video']); ?>" poster="<?php echo esc_url($u . '/assets/' . $a['poster']); ?>" autoplay muted loop playsinline aria-hidden="true"></video></div>
       <?php elseif ($a['img']) : ?>
       <div class="sg-split__media">
-        <img src="<?php echo esc_url($u . '/assets/' . $a['img']); ?>" alt="<?php echo esc_attr($a['alt']); ?>" width="<?php echo (int) $a['img_w']; ?>" height="<?php echo (int) $a['img_h']; ?>" fetchpriority="high">
+        <img src="<?php echo esc_url($u . '/assets/' . $a['img']); ?>" alt="<?php echo esc_attr($a['alt']); ?>" width="<?php echo (int) $a['img_w']; ?>" height="<?php echo (int) $a['img_h']; ?>"<?php echo $a['img_pos'] ? ' style="object-position:' . esc_attr($a['img_pos']) . '"' : ''; ?> fetchpriority="high">
       </div>
       <?php endif; ?>
     </div>
