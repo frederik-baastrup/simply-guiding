@@ -96,6 +96,7 @@ get_template_part('template-parts/faq', null, ['title' => 'FAQ - Ofte stillede s
   ['Hvordan samarbejder I med kommuner og sagsbehandlere?', 'Vi ser os selv som en tæt og troværdig medspiller for kommunerne. Vi har stor forståelse for de administrative rammer og komplekse sagsgange, sagsbehandlere navigerer i. Vores rolle er at lette presset, skabe fremdrift og fungere som en håndholdt brobygger mellem borger, forvaltning og arbejdsmarked.'],
   ['Hvem er medarbejderne hos Simply Guiding?', 'Vores hold består af erfarne faglige profiler med baggrund i blandt andet beskæftigelsesindsatsen, socialpædagogik, socialpsykiatri og kommunal sagsbehandling. Fælles for alle er en dyb metodisk forankring i IPS og Supported Employment samt evnen til at skabe den tillidsfulde relation, der muliggør forandring.'],
 ]]);
+get_template_part('template-parts/latest-news');
 get_template_part('template-parts/final-cta');
 get_template_part('template-parts/site-footer');
 get_footer();
