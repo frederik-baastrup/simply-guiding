@@ -1631,3 +1631,30 @@ Text Domain: simply-guiding
   .sg-story__essence .sg-principles svg { color: var(--sg-hero-ink); margin-top: 3px; }
   .sg-story .sg-principles li { align-items: flex-start; }
   @media (max-width: 960px) { .sg-story__quote, .sg-story__fig { margin-inline: 0; } .sg-story { padding-block: 72px; } .sg-story__inner > p { font-size: 16px; } }
+
+  /* ---------- Nyheder ---------- */
+  .sg-hero--blog .sg-split { min-height: min(460px, 60vh); }
+  .sg-hero--blog .sg-split__copy { padding-top: 150px; padding-bottom: 72px; }
+  .sg-hero--blog h1 { max-width: 20em; }
+  .sg-bloglist { padding-top: 72px; }
+  .sg-catnav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+  .sg-catnav a { padding: 7px 14px; border: 1px solid var(--sg-border); border-radius: 100px; font-size: 13.5px; color: var(--sg-text); text-decoration: none; transition: background .2s, border-color .2s; }
+  .sg-catnav a:hover { border-color: var(--sg-cta); }
+  .sg-catnav a[aria-current] { background: var(--sg-cta); border-color: var(--sg-cta); color: #fff; }
+  .sg-pagination { display: flex; justify-content: center; gap: 6px; margin-top: 56px; }
+  .sg-pagination .page-numbers { min-width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid var(--sg-border); color: var(--sg-text); text-decoration: none; font-size: 14px; }
+  .sg-pagination .current { background: var(--sg-cta); border-color: var(--sg-cta); color: #fff; }
+  .sg-post-hero__meta { display: flex; align-items: center; gap: 14px; margin: 0; font-size: 14px; color: rgba(255,255,255,.75); }
+  .sg-post-hero__meta .sg-pill { text-decoration: none; }
+  .sg-post__thumb { margin-top: 0 !important; }
+  .sg-post__content { font-size: 17px; line-height: 1.8; color: #474747; }
+  .sg-post__content > * { margin: 0 0 20px; }
+  .sg-post__content h2, .sg-post__content h3, .sg-post__content h4 { margin: 48px 0 14px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; line-height: 1.2; color: var(--sg-text); }
+  .sg-post__content h2 { font-size: 28px; } .sg-post__content h3 { font-size: 22px; } .sg-post__content h4 { font-size: 18px; }
+  .sg-post__content a { color: var(--sg-cta); }
+  .sg-post__content img { max-width: 100%; height: auto; border-radius: var(--sg-radius-sm); }
+  .sg-post__content figure { margin: 36px 0; }
+  .sg-post__content figcaption { font-size: 14px; color: var(--sg-muted); text-align: center; margin-top: 8px; }
+  .sg-post__content blockquote { margin: 36px 0; padding: 0 0 0 24px; border-left: 3px solid var(--sg-cta); font-family: "Lora", Georgia, serif; font-size: 21px; line-height: 1.5; color: var(--sg-text); }
+  .sg-post__content ul, .sg-post__content ol { padding-left: 22px; }
+  .sg-post__back { margin-top: 48px; }

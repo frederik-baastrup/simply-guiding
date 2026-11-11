@@ -137,3 +137,18 @@ add_action('init', function () {
     }
     update_option('sg_cases_created', 1);
 }, 20);
+
+/* Nyheder: /blog/ er indlægssiden, og indlæg ligger direkte under roden (/<slug>/) som på det gamle site. Sættes én gang. */
+add_action('init', function () {
+    if (get_option('sg_reading_set')) return;
+    $blog = get_page_by_path('blog');
+    if (!$blog) return;
+    $front = get_page_by_path('forside');
+    if (!$front) { $fid = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Forside', 'post_name' => 'forside']); } else { $fid = $front->ID; }
+    update_option('show_on_front', 'page');
+    update_option('page_on_front', $fid);
+    update_option('page_for_posts', $blog->ID);
+    update_option('permalink_structure', '/%postname%/');
+    flush_rewrite_rules(false);
+    update_option('sg_reading_set', 1);
+}, 30);
