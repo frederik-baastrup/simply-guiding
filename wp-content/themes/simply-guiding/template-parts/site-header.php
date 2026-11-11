@@ -12,8 +12,6 @@
       </a>
     </div>
     <nav class="sg-topbar__links" aria-label="Sekundær">
-      <a href="/indsatser/">Indsatser</a>
-      <a href="/projekter/">Projekter</a>
       <a href="/blog/">Viden</a>
       <a href="/cases/">Succeshistorier</a>
       <a href="/hvad-er-ips/">Hvad er IPS?</a>
@@ -55,8 +53,6 @@
       </ul>
       <a class="sg-btn" href="/kontakt/">Kontakt os</a>
       <div class="sg-mobile-extra">
-        <a href="/indsatser/">Indsatser</a>
-        <a href="/projekter/">Projekter</a>
         <a href="/blog/">Viden</a>
         <a href="/cases/">Succeshistorier</a>
         <a href="/hvad-er-ips/">Hvad er IPS?</a>
