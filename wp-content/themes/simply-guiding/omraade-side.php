@@ -34,7 +34,7 @@ get_template_part('template-parts/page-hero', null, [
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u . '/assets/' . $c['meet_img']); ?>" alt="<?php echo esc_attr($c['meet_alt']); ?>" loading="lazy"></div>
     <div class="sg-mind3__copy">
       <h2 class="sg-h2" id="sgMeetTitle"><?php echo esc_html($c['meet_title']); ?></h2>
-      <?php foreach ($c['meet_text'] as $i => $p) : ?><p class="<?php echo $i === 0 ? 'sg-mind3__lead' : 'sg-meet__p'; ?>"><?php echo esc_html($p); ?></p><?php endforeach; ?>
+      <?php foreach ($c['meet_text'] as $i => $p) : ?><p class="sg-mind3__lead<?php echo $i ? ' sg-mind3__lead--next' : ''; ?>"><?php echo esc_html($p); ?></p><?php endforeach; ?>
       <p class="sg-textlink"><a href="/saadan-arbejder-vi/">Læs mere om vores mindset <?php echo sg_arrow(); ?></a></p>
       <div class="sg-mv__list sg-meet__list">
         <?php foreach ($c['meet_points'] as $pt) : ?>
