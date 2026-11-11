@@ -2058,3 +2058,4 @@ Text Domain: simply-guiding
 @media (min-width: 961px) {
   .sg-header.is-scrolled .sg-nav { background: #fff; box-shadow: 0 4px 18px rgba(16, 32, 28, .09), 0 0 0 1px rgba(16, 32, 28, .04); }
 }
+.sg-mind3--flip .sg-mind3__media { min-height: clamp(420px, 38vw, 580px); } .sg-mind3--flip .sg-mind3__grid { align-items: center; } .sg-mind3--flip .sg-mind3__media img { object-position: 50% 25%; } @media (max-width: 960px) { .sg-mind3--flip .sg-mind3__media { min-height: 0; } }

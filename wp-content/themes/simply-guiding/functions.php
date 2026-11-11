@@ -258,3 +258,59 @@ add_action('init', function () {
 function sg_arrow() {
     return '<svg class="sg-arrow" viewBox="0 0 28 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 7h25M20 1.5 26 7l-6 5.5"/></svg>';
 }
+
+
+/*
+ * SEO-titler og -beskrivelser (Rank Math) – overført fra det gamle site (WXR-eksport 11. nov. 2026) pr. adresse.
+ * Skrives i Rank Maths egne felter én gang (kun hvor feltet er tomt), så de står klar, når Rank Math er aktiveret.
+ * Uden Rank Math bruger temaet selv felterne til <title> og meta description.
+ */
+function sg_seo_map() {
+    return [
+        'blog' => ['Nyheder | Læs det seneste fra Simply Guiding', 'Læs de seneste nyheder om Simply Guiding her.'],
+        'forside' => ['Simply Guiding | Vi matcher mennesker med muligheder', 'Simply Guiding hjælper mennesker, der lever med sociale, psykiske og fysiske udfordringer, tilbage til arbejdslivet. Læs om os her.'],
+        'loesninger' => ['Løsninger | Læs mere om vores løsninger – Simply Guiding', 'Simply Guiding tilbyder en række løsninger og indsatser skræddersyet til specifikke målgrupper. Her kan du læse mere om vores løsninger.'],
+        'saadan-arbejder-vi' => ['Sådan arbejder vi | Læs om vores metoder her', 'Simply Guidings medarbejdere uddannes og arbejder metodebaseret – fx IPS, Supported Employment og IPS UNG/Supported Education (SEd).'],
+        'projekter' => ['Vores projekter | Oversigt over aktuelle projekter', 'Simply Guiding har udviklet en række projekter. På denne side kan du læse mere om vores aktuelle projekter og indsatsområder.'],
+        'om-os' => ['Om os | Hvem er Simply Guiding? Se teamet her', 'Hos Simply Guiding sørger vi for, at historien ikke gentager sig. Sammen skaber vi et nyt ståsted i livet for mennesket bag borgeren. Mød holdet her.'],
+        'cases/gunhilds-historie' => ['Læs Gunhilds historie her – Simply Guiding', 'Efter flere års kamp med sine psykiske lidelser endte Gunhild i et ressourceforløb, hjalp vi hende på arbejdsmarkedet. Læs mere her.'],
+        'cases' => ['Cases | Se vores cases her – Simply Guiding', 'Er du interesseret i at vide, hvad borgerne siger? Så kan du se et overblik over vores cases her.'],
+        'cases/sannes-historie' => ['Læs Sannes historie her – Simply Guiding', 'Læs historien om, hvordan vi med IPS-metoden hjalp Sanne i job, efter hun havde været ledig i mere end syv år.'],
+        'cases/kadans-historie' => ['Læs Kadans historie her – Simply Guiding', 'Læs om syriske Kadans vej til job som maler efter 1½ år i Danmark. Kadans IPS integrationskonsulent ved Simply Guiding er en succeshistorie.'],
+        'cases/martins-historie' => ['Læs Martins historie her – Simply Guiding', 'Før IPS-forløbet havde Martin på 37 år aldrig været ansat et sted i mere end et par uger ad gangen. Læs hans succeshistorie her.'],
+        'cases/annas-historie' => ['Læs Annas historie her – Simply Guiding', 'Efter blot 5 måneders forløb hos Simply Guiding blev 41-årige Anna selvforsørgende. Før var hun ramt af stress. Læs hendes historie her.'],
+        'cases/sofies-historie' => ['Læs Sofies historie her – Simply Guiding', 'Læs Sofies fortælling om, hvordan hun udviklede sig fra indlagt på psykiatrisk afdeling til at starte på en uddannelse som jordbrugsteknolog.'],
+        'kontakt' => ['Kontakt os | Udfyld formularen her', 'Har du spørgsmål, eller ønsker du at indgå et samarbejde med os? Så er vi klar til at hjælpe dig videre. Du kan også ringe til os på 26 34 44 54.'],
+        'cookies-og-privatlivspolitik' => ['', 'Her kan du læse vores privatlivspolitik.'],
+        'hvad-er-ips' => ['Hvad er IPS? Læs om IPS-metoden her – Simply Guiding', 'IPS er en beskæftigelsesindsats, der er målrettet mennesker med en psykisk lidelse eller psykisk sårbarhed. Læs mere om IPS her.'],
+        'ips-konsulentuddannelse' => ['IPS-uddannelse | Bliv IPS-konsulent | Se indhold her', 'Tag Danmarks mest omfattende IPS-uddannelse og bliv klædt på til at arbejde som IPS-konsulent. Læs mere om vores kurser her.'],
+        'indsatser' => ['Indsatser | Se alle vores indsatser her – Simply Guiding', 'Simply Guiding hjælper kommuner og beskæftigelsesaktører med målrettede indsatser og uddannelser, der skaber varig inklusion. Se indsatser.'],
+        'grundkursus-i-ips' => ['Grundkursus i IPS – Simply Guiding', 'Et praksisnært grundkursus, der giver dig et solidt og anvendeligt fundament i IPS-metoden. Du bliver klædt på til at omsætte metoden direkte i praksis.'],
+        'omraade/jobcentre' => ['Ekstern beskæftigelsesaktør til jobcentre – Simply Guiding', 'Simply Guiding hjælper jobcentre med at skabe et nyt ståsted i livet for borgere i en sårbar situation. Specialister i IPS og Supported Employment.'],
+        'omraade/boern-unge-familier' => ['Ekstern aktør for børn, unge og familier – Simply Guiding', 'Simply Guiding hjælper børn, unge og familier tilbage i trivsel, i skole og til et nyt ståsted i livet. Se vores forløb for børn- og familieafdelinger.'],
+        'omraade/forsikring-pension' => ['Hjælp til sygemeldte for forsikring og pension – Simply Guiding', 'Simply Guiding hjælper sygemeldte tilbage i arbejde – hurtigt, trygt og med afsæt i den enkeltes situation. For forsikrings- og pensionsselskaber.'],
+    ];
+}
+add_action('init', function () {
+    if (get_option('sg_seo_seeded') === '1') return;
+    foreach (sg_seo_map() as $path => $m) {
+        $p = $path === 'forside' ? get_post((int) get_option('page_on_front')) : get_page_by_path($path);
+        if (!$p) continue;
+        if ($m[0] !== '' && get_post_meta($p->ID, 'rank_math_title', true) === '') update_post_meta($p->ID, 'rank_math_title', $m[0]);
+        if ($m[1] !== '' && get_post_meta($p->ID, 'rank_math_description', true) === '') update_post_meta($p->ID, 'rank_math_description', $m[1]);
+    }
+    update_option('sg_seo_seeded', '1');
+}, 30);
+if (!defined('RANK_MATH_VERSION')) {
+    add_filter('pre_get_document_title', function ($t) {
+        $id = is_front_page() ? (int) get_option('page_on_front') : (is_home() ? (int) get_option('page_for_posts') : (is_singular() ? get_queried_object_id() : 0));
+        $v = $id ? get_post_meta($id, 'rank_math_title', true) : '';
+        return $v !== '' ? $v : $t;
+    }, 20);
+    add_action('wp_head', function () {
+        $id = is_front_page() ? (int) get_option('page_on_front') : (is_home() ? (int) get_option('page_for_posts') : (is_singular() ? get_queried_object_id() : 0));
+        $d = $id ? get_post_meta($id, 'rank_math_description', true) : '';
+        if ($d === '' && is_singular('post')) $d = wp_trim_words(get_the_excerpt($id), 28, '…');
+        if ($d !== '') echo '<meta name="description" content="' . esc_attr($d) . '">' . "\n";
+    }, 1);
+}
