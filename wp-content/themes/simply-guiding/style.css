@@ -2107,3 +2107,18 @@ Text Domain: simply-guiding
 @media (max-width: 1000px) { .sg-steps__list { grid-template-columns: 1fr 1fr; margin-top: 64px; } }
 @media (max-width: 700px) { .sg-steps { margin-inline: 0; border-radius: 0; } .sg-steps__in { padding-block: 72px 48px; } .sg-steps__list { grid-template-columns: 1fr; } .sg-steps__list li { min-height: 0; } }
 .sg-steps::before { background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.32) 40%, rgba(0,0,0,.75)); } .sg-steps__title span { color: rgba(255,255,255,.6); }
+/* Områdesider: "Derfor ringer … til os" som nummererede felter i et gitter med tynde streger */
+.sg-why { padding-block: 120px 110px; }
+.sg-why__grid { align-items: start; }
+.sg-why__lead { margin: 0 0 8px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -.01em; color: var(--sg-text); }
+.sg-reasons { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--sg-border); }
+.sg-reasons li { padding: 30px 32px 34px; border-bottom: 1px solid var(--sg-border); }
+.sg-reasons li:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--sg-border); }
+.sg-reasons li:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; }
+.sg-reasons__n { display: block; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; letter-spacing: -.02em; color: var(--sg-cta); }
+.sg-reasons p { margin: 16px 0 0; font-size: 16px; line-height: 1.6; color: var(--sg-text); max-width: 26em; }
+.sg-reasons p::first-letter { text-transform: uppercase; }
+@media (max-width: 700px) {
+  .sg-reasons { grid-template-columns: 1fr; }
+  .sg-reasons li, .sg-reasons li:nth-child(odd) { padding: 24px 0; border-right: 0; }
+}
