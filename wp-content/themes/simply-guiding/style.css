@@ -1741,3 +1741,9 @@ Text Domain: simply-guiding
   .sg-band2--side .sg-band2__media { min-height: 0; }
   .sg-band2--side .sg-band2__media img { position: static; aspect-ratio: 16 / 10; }
 }
+/* Tekstlink under et afsnit */
+.sg-textlink { margin: 18px 0 0; font-size: 15px; font-weight: 500; }
+.sg-textlink a { color: var(--sg-cta); text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
+.sg-textlink a span { transition: transform .25s ease; }
+.sg-textlink a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.sg-textlink a:hover span { transform: translateX(3px); }
