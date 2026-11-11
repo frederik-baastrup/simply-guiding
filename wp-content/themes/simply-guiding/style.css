@@ -1779,3 +1779,4 @@ Text Domain: simply-guiding
 .sg-hero--full .sg-hero__actions { justify-content: center; }
 @media (max-width: 1024px) { .sg-hero--full .sg-split__media { height: auto; } .sg-hero--full .sg-split { min-height: 640px; } }
 @media (max-width: 569px) { .sg-hero--full .sg-split__copy { padding: 120px 18px 120px; } .sg-hero--full .sg-split__media { height: auto; } }
+.sg-hero--full .sg-split__media::after { background: linear-gradient(180deg, rgba(6,35,31,.6) 0%, rgba(6,35,31,.62) 50%, rgba(6,35,31,.78) 100%); }
