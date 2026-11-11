@@ -12,9 +12,11 @@
       </a>
     </div>
     <nav class="sg-topbar__links" aria-label="Sekundær">
-      <a href="/viden">Viden</a>
-      <a href="/cases">Succeshistorier</a>
-      <a href="/hvad-er-ips">Hvad er IPS?</a>
+      <a href="/indsatser/">Indsatser</a>
+      <a href="/projekter/">Projekter</a>
+      <a href="/blog/">Viden</a>
+      <a href="/cases/">Succeshistorier</a>
+      <a href="/hvad-er-ips/">Hvad er IPS?</a>
     </nav>
   </div>
 </div>
@@ -28,34 +30,36 @@
     <nav class="sg-nav" id="sgNav" aria-label="Hovedmenu">
       <ul class="sg-nav__list">
         <li class="sg-nav__item has-sub">
-          <a href="/omraade" aria-haspopup="true" aria-expanded="false">Områder <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/loesninger/" aria-haspopup="true" aria-expanded="false">Områder <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="sg-sub">
             <div class="sg-sub__col">
               <p class="sg-sub__head">Vælg dit område</p>
-              <a class="sg-sub__link" href="/omraade/jobcentre">Jobcentre</a>
-              <a class="sg-sub__link" href="/omraade/boern-unge-familier">Børn, unge og familier</a>
-              <a class="sg-sub__link" href="/omraade/forsikring-pension">Forsikring og pension</a>
+              <a class="sg-sub__link" href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a>
+              <a class="sg-sub__link" href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a>
+              <a class="sg-sub__link" href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a>
             </div>
           </div>
         </li>
         <li class="sg-nav__item has-sub">
-          <a href="/academy" aria-haspopup="true" aria-expanded="false">Academy <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/loesninger/#academy" aria-haspopup="true" aria-expanded="false">Academy <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="sg-sub">
             <div class="sg-sub__col">
-              <a class="sg-sub__link" href="/academy">Academy</a>
-              <a class="sg-sub__link" href="/ips-konsulentuddannelse">IPS Konsulentuddannelse</a>
-              <a class="sg-sub__link" href="/grundkursus-i-ips">Grundkursus i IPS</a>
+              <a class="sg-sub__link" href="/loesninger/#academy">Academy</a>
+              <a class="sg-sub__link" href="/ips-konsulentuddannelse/">IPS Konsulentuddannelse</a>
+              <a class="sg-sub__link" href="/grundkursus-i-ips/">Grundkursus i IPS</a>
             </div>
           </div>
         </li>
         <li class="sg-nav__item"><a href="/saadan-arbejder-vi/">Metode</a></li>
-        <li class="sg-nav__item"><a href="/om-simply-guiding">Om SG</a></li>
+        <li class="sg-nav__item"><a href="/om-os/">Om SG</a></li>
       </ul>
-      <a class="sg-btn" href="/kontakt">Kontakt os</a>
+      <a class="sg-btn" href="/kontakt/">Kontakt os</a>
       <div class="sg-mobile-extra">
-        <a href="/viden">Viden</a>
-        <a href="/cases">Succeshistorier</a>
-        <a href="/hvad-er-ips">Hvad er IPS?</a>
+        <a href="/indsatser/">Indsatser</a>
+        <a href="/projekter/">Projekter</a>
+        <a href="/blog/">Viden</a>
+        <a href="/cases/">Succeshistorier</a>
+        <a href="/hvad-er-ips/">Hvad er IPS?</a>
       </div>
     </nav>
 

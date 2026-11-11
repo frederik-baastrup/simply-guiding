@@ -9,8 +9,8 @@
       <h1>Et nyt ståsted<br> i livet til mennesket<br> bag borgeren</h1>
       <p class="sg-hero__lead">Simply Guiding hjælper mennesker i en sårbar situation tilbage til fællesskabet, til jobbet eller i uddannelse.</p>
       <div class="sg-hero__actions">
-        <a class="sg-btn sg-btn--lg" href="/kontakt">Book et uforpligtende møde</a>
-        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/om-os">Lær os at kende</a>
+        <a class="sg-btn sg-btn--lg" href="/kontakt/">Book et uforpligtende møde</a>
+        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/om-os/">Lær os at kende</a>
       </div>
     </div>
     <div class="sg-hero-bottom">
@@ -34,7 +34,7 @@
     <div class="sg-cards" id="sgCards">
       <article class="sg-card is-active">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
-        <a class="sg-card__link" href="/indsatser/jobcentre" aria-label="Læs om indsatsen: Jobcentre"></a>
+        <a class="sg-card__link" href="/loesninger/#beskaeftigelsesindsatser" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Jobcentre</h3>
@@ -45,7 +45,7 @@
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
-        <a class="sg-card__link" href="/indsatser/boern-unge-familier" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
+        <a class="sg-card__link" href="/loesninger/#boern-unge-og-familieindsatser" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Børn, unge og familier</h3>
@@ -56,7 +56,7 @@
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
-        <a class="sg-card__link" href="/indsatser/forsikring-pension" aria-label="Læs om indsatsen: Forsikring og pension"></a>
+        <a class="sg-card__link" href="/loesninger/#forsikrings-og-pensionsindsatser" aria-label="Læs om indsatsen: Forsikring og pension"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Forsikring og pension</h3>
@@ -67,7 +67,7 @@
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-academy.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Uddannelse</span></div>
-        <a class="sg-card__link" href="/academy" aria-label="Læs om Academy"></a>
+        <a class="sg-card__link" href="/loesninger/#academy" aria-label="Læs om Academy"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Academy</h3>
@@ -120,7 +120,7 @@
       <h2 class="sg-about__title" id="sgAboutTitle">Vores samarbejde bygger på forståelse, faglighed og erfaring</h2>
       <p>Bag vores indsatser ligger mere end 10 års erfaring, dyb metodefidelitet og en solid beskæftigelsesfaglighed inden for IPS og Supported Employment.</p>
       <p>Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer. Det gør os til en stærk, resultatskabende og troværdig partner for både borgere, jobcentre, virksomheder og uddannelsesinstitutioner.</p>
-      <a class="sg-tlink" href="/saadan-arbejder-vi">Læs mere om, hvordan vi arbejder</a>
+      <a class="sg-tlink" href="/saadan-arbejder-vi/">Læs mere om, hvordan vi arbejder</a>
     </div>
   </div>
 </section>
@@ -152,7 +152,7 @@
         <h2 class="sg-tile__title">Simply Guiding Academy</h2>
         <p class="sg-tile__text">Styrk fagligheden og skab endnu bedre resultater. Vores Academy bygger bro mellem viden og virkelighed. Vi uddanner og sparrer med kommunale teams, ledere og beskæftigelsesaktører med afsæt i IPS, Supported Employment og pædagogiske virkemidler.</p>
       </div>
-      <a class="sg-btn sg-btn--lg sg-tile__btn" href="/academy">Læs mere om Academy</a>
+      <a class="sg-btn sg-btn--lg sg-tile__btn" href="/loesninger/#academy">Læs mere om Academy</a>
     </article>
     <article class="sg-tile sg-tile--dark">
       <div class="sg-tile__body">

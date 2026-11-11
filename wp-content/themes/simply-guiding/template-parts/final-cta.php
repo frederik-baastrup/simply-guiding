@@ -19,7 +19,7 @@ $p = wp_parse_args(isset($args) && is_array($args) ? $args : [], [
     <div class="sg-final__inner">
       <h2 class="sg-final__title" id="sgFinalTitle">Skal vi skabe det næste<br> ståsted sammen?</h2>
       <div class="sg-final__actions">
-        <a class="sg-final__btn" href="/kontakt">Kontakt os for en uforpligtende snak</a>
+        <a class="sg-final__btn" href="/kontakt/">Kontakt os for en uforpligtende snak</a>
       </div>
     </div>
   </div>

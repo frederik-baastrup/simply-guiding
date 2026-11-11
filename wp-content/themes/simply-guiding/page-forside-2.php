@@ -18,9 +18,9 @@ get_header(); ?>
       </a>
     </div>
     <nav class="sg-topbar__links" aria-label="Sekundær">
-      <a href="/viden">Viden</a>
-      <a href="/cases">Succeshistorier</a>
-      <a href="/hvad-er-ips">Hvad er IPS?</a>
+      <a href="/blog/">Viden</a>
+      <a href="/cases/">Succeshistorier</a>
+      <a href="/hvad-er-ips/">Hvad er IPS?</a>
     </nav>
   </div>
 </div>
@@ -34,13 +34,13 @@ get_header(); ?>
     <nav class="sg-nav" id="sgNav" aria-label="Hovedmenu">
       <ul class="sg-nav__list">
         <li class="sg-nav__item has-sub">
-          <a href="/omraade" aria-haspopup="true" aria-expanded="false">Områder <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/loesninger/" aria-haspopup="true" aria-expanded="false">Områder <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="sg-sub sg-sub--wide">
             <div class="sg-sub__col">
               <p class="sg-sub__head">Vælg dit område</p>
-              <a class="sg-sub__link" href="/omraade/jobcentre">Jobcentre</a>
-              <a class="sg-sub__link" href="/omraade/boern-unge-familier">Børn, unge og familier</a>
-              <a class="sg-sub__link" href="/omraade/forsikring-pension">Forsikring og pension</a>
+              <a class="sg-sub__link" href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a>
+              <a class="sg-sub__link" href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a>
+              <a class="sg-sub__link" href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a>
             </div>
             <div class="sg-sub__col">
               <p class="sg-sub__head">Din rolle</p>
@@ -51,23 +51,23 @@ get_header(); ?>
           </div>
         </li>
         <li class="sg-nav__item has-sub">
-          <a href="/academy" aria-haspopup="true" aria-expanded="false">Academy <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="/loesninger/#academy" aria-haspopup="true" aria-expanded="false">Academy <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="sg-sub">
             <div class="sg-sub__col">
-              <a class="sg-sub__link" href="/academy">Academy</a>
-              <a class="sg-sub__link" href="/ips-konsulentuddannelse">IPS Konsulentuddannelse</a>
-              <a class="sg-sub__link" href="/grundkursus-i-ips">Grundkursus i IPS</a>
+              <a class="sg-sub__link" href="/loesninger/#academy">Academy</a>
+              <a class="sg-sub__link" href="/ips-konsulentuddannelse/">IPS Konsulentuddannelse</a>
+              <a class="sg-sub__link" href="/grundkursus-i-ips/">Grundkursus i IPS</a>
             </div>
           </div>
         </li>
-        <li class="sg-nav__item"><a href="/metode">Metode</a></li>
-        <li class="sg-nav__item"><a href="/om-simply-guiding">Om SG</a></li>
+        <li class="sg-nav__item"><a href="/saadan-arbejder-vi/">Metode</a></li>
+        <li class="sg-nav__item"><a href="/om-os/">Om SG</a></li>
       </ul>
-      <a class="sg-btn" href="/kontakt">Kontakt os</a>
+      <a class="sg-btn" href="/kontakt/">Kontakt os</a>
       <div class="sg-mobile-extra">
-        <a href="/viden">Viden</a>
-        <a href="/cases">Succeshistorier</a>
-        <a href="/hvad-er-ips">Hvad er IPS?</a>
+        <a href="/blog/">Viden</a>
+        <a href="/cases/">Succeshistorier</a>
+        <a href="/hvad-er-ips/">Hvad er IPS?</a>
       </div>
     </nav>
 
@@ -85,8 +85,8 @@ get_header(); ?>
       <h1>Et nyt ståsted<br> i livet til mennesket<br> bag borgeren</h1>
       <p class="sg-hero__lead">Simply Guiding hjælper mennesker i en sårbar situation tilbage til fællesskabet, til jobbet eller i uddannelse.</p>
       <div class="sg-hero__actions">
-        <a class="sg-btn sg-btn--lg" href="/kontakt">Book et uforpligtende møde</a>
-        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/om-os">Lær os at kende</a>
+        <a class="sg-btn sg-btn--lg" href="/kontakt/">Book et uforpligtende møde</a>
+        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/om-os/">Lær os at kende</a>
       </div>
     </div>
     <div class="sg-hero-bottom">
@@ -110,7 +110,7 @@ get_header(); ?>
     <div class="sg-cards" id="sgCards">
       <article class="sg-card is-active">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
-        <a class="sg-card__link" href="/indsatser/boern-unge-familier" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
+        <a class="sg-card__link" href="/loesninger/#boern-unge-og-familieindsatser" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Børn, unge og familier</h3>
@@ -121,7 +121,7 @@ get_header(); ?>
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
-        <a class="sg-card__link" href="/indsatser/forsikring-pension" aria-label="Læs om indsatsen: Forsikring og pension"></a>
+        <a class="sg-card__link" href="/loesninger/#forsikrings-og-pensionsindsatser" aria-label="Læs om indsatsen: Forsikring og pension"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Forsikring og pension</h3>
@@ -132,7 +132,7 @@ get_header(); ?>
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
-        <a class="sg-card__link" href="/indsatser/jobcentre" aria-label="Læs om indsatsen: Jobcentre"></a>
+        <a class="sg-card__link" href="/loesninger/#beskaeftigelsesindsatser" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Jobcentre</h3>
@@ -182,7 +182,7 @@ get_header(); ?>
       <h2 class="sg-about__title" id="sgAboutTitle">Vores samarbejde bygger på forståelse, faglighed og erfaring</h2>
       <p>Bag vores indsatser ligger mere end 10 års erfaring, dyb metodefidelitet og en solid beskæftigelsesfaglighed inden for IPS og Supported Employment.</p>
       <p>Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer. Det gør os til en stærk, resultatskabende og troværdig partner for både borgere, jobcentre, virksomheder og uddannelsesinstitutioner.</p>
-      <a class="sg-tlink" href="/saadan-arbejder-vi">Læs mere om, hvordan vi arbejder</a>
+      <a class="sg-tlink" href="/saadan-arbejder-vi/">Læs mere om, hvordan vi arbejder</a>
     </div>
   </div>
 </section>
@@ -214,7 +214,7 @@ get_header(); ?>
         <h2 class="sg-tile__title">Simply Guiding Academy</h2>
         <p class="sg-tile__text">Styrk fagligheden og skab endnu bedre resultater. Vores Academy bygger bro mellem viden og virkelighed. Vi uddanner og sparrer med kommunale teams, ledere og beskæftigelsesaktører med afsæt i IPS, Supported Employment og pædagogiske virkemidler.</p>
       </div>
-      <a class="sg-btn sg-btn--lg sg-tile__btn" href="/academy">Læs mere om Academy</a>
+      <a class="sg-btn sg-btn--lg sg-tile__btn" href="/loesninger/#academy">Læs mere om Academy</a>
     </article>
     <article class="sg-tile sg-tile--dark">
       <div class="sg-tile__body">
@@ -231,7 +231,7 @@ get_header(); ?>
         </div>
         <?php sg_signup_fields(); $sg_resp = sg_signup_response(); ?>
         <p class="sg-signup__msg" id="sgSignupMsg" role="status"<?php echo $sg_resp ? '' : ' hidden'; ?>><?php echo esc_html($sg_resp); ?></p>
-        <p class="sg-signup__note">Vi bruger kun din e-mail til nyhedsbrevet, og du kan altid afmelde dig. Læs vores <a href="/cookies-og-privatlivspolitik">privatlivspolitik</a>.</p>
+        <p class="sg-signup__note">Vi bruger kun din e-mail til nyhedsbrevet, og du kan altid afmelde dig. Læs vores <a href="/cookies-og-privatlivspolitik/">privatlivspolitik</a>.</p>
       </form>
     </article>
   </div>
@@ -290,19 +290,19 @@ get_header(); ?>
           <div class="sg-footer__navs">
           <nav class="sg-footer__col" aria-label="Områder">
             <p class="sg-footer__head">Områder</p>
-            <ul class="sg-footer__list"><li><a href="/omraade/jobcentre">Jobcentre</a></li><li><a href="/omraade/boern-unge-familier">Børn, unge og familier</a></li><li><a href="/omraade/forsikring-pension">Forsikring og pension</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a></li><li><a href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a></li><li><a href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a></li></ul>
           </nav>
-          <nav class="sg-footer__col" aria-label="Din rolle">
-            <p class="sg-footer__head">Din rolle</p>
-            <ul class="sg-footer__list"><li><a href="/din-rolle/jobcenterchef">Jobcenterchef</a></li><li><a href="/din-rolle/sagsbehandler">Sagsbehandler</a></li><li><a href="/din-rolle/ungeraadgiver">Ungerådgiver</a></li></ul>
+          <nav class="sg-footer__col" aria-label="Indsatser">
+            <p class="sg-footer__head">Indsatser</p>
+            <ul class="sg-footer__list"><li><a href="/indsatser/">Indsatser</a></li><li><a href="/loesninger/">Løsninger</a></li><li><a href="/projekter/">Projekter</a></li></ul>
           </nav>
           <nav class="sg-footer__col" aria-label="Academy">
             <p class="sg-footer__head">Academy</p>
-            <ul class="sg-footer__list"><li><a href="/academy">Academy</a></li><li><a href="/ips-konsulentuddannelse">IPS Konsulentuddannelse</a></li><li><a href="/grundkursus-i-ips">Grundkursus i IPS</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/loesninger/#academy">Academy</a></li><li><a href="/ips-konsulentuddannelse/">IPS Konsulentuddannelse</a></li><li><a href="/grundkursus-i-ips/">Grundkursus i IPS</a></li></ul>
           </nav>
           <nav class="sg-footer__col" aria-label="Simply Guiding">
             <p class="sg-footer__head">Simply Guiding</p>
-            <ul class="sg-footer__list"><li><a href="/metode">Metode</a></li><li><a href="/cases">Succeshistorier</a></li><li><a href="/viden">Viden</a></li><li><a href="/om-simply-guiding">Om SG</a></li><li><a href="/hvad-er-ips">Hvad er IPS?</a></li><li><a href="/kontakt">Kontakt</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/saadan-arbejder-vi/">Metode</a></li><li><a href="/cases/">Succeshistorier</a></li><li><a href="/blog/">Viden</a></li><li><a href="/om-os/">Om SG</a></li><li><a href="/hvad-er-ips/">Hvad er IPS?</a></li><li><a href="/kontakt/">Kontakt</a></li></ul>
           </nav>
           </div>
       </div>
@@ -312,7 +312,7 @@ get_header(); ?>
           <a href="#" aria-label="Simply Guiding på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.4V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.5-2.25 3.1V21H9z"/></svg></a>
           <a href="#" aria-label="Simply Guiding på Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></svg></a>
         </div>
-        <div class="sg-footer__legal"><a href="/cookies-og-privatlivspolitik">Cookies og privatlivspolitik</a></div>
+        <div class="sg-footer__legal"><a href="/cookies-og-privatlivspolitik/">Cookies og privatlivspolitik</a></div>
       </div>
     </div>
   </div>

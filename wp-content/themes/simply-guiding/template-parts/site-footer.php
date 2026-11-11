@@ -14,19 +14,19 @@
           <div class="sg-footer__navs">
           <nav class="sg-footer__col" aria-label="Områder">
             <p class="sg-footer__head">Områder</p>
-            <ul class="sg-footer__list"><li><a href="/omraade/jobcentre">Jobcentre</a></li><li><a href="/omraade/boern-unge-familier">Børn, unge og familier</a></li><li><a href="/omraade/forsikring-pension">Forsikring og pension</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a></li><li><a href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a></li><li><a href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a></li></ul>
           </nav>
-          <nav class="sg-footer__col" aria-label="Din rolle">
-            <p class="sg-footer__head">Din rolle</p>
-            <ul class="sg-footer__list"><li><a href="/din-rolle/jobcenterchef">Jobcenterchef</a></li><li><a href="/din-rolle/sagsbehandler">Sagsbehandler</a></li><li><a href="/din-rolle/ungeraadgiver">Ungerådgiver</a></li></ul>
+          <nav class="sg-footer__col" aria-label="Indsatser">
+            <p class="sg-footer__head">Indsatser</p>
+            <ul class="sg-footer__list"><li><a href="/indsatser/">Indsatser</a></li><li><a href="/loesninger/">Løsninger</a></li><li><a href="/projekter/">Projekter</a></li></ul>
           </nav>
           <nav class="sg-footer__col" aria-label="Academy">
             <p class="sg-footer__head">Academy</p>
-            <ul class="sg-footer__list"><li><a href="/academy">Academy</a></li><li><a href="/ips-konsulentuddannelse">IPS Konsulentuddannelse</a></li><li><a href="/grundkursus-i-ips">Grundkursus i IPS</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/loesninger/#academy">Academy</a></li><li><a href="/ips-konsulentuddannelse/">IPS Konsulentuddannelse</a></li><li><a href="/grundkursus-i-ips/">Grundkursus i IPS</a></li></ul>
           </nav>
           <nav class="sg-footer__col" aria-label="Simply Guiding">
             <p class="sg-footer__head">Simply Guiding</p>
-            <ul class="sg-footer__list"><li><a href="/saadan-arbejder-vi/">Metode</a></li><li><a href="/cases">Succeshistorier</a></li><li><a href="/viden">Viden</a></li><li><a href="/om-simply-guiding">Om SG</a></li><li><a href="/hvad-er-ips">Hvad er IPS?</a></li><li><a href="/kontakt">Kontakt</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/saadan-arbejder-vi/">Metode</a></li><li><a href="/cases/">Succeshistorier</a></li><li><a href="/blog/">Viden</a></li><li><a href="/om-os/">Om SG</a></li><li><a href="/hvad-er-ips/">Hvad er IPS?</a></li><li><a href="/kontakt/">Kontakt</a></li></ul>
           </nav>
           </div>
       </div>
@@ -36,7 +36,7 @@
           <a href="#" aria-label="Simply Guiding på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.4V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.5-2.25 3.1V21H9z"/></svg></a>
           <a href="#" aria-label="Simply Guiding på Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></svg></a>
         </div>
-        <div class="sg-footer__legal"><a href="/cookies-og-privatlivspolitik">Cookies og privatlivspolitik</a></div>
+        <div class="sg-footer__legal"><a href="/cookies-og-privatlivspolitik/">Cookies og privatlivspolitik</a></div>
       </div>
     </div>
   </div>

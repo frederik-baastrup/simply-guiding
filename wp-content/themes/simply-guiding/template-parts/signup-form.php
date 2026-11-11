@@ -8,5 +8,5 @@
         </div>
         <?php sg_signup_fields(); $sg_resp = sg_signup_response(); ?>
         <p class="sg-signup__msg" id="sgSignupMsg" role="status"<?php echo $sg_resp ? '' : ' hidden'; ?>><?php echo esc_html($sg_resp); ?></p>
-        <p class="sg-signup__note">Vi bruger kun din e-mail til nyhedsbrevet, og du kan altid afmelde dig. Læs vores <a href="/cookies-og-privatlivspolitik">privatlivspolitik</a>.</p>
+        <p class="sg-signup__note">Vi bruger kun din e-mail til nyhedsbrevet, og du kan altid afmelde dig. Læs vores <a href="/cookies-og-privatlivspolitik/">privatlivspolitik</a>.</p>
       </form>
