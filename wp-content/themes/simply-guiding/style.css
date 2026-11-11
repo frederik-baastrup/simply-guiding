@@ -130,6 +130,12 @@ Text Domain: simply-guiding
   .sg-header {
     position: fixed; top: calc(env(safe-area-inset-top, 0px) + var(--sg-hdr-top, 36px)); left: 0; right: 0; background: transparent;
   }
+  /* Når man er logget ind, lægger WordPress en 32px (46px på mobil) admin-bar øverst via margin-top på <html>,
+     som en fixed header ikke selv flytter sig for - læg den oveni, ellers overlapper headeren topbaren */
+  body.admin-bar .sg-header { top: calc(env(safe-area-inset-top, 0px) + var(--sg-hdr-top, 36px) + 32px); }
+  @media screen and (max-width: 782px) {
+    body.admin-bar .sg-header { top: calc(env(safe-area-inset-top, 0px) + var(--sg-hdr-top, 36px) + 46px); }
+  }
   .sg-header__inner { transition: height .35s cubic-bezier(.22,.7,.18,1); }
   .sg-logo svg path { transition: fill .5s ease, fill-opacity .5s ease; }
   .sg-header.is-scrolled .sg-header__inner { height: 72px; }
