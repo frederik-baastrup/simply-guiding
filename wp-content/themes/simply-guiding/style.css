@@ -1293,3 +1293,20 @@ Text Domain: simply-guiding
     .sg-more2__media img { aspect-ratio: 16 / 9; height: auto; }
     .sg-more2__copy { padding: 40px 28px 44px; }
   }
+
+  /* Mindset v3: billedet står stille (sticky) til venstre, teksten løber til højre med tynde streger imellem */
+  .sg-mind3 { background: var(--sg-topbar); padding-block: 110px; }
+  .sg-mind3__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 96px; align-items: start; }
+  .sg-mind3__media { position: sticky; top: 110px; border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-mind3__media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .sg-mind3__copy { padding-top: 8px; }
+  .sg-mind3__copy p { margin: 0; padding-block: 28px; border-top: 1px solid rgba(49, 49, 49, .12); font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-mind3__copy .sg-mind3__lead { margin-top: 28px; border-top: 0; padding-top: 0; font-size: clamp(18px, 1.5vw, 21px); line-height: 1.6; color: var(--sg-text); }
+  .sg-mind3__copy p:last-child { padding-bottom: 0; }
+  .sg-mind3__copy a { color: var(--sg-cta); text-decoration: none; border-bottom: 1px solid currentColor; }
+  @media (max-width: 960px) {
+    .sg-mind3 { padding-block: 72px; }
+    .sg-mind3__grid { grid-template-columns: 1fr; gap: 40px; }
+    .sg-mind3__media { position: static; }
+    .sg-mind3__media img { aspect-ratio: 4 / 3; }
+  }

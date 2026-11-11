@@ -47,15 +47,15 @@ $logo_list = function ($hidden) use ($u, $logos) {
 <div id="indhold"></div>
 
 
-<!-- Mindset og metoder: billede + de tre afsnit som hvide kort på lysegrå flade -->
-<section class="sg-mind2" aria-labelledby="sgMindTitle">
-  <div class="sg-wrap">
-    <h2 class="sg-h2" id="sgMindTitle">Mindset og metoder</h2>
-    <div class="sg-mind2__grid">
-      <div class="sg-mind2__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Konsulenter fra Simply Guiding i samtale" width="840" height="1050" loading="lazy"></div>
-      <p class="sg-mind2__card">Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
-      <p class="sg-mind2__card">Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd).</p>
-      <p class="sg-mind2__card">Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor. Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
+<!-- Mindset og metoder: billedet står stille til venstre, mens teksten løber i en spalte til højre -->
+<section class="sg-mind3" aria-labelledby="sgMindTitle">
+  <div class="sg-wrap sg-mind3__grid">
+    <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Konsulenter fra Simply Guiding i samtale" width="840" height="1050" loading="lazy"></div>
+    <div class="sg-mind3__copy">
+      <h2 class="sg-h2" id="sgMindTitle">Mindset og metoder</h2>
+      <p class="sg-mind3__lead">Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
+      <p>Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd).</p>
+      <p>Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor. Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
     </div>
   </div>
 </section>
