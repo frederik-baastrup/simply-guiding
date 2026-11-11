@@ -2050,3 +2050,6 @@ Text Domain: simply-guiding
   .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-project__text { color: var(--sg-muted); }
   .sg-projects__grid:hover .sg-project--active:not(:hover) .sg-project__link { color: var(--sg-cta); }
 }
+.sg-about__title { font-weight: 500; }
+.sg-about__media img { object-position: 50% 30%; }
+.sg-quote:has(.sg-quote__by--stack) { padding-top: 54px; padding-bottom: 82px; }

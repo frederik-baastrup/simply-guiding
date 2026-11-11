@@ -115,7 +115,7 @@
 </div>
 <section class="sg-about" aria-labelledby="sgAboutTitle">
   <div class="sg-about__inner">
-    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/samarbejde.jpg" alt="To kolleger i fortrolig samtale" loading="lazy"></div>
+    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/kursus-lbi.jpg" alt="Konsulent fra Simply Guiding i samtale med to borgere" loading="lazy"></div>
     <div class="sg-about__copy">
       <h2 class="sg-about__title" id="sgAboutTitle">Vores samarbejde bygger på forståelse, faglighed og erfaring</h2>
       <p>Bag vores indsatser ligger mere end 10 års erfaring, dyb metodefidelitet og en solid beskæftigelsesfaglighed inden for IPS og Supported Employment.</p>
