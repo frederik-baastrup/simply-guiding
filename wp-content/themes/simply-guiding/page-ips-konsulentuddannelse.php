@@ -24,6 +24,20 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
+<section class="sg-steps" aria-labelledby="sgStepsTitle">
+  <img class="sg-steps__bg" src="<?php echo esc_url($u); ?>/assets/indsats-academy.jpg" alt="" loading="lazy">
+  <div class="sg-wrap sg-steps__in">
+    <p class="sg-pill">Forløbet</p>
+    <h2 class="sg-steps__title" id="sgStepsTitle">Fra teori til <span>certificeret praksis</span></h2>
+    <ol class="sg-steps__list">
+      <li><small>01</small><h3>Teoretisk viden</h3><p>Principperne og metoden bag IPS, IPS-manualen og værktøjerne.</p></li>
+      <li><small>02</small><h3>Praktiske øvelser</h3><p>Du arbejder med dine egne kandidater og får løbende feedback.</p></li>
+      <li><small>03</small><h3>Rollespil</h3><p>Du trænes i de situationer, der kan opstå i et IPS-forløb.</p></li>
+      <li><small>04</small><h3>Fidelity</h3><p>Evaluering med mundtlig tilbagemelding og skriftlig rapport med score.</p></li>
+    </ol>
+  </div>
+</section>
+
 <section class="sg-sol sg-sol--flip sg-sol--plain" aria-labelledby="sgLearnTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-forskning.jpg" alt="Undervisning i IPS-metoden" loading="lazy"></div>

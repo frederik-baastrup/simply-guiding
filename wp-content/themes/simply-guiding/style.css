@@ -2092,3 +2092,17 @@ Text Domain: simply-guiding
 /* Indledende tekster (lead) en anelse mindre overalt */
 .sg-mind3__copy .sg-mind3__lead, .sg-why__lead--big { font-size: clamp(17px, 1.3vw, 19px); line-height: 1.65; }
 .sg-intro__lead { font-size: clamp(17px, 1.3vw, 19px) !important; line-height: 1.65 !important; }
+/* Forløbet: fire trin i frostet glas oven på ét stort foto */
+.sg-steps { position: relative; margin: 56px max(18px, env(safe-area-inset-right, 0px)) 0 max(18px, env(safe-area-inset-left, 0px)); border-radius: var(--sg-radius); overflow: hidden; color: #fff; isolation: isolate; }
+.sg-steps__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.sg-steps::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(6,35,31,.55), rgba(6,35,31,.38) 40%, rgba(6,35,31,.82)); }
+.sg-steps__in { padding-block: 104px 64px; }
+.sg-steps__title { margin: 22px 0 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.04; letter-spacing: -.02em; color: #fff; }
+.sg-steps__title span { color: rgba(219,231,221,.62); }
+.sg-steps__list { list-style: none; margin: 180px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.sg-steps__list li { min-height: 250px; display: flex; flex-direction: column; padding: 26px 24px; border-radius: 16px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); }
+.sg-steps__list small { font-size: 13px; color: rgba(255,255,255,.65); font-variant-numeric: tabular-nums; }
+.sg-steps__list h3 { margin: 14px 0 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 22px; color: #fff; }
+.sg-steps__list p { margin: auto 0 0; padding-top: 24px; font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.85); }
+@media (max-width: 1000px) { .sg-steps__list { grid-template-columns: 1fr 1fr; margin-top: 64px; } }
+@media (max-width: 700px) { .sg-steps { margin-inline: 0; border-radius: 0; } .sg-steps__in { padding-block: 72px 48px; } .sg-steps__list { grid-template-columns: 1fr; } .sg-steps__list li { min-height: 0; } }
