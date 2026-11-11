@@ -15,7 +15,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
 };
 ?>
 <div class="sg-hero-wrap">
-  <section class="sg-hero sg-hero--split" aria-labelledby="sgPageTitle">
+  <section class="sg-hero sg-hero--split<?php echo $a['img'] ? '' : ' sg-hero--noimg'; ?>" aria-labelledby="sgPageTitle">
     <div class="sg-split">
       <div class="sg-split__copy">
         <p class="sg-pill"><?php echo esc_html($a['label']); ?></p>
@@ -26,9 +26,11 @@ $logo_list = function ($hidden) use ($u, $logos) {
           <a class="sg-btn sg-btn--lg sg-btn--ghost" href="#indhold">Læs mere</a>
         </div>
       </div>
+      <?php if ($a['img']) : ?>
       <div class="sg-split__media">
         <img src="<?php echo esc_url($u . '/assets/' . $a['img']); ?>" alt="<?php echo esc_attr($a['alt']); ?>" width="<?php echo (int) $a['img_w']; ?>" height="<?php echo (int) $a['img_h']; ?>" fetchpriority="high">
       </div>
+      <?php endif; ?>
     </div>
   </section>
   <!-- Logo-bar som på det gamle site: hvid fane med skrå sider op i hero'en, label + streg + logo-slider -->

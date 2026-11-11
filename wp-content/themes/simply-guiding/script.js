@@ -126,14 +126,16 @@
     var signup = document.getElementById('sgSignup');
     if (signup) {
       signup.addEventListener('submit', function (e) {
-        e.preventDefault();
         var input = document.getElementById('sgSignupEmail');
         var msg = document.getElementById('sgSignupMsg');
         var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+        // Gyldig e-mail + Mailchimp (MC4WP) aktivt: lad formularen sende til WordPress
+        if (ok && signup.hasAttribute('data-mc4wp')) return;
+        e.preventDefault();
         msg.hidden = false;
         msg.classList.toggle('is-error', !ok);
         msg.textContent = ok
-          ? 'Prototype: her kobles tilmeldingen på jeres nyhedsbrevssystem.'
+          ? 'Tilmeldingen er ikke koblet til Mailchimp endnu.'
           : 'Skriv en gyldig e-mailadresse, fx navn@kommune.dk.';
         if (!ok) input.focus();
       });

@@ -1416,3 +1416,8 @@ Text Domain: simply-guiding
     .sg-pdetail__grid { grid-template-columns: 1fr; gap: 24px; }
     .sg-pdetail__side { position: static; }
   }
+
+  /* Undersidehero uden billede: tekst på fuld bredde */
+  .sg-hero--noimg .sg-split { grid-template-columns: 1fr; min-height: min(680px, 80vh); }
+  .sg-hero--noimg .sg-split__copy { max-width: calc(var(--sg-max) + 36px); padding-right: var(--sg-gutter); }
+  .sg-hero--noimg .sg-hero__lead { max-width: 36em; }

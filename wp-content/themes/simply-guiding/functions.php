@@ -30,3 +30,26 @@ add_action('init', function () {
     }
     update_option('sg_pages_created', $done);
 });
+
+/*
+ * Nyhedsbrev → Mailchimp via pluginnet "MC4WP: Mailchimp for WordPress" (samme som på det gamle site).
+ * Vores egen formular (#sgSignup) sender felterne EMAIL og FNAME med det første MC4WP-formular-id,
+ * så pluginnet tilmelder til den liste, der er valgt i pluginnets formular. Uden pluginnet sendes intet.
+ */
+function sg_mc4wp_form_id() {
+    if (!function_exists('mc4wp_get_forms')) return 0;
+    $forms = mc4wp_get_forms(['numberposts' => 1]);
+    return $forms ? (int) $forms[0]->ID : 0;
+}
+function sg_signup_fields() {
+    $id = sg_mc4wp_form_id();
+    if (!$id) return;
+    printf('<input type="hidden" name="_mc4wp_form_id" value="%d"><input type="hidden" name="_mc4wp_form_element_id" value="sgSignup"><input type="hidden" name="_mc4wp_timestamp" value="%d">', $id, time());
+    echo '<label style="display:none !important">Udfyld ikke dette felt: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label>';
+}
+function sg_signup_response() {
+    $id = sg_mc4wp_form_id();
+    if (!$id || !function_exists('mc4wp_get_form')) return '';
+    try { $form = mc4wp_get_form($id); } catch (Exception $e) { return ''; }
+    return trim(wp_strip_all_tags($form->get_response_html('sgSignup')));
+}
