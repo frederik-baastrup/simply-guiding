@@ -271,7 +271,7 @@
         var stacked = window.matchMedia('(max-width: 960px)').matches;
         var limit = stacked ? 420 : it.media.getBoundingClientRect().height - 64;
         var full = it.clip.scrollHeight;
-        var clamp = full > limit + 80;
+        var clamp = full > limit + 240;
         it.copy.classList.toggle('is-clamped', clamp);
         it.btn.hidden = !clamp;
         it.copy.style.setProperty('--sg-clip', Math.max(limit, 200) + 'px');
