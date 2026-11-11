@@ -1346,3 +1346,18 @@ Text Domain: simply-guiding
   @media (max-width: 960px) {
     .sg-consult__media img { position: static; height: auto; aspect-ratio: 4 / 3; }
   }
+
+  /* Konsulenter: ingen streg over principperne */
+  .sg-consult__sub { border-top: 0; padding-top: 0; }
+
+  /* Vil du vide mere? v2: billede + tekst direkte på hvid – ingen boks/baggrund */
+  .sg-more2 { padding-block: 40px 120px; }
+  .sg-more2__box { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 0 96px; align-items: center; border-radius: 0; overflow: visible; background: none; }
+  .sg-more2__media { min-height: 0; border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-more2__media img { height: auto; aspect-ratio: 3 / 2; }
+  .sg-more2__copy { padding: 0; }
+  @media (max-width: 900px) {
+    .sg-more2 { padding-block: 24px 80px; }
+    .sg-more2__box { grid-template-columns: 1fr; gap: 32px; }
+    .sg-more2__copy { padding: 0; }
+  }
