@@ -1816,3 +1816,7 @@ Text Domain: simply-guiding
 .sg-sol--half.sg-sol--flip { --sol-bg: var(--sg-topbar); background: var(--sol-bg); padding-block: 80px; }
 .sg-sol--half:last-of-type { margin-bottom: 110px; }
 .sg-sol__copy.is-clamped .sg-sol__clip::after { background: linear-gradient(rgba(255,255,255,0), var(--sol-bg, #fff)); }
+/* Citat-modul: portræt over navnet, alt centreret */
+.sg-quote__by--stack { flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; flex-wrap: nowrap; }
+.sg-quote__by--stack .sg-quote__photo { width: 72px; height: 72px; }
+.sg-quote__by--stack .sg-quote__who { align-items: center; text-align: center; }
