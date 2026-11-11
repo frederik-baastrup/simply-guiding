@@ -253,3 +253,8 @@ add_action('init', function () {
     }
     update_option('sg_omraade_created', 1);
 }, 20);
+
+/* Tynd, lang pil til tekstlinks */
+function sg_arrow() {
+    return '<svg class="sg-arrow" viewBox="0 0 28 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 7h25M20 1.5 26 7l-6 5.5"/></svg>';
+}

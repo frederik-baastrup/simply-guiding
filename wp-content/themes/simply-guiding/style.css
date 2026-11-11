@@ -1960,3 +1960,4 @@ Text Domain: simply-guiding
   .sg-index__text { grid-column: 2 / 3; grid-row: 2; }
   .sg-index__go { width: 44px; height: 44px; grid-column: 3; grid-row: 1; }
 }
+.sg-split__copy h1 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
