@@ -7,7 +7,7 @@ $check = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 1
 $checks = function ($items) use ($check) { echo '<ul class="sg-principles">'; foreach ($items as $i) echo '<li>' . $check . esc_html($i) . '</li>'; echo '</ul>'; };
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'IPS-konsulentuddannelse',
-  'lead'  => 'Tag Danmarks mest omfattende IPSuddannelse og bliv klædt på til at arbejde som IPS-konsulent. Her kan du læse mere om, hvad du lærer på kurset.',
+  'lead'  => 'Tag Danmarks mest omfattende IPS-uddannelse og bliv klædt på til at arbejde som IPS-konsulent. Her kan du læse mere om, hvad du lærer på kurset.',
   'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding',
 ]);
 ?>
@@ -18,7 +18,7 @@ get_template_part('template-parts/page-hero', null, [
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/kursus-tilmeld.jpg" alt="Kursusdeltagere hos Simply Guiding" loading="lazy"></div>
     <div class="sg-mind3__copy">
       <h2 class="sg-h2" id="sgEduTitle">Bliv uddannet til IPS-konsulent hos Simply Guiding</h2>
-      <p class="sg-mind3__lead">Med uddannelsen til IPS-konsulent, får du indgående viden om metoden og bliver klædt på til at praktisere alle elementer i metoden. Lær om on-boarding af kandidater, at. virksomhedsmatche og at opstarte et arbejdsrettet forløb, samt tværfagligt samarbejde og fastholdelse af kandidaten i job eller uddannelse.</p>
+      <p class="sg-mind3__lead">Med uddannelsen til IPS-konsulent, får du indgående viden om metoden og bliver klædt på til at praktisere alle elementer i metoden. Lær om on-boarding af kandidater, at virksomhedsmatche og at opstarte et arbejdsrettet forløb, samt tværfagligt samarbejde og fastholdelse af kandidaten i job eller uddannelse.</p>
       <p>Du og dine kolleger får løbende supervision af din praksis som IPS-konsulent med vejledning på dine kandidatforløb. I jobcentre, der ønsker at introducere IPS som ny praksis, uddannes typisk flere medarbejdere til rollen som IPS-konsulent, så de sammen udgør et IPS-team.</p>
     </div>
   </div>
@@ -52,7 +52,7 @@ get_template_part('template-parts/page-hero', null, [
     <div class="sg-wrap">
       <div class="sg-band2__head">
         <div><p class="sg-pill">Indhold</p><h2 class="sg-h2 sg-h2--light" id="sgContentTitle" style="margin-top:20px">Hvad indeholder IPS-kurset?</h2></div>
-        <p class="sg-principles8__intro">Med IPS-konsulentuddannelsen vil du være i stand til selv at drive forløbene fra den indledende visitation og screening til den afsluttende rapportering. Her får du et kort overblik over de ialt 15 kursusdages indhold, samt praktisk information.</p>
+        <p class="sg-principles8__intro">Med IPS-konsulentuddannelsen vil du være i stand til selv at drive forløbene fra den indledende visitation og screening til den afsluttende rapportering. Her får du et kort overblik over de i alt 15 kursusdages indhold, samt praktisk information.</p>
       </div>
       <div class="sg-cols3">
         <div><h3>Teoretisk viden</h3><p>På IPS-konsulentuddannelsen vil du – til at begynde med – få en indgående forståelse for principperne og metoden bag IPS, samt hvordan du omsætter metodens mål og midler i det praktiske arbejde med kandidater, virksomheder og øvrige samarbejdspartnere.</p><p>Du vil blive undervist i IPS-manualen, de værktøjer der understøtter dine IPS-arbejdsopgaver, samt andet relevant undervisningsmateriale.</p><p>Derudover vil du få undervisning i komplementære teorier, der understøtter IPS-metoden.</p></div>
@@ -65,9 +65,9 @@ get_template_part('template-parts/page-hero', null, [
 
 <section class="sg-pdetail sg-intro" aria-labelledby="sgWhyTitle">
   <div class="sg-wrap sg-pdetail__grid">
-    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgWhyTitle">Hvorfor Simply Guding?</h2></div>
+    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgWhyTitle">Hvorfor Simply Guiding?</h2></div>
     <div class="sg-pdetail__body">
-      <p class="sg-intro__lead">Vi er den førende leverandør af den evidensbaserede IPS-metode, som hjælper psykisk sårbare tilbage til et stabilt og givende arbejdsliv. Vores kurser og uddannelser er rettet mod dig som arbejder i en kommune eller et i jobcenter, der ønsker mere erfaringsbaseret og praksisnær viden om IPS eller vil uddanne dig til at arbejde med metoden.</p>
+      <p class="sg-intro__lead">Vi er den førende leverandør af den evidensbaserede IPS-metode, som hjælper psykisk sårbare tilbage til et stabilt og givende arbejdsliv. Vores kurser og uddannelser er rettet mod dig som arbejder i en kommune eller et jobcenter, der ønsker mere erfaringsbaseret og praksisnær viden om IPS eller vil uddanne dig til at arbejde med metoden.</p>
       <h3 class="sg-mind3__h3">Vores IPS-uddannelse er for dig, der:</h3>
       <?php $checks(['Ønsker at kunne arbejde selvstændigt med IPS-opgaver i hverdagen', 'Er kreativ og vedholdende i din problemløsning og ser muligheder – uanset borgerens forudsætninger', 'Har et ønske om at opnå indgående viden om IPS-metoden og tilgangen til jobskabelse', 'Vil oplæres i metoder som den motiverende samtale, den værdsættende samtale og andre relevante tilgange', 'Allerede arbejder med borgerrettede eller virksomhedsrettede aktiviteter i et jobcenter']); ?>
       <p>Ønsker du, eller dit team at blive uddannede inden for IPS-metoden og kunne praktisere dette i jeres arbejde med borgere, kan I altid kontakte os for mere information.</p>

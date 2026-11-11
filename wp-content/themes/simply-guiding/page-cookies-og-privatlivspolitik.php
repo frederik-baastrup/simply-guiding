@@ -33,10 +33,10 @@ get_template_part('template-parts/site-header');
     <p>Vi benytter herudover en række tredjeparter til opbevaring og behandling af data. Disse behandler udelukkende oplysninger på vores vegne og må ikke anvende dem til egne formål.</p>
     <p>Videregivelse af personoplysninger som navn og e-mail m.v. vil kun ske, hvis du giver samtykke til det. Vi anvender kun databehandlere i EU eller i lande, der kan give dine oplysninger en tilstrækkelig beskyttelse.</p>
     <h4>Indsigt og klager</h4>
-    <p>Du har ret til at få oplyst, hvilke personoplysninger, vi behandler om dig. Du kan desuden til enhver tid gøre indsigelse mod, at oplysninger anvendes. Du kan også tilbagekalde dit samtykke til, at der bliver behandlet oplysninger om dig. Hvis de oplysninger, der behandles om dig, er forkerte har du ret til at de bliver rettet eller slettet. Henvendelse herom kan ske til: info@ipscenterdanmark.dk Hvis du vil klage over vores behandling af dine personoplysninger, har du også mulighed for at tage kontakt til Datatilsynet.</p>
+    <p>Du har ret til at få oplyst, hvilke personoplysninger, vi behandler om dig. Du kan desuden til enhver tid gøre indsigelse mod, at oplysninger anvendes. Du kan også tilbagekalde dit samtykke til, at der bliver behandlet oplysninger om dig. Hvis de oplysninger, der behandles om dig, er forkerte har du ret til at de bliver rettet eller slettet. Henvendelse herom kan ske til: <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a>. Hvis du vil klage over vores behandling af dine personoplysninger, har du også mulighed for at tage kontakt til <a href="https://www.datatilsynet.dk" target="_blank" rel="noopener">Datatilsynet</a>.</p>
     <h4>Udgiver</h4>
     <p>Websitet ejes og publiceres af:</p>
-    <p>Simply Guiding Ipscenter Danmark ApS<br>Odin Havnepark<br>Lumbyvej 11<br>5000 Odense<br>Telefon: +45 41 90 56 06<br>Email: <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a></p>
+    <p>Simply Guiding ApS<br>CVR: 37319643<br>Odin Havnepark<br>Lumbyvej 11<br>5000 Odense C<br>Telefon: +45 26 34 44 54<br>Email: <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a></p>
   </div>
 </article>
 <?php get_template_part('template-parts/site-footer'); ?>

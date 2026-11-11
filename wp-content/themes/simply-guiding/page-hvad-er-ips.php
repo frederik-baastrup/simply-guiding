@@ -27,7 +27,7 @@ $principles = [
   <div class="sg-wrap sg-pdetail__grid">
     <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgGoalTitle">Målet er uddannelse eller beskæftigelse</h2></div>
     <div class="sg-pdetail__body">
-      <p class="sg-intro__lead">Det er målet, at mennesker, der deltager i IPS,-indsatsen, starter og fastholdes i ordinær beskæftigelse eller uddannelse. Det er IPS-kandidatens motivation for at komme i job og ønsker for fremtiden, der sætter retningen for kandidatens vej tilbage i arbejde.</p>
+      <p class="sg-intro__lead">Det er målet, at mennesker, der deltager i IPS-indsatsen, starter og fastholdes i ordinær beskæftigelse eller uddannelse. Det er IPS-kandidatens motivation for at komme i job og ønsker for fremtiden, der sætter retningen for kandidatens vej tilbage i arbejde.</p>
       <?php $checks(['IPS er en virksomhedsrettet indsats med fokus på ’Job Development’', 'IPS-konsulenten samarbejder tæt med det kommunale jobcenter', 'IPS er en tværfaglig indsats der samarbejder med en række fagpersoner som psykiater, misbrugsbehandler og mentor.']); ?>
     </div>
   </div>

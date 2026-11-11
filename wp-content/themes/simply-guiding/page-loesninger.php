@@ -58,8 +58,8 @@ $sol = [
       <p>Simply Guidings ungeindsatser er inspireret af flere forskellige traditioner og grundtanker, som fx det narrative, det systemiske, det kognitive og recovery-tilgangen. Tilgange som hviler på mindset og principper fra IPS-metoden, hvor det mest centrale princip i arbejdet med de unge er; ’At samarbejde med afsæt i de unges drømme, erfaringer, ressourcer, behov og tempo’.</p>
       <p>Målgruppen er unge i alderen 18-29 år, der lever med en psykisk sygdom (fx skizofreni, bipolar, autisme) eller psykisk sårbarhed (fx depression, angst, stress). Udover at leve med en psykisk lidelse eller psykisk sårbarhed spænder de unges baggrund og livsvilkår vidt. Det primære mål med vores ungeindsatser er at de unge starter og fastholdes i ordinær beskæftigelse eller uddannelse.</p>
       <h4 class="sg-mind3__h3">Her er nogle af de pejlemærker, der guider vores ungevejledere i arbejdet med de unge:</h4>
-      <?php $checks(['Vi lader den unge være ekspert på eget liv.', 'Vi er nysgerrige på den unges liv og relationer til andre – uden at konkludere på deres vegne (`parkere` vores forforståelser).', 'Selvfølgelige positive forventninger og `vikariende håb`.', 'At vi bruger de unges egne ord for det de oplever, frem for at kategorisere og diagnosticere.', 'At arbejde ud fra en `ikke-diagnostiks tilgang` og en mere dynamisk og eksplorativ forståelse af diagnoser.']); ?>
-      <p>Der arbejdes med individuelt tilrettelagte forløb, hvor den unges ønsker og behov sææter retningen for indsatsen. Samtidig samler vi de unge i netværksgrupper, hvor de mødes ugentligt for at dele erfaringer og oplevelser med hinanden. Som en rød tråd i indsatsen arbejder vi med at inddrage den unge i alle faser af forløbet.</p>
+      <?php $checks(['Vi lader den unge være ekspert på eget liv.', 'Vi er nysgerrige på den unges liv og relationer til andre – uden at konkludere på deres vegne (‘parkere’ vores forforståelser).', 'Selvfølgelige positive forventninger og ‘vikarierende håb’.', 'At vi bruger de unges egne ord for det de oplever, frem for at kategorisere og diagnosticere.', 'At arbejde ud fra en ‘ikke-diagnostisk tilgang’ og en mere dynamisk og eksplorativ forståelse af diagnoser.']); ?>
+      <p>Der arbejdes med individuelt tilrettelagte forløb, hvor den unges ønsker og behov sætter retningen for indsatsen. Samtidig samler vi de unge i netværksgrupper, hvor de mødes ugentligt for at dele erfaringer og oplevelser med hinanden. Som en rød tråd i indsatsen arbejder vi med at inddrage den unge i alle faser af forløbet.</p>
     </div>
   </div>
 </section>
@@ -98,7 +98,7 @@ $sol = [
     <div class="sg-sol__copy">
       <h3 class="sg-h2" id="sgSol5">Academy</h3>
       <p>Simply Guiding har som den eneste private aktør i Danmark uddannet kommunale IPS-teams i landets jobcentre. Vores uddannelsesforløb spænder bredt, og giver mulighed for særligt tilrettelagte uddannelsesforløb, uanset om det er målrettet en enkelt konsulent eller et samlet IPS-team.</p>
-      <p>Vores certificerede supervisorteam tilbyder også supervision i IPS. Dette kan både forgå individuelt for IPS-konsulenten, IPS-lederen eller for hele teamet.</p>
+      <p>Vores certificerede supervisorteam tilbyder også supervision i IPS. Dette kan både foregå individuelt for IPS-konsulenten, IPS-lederen eller for hele teamet.</p>
       <p>Derudover har vi mulighed for at afholde kurser, hvor hele teamet får et boost for at opnå bedre resultater eller performance.</p>
       <p>Vores kurser og uddannelsesforløb kan sammensættes efter jeres behov, så kontakt os på tlf. 26 34 44 54, hvis du vil høre nærmere.</p>
     </div>

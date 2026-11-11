@@ -45,7 +45,7 @@ get_template_part('template-parts/page-hero', null, [
       <article class="sg-project">
         <p class="sg-pill">Afsluttede projekter</p>
         <h2 class="sg-project__title">IPS UNG</h2>
-        <p class="sg-project__text">Simply Guilding arbejder sammen med Ungeenheden i Gladsaxe Kommune og SIND om et ungeprojekt, der bl.a. har fokus på at udvikle nye metoder til at inddrage de unge og give dem større beslutningskraft i forløbet. Der arbejdes også med at gå nye veje i involveringen af virksomheder i indsatsen.</p>
+        <p class="sg-project__text">Simply Guiding arbejder sammen med Ungeenheden i Gladsaxe Kommune og SIND om et ungeprojekt, der bl.a. har fokus på at udvikle nye metoder til at inddrage de unge og give dem større beslutningskraft i forløbet. Der arbejdes også med at gå nye veje i involveringen af virksomheder i indsatsen.</p>
         <a class="sg-project__link" href="#ipsung">Læs mere om IPS Ung <span aria-hidden="true">→</span></a>
       </article>
       <article class="sg-project">
@@ -67,7 +67,7 @@ get_template_part('template-parts/page-hero', null, [
     </div>
     <div class="sg-pdetail__body">
       <p>Simply Guiding har i samarbejde med Børn-, Unge- og Familieafdelingen i Herlev Kommune igangsat et udviklingsprojekt, hvor der afprøves og implementeres en indsats for børn og unge i aldersgruppen 12-17 år, der lever med svær social og psykisk mistrivsel. Projektet startede i foråret 2024 og foreløbig er en håndfuld unge startet i Recharge-indsatsen.</p>
-      <p>Formålet med Recharg-indsatsen er bl.a. at give den unge en tilknytning til fritids- og fællesskabende aktiviteter, give den unge arbejdserfaringer fra fritidsjob og praktikker, og fremme den unges personlige og faglige udvikling gennem individuelt tilrettelagt støtte og læring.</p>
+      <p>Formålet med Recharge-indsatsen er bl.a. at give den unge en tilknytning til fritids- og fællesskabende aktiviteter, give den unge arbejdserfaringer fra fritidsjob og praktikker, og fremme den unges personlige og faglige udvikling gennem individuelt tilrettelagt støtte og læring.</p>
       <p>Ved opstart på et forløb laver vi sammen med den unge, forældre og sagsbehandler en handleplan, der sætter retning og mål for samarbejdet, der kan omfatte et eller flere af nedenstående indsatsområder.</p>
       <h3 class="sg-mind3__h3">Indsatsområder:</h3>
       <?php $checks(['Arbejdserfaringer fra fritidsjob/praktikker', 'Tilknytning til fritidsaktiviteter', 'Undervisning og pædagogisk støtte', 'Opstart på uddannelsesforløb', 'Strategier til håndtering af psykiske symptomer']); ?>
@@ -83,9 +83,9 @@ get_template_part('template-parts/page-hero', null, [
       <p class="sg-pdetail__status">Projektet blev afsluttet i 2025.</p>
     </div>
     <div class="sg-pdetail__body">
-      <p>Gladsaxe Kommune indgår partnerskab med SIND Erhverv og Simply Guiding. Sammen vil parterne hjælpe unge, der står på kanten af samfundet uden uddannelse og job, og som kæmper med en psykiske lidelse. Med en donation på 4.5 millioner kr. fra Det Obelske Familiefond går Simply Guiding sammen med SIND Erhverv, EGGS Design, Defactum og Gladsaxe Kommune om at udvikle en ungeindsats, der står på IPS-indsatsens evidensbaserede principper og metoder, og samtidig går nye veje i støtten til psykisk sårbare unge. Det sker bl.a. ved at afsøge mulighederne for en styrket brobygning til psykiatrien, udvikling af nye greb i virksomhedssamarbejdet, involvering af pårørende/frivillige, og gruppeforløb hvor de unge bygger netværk med hinanden.</p>
+      <p>Gladsaxe Kommune indgår partnerskab med SIND Erhverv og Simply Guiding. Sammen vil parterne hjælpe unge, der står på kanten af samfundet uden uddannelse og job, og som kæmper med en psykisk lidelse. Med en donation på 4.5 millioner kr. fra Det Obelske Familiefond går Simply Guiding sammen med SIND Erhverv, EGGS Design, Defactum og Gladsaxe Kommune om at udvikle en ungeindsats, der står på IPS-indsatsens evidensbaserede principper og metoder, og samtidig går nye veje i støtten til psykisk sårbare unge. Det sker bl.a. ved at afsøge mulighederne for en styrket brobygning til psykiatrien, udvikling af nye greb i virksomhedssamarbejdet, involvering af pårørende/frivillige, og gruppeforløb hvor de unge bygger netværk med hinanden.</p>
       <h3 class="sg-mind3__h3">Den faglige praksis i IPS UNG:</h3>
-      <?php $checks(['”At (sam)arbejde med afsæt i de unges ønsker, erfaringer, ressourcer, drømme, behov og tempo”', 'Vi lader den unge være ekspert på eget liv.', 'Vi er nysgerrige på den unges liv og relationer til andre – uden at konkludere på deres vegne (`parkere` vores forforståelser).', 'Selvfølgelige positive forventninger og `vikariende håb`.', 'At vi bruger de unges egne ord for det de oplever, frem for at kategorisere og diagnosticere.', 'At arbejde ud fra en `ikke-diagnostiks tilgang` og en mere dynamisk og eksplorativ forståelse af diagnoser.']); ?>
+      <?php $checks(['”At (sam)arbejde med afsæt i de unges ønsker, erfaringer, ressourcer, drømme, behov og tempo”', 'Vi lader den unge være ekspert på eget liv.', 'Vi er nysgerrige på den unges liv og relationer til andre – uden at konkludere på deres vegne (‘parkere’ vores forforståelser).', 'Selvfølgelige positive forventninger og ‘vikarierende håb’.', 'At vi bruger de unges egne ord for det de oplever, frem for at kategorisere og diagnosticere.', 'At arbejde ud fra en ‘ikke-diagnostisk tilgang’ og en mere dynamisk og eksplorativ forståelse af diagnoser.']); ?>
       <p>Klik på knappen herunder for at se folder. Virksomhedsfolderen er et eksempel på et redskab der er udviklet til at styrke dialogen med virksomheder og deres engagement i IPS UNG.</p>
       <p class="sg-pdetail__actions"><a class="sg-btn sg-btn--lg" href="<?php echo esc_url($u); ?>/assets/ips-ung-virksomhedsfolder.pdf" target="_blank" rel="noopener">Se folder</a></p>
     </div>
