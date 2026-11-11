@@ -12,17 +12,24 @@ get_template_part('template-parts/page-hero', null, [
 ?>
 <div id="indhold"></div>
 
-<section class="sg-why" aria-labelledby="sgWhoTitle">
-  <div class="sg-wrap sg-why__grid">
-    <div><h2 class="sg-h2" id="sgWhoTitle">Hvem er Simply Guiding?</h2></div>
-    <div>
-      <p class="sg-why__lead sg-why__lead--big">Simply Guiding er en specialiseret beskæftigelsesaktør. Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer med fokus på det enkelte menneske.</p>
-      <p class="sg-why__p">Vi går på arbejde for at hjælpe mennesker i en sårbar position tilbage til fællesskabet, til jobbet eller i uddannelse. Kort sagt betyder det:</p>
-      <?php sg_checks([
-        'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske',
-        'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment',
-        'Vi tror på holdbare løsninger frem for hurtige quickfixes',
-      ]); ?>
+<section class="sg-who" aria-labelledby="sgWhoTitle">
+  <div class="sg-wrap sg-who__grid">
+    <div class="sg-who__side">
+      <div>
+        <h2 class="sg-h2" id="sgWhoTitle">Hvem er Simply Guiding?</h2>
+        <p class="sg-who__lead">Simply Guiding er en specialiseret beskæftigelsesaktør. Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer med fokus på det enkelte menneske.</p>
+      </div>
+      <img class="sg-who__img" src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" loading="lazy">
+    </div>
+    <div class="sg-who__cells">
+      <?php foreach ([
+        ['heart', 'Vores opgave', 'Vi hjælper mennesker i en sårbar position tilbage til fællesskabet, til jobbet eller i uddannelse.'],
+        ['handshake', 'Brobygger', 'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske.'],
+        ['book', 'Evidensbaseret', 'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment.'],
+        ['shield', 'Holdbare løsninger', 'Vi tror på holdbare løsninger frem for hurtige quickfixes.'],
+      ] as $c) : ?>
+      <div class="sg-who__cell"><span class="sg-who__ico"><?php echo sg_icon($c[0]); ?></span><h3><?php echo esc_html($c[1]); ?></h3><p><?php echo esc_html($c[2]); ?></p></div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>

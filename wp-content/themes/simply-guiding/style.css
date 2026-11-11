@@ -1904,3 +1904,23 @@ Text Domain: simply-guiding
 .sg-mind3 + .sg-band-wrap, .sg-band-wrap + .sg-band-wrap { margin-top: 16px; }
 .sg-sol--plain { background: transparent; padding-block: 56px; margin-bottom: 0; } .sg-sol--plain:first-of-type, section + .sg-sol--plain { margin-top: 0; }
 .sg-hero--full .sg-split__copy h1:first-child { margin-top: 0; }
+/* Om os: "Hvem er Simply Guiding?" – overskrift + billede til venstre, gitter med tynde streger til højre */
+.sg-who { padding-block: 120px 110px; }
+.sg-who__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: 96px; row-gap: 48px; }
+.sg-who__side { display: flex; flex-direction: column; justify-content: space-between; gap: 48px; }
+.sg-who__lead { margin: 22px 0 0; max-width: 28em; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+.sg-who__img { display: block; width: 100%; max-width: 400px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; }
+.sg-who__cells { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-self: start; }
+.sg-who__cell { display: flex; flex-direction: column; min-height: 220px; padding: 34px 36px 40px; }
+.sg-who__cell:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--sg-border); }
+.sg-who__cell:nth-child(n+3) { border-top: 1px solid var(--sg-border); }
+.sg-who__ico { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; background: var(--sg-topbar); color: var(--sg-cta); }
+.sg-who__ico svg { width: 19px; height: 19px; }
+.sg-who__cell h3 { margin: 24px 0 0; font-size: 17px; font-weight: 500; color: var(--sg-text); }
+.sg-who__cell p { margin: 8px 0 0; font-size: 15px; line-height: 1.7; color: var(--sg-muted); max-width: 24em; }
+@media (max-width: 1000px) { .sg-who { padding-block: 72px; } .sg-who__grid { grid-template-columns: 1fr; } .sg-who__img { max-width: none; aspect-ratio: 16 / 10; } }
+@media (max-width: 600px) {
+  .sg-who__cells { grid-template-columns: 1fr; }
+  .sg-who__cell, .sg-who__cell:nth-child(odd) { min-height: 0; padding: 28px 0; border-right: 0; }
+  .sg-who__cell:nth-child(n+2) { border-top: 1px solid var(--sg-border); }
+}
