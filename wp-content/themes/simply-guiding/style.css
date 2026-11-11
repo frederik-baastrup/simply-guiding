@@ -1980,3 +1980,4 @@ Text Domain: simply-guiding
 .sg-mv__list > div:hover .sg-mv__ico { background: #EEF2F0; color: var(--sg-cta); }
 .sg-mind3__copy .sg-mind3__lead--next { margin-top: 18px; }
 .sg-meet__list > div { row-gap: 0; } .sg-mind3__copy .sg-meet__t { margin-top: 4px; }
+.sg-split__copy h1 { hyphens: manual; -webkit-hyphens: manual; overflow-wrap: normal; }
