@@ -2129,3 +2129,4 @@ Text Domain: simply-guiding
 .sg-sol--small .sg-sol__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .sg-sol--small .sg-sol__media { min-height: 0; aspect-ratio: 4 / 5; align-self: center; }
 @media (max-width: 960px) { .sg-sol--small .sg-sol__grid { grid-template-columns: 1fr; } .sg-sol--small .sg-sol__media { aspect-ratio: auto; } }
+.sg-sol--small .sg-sol__grid { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); } .sg-sol--small .sg-sol__media { aspect-ratio: 3 / 4; }
