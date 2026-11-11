@@ -2031,3 +2031,4 @@ Text Domain: simply-guiding
   .sg-index--compact .sg-index__row, .sg-index--compact .sg-index__list li:first-child .sg-index__row { min-height: 120px; padding: 18px 16px; }
   .sg-index--compact .sg-index__row:hover { padding-left: 16px; }
 }
+.sg-mind3__media:has(video) { min-height: clamp(360px, 34vw, 500px); } .sg-mind3__grid:has(.sg-mind3__media video) { align-items: center; } @media (max-width: 960px) { .sg-mind3__media:has(video) { min-height: 0; } }
