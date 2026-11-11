@@ -55,8 +55,8 @@ $logo_list = function ($hidden) use ($u, $logos) {
       <h2 class="sg-h2" id="sgMindTitle">Mindset og metoder</h2>
       <p class="sg-mind3__lead">Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
       <div class="sg-mind3__cols">
-        <p>Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd). Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor.</p>
-        <p>Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
+        <div><h3 class="sg-mind3__h3">Uddannelse og supervision</h3><p>Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd). Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor.</p></div>
+        <div><h3 class="sg-mind3__h3">Praktisk læring og feedback</h3><p>Vi organiserer praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p></div>
       </div>
     </div>
   </div>

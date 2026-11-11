@@ -1317,3 +1317,11 @@ Text Domain: simply-guiding
   .sg-mind3__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(49, 49, 49, .12); }
   .sg-mind3__copy .sg-mind3__cols p { padding: 0; border: 0; }
   @media (max-width: 700px) { .sg-mind3__cols { grid-template-columns: 1fr; gap: 18px; } }
+  /* Billedet følger tekstspaltens højde */
+  .sg-mind3__grid { align-items: stretch; }
+  .sg-mind3__media { position: relative; top: auto; }
+  .sg-mind3__media img { position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
+  .sg-mind3__h3 { margin: 0 0 10px; font-size: 15px; font-weight: 500; line-height: 1.3; color: var(--sg-text); }
+  @media (max-width: 960px) {
+    .sg-mind3__media img { position: static; height: auto; aspect-ratio: 4 / 3; }
+  }
