@@ -18,7 +18,7 @@ add_action('after_setup_theme', 'sg_theme_setup');
 
 // Undersider med egen skabelon (page-<slug>.php) skal findes i WordPress. Oprettes én gang med samme adresse som på det gamle site.
 add_action('init', function () {
-    $pages = ['saadan-arbejder-vi' => 'Sådan arbejder vi', 'projekter' => 'Projekter', 'indsatser' => 'Indsatser', 'loesninger' => 'Løsninger', 'om-os' => 'Om os', 'kontakt' => 'Kontakt', 'tak' => 'Tak', 'hvad-er-ips' => 'Hvad er IPS?', 'grundkursus-i-ips' => 'Grundkursus i IPS', 'ips-konsulentuddannelse' => 'IPS-konsulentuddannelse', 'cases' => 'Cases', 'cookies-og-privatlivspolitik' => 'Cookies og privatlivspolitik', 'blog' => 'Blog', 'postkort-2026' => 'Postkort 2026'];
+    $pages = ['saadan-arbejder-vi' => 'Sådan arbejder vi', 'projekter' => 'Projekter', 'indsatser' => 'Indsatser', 'loesninger' => 'Løsninger', 'om-os' => 'Om os', 'kontakt' => 'Kontakt', 'tak' => 'Tak', 'hvad-er-ips' => 'Hvad er IPS?', 'grundkursus-i-ips' => 'Grundkursus i IPS', 'ips-konsulentuddannelse' => 'IPS-konsulentuddannelse', 'cases' => 'Cases', 'cookies-og-privatlivspolitik' => 'Cookies og privatlivspolitik', 'blog' => 'Blog', 'postkort-2026' => 'Postkort 2026', 'omraade' => 'Områder'];
     $done = (array) get_option('sg_pages_created', []);
     if (get_option('sg_page_saadan_created')) $done['saadan-arbejder-vi'] = 1;
     foreach ($pages as $slug => $title) {
@@ -69,7 +69,7 @@ function sg_table($rows) {
             } elseif ($i === 0) {
                 echo '<span role="cell" class="sg-table__name"><b>' . esc_html($cell) . '</b></span>';
             } else {
-                echo '<span role="cell" data-label="' . esc_attr($head[$i]) . '">' . esc_html($cell) . '</span>';
+                echo '<span role="cell" data-label="' . esc_attr($head[$i]) . '">' . str_replace("\n", '<br><br>', esc_html($cell)) . '</span>';
             }
         }
         echo '</div>';
@@ -188,3 +188,68 @@ add_action('template_redirect', function () {
         exit;
     }
 }, 1);
+
+
+/* Grønt flueben (check123.svg) og liste med flueben */
+function sg_check_svg() {
+    return '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.0857V12.0057C21.9988 14.1621 21.3005 16.2604 20.0093 17.9875C18.7182 19.7147 16.9033 20.9782 14.8354 21.5896C12.7674 22.201 10.5573 22.1276 8.53447 21.3803C6.51168 20.633 4.78465 19.2518 3.61096 17.4428C2.43727 15.6338 1.87979 13.4938 2.02168 11.342C2.16356 9.19029 2.99721 7.14205 4.39828 5.5028C5.79935 3.86354 7.69279 2.72111 9.79619 2.24587C11.8996 1.77063 14.1003 1.98806 16.07 2.86572M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+}
+function sg_checks($items, $class = 'sg-checks') {
+    echo '<ul class="' . esc_attr($class) . '">';
+    foreach ($items as $i) echo '<li>' . sg_check_svg() . '<span>' . esc_html($i) . '</span></li>';
+    echo '</ul>';
+}
+
+/* Holdet: bruges på Om os og områdesiderne */
+function sg_team_members() {
+    return [
+        ['team-lars.jpg', 'Lars Olaf Nielsen', 'Direktør', '+4551905606', '51 90 56 06', 'lars@simplyguiding.dk'],
+        ['team-marlene.jpg', 'Marlene Mohn Ishøi', 'Driftsdirektør', '+4551909603', '51 90 96 03', 'marlene@simplyguiding.dk'],
+        ['team-tania.jpg', 'Tania Cortes', 'Økonomiansvarlig', '+4551903726', '51 90 37 26', 'tania@simplyguiding.dk'],
+    ];
+}
+
+/* Små linjeikoner til punkter og kort */
+function sg_icon($name) {
+    $p = [
+        'pin'    => '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
+        'anchor' => '<circle cx="12" cy="5" r="2"/><path d="M12 7v14M7 11h10M4.5 14a7.5 7.5 0 0 0 15 0"/>',
+        'arrow'  => '<path d="M4 12h15M13 6l6 6-6 6"/>',
+        'people' => '<circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.3"/><path d="M15.5 14.2A4.5 4.5 0 0 1 21 18.5"/>',
+        'spark'  => '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
+        'shield' => '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/>',
+        'heart'  => '<path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/>',
+        'book'   => '<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15H5.5A1.5 1.5 0 0 1 4 17.5zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v15h5.5a1.5 1.5 0 0 0 1.5-1.5z"/>',
+        'bolt'   => '<path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/>',
+        'user'   => '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
+        'puzzle' => '<path d="M9 4h6v3a1.5 1.5 0 1 0 3 0h0v0h2v6h-3a1.5 1.5 0 1 0 0 3h3v4H4V4h5"/>',
+        'handshake' => '<path d="m3 12 4-4 4 2 3-2 3 1 4 3"/><path d="m7 12 3 3a1.4 1.4 0 0 0 2-2M10 15l1.5 1.5a1.4 1.4 0 0 0 2-2M12.5 16.5l.8.8a1.4 1.4 0 0 0 2-2l-2.3-2.3"/>',
+    ];
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($p[$name] ?? $p['arrow']) . '</svg>';
+}
+
+/* Områdesider: /omraade/<slug>/ bruger omraade-side.php med indhold fra content/omraade/<slug>.php. /omraade/ selv viderestilles til Løsninger. */
+add_filter('template_include', function ($t) {
+    if (is_page()) {
+        $p = get_queried_object();
+        if ($p && $p->post_parent && get_post_field('post_name', $p->post_parent) === 'omraade') {
+            $f = locate_template('omraade-side.php');
+            if ($f) return $f;
+        }
+    }
+    return $t;
+});
+add_action('template_redirect', function () {
+    if (is_page('omraade')) { wp_redirect(home_url('/loesninger/'), 301); exit; }
+});
+add_action('init', function () {
+    if (get_option('sg_omraade_created')) return;
+    $parent = get_page_by_path('omraade');
+    if (!$parent) return;
+    foreach (['jobcentre' => 'Jobcentre', 'boern-unge-familier' => 'Børn, unge og familier', 'forsikring-pension' => 'Forsikring og pension'] as $slug => $title) {
+        if (!get_page_by_path('omraade/' . $slug)) {
+            wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => $title, 'post_name' => $slug, 'post_parent' => $parent->ID]);
+        }
+    }
+    update_option('sg_omraade_created', 1);
+}, 20);

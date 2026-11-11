@@ -1,68 +1,101 @@
 <?php
-/* Om os (/om-os/) – samme adresse og tekst som på det gamle site */
+/* Om os (/om-os/) – "Om Simply Guiding" (tekst fra sg-web-om-sg.docx, nov. 2026) */
 get_header();
 get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
 get_template_part('template-parts/page-hero', null, [
-  'title' => 'Vi hjælper mennesker tilbage til arbejdslivet',
-  'lead'  => 'Simply Guiding har siden 2015 haft som mission at hjælpe mennesker, der lever med sociale, psykiske og fysiske udfordringer, til et nyt ståsted i tilværelsen med fast grund under fødderne og en vej tilbage til arbejdslivet.',
+  'label' => 'Om SG',
+  'title' => 'Om Simply Guiding',
+  'lead'  => 'Hos Simply Guiding sørger vi for, at historien ikke gentager sig. Sammen skaber vi et nyt ståsted i livet for mennesket bag borgeren.',
   'video' => 'om-os-hero.mp4', 'full' => true, 'poster' => 'om-os-hero.jpg',
-  'btn1' => 'Kontakt os for at høre mere', 'btn2' => 'Læs mere om os', 'btn2_href' => '#info',
+  'btn1' => 'Kontakt os for en uforpligtende snak', 'btn2' => 'Mød holdet', 'btn2_href' => '#holdet',
 ]);
-$team = [
-  ['team-lars.jpg', 'Lars Olaf Nielsen', 'Direktør', '+4551905606', '51 90 56 06', 'lars@simplyguiding.dk'],
-  ['team-marlene.jpg', 'Marlene Mohn Ishøi', 'Driftsdirektør', '+4551909603', '51 90 96 03', 'marlene@simplyguiding.dk'],
-  ['team-tania.jpg', 'Tania Cortes', 'Økonomiansvarlig', '+4551903726', '51 90 37 26', 'tania@simplyguiding.dk'],
-];
 ?>
-<div id="info"></div>
+<div id="indhold"></div>
 
-<section class="sg-mind3" aria-labelledby="sgMissionTitle">
+<section class="sg-why" aria-labelledby="sgWhoTitle">
+  <div class="sg-wrap sg-why__grid">
+    <div><h2 class="sg-h2" id="sgWhoTitle">Hvem er Simply Guiding?</h2></div>
+    <div>
+      <p class="sg-why__lead sg-why__lead--big">Simply Guiding er en specialiseret beskæftigelsesaktør. Vi kombinerer høj faglighed med en dyb forståelse for de kommunale og samfundsmæssige rammer med fokus på det enkelte menneske.</p>
+      <p class="sg-why__p">Vi går på arbejde for at hjælpe mennesker i en sårbar position tilbage til fællesskabet, til jobbet eller i uddannelse. Kort sagt betyder det:</p>
+      <?php sg_checks([
+        'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske',
+        'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment',
+        'Vi tror på holdbare løsninger frem for hurtige quickfixes',
+      ]); ?>
+    </div>
+  </div>
+</section>
+
+<section class="sg-mind3" aria-labelledby="sgFloorTitle">
   <div class="sg-wrap sg-mind3__grid">
-    <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejdere hos Simply Guiding" width="1200" height="1800" loading="lazy"></div>
-    <div class="sg-mind3__copy sg-mv">
-      <h2 class="sg-h2" id="sgMissionTitle">Vi hjælper mennesker videre i tilværelsen</h2>
-      <p class="sg-mind3__lead">Vi skaber trygge relationer og en optimistisk tro på fremtiden for mennesker, der for en stund har brug for støtte til at komme videre. Og vi udvikler os hele tiden gennem partnerskaber og samarbejder, der styrker vores faglighed.</p>
-      <dl class="sg-mv__list">
-        <div><span class="sg-mv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></svg></span><dt>Mission</dt><dd>At støtte mennesker i udsatte positioner til at finde en vej i tilværelsen, der øger deres trivsel og sundhed og gør dem selvforsørgende.</dd></div>
-        <div><span class="sg-mv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><dt>Vision</dt><dd>Et samfund, hvor alle – uanset udgangspunkt – kan finde deres egen vej til job, uddannelse og trivsel. Vi vil være en drivkraft for positiv forandring og give mere, end vi modtager.</dd></div>
-        <div><span class="sg-mv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg></span><dt>Værdier</dt><dd>Vi arbejder evidensbaseret og stringent metodisk – og bygger på fire værdier:</dd>
-          <dd class="sg-mv__vals"><ul class="sg-mv__values"><li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>Autenticitet</li><li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>Inklusion</li><li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>Nærvær</li><li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>Alle har værdi</li></ul></dd></div>
-      </dl>
-      <p class="sg-mv__actions"><a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os og hør mere</a></p>
+    <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejder i arbejde" width="1200" height="1800" loading="lazy"></div>
+    <div class="sg-mind3__copy">
+      <h2 class="sg-h2" id="sgFloorTitle">Når gulvet vipper, griber vi dig</h2>
+      <p class="sg-mind3__lead">Når et menneske mister fodfæstet, omdannes den personlige historie alt for ofte til en sag, en paragraf og en diagnose. Det er ikke af ond vilje.</p>
+      <p class="sg-meet__p">Hos Simply Guiding tror vi på, at mennesker udvikler sig, når de mødes som dem, de er – summen af datid, nutid og drømme for fremtiden. Vi er optaget af den enkeltes situation, muligheder og ønsker. Det betyder, at vi for mange er den vejleder og guide, man kan læne sig op ad, når gulvet vipper.</p>
+      <p class="sg-meet__p">Vi er dem, man kan komme til og spørge til råds, når tvivlen melder sig – og vi er dem, der hjælper mennesker i en sårbar situation tilbage til fællesskabet, til jobbet eller i uddannelse.</p>
+      <div class="sg-belief">
+        <h3 class="sg-belief__title">Tro kan ikke flytte bjerge alene</h3>
+        <p>Vi tror på, at alle mennesker har muligheder og potentiale. Vi begrænser os ikke af kassetænkning eller diagnoser. Vi tror også på, at det enkelte menneske nogle gange skal have et kærligt skub i den rigtige retning.</p>
+        <p>Men tro kan ikke flytte bjerge eller mennesker alene, og heldigvis for det. Troen skal ledsages af handling og faglighed. Intet sker af sig selv, og vi venter heller ikke på, at tiden heler alle sår.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sg-news-signup" aria-labelledby="sgNlTitle">
-  <div class="sg-wrap">
-    <div class="sg-news-signup__box">
-      <h2 class="sg-h2 sg-h2--light" id="sgNlTitle">Tilmeld dig vores nyhedsbrev</h2>
-      <?php get_template_part('template-parts/signup-form'); ?>
-    </div>
-  </div>
-</section>
+<?php
+get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfaren aktør', 'items' => [
+  ['25+', 'kommuner', 'Tæt og tillidsfuldt samarbejde om at løfte beskæftigelses- og ungeindsatsen.'],
+  ['1.500+', 'mennesker', 'Individuel støtte tilbage til job, uddannelse eller fællesskab.'],
+  ['10+', 'år i branchen', 'Siden 2015 har vi fungeret som en specialiseret og resultatskabende ekstern aktør.'],
+]]);
+get_template_part('template-parts/cards3', null, [
+  'title' => 'Hvorfor vælge Simply Guiding?',
+  'text'  => 'Udvikling gennem stærke relationer og troen på det enkelte menneske. Så kort kan det siges, men der er heldigvis mere til historien.',
+  'items' => [
+    ['user', 'Det enkelte menneske', 'Vores fokus er at opbygge en tillidsfuld relation, der giver det enkelte menneske modet og redskaberne til at genvinde fodfæstet og opnå et nyt ståsted i livet.'],
+    ['puzzle', 'Indsatser, som passer til situationen', 'Du kan ikke købe en hyldevare hos Simply Guiding. Det ville være mod vores natur. Når vi møder et menneske, hvor det er, giver det ikke mening at putte vedkommende i en bås – og håbe på det bedste.'],
+    ['shield', 'Tæt kommunalt samarbejde og dokumenteret faglighed', 'Vores tværfaglige hold af konsulenter kombinerer dyb empati med en stærk beskæftigelsesfaglighed. Med afsæt i evidensbaserede metoder som IPS og Supported Employment er vi en stærk, gennemsigtig og resultatskabende medspiller for både kommuner, jobcentre og virksomheder.'],
+  ],
+]);
+?>
 
-<section class="sg-team" aria-labelledby="sgOrgTitle">
-  <div class="sg-wrap">
-    <div class="sg-tablesec__head">
-      <h2 class="sg-h2" id="sgOrgTitle">Organisation</h2>
-      <p>Simply Guidings medarbejdere har et særligt DNA, som vi værner om. De har blik for det unikke i mennesket, de møder borgeren fordomsfrit og med optimisme og de overgår dagligt vores forventninger. Derfor har vi som virksomhed også en særlig forpligtigelse til at skabe et arbejdsmiljø, der fokuserer på fleksibilitet, livsbalance, og anerkendelse.</p>
+<div class="sg-band-wrap">
+  <section class="sg-band2 sg-band2--side" aria-labelledby="sgAcadTitle">
+    <div class="sg-wrap sg-band2__side">
+      <div class="sg-band2__head">
+        <h2 class="sg-h2 sg-h2--light" id="sgAcadTitle">Faglighed, der skaber resultater i praksis</h2>
+        <div class="sg-band2__cols">
+          <p>Vores viden og erfaring lever ikke kun i vores borgerrettede forløb. Gennem Simply Guiding Academy bygger vi bro mellem viden og virkelighed i den kommunale praksis.</p>
+          <p>Vi uddanner, sparrer med og opkvalificerer kommunale teams, ledere og beskæftigelsesaktører med afsæt i IPS, Supported Employment og pædagogiske virkemidler – så den faglige indsats styrkes hele vejen rundt.</p>
+        </div>
+        <p class="sg-band2__btn"><a class="sg-btn sg-btn--lg" href="/loesninger/#academy">Læs mere om Academy</a></p>
+      </div>
+      <div class="sg-band2__media"><img src="<?php echo esc_url($u); ?>/assets/indsats-academy.jpg" alt="Undervisning i Simply Guiding Academy" loading="lazy"></div>
     </div>
-    <div class="sg-team__grid">
-      <?php foreach ($team as $t) : ?>
-      <article class="sg-person">
-        <div class="sg-person__img"><img src="<?php echo esc_url($u . '/assets/' . $t[0]); ?>" alt="<?php echo esc_attr($t[1]); ?>" loading="lazy"></div>
-        <h3 class="sg-person__name"><?php echo esc_html($t[1]); ?></h3>
-        <p class="sg-person__role"><?php echo esc_html($t[2]); ?></p>
-        <p class="sg-person__contact"><a href="tel:<?php echo esc_attr($t[3]); ?>"><?php echo esc_html($t[4]); ?></a><a href="mailto:<?php echo esc_attr($t[5]); ?>"><?php echo esc_html($t[5]); ?></a></p>
-      </article>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<?php get_template_part('template-parts/latest-news'); ?>
-<?php get_template_part('template-parts/final-cta'); ?>
-<?php get_template_part('template-parts/site-footer'); ?>
-<?php get_footer(); ?>
+<?php
+get_template_part('template-parts/cards3', null, [
+  'title' => 'Vores værdier',
+  'items' => [
+    ['heart', 'Tro', 'Vi tror på mennesket og fremtiden.'],
+    ['book', 'Faglighed', 'Vi bygger vores indsatser på evidens og erfaring.'],
+    ['bolt', 'Handling', 'Vi sætter mennesker i bevægelse.'],
+    ['user', 'Autenticitet', 'Vi kommer med, hvad og hvem vi er.'],
+  ],
+]);
+get_template_part('template-parts/team', null, ['title' => 'Mød holdet bag Simply Guiding']);
+get_template_part('template-parts/faq', null, ['title' => 'FAQ - Ofte stillede spørgsmål om Simply Guiding', 'items' => [
+  ['Hvad er historien bag Simply Guiding?', 'Siden 2015 har vi arbejdet som ekstern aktør og samarbejdspartner på beskæftigelses- og socialområdet. Vi startede med et ønske om at skabe reelle, varige forandringer for mennesker i sårbare positioner. Vores navn, organisation og forretningsområder har udviklet sig over mere end ti år, men vores grundlæggende DNA er uændret: Vi ser mennesket før sagsnummeret.'],
+  ['Hvad betyder "Et nyt ståsted i livet" i praksis?', 'Et nyt ståsted betyder, at vi ikke arbejder med quickfixes eller symptombehandling. Vi hjælper det enkelte menneske med at opbygge et stabilt og holdbart fundament, uanset om det handler om at vende tilbage til arbejdsmarkedet, komme i uddannelse, genvinde trivslen i familien eller finde tilbage til fællesskabet.'],
+  ['Hvilket menneskesyn arbejder Simply Guiding ud fra?', 'Vi møder det enkelte menneske med summen af sin datid, sin nutid og sine drømme for fremtiden. Vi tror på, at alle har ressourcer og potentiale til at udvikle sig, når de mødes med tro, empati og en fordomsfri tilgang frem for at blive defineret af diagnoser, paragraffer eller tidligere nederlag.'],
+  ['Hvordan samarbejder I med kommuner og sagsbehandlere?', 'Vi ser os selv som en tæt og troværdig medspiller for kommunerne. Vi har stor forståelse for de administrative rammer og komplekse sagsgange, sagsbehandlere navigerer i. Vores rolle er at lette presset, skabe fremdrift og fungere som en håndholdt brobygger mellem borger, forvaltning og arbejdsmarked.'],
+  ['Hvem er medarbejderne hos Simply Guiding?', 'Vores hold består af erfarne faglige profiler med baggrund i blandt andet beskæftigelsesindsatsen, socialpædagogik, socialpsykiatri og kommunal sagsbehandling. Fælles for alle er en dyb metodisk forankring i IPS og Supported Employment samt evnen til at skabe den tillidsfulde relation, der muliggør forandring.'],
+]]);
+get_template_part('template-parts/final-cta');
+get_template_part('template-parts/site-footer');
+get_footer();

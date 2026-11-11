@@ -1820,3 +1820,78 @@ Text Domain: simply-guiding
 .sg-quote__by--stack { flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; flex-wrap: nowrap; }
 .sg-quote__by--stack .sg-quote__photo { width: 72px; height: 72px; }
 .sg-quote__by--stack .sg-quote__who { align-items: center; text-align: center; }
+
+/* ===================== Områdesider + ny Om os (nov. 2026) ===================== */
+/* Fælles sektionshoved: overskrift til venstre, tekst til højre */
+.sg-sechead { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: 96px; row-gap: 16px; align-items: end; margin-bottom: 44px; }
+.sg-sechead > p { margin: 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+.sg-sechead:has(> :only-child) { grid-template-columns: 1fr; }
+.sg-sechead:has(> :only-child) .sg-h2 { max-width: 22em; }
+@media (max-width: 1000px) { .sg-sechead { grid-template-columns: 1fr; } }
+
+/* Hvornår ringer man: overskrift venstre, fluebensliste højre */
+.sg-why { padding-block: 110px; }
+.sg-why__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: 96px; row-gap: 32px; align-items: start; }
+.sg-why__intro { margin: 20px 0 0; font-size: 15.5px; line-height: 1.75; color: var(--sg-muted); max-width: 26em; }
+.sg-why__lead { margin: 0 0 10px; font-size: 17px; font-weight: 500; color: var(--sg-text); }
+.sg-why__lead--big { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.6; font-weight: 400; margin-bottom: 18px; }
+.sg-why__p { margin: 0 0 10px; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+.sg-checks { list-style: none; margin: 0; padding: 0; }
+.sg-checks li { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--sg-border); font-size: 16.5px; line-height: 1.55; color: var(--sg-text); }
+.sg-checks li:first-child { border-top: 1px solid var(--sg-border); }
+.sg-checks svg { flex: none; width: 22px; height: 22px; margin-top: 1px; color: var(--sg-cta); }
+@media (max-width: 1000px) { .sg-why { padding-block: 72px; } .sg-why__grid { grid-template-columns: 1fr; } }
+
+/* Mennesket bag: hvide kort med rundt ikon i den lysegrønne sektion */
+.sg-meet__p { margin: 16px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+.sg-meet__list { margin-top: 36px; }
+.sg-meet__list .sg-mv__ico { align-self: start; grid-row: span 2; }
+.sg-meet__h { grid-column: 2; margin: 2px 0 0; font-family: inherit; font-size: 16px; font-weight: 500; line-height: 1.35; color: var(--sg-text); }
+.sg-meet__t { grid-column: 2; margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: var(--sg-muted); }
+.sg-belief { margin-top: 40px; padding: 30px 32px; border-radius: 16px; background: #fff; }
+.sg-belief__title { margin: 0 0 12px; font-family: "Lora", Georgia, serif; font-weight: 400; font-size: clamp(22px, 2vw, 28px); line-height: 1.25; color: var(--sg-text); }
+.sg-belief p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+
+/* Tal på mørkt bånd */
+.sg-stats { border-radius: var(--sg-radius); padding-block: 96px 100px; color: #fff; background: url("assets/pattern.png") center / 601px repeat, #0A2F2A; }
+.sg-stats__title { max-width: 18em; }
+.sg-stats__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 56px; }
+.sg-stat { padding: 8px 40px 0 0; }
+.sg-stat + .sg-stat { padding-left: 40px; border-left: 1px solid rgba(255,255,255,.14); }
+.sg-stat__num { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: clamp(52px, 6vw, 88px); line-height: .95; letter-spacing: -.02em; color: var(--sg-hero-ink); font-variant-numeric: tabular-nums; }
+.sg-stat__label { margin: 14px 0 0; font-size: 16px; font-weight: 500; color: #fff; }
+.sg-stat__text { margin: 8px 0 0; font-size: 14.5px; line-height: 1.7; color: rgba(255,255,255,.72); max-width: 24em; }
+@media (max-width: 860px) {
+  .sg-stats { border-radius: 0; padding-block: 72px; }
+  .sg-stats__grid { grid-template-columns: 1fr; gap: 32px; }
+  .sg-stat, .sg-stat + .sg-stat { padding: 0; border: 0; }
+  .sg-stat + .sg-stat { padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14); }
+}
+
+/* Forløbstabel med tre kolonner */
+.sg-forloeb { padding-block: 110px 64px; }
+.sg-forloeb .sg-table__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 2fr); gap: 32px; padding: 26px 28px; font-size: 14.5px; }
+.sg-forloeb .sg-table__head { padding-block: 14px; font-size: 12px; }
+.sg-forloeb .sg-table__name b { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 17px; font-weight: 500; }
+@media (max-width: 1000px) { .sg-forloeb .sg-table__row { grid-template-columns: 1fr; gap: 10px; } }
+
+/* Kort-sektion (3 eller 4) */
+.sg-cards3 { padding-block: 64px 110px; }
+.sg-cards3__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.sg-cards3__grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.sg-card3 { display: flex; flex-direction: column; padding: 32px 30px 34px; border-radius: 16px; background: var(--sg-topbar); transition: transform .3s, box-shadow .3s; }
+.sg-card3:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(10,47,42,.07); }
+.sg-card3__ico { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: #fff; color: var(--sg-cta); }
+.sg-card3__ico svg { width: 22px; height: 22px; }
+.sg-card3__num { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 15px; color: var(--sg-cta); }
+.sg-card3 h3 { margin: 26px 0 0; font-size: 17px; font-weight: 500; line-height: 1.35; color: var(--sg-text); }
+.sg-card3 p { margin: 10px 0 0; font-size: 15px; line-height: 1.75; color: var(--sg-muted); }
+@media (max-width: 1100px) { .sg-cards3__grid--4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 860px) { .sg-cards3__grid { grid-template-columns: 1fr; } .sg-cards3 { padding-block: 48px 72px; } }
+@media (max-width: 860px) and (min-width: 561px) { .sg-cards3__grid--4 { grid-template-columns: 1fr 1fr; } }
+
+/* Mørkt bånd med knap */
+.sg-band2__btn { margin: 32px 0 0; }
+.sg-band-wrap + .sg-cards3, .sg-band-wrap + .sg-tablesec { margin-top: 0; }
+.sg-band-wrap:has(.sg-stats) { margin-bottom: 0; }
+.sg-team .sg-sechead { margin-bottom: 40px; }

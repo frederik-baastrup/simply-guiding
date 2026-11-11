@@ -1,0 +1,51 @@
+<?php
+return [
+  'label' => 'Jobcentre',
+  'title' => 'Ekstern beskæftigelsesaktør til jobcentre',
+  'lead' => 'Simply Guiding hjælper jobcentre med at skabe et nyt ståsted i livet for borgere i en sårbar situation.',
+  'hero_img' => 'indsats-jobcenter.jpg', 'hero_alt' => 'Konsulent fra Simply Guiding i samtale med en borger',
+  'btn1' => 'Henvis en borger', 'btn2' => 'Se alle indsatser',
+  'why_title' => 'Derfor ringer jobcentre til Simply Guiding',
+  'why_intro' => 'Simply Guiding er en specialiseret beskæftigelsesaktør (anden aktør).',
+  'why_lead' => 'Jobcentre ringer til os, når de …',
+  'why_items' => [
+    'vil undgå uendelige afklaringsforløb og har brug for specialister i IPS og Supported Employment, der arbejder direkte mod løntimer',
+    'har brug for ro i sagsbehandlingen og gennemskuelige statusnotater i god tid før opfølgningen',
+    'står med en sag i hårdknude og har brug for en intensiv indsats i borgerens eget nærmiljø',
+    'møder en borger, der ikke er »systemklar«, og har brug for en aktør, der tager udgangspunkt i den enkeltes situation',
+  ],
+  'meet_title' => 'Vi møder mennesket bag borgeren',
+  'meet_img' => 'mindset.jpg', 'meet_alt' => 'Konsulenter fra Simply Guiding i samtale',
+  'meet_text' => [
+    'Mennesker rykker sig kun, når de bliver mødt som dem, de er. Det er inklusiv den enkeltes historie, ønsker og drømme for fremtiden.',
+    'Bag vores forløb ligger mere end 10 års erfaring, høj metodefidelitet og en solid beskæftigelsesfaglighed.',
+  ],
+  'meet_points' => [
+    ['pin', 'Vi starter dér, hvor borgeren er', 'Borgeren behøver hverken at være færdigbehandlet i psykiatrien eller 100 % arbejdsmarkedsafklaret, når forløbet starter.'],
+    ['anchor', 'Der skal ro på', 'Simply Guiding agerer ekstern beskæftigelsesaktør, som borgeren og jobcenteret kan læne sig op ad, når gulvet vipper, og der er behov for en specialist med fokus på fremdrift.'],
+    ['arrow', 'Farvel til uendelige afklaringsforløb', 'Vi arbejder altid henimod løntimer, uddannelse eller selvhjulpenhed. Vi stemmer ’nej tak’ til uendelige afklaringsforløb, og vi formulerer altid et konkret næste skridt for borgeren.'],
+  ],
+  'stats_title' => 'Dokumenterede resultater fra den virkelige verden',
+  'stats' => [
+    ['25+', 'kommuner', 'Tæt og tillidsfuldt samarbejde om at løfte beskæftigelses- og ungeindsatsen i mere end 25 kommuner.'],
+    ['1.500+', 'mennesker', 'Individuel støtte til mere end 1.500 mennesker i deres søgen tilbage til arbejdsmarkedet eller i uddannelse.'],
+    ['10+', 'år i branchen', 'Mere end 10 års erfaring som beskæftigelsesaktør for kommuner i hele landet.'],
+  ],
+  'table_title' => 'Sådan kan vi hjælpe jeres borgere til et nyt ståsted i livet',
+  'table' => [
+    ['IPS-forløb', 'Borgere (18-67 år) på kontanthjælp, sygedagpenge eller i ressourceforløb med psykisk sårbarhed eller diagnoser.', 'Vi lader borgerens egne drømme og ressourcer være drivkraften frem for uendelige afklaringsforløb.'],
+    ['IPS UNG', 'Unge (15-29 år) med psykisk sårbarhed, diagnoser eller skolevægring.', 'Vi genopbygger livsmodet, styrker trivslen og hjælper den unge med at finde sin egen vej mod uddannelse eller job.'],
+    ['Vendepunktet', 'Borgere med høj udeblivelse, slem skolevægring eller langvarig, fastlåst ledighed.', 'Vi møder borgeren dér, hvor livet leves, og skaber det afgørende vendepunkt for den enkelte.'],
+    ['Supported Employment', 'Borgere med fysiske eller psykiske funktionsnedsættelser.', 'Vi er den faglige vejleder, man kan læne sig op ad, når vi hjælper borgeren med at finde, opnå og fastholde sin egen plads på det ordinære arbejdsmarked eller i uddannelse.'],
+    ['§ 82 b og § 85 (Serviceloven)', 'Borgere med nedsat psykisk funktionsevne eller svære sociale udfordringer.', 'Vi arbejder med at være i hverdagen, skabe tryghed og styrke borgerens evne til at klare sig selv – med ønsket om, at den enkelte kan stå på egne ben.'],
+    ['Job Accelerator', 'Forsikrede ledige, som har brug for et målrettet skub tilbage til arbejdsmarkedet.', 'Vi samler afklaring, opsøgende virksomhedskontakt og tæt opfølgning på arbejdspladsen i et forløb, så borgeren opnår en varig tilknytning til arbejdsmarkedet.'],
+  ],
+  'how_title' => 'Sådan går vi til alle opgaver hos dit jobcenter',
+  'how' => [
+    ['', 'Vi møder borgere, hvor de er', 'Vi møder det enkelte menneske med summen af sin datid, sin nutid og sine drømme om fremtiden.'],
+    ['', 'Vi tror på, at alle kan rykke sig', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
+    ['', 'Vi skaber holdbare løsninger for jer og borgeren', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
+  ],
+  'form_title' => 'Sådan kommer jeres borgere i gang hos Simply Guiding',
+  'form_text' => 'Send os en besked eller ring på 26 34 44 54, så vender vi hurtigst muligt tilbage.',
+];

@@ -32,9 +32,9 @@
           <div class="sg-sub">
             <div class="sg-sub__col">
               <p class="sg-sub__head">Vælg dit område</p>
-              <a class="sg-sub__link" href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a>
-              <a class="sg-sub__link" href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a>
-              <a class="sg-sub__link" href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a>
+              <a class="sg-sub__link" href="/omraade/jobcentre/">Jobcentre</a>
+              <a class="sg-sub__link" href="/omraade/boern-unge-familier/">Børn, unge og familier</a>
+              <a class="sg-sub__link" href="/omraade/forsikring-pension/">Forsikring og pension</a>
             </div>
           </div>
         </li>

@@ -1,9 +1,11 @@
-<?php /* Kontaktformular "Skal vi tage en snak?" (samme felter som på det gamle site) */ ?>
+<?php /* Kontaktformular "Skal vi tage en snak?" (samme felter som på det gamle site). Args: title, text */
+$cf = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['title' => 'Skal vi tage en snak?', 'text' => 'Hvis du er nysgerrig på at høre nærmere om vores indsatser, eller har brug for at vide hvordan du kommer i gang, så send os en besked. Vi vender hurtigst muligt tilbage.']);
+?>
 <section class="sg-cform" id="formular" aria-labelledby="sgCformTitle">
   <div class="sg-wrap sg-cform__grid">
     <div class="sg-cform__intro">
-      <h2 class="sg-h2" id="sgCformTitle">Skal vi tage en snak?</h2>
-      <p>Hvis du er nysgerrig på at høre nærmere om vores indsatser, eller har brug for at vide hvordan du kommer i gang, så send os en besked. Vi vender hurtigst muligt tilbage.</p>
+      <h2 class="sg-h2" id="sgCformTitle"><?php echo esc_html($cf['title']); ?></h2>
+      <p><?php echo esc_html($cf['text']); ?></p>
     </div>
     <div class="sg-cform__box">
       <?php if (isset($_GET['sg_fejl'])) : ?><p class="sg-form__error" role="alert">Udfyld venligst navn og en gyldig e-mail.</p><?php endif; ?>

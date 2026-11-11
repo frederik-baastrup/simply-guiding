@@ -14,7 +14,7 @@
           <div class="sg-footer__navs">
           <nav class="sg-footer__col" aria-label="Områder">
             <p class="sg-footer__head">Områder</p>
-            <ul class="sg-footer__list"><li><a href="/loesninger/#beskaeftigelsesindsatser">Jobcentre</a></li><li><a href="/loesninger/#boern-unge-og-familieindsatser">Børn, unge og familier</a></li><li><a href="/loesninger/#forsikrings-og-pensionsindsatser">Forsikring og pension</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/omraade/jobcentre/">Jobcentre</a></li><li><a href="/omraade/boern-unge-familier/">Børn, unge og familier</a></li><li><a href="/omraade/forsikring-pension/">Forsikring og pension</a></li></ul>
           </nav>
           <nav class="sg-footer__col" aria-label="Indsatser">
             <p class="sg-footer__head">Indsatser</p>

@@ -34,7 +34,7 @@
     <div class="sg-cards" id="sgCards">
       <article class="sg-card is-active">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
-        <a class="sg-card__link" href="/loesninger/#beskaeftigelsesindsatser" aria-label="Læs om indsatsen: Jobcentre"></a>
+        <a class="sg-card__link" href="/omraade/jobcentre/" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Jobcentre</h3>
@@ -45,7 +45,7 @@
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
-        <a class="sg-card__link" href="/loesninger/#boern-unge-og-familieindsatser" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
+        <a class="sg-card__link" href="/omraade/boern-unge-familier/" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Børn, unge og familier</h3>
@@ -56,7 +56,7 @@
       </article>
       <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
-        <a class="sg-card__link" href="/loesninger/#forsikrings-og-pensionsindsatser" aria-label="Læs om indsatsen: Forsikring og pension"></a>
+        <a class="sg-card__link" href="/omraade/forsikring-pension/" aria-label="Læs om indsatsen: Forsikring og pension"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
             <h3 class="sg-card__title">Forsikring og pension</h3>
