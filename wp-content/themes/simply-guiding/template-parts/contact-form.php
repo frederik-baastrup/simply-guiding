@@ -1,0 +1,22 @@
+<?php /* Kontaktformular "Skal vi tage en snak?" (samme felter som på det gamle site) */ ?>
+<section class="sg-cform" id="formular" aria-labelledby="sgCformTitle">
+  <div class="sg-wrap sg-cform__grid">
+    <div class="sg-cform__intro">
+      <h2 class="sg-h2" id="sgCformTitle">Skal vi tage en snak?</h2>
+      <p>Hvis du er nysgerrig på at høre nærmere om vores indsatser, eller har brug for at vide hvordan du kommer i gang, så send os en besked. Vi vender hurtigst muligt tilbage.</p>
+    </div>
+    <div class="sg-cform__box">
+      <?php if (isset($_GET['sg_fejl'])) : ?><p class="sg-form__error" role="alert">Udfyld venligst navn og en gyldig e-mail.</p><?php endif; ?>
+      <?php sg_form_open('kontakt'); ?>
+        <div class="sg-form__grid">
+          <label class="sg-field"><span class="sg-sr">Navn</span><input type="text" name="navn" placeholder="Indtast dit navn" autocomplete="name" required></label>
+          <label class="sg-field"><span class="sg-sr">Lokation</span><input type="text" name="lokation" placeholder="Indtast evt. lokation"></label>
+          <label class="sg-field"><span class="sg-sr">E-mail</span><input type="email" name="email" placeholder="Indtast din e-mail" autocomplete="email" required></label>
+          <label class="sg-field"><span class="sg-sr">Telefon</span><input type="tel" name="telefon" placeholder="Indtast evt. telefonnummer" autocomplete="tel"></label>
+          <label class="sg-field sg-field--full"><span class="sg-sr">Besked</span><textarea name="besked" rows="6" placeholder="Hvad drejer henvendelsen sig om?" required></textarea></label>
+        </div>
+        <button class="sg-btn sg-btn--lg sg-form__submit" type="submit">Send besked</button>
+      </form>
+    </div>
+  </div>
+</section>
