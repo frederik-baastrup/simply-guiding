@@ -1211,3 +1211,85 @@ Text Domain: simply-guiding
     .sg-band, .sg-more { border-radius: 0; }
   }
   @media (max-width: 600px) { .sg-band__title { font-size: 28px; } .sg-more__actions { gap: 10px; } }
+
+  /* ---------- Sådan arbejder vi v2: varieret opbygning, samme tekst ---------- */
+  .sg-h2 {
+    margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500;
+    font-size: clamp(28px, 2.6vw, 38px); line-height: 1.08; letter-spacing: -.01em; color: var(--sg-text);
+    text-wrap: balance; -webkit-font-smoothing: antialiased;
+  }
+  .sg-h2--light { color: var(--sg-hero-ink); }
+
+  /* Mindset: billede + tre hvide kort */
+  .sg-mind2 { background: var(--sg-topbar); padding-block: 96px; }
+  .sg-mind2 .sg-h2 { margin-bottom: 40px; }
+  .sg-mind2__grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr 1fr; gap: 16px; align-items: stretch; }
+  .sg-mind2__media { border-radius: var(--sg-radius-sm); overflow: hidden; min-height: 360px; }
+  .sg-mind2__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .sg-mind2__card { margin: 0; padding: 30px 28px; border-radius: var(--sg-radius-sm); background: #fff; font-size: 15px; line-height: 1.75; color: var(--sg-text); }
+  .sg-mind2__card a { color: var(--sg-cta); text-decoration: none; border-bottom: 1px solid currentColor; }
+  @media (max-width: 1100px) {
+    .sg-mind2__grid { grid-template-columns: 1fr 1fr; }
+    .sg-mind2__media { grid-row: span 2; }
+  }
+  @media (max-width: 700px) {
+    .sg-mind2 { padding-block: 64px; }
+    .sg-mind2__grid { grid-template-columns: 1fr; }
+    .sg-mind2__media { grid-row: auto; min-height: 0; }
+    .sg-mind2__media img { aspect-ratio: 4 / 3; height: auto; }
+  }
+
+  /* Borgere: mørkt bånd, overskrift + to spalter, bredt billede */
+  .sg-band2 {
+    border-radius: var(--sg-radius); padding-block: 96px 18px; color: #fff;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("assets/pattern.png") center / 601px repeat; background-color: #0A352F;
+  }
+  .sg-band2__head { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 32px 72px; align-items: start; }
+  .sg-band2__head .sg-h2 { max-width: 12em; }
+  .sg-band2__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .sg-band2__cols p { margin: 0; font-size: 15px; line-height: 1.8; color: rgba(255,255,255,.82); }
+  .sg-band2__media { margin-top: 64px; border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-band2__media img { display: block; width: 100%; height: auto; aspect-ratio: 21 / 8; object-fit: cover; object-position: 50% 32%; }
+  .sg-band2 .sg-wrap { padding-bottom: 60px; }
+  @media (max-width: 1000px) {
+    .sg-band2 { padding-top: 72px; }
+    .sg-band2__head { grid-template-columns: 1fr; }
+    .sg-band2__media img { aspect-ratio: 16 / 9; }
+  }
+  @media (max-width: 700px) { .sg-band2__cols { grid-template-columns: 1fr; gap: 18px; } }
+  @media (max-width: 860px) { .sg-band2 { border-radius: 0; } .sg-band2 .sg-wrap { padding-bottom: 40px; } }
+
+  /* Konsulenter: billede + tekst, principperne som store linjer */
+  .sg-consult { padding-block: 110px; }
+  .sg-consult__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 96px; align-items: center; }
+  .sg-consult__media { border-radius: var(--sg-radius-sm); overflow: hidden; }
+  .sg-consult__media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .sg-consult__lead { margin: 20px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-consult__sub { margin: 40px 0 6px; font-size: 14px; font-weight: 500; color: var(--sg-cta); }
+  .sg-principles { list-style: none; margin: 0; padding: 0; }
+  .sg-principles li {
+    display: flex; align-items: center; gap: 16px; padding: 17px 0; border-bottom: 1px solid var(--sg-border);
+    font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.3; color: var(--sg-text);
+    -webkit-font-smoothing: antialiased;
+  }
+  .sg-principles svg { flex: none; width: 24px; height: 24px; color: var(--sg-cta); }
+  @media (max-width: 960px) {
+    .sg-consult { padding-block: 72px; }
+    .sg-consult__grid { grid-template-columns: 1fr; gap: 40px; }
+    .sg-consult__media img { aspect-ratio: 4 / 3; }
+  }
+
+  /* Vil du vide mere?: lys boks med billede */
+  .sg-more2 { padding-block: 0 var(--sg-gap); }
+  .sg-more2__box { display: grid; grid-template-columns: 1fr 1fr; border-radius: var(--sg-radius-sm); overflow: hidden; background: var(--sg-topbar); }
+  .sg-more2__media { min-height: 420px; }
+  .sg-more2__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .sg-more2__copy { align-self: center; padding: 64px clamp(32px, 5vw, 72px); }
+  .sg-more2__copy p { margin: 20px 0 0; font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
+  .sg-more2__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+  @media (max-width: 900px) {
+    .sg-more2__box { grid-template-columns: 1fr; }
+    .sg-more2__media { min-height: 0; }
+    .sg-more2__media img { aspect-ratio: 16 / 9; height: auto; }
+    .sg-more2__copy { padding: 40px 28px 44px; }
+  }

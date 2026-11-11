@@ -46,14 +46,16 @@ $logo_list = function ($hidden) use ($u, $logos) {
 
 <div id="indhold"></div>
 
-<section class="sg-mind" aria-labelledby="sgMindTitle">
-  <div class="sg-wrap sg-mind__grid">
-    <div class="sg-mind__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Konsulenter fra Simply Guiding i samtale" width="840" height="1050" loading="lazy"></div>
-    <div class="sg-mind__copy">
-      <h2 class="sg-mind__title" id="sgMindTitle">Mindset og metoder</h2>
-      <p>Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
-      <p>Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd).</p>
-      <p>Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor. Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
+
+<!-- Mindset og metoder: billede + de tre afsnit som hvide kort på lysegrå flade -->
+<section class="sg-mind2" aria-labelledby="sgMindTitle">
+  <div class="sg-wrap">
+    <h2 class="sg-h2" id="sgMindTitle">Mindset og metoder</h2>
+    <div class="sg-mind2__grid">
+      <div class="sg-mind2__media"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Konsulenter fra Simply Guiding i samtale" width="840" height="1050" loading="lazy"></div>
+      <p class="sg-mind2__card">Vores indsatser er tilrettelagt ud fra mindset, principper, redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metode. Vi er som den eneste private aktør i Danmark specialister i Supported Employment og IPS-metoden. <a href="/hvad-er-ips/">Læs mere om IPS her</a>.</p>
+      <p class="sg-mind2__card">Simply Guidings medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret. For eksempel ud fra metoder som Supported Employment, IPS og Supported Education (SEd).</p>
+      <p class="sg-mind2__card">Medarbejderne modtager supervision i vores metodegrundlag, og har tilknyttet en individuel supervisor. Derudover organiserer vi praktisk læring mellem medarbejder og supervisor, så vi hele tiden opretholder metodisk tilgang og vores mindset, der er baseret på en tillidsfuld feedbackkultur. Det er helt essentielt at tilbyde supervision til hver enkelt medarbejder for at fastholde momentum i hvert enkelt forløb.</p>
     </div>
   </div>
 </section>
@@ -69,71 +71,56 @@ $logo_list = function ($hidden) use ($u, $logos) {
   </div>
 </section>
 
+<!-- Borgere: mørkt bånd med overskrift og to tekstspalter, bredt billede nedenunder -->
 <div class="sg-band-wrap">
-  <section class="sg-band" aria-labelledby="sgCitizensTitle">
-    <div class="sg-wrap sg-band__grid">
-      <div class="sg-band__copy">
-        <h2 class="sg-band__title" id="sgCitizensTitle">Hvordan arbejder Simply Guiding med borgere?</h2>
-        <p>Målet med vores støtte er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet, på lige fod med alle andre, uanset udfordringer. Vi tror på bæredygtige og trygge relationer. Hos Simply Guiding får borgeren derfor sin egen konsulent tilknyttet. Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.</p>
-        <p>Konsulenten har et tæt samarbejde med kandidaten og der er altid ugentligt kontakt. Vi er uddannet i at inddrage pårørende, netværk eller andre personer, som er relevante at inddrage for at understøtte kandidatens progression mod job, uddannelse, bedre trivsel, raskmelding, etc.</p>
+  <section class="sg-band2" aria-labelledby="sgCitizensTitle">
+    <div class="sg-wrap">
+      <div class="sg-band2__head">
+        <h2 class="sg-h2 sg-h2--light" id="sgCitizensTitle">Hvordan arbejder Simply Guiding med borgere?</h2>
+        <div class="sg-band2__cols">
+          <p>Målet med vores støtte er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet, på lige fod med alle andre, uanset udfordringer. Vi tror på bæredygtige og trygge relationer. Hos Simply Guiding får borgeren derfor sin egen konsulent tilknyttet. Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.</p>
+          <p>Konsulenten har et tæt samarbejde med kandidaten og der er altid ugentligt kontakt. Vi er uddannet i at inddrage pårørende, netværk eller andre personer, som er relevante at inddrage for at understøtte kandidatens progression mod job, uddannelse, bedre trivsel, raskmelding, etc.</p>
+        </div>
       </div>
-      <div class="sg-band__media"><img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" width="1200" height="715" loading="lazy"></div>
+      <div class="sg-band2__media"><img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" width="1200" height="715" loading="lazy"></div>
     </div>
   </section>
 </div>
 
-<section class="sg-mind sg-mind--white" aria-labelledby="sgConsultTitle">
-  <div class="sg-wrap sg-mind__grid">
-    <div class="sg-mind__media"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></div>
-    <div class="sg-mind__copy">
-      <h2 class="sg-mind__title" id="sgConsultTitle">Simply Guiding’s konsulenter</h2>
-      <p>Vores jobspecialister har en bred vifte af kompetencer og forskellige faglige baggrunde, der understøtter forløbet for den enkelte borger. Men det vigtigste er deres mindset, som vi løbende superviserer og træner dem i at bevare og udvikle, nemlig at de tror på borgeren og vedkommendes muligheder for fremtiden.</p>
-      <h3 class="sg-mind__sub">Vi arbejder efter følgende principper i Simply Guiding:</h3>
-      <ul class="sg-checks">
+<!-- Konsulenter: billede + tekst, principperne som store linjer -->
+<section class="sg-consult" aria-labelledby="sgConsultTitle">
+  <div class="sg-wrap sg-consult__grid">
+    <div class="sg-consult__media"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></div>
+    <div class="sg-consult__copy">
+      <h2 class="sg-h2" id="sgConsultTitle">Simply Guiding’s konsulenter</h2>
+      <p class="sg-consult__lead">Vores jobspecialister har en bred vifte af kompetencer og forskellige faglige baggrunde, der understøtter forløbet for den enkelte borger. Men det vigtigste er deres mindset, som vi løbende superviserer og træner dem i at bevare og udvikle, nemlig at de tror på borgeren og vedkommendes muligheder for fremtiden.</p>
+      <h3 class="sg-consult__sub">Vi arbejder efter følgende principper i Simply Guiding:</h3>
+      <ul class="sg-principles">
         <?php foreach (['Suspender din forforståelse og mød mennesket hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på, og arbejder efter ”place then train” modellen'] as $pr) : ?>
-        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.2 10.3l2.5 2.5 5-5.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><?php echo esc_html($pr); ?></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M6.2 10.3l2.5 2.5 5-5.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><?php echo esc_html($pr); ?></li>
         <?php endforeach; ?>
       </ul>
     </div>
   </div>
 </section>
 
-<div class="sg-band-wrap">
-  <section class="sg-more" aria-labelledby="sgMoreTitle">
-    <img class="sg-more__bg" src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="" width="2000" height="1333" loading="lazy">
-    <div class="sg-wrap sg-more__inner">
-      <h2 class="sg-more__title" id="sgMoreTitle">Vil du vide mere?</h2>
-      <p>Har du spørgsmål angående vores løsninger og indsatser? Så er vores konsulenter altid klar til at hjælpe. Du kan kontakte os på 26 34 44 54 eller skrive til os via vores kontaktformular. Vi sidder klar til at hjælpe dig til at finde den perfekte løsning.</p>
-      <div class="sg-more__actions">
-        <a class="sg-btn sg-btn--lg" href="tel:+4526344454">Ring på 26 34 44 54</a>
-        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="/kontakt">Udfyld vores kontaktformular</a>
+<!-- Vil du vide mere? – afslutning: billede + tekst i lys boks -->
+<section class="sg-more2" aria-labelledby="sgMoreTitle">
+  <div class="sg-wrap">
+    <div class="sg-more2__box">
+      <div class="sg-more2__media"><img src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="Møde omkring et bord med tablets og kaffe" width="2000" height="1333" loading="lazy"></div>
+      <div class="sg-more2__copy">
+        <h2 class="sg-h2" id="sgMoreTitle">Vil du vide mere?</h2>
+        <p>Har du spørgsmål angående vores løsninger og indsatser? Så er vores konsulenter altid klar til at hjælpe. Du kan kontakte os på 26 34 44 54 eller skrive til os via nedenstående kontaktformular. Vi sidder klar til at hjælpe dig til at finde den perfekte løsning.</p>
+        <div class="sg-more2__actions">
+          <a class="sg-btn sg-btn--lg" href="tel:+4526344454">Ring på 26 34 44 54</a>
+          <a class="sg-btn sg-btn--lg sg-btn--outline" href="/kontakt">Udfyld vores kontaktformular</a>
+        </div>
       </div>
     </div>
-  </section>
-</div>
-
-<?php get_template_part('template-parts/final-cta'); ?>
-<?php
-// FAQ: svarene bygger kun på det, der står på siden ovenfor
-$faq = [
-  ['Hvilke metoder arbejder Simply Guiding ud fra?', 'Vores indsatser er tilrettelagt ud fra mindset, principper og redskaber fra Supported Employment og IPS-metoden. Medarbejderne arbejder metodebaseret, for eksempel ud fra IPS, Supported Employment og IPS UNG/Supported Education (SEd).'],
-  ['Hvordan sikrer I, at konsulenterne arbejder efter metoden?', 'Medarbejderne uddannes af certificerede undervisere og modtager supervision i vores metodegrundlag. Hver medarbejder har en individuel supervisor, og vi organiserer praktisk læring mellem medarbejder og supervisor, baseret på en tillidsfuld feedbackkultur.'],
-  ['Hvordan foregår et forløb for borgeren?', 'Borgeren får sin egen konsulent tilknyttet, og sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden. Der er altid ugentlig kontakt, og konsulenten kan inddrage pårørende, netværk eller andre relevante personer for at understøtte vejen mod job, uddannelse, bedre trivsel eller raskmelding.'],
-];
-?>
-<section class="sg-faq" aria-labelledby="sgFaqTitle">
-  <div class="sg-wrap sg-faq__grid">
-    <h2 class="sg-faq__title" id="sgFaqTitle">FAQ - ofte stillede spørgsmål</h2>
-    <ul class="sg-faq__list">
-      <?php foreach ($faq as $i => $f) : ?>
-      <li class="sg-faq__item">
-        <button class="sg-faq__q" id="faq-q<?php echo $i; ?>" aria-expanded="false" aria-controls="faq-a<?php echo $i; ?>"><?php echo esc_html($f[0]); ?><span class="sg-faq__icon" aria-hidden="true"></span></button>
-        <div class="sg-faq__a" id="faq-a<?php echo $i; ?>" role="region" aria-labelledby="faq-q<?php echo $i; ?>"><div><p><?php echo esc_html($f[1]); ?></p></div></div>
-      </li>
-      <?php endforeach; ?>
-    </ul>
   </div>
 </section>
+
 <?php get_template_part('template-parts/site-footer'); ?>
 
 <?php get_footer(); ?>
