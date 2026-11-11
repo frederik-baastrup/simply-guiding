@@ -34,7 +34,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-mind3" aria-labelledby="sgFloorTitle">
+<section class="sg-mind3 sg-mind3--flip" aria-labelledby="sgFloorTitle">
   <div class="sg-wrap sg-mind3__grid">
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejder i arbejde" width="1200" height="1800" loading="lazy"></div>
     <div class="sg-mind3__copy">

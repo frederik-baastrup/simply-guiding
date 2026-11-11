@@ -1927,3 +1927,10 @@ Text Domain: simply-guiding
 /* Konsulenter: luft under "Vi arbejder efter …" og hovederne med i billedet */
 .sg-consult__sub { margin-bottom: 18px; }
 .sg-consult__media img { object-position: 50% 12%; }
+/* Om os: "Når gulvet vipper" med billedet til højre, og "Tro kan ikke flytte bjerge" som afsnit med streg i stedet for hvid boks */
+.sg-mind3--flip .sg-mind3__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.sg-mind3--flip .sg-mind3__media { order: 2; }
+@media (max-width: 960px) { .sg-mind3--flip .sg-mind3__grid { grid-template-columns: 1fr; } .sg-mind3--flip .sg-mind3__media { order: 0; } }
+.sg-belief { margin-top: 36px; padding: 32px 0 0; border-radius: 0; background: none; border-top: 1px solid rgba(49,49,49,.12); }
+.sg-belief__title { margin: 0 0 4px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 500; font-size: 22px; line-height: 1.25; letter-spacing: -.01em; color: var(--sg-text); }
+.sg-mind3__copy .sg-belief p, .sg-mind3__copy .sg-meet__p { font-size: 15.5px; line-height: 1.8; color: var(--sg-muted); }
