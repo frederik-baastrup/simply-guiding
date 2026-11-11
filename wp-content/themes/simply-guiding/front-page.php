@@ -32,7 +32,7 @@
       <h2 class="sg-ind__title" id="sgIndTitle">Indsatser, der gør en forskel for dit område</h2>
     </div>
     <div class="sg-cards" id="sgCards">
-      <article class="sg-card is-active">
+      <article class="sg-card">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
         <a class="sg-card__link" href="/omraade/jobcentre/" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
@@ -65,7 +65,7 @@
           <div class="sg-card__foot" aria-hidden="true"><span class="sg-card__cta">Læs om indsatsen</span><span class="sg-card__arrow"><svg viewBox="-1 -1 39 27" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span></div>
         </div>
       </article>
-      <article class="sg-card">
+      <article class="sg-card is-active">
         <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-academy.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Uddannelse</span></div>
         <a class="sg-card__link" href="/loesninger/#academy" aria-label="Læs om Academy"></a>
         <div class="sg-card__body">
