@@ -1780,3 +1780,17 @@ Text Domain: simply-guiding
 @media (max-width: 1024px) { .sg-hero--full .sg-split__media { height: auto; } .sg-hero--full .sg-split { min-height: 640px; } }
 @media (max-width: 569px) { .sg-hero--full .sg-split__copy { padding: 120px 18px 120px; } .sg-hero--full .sg-split__media { height: auto; } }
 .sg-hero--full .sg-split__media::after { background: linear-gradient(180deg, rgba(6,35,31,.6) 0%, rgba(6,35,31,.62) 50%, rgba(6,35,31,.78) 100%); }
+/* Om os: mission/vision/værdier v2 – ikon i tonet firkant, større tekst, værdier med flueben */
+.sg-mv__list { margin-top: 48px; }
+.sg-mv__list > div { grid-template-columns: 170px minmax(0, 1fr); padding: 30px 0; transition: background .3s; }
+.sg-mv__list > div:last-child { border-bottom: 0; }
+.sg-mv__list dt { display: flex; align-items: center; gap: 14px; padding-top: 0; font-family: var(--sg-font-head, inherit); font-weight: 500; font-size: 15px; color: var(--sg-text); }
+.sg-mv__ico { display: grid; place-items: center; flex: none; width: 40px; height: 40px; border-radius: 10px; background: #fff; color: var(--sg-cta); box-shadow: 0 1px 2px rgba(10,47,42,.06); transition: background .3s, color .3s; }
+.sg-mv__ico svg { width: 20px; height: 20px; }
+.sg-mv__list > div:hover .sg-mv__ico { background: var(--sg-cta); color: #fff; }
+.sg-mv__list dd { align-self: center; font-size: 17px; line-height: 1.65; color: var(--sg-text); }
+.sg-mv__values { margin-top: 18px; gap: 10px; }
+.sg-mv__values li { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px 10px 12px; font-size: 14.5px; box-shadow: 0 1px 2px rgba(10,47,42,.06); }
+.sg-mv__values svg { width: 15px; height: 15px; color: var(--sg-cta); }
+.sg-mv__actions { margin-top: 28px; }
+@media (max-width: 600px) { .sg-mv__list > div { gap: 14px; padding: 24px 0; } .sg-mv__list dd { font-size: 16px; } }
