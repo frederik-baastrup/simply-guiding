@@ -47,11 +47,11 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-stage sg-stage--green" aria-labelledby="sgContentTitle">
+<section class="sg-stage" aria-labelledby="sgContentTitle">
+  <img class="sg-stage__bg" src="<?php echo esc_url($u); ?>/assets/indsats-academy.jpg" alt="" loading="lazy">
   <div class="sg-wrap sg-stage__in">
     <p class="sg-pill">Indhold</p>
     <h2 class="sg-stage__title" id="sgContentTitle">Hvad indeholder <span>IPS-kurset?</span></h2>
-    <p class="sg-stage__lead">Med IPS-konsulentuddannelsen kan du selv drive forløbene – fra den indledende visitation og screening til den afsluttende rapportering. Her er et overblik over de i alt 15 kursusdage.</p>
     <ol class="sg-stage__list sg-stage__list--3">
       <li><small>01</small><h3>Teoretisk viden</h3><p>Principperne og metoden bag IPS, IPS-manualen, værktøjerne og komplementære teorier – og hvordan du omsætter det i arbejdet med kandidater og virksomheder.</p></li>
       <li><small>02</small><h3>Praktiske øvelser</h3><p>Du arbejder med dine egne kandidater, vi gennemgår cases i dybden, og du får løbende feedback, så dine sager ikke går i stå.</p></li>

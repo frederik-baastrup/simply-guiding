@@ -2195,3 +2195,4 @@ Text Domain: simply-guiding
   .sg-cards3__grid, .sg-tiles2__grid, .sg-team__grid, .sg-cols3, .sg-stage__list, .sg-kpis__grid, .sg-projects__grid, .sg-posts { column-gap: var(--sg-gut) !important; }
 }
 .sg-statement__title { font-size: clamp(30px, 3vw, 44px); line-height: 1.08; }
+.sg-stage__bg { object-position: 50% 50%; } .sg-stage__list--3 { margin-top: 180px; }
