@@ -1023,7 +1023,7 @@ Text Domain: simply-guiding
   }
   .sg-split__copy h1 { margin-top: 30px; font-weight: 500; font-size: clamp(36px, 3.4vw, 50px); color: rgba(190, 206, 193, .7); }
   .sg-pill {
-    align-self: flex-start; margin: 0; padding: 5px 14px; border: 1px solid rgba(255,255,255,.28); border-radius: 100px;
+    align-self: flex-start; margin: 0; padding: 3px 11px; border: 1px solid rgba(255,255,255,.28); border-radius: 100px;
     font-size: 12px !important; line-height: 1.2; font-weight: 400; color: rgba(255,255,255,.9); letter-spacing: .01em;
   }
   .sg-split__media { position: relative; min-height: 320px; }
@@ -1124,7 +1124,11 @@ Text Domain: simply-guiding
             mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
   }
   .sg-partner__inner { text-align: center; }
-  .sg-partner__eyebrow { margin: 0; font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--sg-cta); }
+  /* Samme label som "Metode"-pillen, i mørk udgave på lys baggrund */
+  .sg-partner__eyebrow, .sg-quote__tag {
+    display: inline-block; margin: 0; padding: 3px 11px; border: 1px solid rgba(49, 49, 49, .22); border-radius: 100px; background: none;
+    font-family: inherit; font-size: 12px; font-weight: 400; line-height: 1.2; letter-spacing: .01em; text-transform: none; color: var(--sg-text);
+  }
   .sg-partner__text {
     margin: 22px auto 0; max-width: 980px; font-family: "Lora", Georgia, serif; font-weight: 400;
     font-size: clamp(22px, 2.3vw, 31px); line-height: 1.32; color: var(--sg-text); text-wrap: balance;
@@ -1135,7 +1139,8 @@ Text Domain: simply-guiding
   @media (max-width: 600px) { .sg-partner { padding-block: 88px; } .sg-partner__actions { gap: 10px; } .sg-partner::before { width: 520px; height: 520px; } }
 
   /* ---------- Forsidens kundecitat i samme stil som "Tæt samarbejde med landets jobcentre" ---------- */
-  .sg-quote { position: relative; overflow: hidden; isolation: isolate; padding-block: 140px; }
+  /* Indsats-sektionen over har selv 96 px bundluft – så bliver luften over og under citatet ens (140 px) */
+  .sg-quote { position: relative; overflow: hidden; isolation: isolate; padding-block: calc(140px - var(--sg-gap)) 140px; }
   .sg-quote::before {
     content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 760px; height: 760px; transform: translate(-50%, -50%);
     background-image: linear-gradient(rgba(49, 49, 49, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 49, 49, .07) 1px, transparent 1px);
@@ -1144,10 +1149,6 @@ Text Domain: simply-guiding
             mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.5) 35%, transparent 68%);
   }
   .sg-quote__card { max-width: 1000px; }
-  .sg-quote__tag {
-    padding: 0; border: 0; border-radius: 0; background: none; text-transform: none; letter-spacing: 0;
-    font-size: 14px; font-weight: 500; line-height: 1.4; color: var(--sg-cta);
-  }
   .sg-quote__text {
     width: auto; max-width: 980px; margin-top: 22px; font-family: "Lora", Georgia, serif; font-weight: 400;
     font-size: clamp(22px, 2.3vw, 31px); line-height: 1.32; letter-spacing: 0; color: var(--sg-text); text-wrap: balance;
