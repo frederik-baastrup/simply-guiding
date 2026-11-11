@@ -1724,3 +1724,7 @@ Text Domain: simply-guiding
 .sg-latest__rule { flex: 1 1 auto; min-width: 40px; height: 1px; background: #e2e5e3; }
 .sg-latest__head .sg-btn { flex: none; }
 @media (max-width: 700px) { .sg-latest__head { flex-wrap: wrap; } .sg-latest__rule { display: none; } }
+/* Footer: 10 % sort overlay. Når CTA-boksen står lige over footeren, smelter de sammen med en tynd streg imellem */
+.sg-footer__box { background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("assets/pattern.png") center / 601px repeat, #0A2F2A; }
+.sg-final:has(+ .sg-footer) .sg-final__box { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.sg-final + .sg-footer .sg-footer__box { border-top-left-radius: 0; border-top-right-radius: 0; box-shadow: inset 0 1px 0 rgba(255,255,255,.12); }
