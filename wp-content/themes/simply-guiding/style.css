@@ -1811,3 +1811,8 @@ Text Domain: simply-guiding
 .sg-mv__values svg { display: none; }
 @media (max-width: 600px) { .sg-mv__list > div, .sg-mv__list > div:last-child { grid-template-columns: 40px minmax(0,1fr); column-gap: 14px; padding: 22px 20px; } .sg-mv__ico { width: 40px; height: 40px; align-self: start; } }
 .sg-hero--full .sg-split__media::after { background: linear-gradient(90deg, rgb(var(--sg-hero-base)) 39%, rgba(0,0,0,.7) 100%); opacity: .96; }
+/* Løsninger: hver anden sektion på lysegrøn flade */
+.sg-sol--half { --sol-bg: #fff; }
+.sg-sol--half.sg-sol--flip { --sol-bg: var(--sg-topbar); background: var(--sol-bg); padding-block: 80px; }
+.sg-sol--half:last-of-type { margin-bottom: 110px; }
+.sg-sol__copy.is-clamped .sg-sol__clip::after { background: linear-gradient(rgba(255,255,255,0), var(--sol-bg, #fff)); }
