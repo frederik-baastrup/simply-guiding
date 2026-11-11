@@ -24,7 +24,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--flip" aria-labelledby="sgLearnTitle" style="margin-top:110px">
+<section class="sg-sol sg-sol--flip sg-sol--plain" aria-labelledby="sgLearnTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-forskning.jpg" alt="Undervisning i IPS-metoden" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -36,7 +36,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol" aria-labelledby="sgFidTitle">
+<section class="sg-sol sg-sol--plain" aria-labelledby="sgFidTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-fidelity.jpg" alt="IPS-team til evaluering" loading="lazy"></div>
     <div class="sg-sol__copy">
