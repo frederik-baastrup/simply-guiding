@@ -1795,3 +1795,18 @@ Text Domain: simply-guiding
 .sg-mv__actions { margin-top: 28px; }
 @media (max-width: 600px) { .sg-mv__list > div { gap: 14px; padding: 24px 0; } .sg-mv__list dd { font-size: 16px; } }
 .sg-mv__list > div { grid-template-columns: 150px minmax(0, 1fr); align-items: start; } .sg-mv__list dd { align-self: start; padding-top: 7px; } .sg-mv__list dt { align-self: start; }
+/* Om os: mission/vision/værdier v3 – hvide kort med rundt ikon, titel og tekst stablet */
+.sg-mv__list { margin-top: 36px; display: grid; gap: 14px; }
+.sg-mv__list > div,
+.sg-mv__list > div:last-child { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 18px; align-items: start;
+  padding: 26px 28px; border: 0; border-radius: 16px; background: #fff; transition: box-shadow .3s, transform .3s; }
+.sg-mv__list > div:hover { box-shadow: 0 10px 30px rgba(10,47,42,.07); transform: translateY(-2px); }
+.sg-mv__ico, .sg-mv__list > div:hover .sg-mv__ico { grid-row: span 3; width: 52px; height: 52px; border-radius: 50%; background: #EEF2F0; color: var(--sg-cta); box-shadow: none; align-self: center; }
+.sg-mv__ico svg { width: 22px; height: 22px; }
+.sg-mv__list dt { grid-column: 2; display: block; padding: 0; font-weight: 500; font-size: 16px; line-height: 1.3; color: var(--sg-text); }
+.sg-mv__list dd { grid-column: 2; align-self: start; padding-top: 0; margin-top: 6px; font-size: 15px; line-height: 1.6; color: var(--sg-text); }
+.sg-mv__list dd.sg-mv__vals { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(49,49,49,.08); }
+.sg-mv__values { margin: 0; gap: 8px; }
+.sg-mv__values li { padding: 7px 14px; background: #EEF2F0; box-shadow: none; font-size: 13.5px; font-weight: 400; }
+.sg-mv__values svg { display: none; }
+@media (max-width: 600px) { .sg-mv__list > div, .sg-mv__list > div:last-child { grid-template-columns: 40px minmax(0,1fr); column-gap: 14px; padding: 22px 20px; } .sg-mv__ico { width: 40px; height: 40px; align-self: start; } }
