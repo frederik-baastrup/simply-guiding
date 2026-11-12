@@ -2523,3 +2523,12 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-fcard__col { padding: 22px 24px 0; }
   .sg-fcard__col:last-child { padding: 18px 24px 26px; }
 }
+/* .sg-trio v2: lysegrønne kort med ikon i mørkegrøn cirkel og nummer */
+.sg-trio__grid { column-gap: 14px !important; row-gap: 14px !important; }
+.sg-trio__item { position: relative; display: flex; flex-direction: column; padding: 34px 32px 36px; border-radius: var(--sg-radius-sm); background: var(--sg-topbar); }
+.sg-trio__no { position: absolute; top: 34px; right: 32px; font-size: var(--sg-small); letter-spacing: .06em; color: var(--sg-muted); }
+.sg-trio__ico { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: #0A2F2A url("assets/pattern.png") center / 300px repeat; color: #DBE7DD; }
+.sg-trio__ico svg { width: 26px; height: 26px; stroke-width: 1.4; }
+.sg-trio__item h3 { margin: 36px 0 12px !important; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(20px, 1.6vw, 24px) !important; font-weight: 500; line-height: 1.15 !important; letter-spacing: -.01em; }
+.sg-trio__item p { font-size: 15px !important; line-height: 1.7 !important; }
+@media (max-width: 560px) { .sg-trio__item { padding: 26px 24px 28px; } .sg-trio__no { top: 26px; right: 24px; } .sg-trio__item h3 { margin-top: 26px !important; } }
