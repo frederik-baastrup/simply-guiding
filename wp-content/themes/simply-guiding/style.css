@@ -2634,3 +2634,11 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-cform--dark > .sg-wrap { padding-block: 56px; }
   .sg-cform--dark .sg-cform__box { margin-top: 36px; padding: 24px !important; }
 }
+/* Kontaktformular v2 – lys udgave (står lige over den mørke footer) */
+.sg-cform--dark { background: var(--sg-topbar) !important; color: var(--sg-text) !important; }
+.sg-cform--dark .sg-h2 { color: var(--sg-text) !important; }
+.sg-cform--dark .sg-cform__intro > p { color: var(--sg-body-color) !important; }
+.sg-cform__direct a { background: #fff !important; border-color: transparent !important; color: var(--sg-text) !important; }
+.sg-cform__direct small { color: var(--sg-muted) !important; }
+.sg-cform__ico { background: #0A2F2A url("assets/pattern.png") center / 300px repeat !important; color: #DBE7DD !important; }
+.sg-cform--dark .sg-cform__box { box-shadow: 0 18px 50px rgba(10,47,42,.10) !important; }
