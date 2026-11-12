@@ -2493,3 +2493,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-flow .sg-pdetail__body .sg-mind3__h3 { font-size: var(--sg-body) !important; font-weight: 500; margin-top: 0 !important; margin-bottom: 8px !important; }
 .sg-flow .sg-learnsec .sg-pdetail__body p { margin: 0 0 18px; font-size: var(--sg-body); line-height: 1.75; color: var(--sg-body-color); }
 .sg-flow .sg-learnsec .sg-pdetail__body p:last-child { margin-bottom: 0; }
+/* Mobil: overskrift med streg må ombrydes (stak 3 px ud og gav vandret scroll) */
+@media (max-width: 600px) { .sg-headline .sg-h2 { flex: 1 1 auto; min-width: 0; } }
