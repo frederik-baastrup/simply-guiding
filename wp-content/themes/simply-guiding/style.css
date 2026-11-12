@@ -2443,3 +2443,53 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Om os, "Tro kan ikke flytte bjerge alene": ingen streg, begge afsnit samme størrelse */
 .sg-statement__cols p, .sg-statement__cols p:first-child, .sg-statement__cols p + p { border-top: 0 !important; padding-top: 0 !important; font-size: var(--sg-body) !important; line-height: 1.75 !important; color: var(--sg-body-color) !important; }
 .sg-statement__cols { gap: 18px !important; }
+
+/* ===== Harmoni-rettelser (12. nov.) ===== */
+/* Mobil: "lille" billed/tekst-sektion i én kolonne med billedet øverst (overstyrede tidligere 8fr/4fr uden media query) */
+@media (max-width: 960px) {
+  .sg-sol--small .sg-sol__grid, .sg-sol--mirror .sg-sol__grid { display: flex !important; flex-direction: column; gap: 28px; }
+  .sg-sol--small .sg-sol__media, .sg-sol--mirror .sg-sol__media { order: -1; width: 100%; aspect-ratio: 4 / 3 !important; }
+  .sg-sol--small .sg-sol__copy, .sg-sol--mirror .sg-sol__copy { width: 100%; padding: 0 !important; }
+}
+/* Én ydre kant: indhold i indrykkede sektioner (18 px margin) flugter med 54 px som alt andet (18 + 36 indre luft, som hero) */
+@media (min-width: 961px) {
+  .sg-mind3 > .sg-wrap, .sg-sol > .sg-wrap, .sg-stage > .sg-wrap { padding-left: calc(var(--sg-gutter) - 18px); padding-right: calc(var(--sg-gutter) - 18px); }
+}
+
+/* IPS-konsulentuddannelse (.sg-flow): én opdeling (billede 5 kolonner | tekst fra 680 px), ens billeder, ens rytme */
+@media (min-width: 961px) {
+  .sg-flow .sg-mind3__grid, .sg-flow .sg-sol__grid, .sg-flow .sg-pdetail__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important; align-items: center; }
+  .sg-flow .sg-mind3__media, .sg-flow .sg-sol--plain:not(.sg-sol--mirror) .sg-sol__media, .sg-flow .sg-pdetail__side { grid-column: 1 / span 5 !important; grid-row: 1; }
+  .sg-flow .sg-mind3__copy, .sg-flow .sg-sol--plain:not(.sg-sol--mirror) .sg-sol__copy, .sg-flow .sg-pdetail__body { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; padding-right: 0 !important; }
+  .sg-flow .sg-pdetail__grid { align-items: start; }
+  /* spejlvendt: tekst til venstre, billede til højre i samme bredde */
+  .sg-flow .sg-sol--mirror .sg-sol__copy, .sg-flow .sg-sol--small .sg-sol__copy { grid-column: 1 / span 7 !important; grid-row: 1; padding-right: 56px !important; padding-left: 0 !important; }
+  .sg-flow .sg-sol--mirror .sg-sol__media, .sg-flow .sg-sol--small .sg-sol__media { grid-column: 8 / span 5 !important; grid-row: 1; }
+  .sg-flow .sg-sol--small .sg-sol__grid { align-items: center; }
+}
+/* ens billeder: 4:3 – undtagen den lange tekst i den grønne boks, hvor samme bredde får 1:1, så billede og tekst er lige høje */
+.sg-flow .sg-mind3__media, .sg-flow .sg-sol__media { aspect-ratio: 4 / 3 !important; min-height: 0 !important; overflow: hidden; border-radius: var(--sg-radius-sm); }
+.sg-flow .sg-mind3__media img, .sg-flow .sg-sol__media img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 961px) { .sg-flow .sg-sol--small .sg-sol__media { aspect-ratio: 1 / 1 !important; } }
+
+/* rytme: 96 px mellem alle hvide sektioner, bokse 48 px fra naboer og 72 px indvendig */
+.sg-flow > section { margin-top: 0 !important; margin-bottom: 0 !important; padding-block: 48px !important; }
+.sg-flow > section:first-child { padding-top: 96px !important; }
+.sg-flow > section:last-child { padding-bottom: 96px !important; }
+.sg-flow > .sg-stage, .sg-flow > .sg-sol--small { padding-block: 0 !important; margin-block: 48px !important; }
+.sg-flow > .sg-sol--small > .sg-wrap { padding-block: 72px; }
+.sg-flow .sg-stage__in { padding-block: 72px !important; }
+@media (max-width: 960px) { .sg-flow > section { padding-block: 36px !important; } .sg-flow > section:first-child { padding-top: 72px !important; } .sg-flow > .sg-stage, .sg-flow > .sg-sol--small { margin-block: 36px !important; } .sg-flow > .sg-sol--small > .sg-wrap { padding-block: 48px; } .sg-flow .sg-stage__in { padding-block: 48px !important; } }
+
+/* overskrifter: H2 ens; fuld-bredde-overskrift over kortrække = streg + 40 px til kortene (også på mørk baggrund) */
+.sg-flow .sg-stage .sg-h2 { color: #fff; }
+.sg-headline--light::after { background: rgba(255,255,255,.25); }
+.sg-flow .sg-stage__list { margin-top: 0 !important; }
+.sg-flow .sg-stage .sg-headline { margin-bottom: 40px; }
+
+/* typografi: korttekst 15 px (som forsidens kort), lead med samme linjehøjde som brødtekst, listeintro som brødtekst */
+.sg-flow .sg-stage__list p, .sg-flow .sg-tile2 p { font-size: 15px !important; line-height: 1.6 !important; }
+.sg-flow .sg-mind3__lead { line-height: 1.75 !important; }
+.sg-flow .sg-pdetail__body .sg-mind3__h3 { font-size: var(--sg-body) !important; font-weight: 500; margin-top: 0 !important; margin-bottom: 8px !important; }
+.sg-flow .sg-learnsec .sg-pdetail__body p { margin: 0 0 18px; font-size: var(--sg-body); line-height: 1.75; color: var(--sg-body-color); }
+.sg-flow .sg-learnsec .sg-pdetail__body p:last-child { margin-bottom: 0; }

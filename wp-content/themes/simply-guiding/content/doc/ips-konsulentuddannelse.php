@@ -45,7 +45,7 @@ return [
     ['id' => 'kursets-indhold', 'nav' => 'Kursets indhold', 'title' => 'Hvad indeholder IPS-kurset?', 'blocks' => [
       ['type' => 'p', 'text' => 'Kurset veksler mellem tre måder at lære på:'],
       ['type' => 'steps', 'items' => [
-        ['01', 'Teoretisk viden', 'Principperne og metoden bag IPS, IPS-manualen, værktøjerne og komplementære teorier – og hvordan du omsætter det i arbejdet med kandidater og virksomheder.', 'book'],
+        ['01', 'Teoretisk viden', 'Principperne bag IPS, IPS-manualen og komplementære teorier – og hvordan du bruger dem med kandidater og virksomheder.', 'book'],
         ['02', 'Praktiske øvelser', 'Du arbejder med dine egne kandidater, vi gennemgår cases i dybden, og du får løbende feedback, så dine sager ikke går i stå.', 'puzzle'],
         ['03', 'Rollespil', 'Du trænes i de situationer, der kan opstå i et IPS-forløb – fx at screene kandidater og arbejde tværfagligt med kandidaten i fokus.', 'people'],
       ]],

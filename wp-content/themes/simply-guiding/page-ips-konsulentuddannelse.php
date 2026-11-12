@@ -17,6 +17,7 @@ get_template_part('template-parts/page-hero', null, [
   get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
 } ?>
 
+<div class="sg-flow">
 <section class="sg-mind3 sg-mind3--plain" aria-labelledby="sgEduTitle">
   <div class="sg-wrap sg-mind3__grid">
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/kursus-tilmeld.jpg" alt="Kursusdeltagere hos Simply Guiding" loading="lazy"></div>
@@ -28,11 +29,10 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--plain" aria-labelledby="sgLearnTitle">
-  <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-forskning.jpg" alt="Undervisning i IPS-metoden" loading="lazy"></div>
-    <div class="sg-sol__copy">
-      <h2 class="sg-h2" id="sgLearnTitle">Hvad lærer du på konsulentuddannelsen?</h2>
+<section class="sg-pdetail sg-learnsec" aria-labelledby="sgLearnTitle">
+  <div class="sg-wrap sg-pdetail__grid">
+    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgLearnTitle">Hvad lærer du på konsulentuddannelsen?</h2></div>
+    <div class="sg-pdetail__body">
       <p>På konsulentuddannelsen bliver du undervist i IPS-metoden og de otte principper, som metoden bygger på. Du lærer at screene kandidater til IPS-forløb og at arbejde tværfagligt med IPS-kandidaten i centrum.</p>
       <p>Uddannelsen giver dig desuden konkrete værktøjer til arbejdet med at støtte psykisk sårbare i at opnå job eller uddannelse, herunder virksomhedskontakt, etablering af praktikker og jobmatch.</p>
       <p>Du lærer at kortlægge dine kandidaters muligheder på arbejdsmarkedet og at udarbejde en ambitiøs og realistisk plan med fokus på beskæftigelse på det ordinære arbejdsmarked eller adgang til uddannelse.</p>
@@ -40,7 +40,7 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-sol sg-sol--plain" aria-labelledby="sgFidTitle">
+<section class="sg-sol sg-sol--plain sg-sol--mirror" aria-labelledby="sgFidTitle">
   <div class="sg-wrap sg-sol__grid">
     <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/uddannelse-fidelity.jpg" alt="IPS-team til evaluering" loading="lazy"></div>
     <div class="sg-sol__copy">
@@ -54,10 +54,9 @@ get_template_part('template-parts/page-hero', null, [
 <section class="sg-stage" aria-labelledby="sgContentTitle">
   <img class="sg-stage__bg" src="<?php echo esc_url($u); ?>/assets/indsats-academy.jpg" alt="" loading="lazy">
   <div class="sg-wrap sg-stage__in">
-    <p class="sg-pill">Indhold</p>
-    <h2 class="sg-stage__title" id="sgContentTitle">Hvad indeholder <span>IPS-kurset?</span></h2>
+    <div class="sg-headline sg-headline--light"><h2 class="sg-h2" id="sgContentTitle">Hvad indeholder IPS-kurset?</h2></div>
     <ol class="sg-stage__list sg-stage__list--3">
-      <li><small>01</small><h3>Teoretisk viden</h3><p>Principperne og metoden bag IPS, IPS-manualen, værktøjerne og komplementære teorier – og hvordan du omsætter det i arbejdet med kandidater og virksomheder.</p></li>
+      <li><small>01</small><h3>Teoretisk viden</h3><p>Principperne bag IPS, IPS-manualen og komplementære teorier – og hvordan du bruger dem med kandidater og virksomheder.</p></li>
       <li><small>02</small><h3>Praktiske øvelser</h3><p>Du arbejder med dine egne kandidater, vi gennemgår cases i dybden, og du får løbende feedback, så dine sager ikke går i stå.</p></li>
       <li><small>03</small><h3>Rollespil</h3><p>Du trænes i de situationer, der kan opstå i et IPS-forløb – fx at screene kandidater og arbejde tværfagligt med kandidaten i fokus.</p></li>
     </ol>
@@ -101,6 +100,8 @@ get_template_part('template-parts/page-hero', null, [
     </div>
   </div>
 </section>
+
+</div><!-- /sg-flow -->
 
 <?php get_template_part('template-parts/final-cta'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
