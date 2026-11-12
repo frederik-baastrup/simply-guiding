@@ -35,12 +35,7 @@ $faq = [
 
       <div class="sg-course__box">
       <div class="sg-course__bhead"><span class="sg-course__bico"><?php echo sg_icon('calendar'); ?></span><h3 class="sg-course__h">Kursets opbygning</h3><span class="sg-course__bno">01</span></div>
-      <ul class="sg-course__facts">
-        <li><strong>2</strong><span>intensive sammenhængende kursusdage</span></li>
-        <li><strong>12</strong><span>timers undervisning</span></li>
-        <li><strong>Odense</strong><span>undervisning på Simply Guidings faciliteter</span></li>
-        <li><strong>4 i 1</strong><span>oplæg, dialog, øvelser og praksisnære cases</span></li>
-      </ul>
+      <?php $checks(['2 intensive sammenhængende kursusdage', '12 timers undervisning', 'Undervisning på Simply Guidings faciliteter i Odense', 'Undervisningen kombinerer oplæg, dialog, øvelser og praksisnære cases']); ?>
       <p>Du får mulighed for at arbejde med egne cases eller cases, der afspejler virkelige IPS-forløb i både kommunale og private kontekster.</p>
       </div>
       <div class="sg-course__box">
