@@ -2610,3 +2610,27 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-why .sg-why__grid > :first-child, .sg-meet .sg-mind3__media { grid-column: 1 / span 5 !important; grid-row: 1; }
   .sg-why .sg-why__grid > :last-child, .sg-meet .sg-mind3__copy { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
 }
+/* Kontaktformular v2: mørkegrøn boks med mønster, direkte kontakt til venstre, hvidt formularkort til højre */
+.sg-cform--dark { margin: var(--sg-gap) max(18px, env(safe-area-inset-right, 0px)) var(--sg-gap) max(18px, env(safe-area-inset-left, 0px)); padding: 0 !important; border-radius: var(--sg-radius); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-cform--dark > .sg-wrap { padding-block: 88px; }
+@media (min-width: 961px) {
+  .sg-cform--dark > .sg-wrap { max-width: var(--sg-max); padding-inline: calc(var(--sg-gutter) - 18px); }
+  .sg-cform--dark .sg-cform__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important; align-items: center; }
+  .sg-cform--dark .sg-cform__intro { grid-column: 1 / span 5 !important; }
+  .sg-cform--dark .sg-cform__box { grid-column: 7 / span 6 !important; }
+}
+.sg-cform--dark .sg-h2 { color: #DBE7DD !important; }
+.sg-cform--dark .sg-cform__intro > p { margin-top: 22px !important; color: rgba(255,255,255,.82) !important; font-size: var(--sg-body) !important; line-height: 1.75; }
+.sg-cform__direct { list-style: none; margin: 36px 0 0; padding: 0; display: grid; gap: 12px; }
+.sg-cform__direct a { display: flex; align-items: center; gap: 16px; padding: 14px 18px 14px 14px; border: 1px solid rgba(255,255,255,.14); border-radius: var(--sg-radius-sm); background: rgba(255,255,255,.05); color: #fff; text-decoration: none; font-size: var(--sg-body); font-weight: 500; }
+.sg-cform__direct small { display: block; margin-bottom: 2px; font-size: 12px; font-weight: 400; letter-spacing: .04em; color: rgba(255,255,255,.6); }
+.sg-cform__ico { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.08); color: #8FC7AE; }
+.sg-cform__ico svg { width: 20px; height: 20px; }
+.sg-cform--dark .sg-cform__box { background: #fff !important; border-radius: var(--sg-radius-sm); padding: 36px !important; box-shadow: 0 24px 60px rgba(0,0,0,.25); color: var(--sg-text); }
+.sg-cform--dark .sg-field input, .sg-cform--dark .sg-field textarea { background: var(--sg-topbar) !important; border-color: transparent !important; }
+.sg-cform--dark .sg-field input:focus, .sg-cform--dark .sg-field textarea:focus { background: #fff !important; border-color: var(--sg-cta) !important; outline: none; }
+@media (max-width: 960px) {
+  .sg-cform--dark { margin-inline: 0; border-radius: 0; }
+  .sg-cform--dark > .sg-wrap { padding-block: 56px; }
+  .sg-cform--dark .sg-cform__box { margin-top: 36px; padding: 24px !important; }
+}
