@@ -2572,3 +2572,27 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-why3__grid, .sg-why3__grid--3 { grid-template-columns: 1fr; }
   .sg-why3__grid li { padding: 22px 22px; gap: 16px; }
 }
+/* Områdesider: "Derfor kontakter de os" v4 – mørkegrøn boks med mønster, grundene som liste med tjek */
+.sg-why4 { margin: var(--sg-gap) max(18px, env(safe-area-inset-right, 0px)) 18px max(18px, env(safe-area-inset-left, 0px)); border-radius: var(--sg-radius); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-why4 > .sg-wrap { padding-block: 88px; }
+@media (min-width: 961px) { .sg-why4 > .sg-wrap { max-width: var(--sg-max); padding-inline: calc(var(--sg-gutter) - 18px); } }
+.sg-why4__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--sg-gut); align-items: start; }
+.sg-why4__side { grid-column: 1 / span 5; }
+.sg-why4__main { grid-column: 7 / span 6; }
+.sg-why4 .sg-h2 { color: #DBE7DD !important; margin: 0; }
+.sg-why4__intro { margin: 22px 0 26px !important; font-size: var(--sg-body) !important; line-height: 1.75; color: rgba(255,255,255,.82) !important; }
+.sg-why4 .sg-textlink a { color: #DBE7DD !important; }
+.sg-why4__lead { margin: 6px 0 10px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #8FC7AE !important; }
+.sg-why4__list { list-style: none; margin: 0; padding: 0; }
+.sg-why4__list li { display: grid; grid-template-columns: 36px 1fr; gap: 16px; align-items: start; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.sg-why4__list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.sg-why4__ico { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); color: #8FC7AE; }
+.sg-why4__ico svg { width: 18px; height: 18px; }
+.sg-why4__list p { margin: 0; padding-top: 5px; font-size: var(--sg-body) !important; line-height: 1.6 !important; color: #fff !important; }
+.sg-why4__list p::first-letter { text-transform: uppercase; }
+@media (max-width: 960px) {
+  .sg-why4 { margin-inline: 0; border-radius: 0; }
+  .sg-why4 > .sg-wrap { padding-block: 56px; }
+  .sg-why4__side, .sg-why4__main { grid-column: 1 / -1; }
+  .sg-why4__main { margin-top: 36px; }
+}

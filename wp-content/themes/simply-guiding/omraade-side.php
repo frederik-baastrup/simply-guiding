@@ -15,21 +15,21 @@ get_template_part('template-parts/page-hero', null, [
 <div id="indhold"></div>
 
 <!-- Hvornår ringer man til os -->
-<section class="sg-why3" aria-labelledby="sgWhyTitle">
-  <div class="sg-wrap">
-    <div class="sg-why3__head">
+<section class="sg-why4" aria-labelledby="sgWhyTitle">
+  <div class="sg-wrap sg-why4__grid">
+    <div class="sg-why4__side">
       <h2 class="sg-h2" id="sgWhyTitle"><?php echo esc_html($c['why_title']); ?></h2>
-      <div class="sg-why3__intro">
-        <p><?php echo esc_html($c['why_intro']); ?></p>
-        <p class="sg-textlink"><a href="/kontakt/">Tal med os om et forløb <?php echo sg_arrow(); ?></a></p>
-      </div>
+      <p class="sg-why4__intro"><?php echo esc_html($c['why_intro']); ?></p>
+      <p class="sg-textlink"><a href="/kontakt/">Tal med os om et forløb <?php echo sg_arrow(); ?></a></p>
     </div>
-    <p class="sg-why3__lead"><?php echo esc_html($c['why_lead']); ?></p>
-    <ol class="sg-why3__grid sg-why3__grid--<?php echo count($c['why_items']) === 3 ? 3 : 2; ?>">
-      <?php foreach ($c['why_items'] as $i => $it) : ?>
-      <li><span class="sg-why3__ico"><?php echo sg_check_svg(); ?></span><p><?php echo esc_html($it); ?></p></li>
-      <?php endforeach; ?>
-    </ol>
+    <div class="sg-why4__main">
+      <p class="sg-why4__lead"><?php echo esc_html($c['why_lead']); ?></p>
+      <ul class="sg-why4__list">
+        <?php foreach ($c['why_items'] as $it) : ?>
+        <li><span class="sg-why4__ico"><?php echo sg_check_svg(); ?></span><p><?php echo esc_html($it); ?></p></li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
   </div>
 </section>
 
