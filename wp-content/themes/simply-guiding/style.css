@@ -2552,3 +2552,23 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 }
 /* Mørke bokse: brødtekst er hvid (den fælles #212121-regel ramte nyhedsbrevsboksen) */
 .sg-tile--dark .sg-tile__text, .sg-tile--dark p { color: rgba(255,255,255,.85) !important; }
+/* Områdesider: "Derfor kontakter de os" v3 – overskrift + intro i to kolonner, grundene som lysegrønne kort */
+.sg-why3 { padding-block: var(--sg-gap); }
+.sg-why3__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--sg-gut); align-items: start; margin-bottom: 48px; }
+.sg-why3__head .sg-h2 { grid-column: 1 / span 5; margin: 0; }
+.sg-why3__intro { grid-column: 7 / span 6; }
+.sg-why3__intro p:first-child { margin: 0 0 18px; font-size: var(--sg-body) !important; line-height: 1.75; color: var(--sg-body-color) !important; }
+.sg-why3__lead { margin: 0 0 16px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta) !important; }
+.sg-why3__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.sg-why3__grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.sg-why3__grid li { display: grid; grid-template-columns: 44px 1fr; gap: 20px; align-items: start; padding: 30px 32px; border-radius: var(--sg-radius-sm); background: var(--sg-topbar); }
+.sg-why3__ico { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #0A2F2A url("assets/pattern.png") center / 300px repeat; color: #DBE7DD; }
+.sg-why3__ico svg { width: 20px; height: 20px; }
+.sg-why3__grid p { margin: 0; padding-top: 9px; font-size: var(--sg-body) !important; font-weight: 500; line-height: 1.55 !important; color: var(--sg-text) !important; }
+.sg-why3__grid p::first-letter { text-transform: uppercase; }
+@media (max-width: 960px) {
+  .sg-why3__head .sg-h2, .sg-why3__intro { grid-column: 1 / -1; }
+  .sg-why3__intro { margin-top: 22px; }
+  .sg-why3__grid, .sg-why3__grid--3 { grid-template-columns: 1fr; }
+  .sg-why3__grid li { padding: 22px 22px; gap: 16px; }
+}
