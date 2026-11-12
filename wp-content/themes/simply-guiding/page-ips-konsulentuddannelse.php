@@ -13,7 +13,7 @@ get_template_part('template-parts/page-hero', null, [
 ?>
 <div id="indhold"></div>
 
-<section class="sg-mind3" aria-labelledby="sgEduTitle">
+<section class="sg-mind3 sg-mind3--plain" aria-labelledby="sgEduTitle">
   <div class="sg-wrap sg-mind3__grid">
     <div class="sg-mind3__media"><img src="<?php echo esc_url($u); ?>/assets/kursus-tilmeld.jpg" alt="Kursusdeltagere hos Simply Guiding" loading="lazy"></div>
     <div class="sg-mind3__copy">

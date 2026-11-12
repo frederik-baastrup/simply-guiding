@@ -2309,3 +2309,5 @@ Text Domain: simply-guiding
   .sg-sol--small .sg-sol__copy { grid-column: 1 / span 5 !important; }
   .sg-sol--small .sg-sol__media { grid-column: 7 / span 6 !important; aspect-ratio: 4 / 3; align-self: start; }
 }
+/* Mind3 uden baggrund */
+.sg-mind3--plain { background: transparent !important; }
