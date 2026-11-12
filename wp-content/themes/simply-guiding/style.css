@@ -2298,3 +2298,7 @@ Text Domain: simply-guiding
 .sg-mind3__copy p { border-top: 0; padding-block: 0; margin-top: 18px; }
 .sg-mind3__copy > .sg-h2 + p, .sg-mind3__copy > p:first-child { margin-top: 0; }
 .sg-mind3__copy .sg-mind3__lead { margin-top: 22px; }
+/* Lille tekst (small, 14 px) i to-kolonne-noter */
+:root { --sg-small: 14px; }
+.sg-mind3__cols p { font-size: var(--sg-small) !important; line-height: 1.7 !important; margin-top: 8px !important; color: var(--sg-muted) !important; }
+.sg-mind3__cols .sg-mind3__h3 { font-size: 15px; }
