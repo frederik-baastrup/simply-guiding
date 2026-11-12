@@ -2669,3 +2669,31 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (min-width: 961px) { .sg-relevant--dark .sg-pdetail__grid { align-items: center; } }
 @media (max-width: 700px) { .sg-relevant--dark .sg-principles { grid-template-columns: 1fr; } .sg-relevant--dark .sg-pdetail__body { margin-top: 32px; } }
 .sg-relevant.sg-relevant--dark .sg-pdetail__body > p.sg-relevant__lead.sg-relevant__lead { color: #8FC7AE !important; }
+/* Kontaktformular v3: ét kort delt i mørk kontaktside og hvid formular med synlige labels */
+.sg-cform--v3 { padding-block: var(--sg-gap) !important; background: none !important; }
+@media (min-width: 961px) {
+  .sg-cform--v3 .sg-cform__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: 0 !important; align-items: stretch !important; border-radius: var(--sg-radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(10,47,42,.08), 0 30px 70px rgba(10,47,42,.10); padding: 0 !important; max-width: calc(var(--sg-max) - 72px); }
+  .sg-cform--v3 > .sg-wrap { padding-inline: 0 !important; }
+  .sg-cform--v3 .sg-cform__intro { grid-column: 1 / span 5 !important; }
+  .sg-cform--v3 .sg-cform__box { grid-column: 6 / span 7 !important; }
+}
+@media (min-width: 961px) and (max-width: 1460px) { .sg-cform--v3 .sg-cform__grid { margin-inline: var(--sg-gutter); } }
+.sg-cform--v3 .sg-cform__intro { display: flex; flex-direction: column; padding: 56px 48px; background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-cform--v3 .sg-h2 { color: #DBE7DD !important; }
+.sg-cform--v3 .sg-cform__intro > p { margin-top: 22px !important; color: rgba(255,255,255,.82) !important; font-size: var(--sg-body) !important; line-height: 1.75; }
+.sg-cform--v3 .sg-cform__direct { margin-top: 32px; }
+.sg-cform--v3 .sg-cform__direct a { background: rgba(255,255,255,.06) !important; border: 1px solid rgba(255,255,255,.14) !important; color: #fff !important; }
+.sg-cform--v3 .sg-cform__direct small { color: rgba(255,255,255,.6) !important; }
+.sg-cform--v3 .sg-cform__ico { background: rgba(255,255,255,.1) !important; color: #8FC7AE !important; }
+.sg-cform__person { display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 36px; font-size: var(--sg-small); line-height: 1.45; color: rgba(255,255,255,.7); }
+.sg-cform__person img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.2); }
+.sg-cform__person strong { display: block; font-size: 15px; font-weight: 500; color: #fff; }
+.sg-cform__person a { color: #DBE7DD; text-decoration: none; }
+.sg-cform--v3 .sg-cform__box { margin: 0 !important; padding: 56px 48px !important; border-radius: 0 !important; background: #fff !important; box-shadow: none !important; display: flex; flex-direction: column; justify-content: center; }
+.sg-cform--v3 .sg-sr { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; display: block; margin-bottom: 8px; font-size: 13px; font-weight: 500; color: var(--sg-text); }
+.sg-cform--v3 .sg-field input, .sg-cform--v3 .sg-field textarea { background: #fff !important; border: 1px solid rgba(10,47,42,.16) !important; border-radius: 10px !important; }
+.sg-cform--v3 .sg-field input:focus, .sg-cform--v3 .sg-field textarea:focus { border-color: var(--sg-cta) !important; box-shadow: 0 0 0 3px rgba(0,114,93,.12); outline: none; }
+@media (max-width: 960px) {
+  .sg-cform--v3 .sg-cform__grid { display: block !important; border-radius: var(--sg-radius-sm); overflow: hidden; box-shadow: 0 0 0 1px rgba(10,47,42,.08); }
+  .sg-cform--v3 .sg-cform__intro, .sg-cform--v3 .sg-cform__box { padding: 32px 24px !important; }
+}
