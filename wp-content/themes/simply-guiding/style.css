@@ -2699,3 +2699,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (max-width: 960px) { .sg-cform--v3 .sg-cform__grid { margin-inline: var(--sg-gutter); padding: 0 !important; } }
 /* IPS "Hvad lærer du": samme varme sandfarve som Academy-boksen på forsiden */
 .sg-trio__item { background: var(--sg-sand) !important; }
+/* Forløbskort: navnet i toppen, lige under nummeret */
+.sg-fcard__name { justify-content: flex-start !important; gap: 12px !important; }
