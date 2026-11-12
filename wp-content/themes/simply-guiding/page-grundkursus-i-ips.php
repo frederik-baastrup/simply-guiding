@@ -77,7 +77,7 @@ $faq = [
 
 <section class="sg-mind3 sg-relevant" aria-labelledby="sgRelTitle">
   <div class="sg-wrap sg-pdetail__grid">
-    <div><h2 class="sg-h2" id="sgRelTitle">Er dette kursus relevant for mig?</h2></div>
+    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgRelTitle">Er dette kursus relevant for mig?</h2></div>
     <div class="sg-pdetail__body">
       <p>Dette kursus er relevant for dig, der:</p>
       <?php $checks(['Ønsker at arbejde med IPS og Supported Employment', 'Arbejder inden for beskæftigelse, mental sundhed eller socialområdet', 'Vil opbygge kompetencer, der gør dig kvalificeret til IPS-stillinger', 'Er ledig og vil opkvalificere dig til fremtidig beskæftigelse']); ?>
