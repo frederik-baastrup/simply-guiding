@@ -2701,5 +2701,3 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-trio__item { background: var(--sg-sand) !important; }
 /* Forløbskort: navnet i toppen, lige under nummeret */
 .sg-fcard__name { justify-content: flex-start !important; gap: 12px !important; }
-/* Tal-båndet: gul accent på tallene (samme gul som temadag-loddet) */
-.sg-kpis .sg-kpi__num { color: #F6C552 !important; }
