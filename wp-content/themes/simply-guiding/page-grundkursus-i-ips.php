@@ -34,23 +34,23 @@ $faq = [
       <p>Grundkurset henvender sig til praktikere og andre fagprofessionelle, som ikke nødvendigvis er ansat i et jobcenter, men som ønsker at opbygge eller styrke deres IPS-kompetencer.</p>
 
       <div class="sg-course__box">
-      <h3 class="sg-course__h">Kursets opbygning:</h3>
+      <div class="sg-course__bhead"><span class="sg-course__bico"><?php echo sg_icon('calendar'); ?></span><h3 class="sg-course__h">Kursets opbygning</h3><span class="sg-course__bno">01</span></div>
       <?php $checks(['2 intensive sammenhængende kursusdage', '12 timers undervisning', 'Undervisning på Simply Guidings faciliteter i Odense', 'Undervisningen kombinerer oplæg, dialog, øvelser og praksisnære cases']); ?>
       <p>Du får mulighed for at arbejde med egne cases eller cases, der afspejler virkelige IPS-forløb i både kommunale og private kontekster.</p>
       </div>
       <div class="sg-course__box">
-      <h3 class="sg-course__h">På kurset arbejder vi bl.a. med</h3>
+      <div class="sg-course__bhead"><span class="sg-course__bico"><?php echo sg_icon('bookopen'); ?></span><h3 class="sg-course__h">På kurset arbejder vi bl.a. med</h3><span class="sg-course__bno">02</span></div>
       <?php $checks(['IPS-mindset og de 8 principper', 'Recovery- og beskæftigelsesperspektivet i IPS', 'Job development og samarbejde med virksomheder', 'Konkrete redskaber i arbejdet med borgere/deltagere', 'Overførsel af IPS til forskellige organisatoriske og faglige kontekster']); ?>
       <p>Fokus er på, hvordan IPS omsættes til praksis – ikke kun hvad metoden er i teorien.</p>
       </div>
       <div class="sg-course__box">
-      <h3 class="sg-course__h">Målgruppe</h3>
+      <div class="sg-course__bhead"><span class="sg-course__bico"><?php echo sg_icon('people'); ?></span><h3 class="sg-course__h">Målgruppe</h3><span class="sg-course__bno">03</span></div>
       <p>Kurset er relevant for dig, der:</p>
       <?php $checks(['arbejder med beskæftigelsesrettede indsatser.', 'arbejder med mennesker med psykiske vanskeligheder.', 'arbejder inden for social-, sundheds- eller beskæftigelsesområdet.', 'ønsker at kvalificere dig til en IPS- eller Supported Employment-stilling.', 'er ledig eller selvbetaler og ønsker at opkvalificere dig med henblik på beskæftigelse.']); ?>
       <p>Der stilles ingen formelle forudsætninger for deltagelse.</p>
       </div>
       <div class="sg-course__box">
-      <h3 class="sg-course__h">Udbytte</h3>
+      <div class="sg-course__bhead"><span class="sg-course__bico"><?php echo sg_icon('shield'); ?></span><h3 class="sg-course__h">Udbytte</h3><span class="sg-course__bno">04</span></div>
       <p>Efter kurset har du:</p>
       <?php $checks(['Grundlæggende viden om IPS-metoden og dens principper', 'Indsigt i IPS-mindset og metodens praksis', 'Konkrete redskaber, der kan anvendes direkte i dit arbejde', 'Forståelse for, hvordan IPS kan anvendes i forskellige organisatoriske rammer']); ?>
       <p>Alle deltagere modtager et kursusbevis, der beskriver de opnåede kompetencer.</p>

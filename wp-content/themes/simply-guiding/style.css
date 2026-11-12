@@ -2642,3 +2642,17 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-cform__direct small { color: var(--sg-muted) !important; }
 .sg-cform__ico { background: #0A2F2A url("assets/pattern.png") center / 300px repeat !important; color: #DBE7DD !important; }
 .sg-cform--dark .sg-cform__box { box-shadow: 0 18px 50px rgba(10,47,42,.10) !important; }
+/* Grundkursus: indholdsbokse v2 – ikon-hoved, punkter som hvide fliser, note med grøn streg */
+.sg-course__box { position: relative; padding: 32px 32px 30px !important; border-radius: var(--sg-radius-sm) !important; }
+.sg-course__bhead { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+.sg-course__bico { display: grid; place-items: center; flex: none; width: 48px; height: 48px; border-radius: 50%; background: #0A2F2A url("assets/pattern.png") center / 300px repeat; color: #DBE7DD; }
+.sg-course__bico svg { width: 22px; height: 22px; stroke-width: 1.4; }
+.sg-course__bhead .sg-course__h { flex: 1; margin: 0 !important; font-size: clamp(20px, 1.6vw, 24px) !important; line-height: 1.15; }
+.sg-course__bno { font-size: var(--sg-small); letter-spacing: .06em; color: var(--sg-muted); }
+.sg-course__box .sg-principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0 !important; padding: 0; list-style: none; }
+.sg-course__box .sg-principles li { display: flex; align-items: flex-start; gap: 12px; margin: 0 !important; padding: 16px 18px !important; border: 0 !important; border-radius: 12px; background: #fff; font-size: 15px !important; line-height: 1.5 !important; color: var(--sg-text) !important; }
+.sg-course__box .sg-principles li::first-letter { text-transform: uppercase; }
+.sg-course__box .sg-principles svg { flex: none; width: 18px !important; height: 18px !important; margin-top: 2px; color: var(--sg-cta); }
+.sg-course__box > p:not(:last-child) { margin: 0 0 14px !important; }
+.sg-course__box > p:last-child { margin: 20px 0 0 !important; padding-left: 16px; border-left: 2px solid var(--sg-cta); font-size: 15px !important; line-height: 1.6 !important; color: var(--sg-body-color) !important; }
+@media (max-width: 700px) { .sg-course__box .sg-principles { grid-template-columns: 1fr; } .sg-course__box { padding: 24px 20px !important; } }
