@@ -15,17 +15,18 @@ get_template_part('template-parts/page-hero', null, [
 <div id="indhold"></div>
 
 <!-- Hvornår ringer man til os -->
-<section class="sg-why" aria-labelledby="sgWhyTitle">
-  <div class="sg-wrap sg-why__grid">
-    <div>
+<section class="sg-why2" aria-labelledby="sgWhyTitle">
+  <div class="sg-wrap sg-why2__grid">
+    <div class="sg-why2__side">
       <h2 class="sg-h2" id="sgWhyTitle"><?php echo esc_html($c['why_title']); ?></h2>
-      <p class="sg-why__intro"><?php echo esc_html($c['why_intro']); ?></p>
+      <p class="sg-why2__intro"><?php echo esc_html($c['why_intro']); ?></p>
+      <p class="sg-textlink"><a href="/kontakt/">Tal med os om et forløb <?php echo sg_arrow(); ?></a></p>
     </div>
-    <div>
-      <p class="sg-why__lead"><?php echo esc_html($c['why_lead']); ?></p>
-      <ol class="sg-reasons<?php echo count($c['why_items']) % 2 ? ' sg-reasons--rows' : ''; ?>">
+    <div class="sg-why2__main">
+      <p class="sg-why2__lead"><?php echo esc_html($c['why_lead']); ?></p>
+      <ol class="sg-why2__list">
         <?php foreach ($c['why_items'] as $i => $it) : ?>
-        <li><span class="sg-reasons__n"><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($it); ?></p></li>
+        <li><span class="sg-why2__n"><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($it); ?></p></li>
         <?php endforeach; ?>
       </ol>
     </div>
