@@ -2656,3 +2656,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-course__box > p:not(:last-child) { margin: 0 0 14px !important; }
 .sg-course__box > p:last-child { margin: 20px 0 0 !important; padding-left: 16px; border-left: 2px solid var(--sg-cta); font-size: 15px !important; line-height: 1.6 !important; color: var(--sg-body-color) !important; }
 @media (max-width: 700px) { .sg-course__box .sg-principles { grid-template-columns: 1fr; } .sg-course__box { padding: 24px 20px !important; } }
+.sg-course__box .sg-principles li:last-child:nth-child(odd) { grid-column: 1 / -1; }
