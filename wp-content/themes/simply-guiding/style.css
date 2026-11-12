@@ -2596,3 +2596,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-why4__side, .sg-why4__main { grid-column: 1 / -1; }
   .sg-why4__main { margin-top: 36px; }
 }
+/* Smallere layout på hele sitet (12. nov.): indholdsbredde 1280 px (wrap = 1280 + 2 × 54 px luft + 36 px) */
+:root { --sg-max: 1352px; }
