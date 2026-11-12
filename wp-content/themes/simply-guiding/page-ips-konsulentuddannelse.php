@@ -29,13 +29,13 @@ get_template_part('template-parts/page-hero', null, [
   </div>
 </section>
 
-<section class="sg-pdetail sg-learnsec" aria-labelledby="sgLearnTitle">
-  <div class="sg-wrap sg-pdetail__grid">
-    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgLearnTitle">Hvad lærer du på konsulentuddannelsen?</h2></div>
-    <div class="sg-pdetail__body">
-      <p>På konsulentuddannelsen bliver du undervist i IPS-metoden og de otte principper, som metoden bygger på. Du lærer at screene kandidater til IPS-forløb og at arbejde tværfagligt med IPS-kandidaten i centrum.</p>
-      <p>Uddannelsen giver dig desuden konkrete værktøjer til arbejdet med at støtte psykisk sårbare i at opnå job eller uddannelse, herunder virksomhedskontakt, etablering af praktikker og jobmatch.</p>
-      <p>Du lærer at kortlægge dine kandidaters muligheder på arbejdsmarkedet og at udarbejde en ambitiøs og realistisk plan med fokus på beskæftigelse på det ordinære arbejdsmarked eller adgang til uddannelse.</p>
+<section class="sg-cols3" aria-labelledby="sgLearnTitle">
+  <div class="sg-wrap">
+    <div class="sg-headline"><h2 class="sg-h2" id="sgLearnTitle">Hvad lærer du på konsulentuddannelsen?</h2></div>
+    <div class="sg-cols3__grid">
+      <div class="sg-cols3__item"><?php echo sg_icon('book'); ?><h3>Metoden og de otte principper</h3><p>På konsulentuddannelsen bliver du undervist i IPS-metoden og de otte principper, som metoden bygger på. Du lærer at screene kandidater til IPS-forløb og at arbejde tværfagligt med IPS-kandidaten i centrum.</p></div>
+      <div class="sg-cols3__item"><?php echo sg_icon('handshake'); ?><h3>Værktøjer til jobskabelse</h3><p>Uddannelsen giver dig desuden konkrete værktøjer til arbejdet med at støtte psykisk sårbare i at opnå job eller uddannelse, herunder virksomhedskontakt, etablering af praktikker og jobmatch.</p></div>
+      <div class="sg-cols3__item"><?php echo sg_icon('spark'); ?><h3>Kortlægning og en realistisk plan</h3><p>Du lærer at kortlægge dine kandidaters muligheder på arbejdsmarkedet og at udarbejde en ambitiøs og realistisk plan med fokus på beskæftigelse på det ordinære arbejdsmarked eller adgang til uddannelse.</p></div>
     </div>
   </div>
 </section>
