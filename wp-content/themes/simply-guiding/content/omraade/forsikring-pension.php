@@ -1,8 +1,8 @@
 <?php
 return [
   'label' => 'Forsikring og pension',
-  'title' => 'Beskæftigelsesindsatser til forsikrings- og pensionsselskabers sygemeldte kunder',
-  'lead' => 'Simply Guiding hjælper sygemeldte tilbage i arbejde – hurtigt, trygt og med afsæt i den enkeltes situation.',
+  'title' => 'Forsikring og pension',
+  'lead' => 'Simply Guiding tilbyder beskæftigelsesindsatser til forsikrings- og pensionsselskabers sygemeldte kunder. Vi hjælper sygemeldte tilbage i arbejde – hurtigt, trygt og med afsæt i den enkeltes situation.',
   'hero_img' => 'loesninger-forsikring.jpg', 'hero_alt' => 'Samtale mellem en sygemeldt og en konsulent',
   'btn1' => 'Henvis en sygemeldt', 'btn2' => 'Se vores indsatser',
   'why_title' => 'Når en sygemelding handler om mere end sygdom',
