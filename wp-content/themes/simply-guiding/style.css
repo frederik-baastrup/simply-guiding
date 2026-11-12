@@ -2598,3 +2598,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 }
 /* Smallere layout på hele sitet (12. nov.): indholdsbredde 1280 px (wrap = 1280 + 2 × 54 px luft + 36 px) */
 :root { --sg-max: 1352px; }
+/* Områdesider: mindre tekst i 2x2-grundene */
+.sg-reasons li p, .sg-reasons p { font-size: 15px !important; line-height: 1.65 !important; }
