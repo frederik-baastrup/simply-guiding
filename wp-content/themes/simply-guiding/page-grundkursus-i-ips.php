@@ -122,15 +122,22 @@ $faq = [
     <div class="sg-cform__intro">
       <h2 class="sg-h2" id="sgRegTitle">Tilmelding til kurset</h2>
       <p>Udfyld formularen for at tilmelde dig Grundkursus i IPS hos Simply Guiding. Når vi har modtaget din tilmelding, fremsender vi en bekræftelse samt praktisk information om kurset.</p>
-      <div class="sg-terms" id="handelsbetingelser">
-        <h3 class="sg-mind3__h3">Handelsbetingelser – Grundkursus i IPS</h3>
-        <ul>
-          <li>Tilmelding er bindende.</li>
-          <li>Afbud skal ske skriftligt til <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a></li>
-          <li>Ved afbud: Indtil 14 dage før kursusstart: ingen betaling 7–13 dage før: 50 % af kursusprisen Senere end 7 dage før: fuld betaling</li>
-          <li>Ved udeblivelse opkræves fuld kursuspris.</li>
-          <li>Simply Guiding forbeholder sig ret til at aflyse kurset ved for få tilmeldte.</li>
-          <li>Alle priser er ekskl. moms.</li>
+      <div class="sg-terms sg-terms--v2" id="handelsbetingelser">
+        <h3 class="sg-terms__title">Handelsbetingelser – Grundkursus i IPS</h3>
+        <ul class="sg-terms__list">
+          <li><?php echo sg_icon('shield'); ?><span>Tilmelding er bindende.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Afbud skal ske skriftligt til <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a></span></li>
+        </ul>
+        <p class="sg-terms__sub">Ved afbud</p>
+        <div class="sg-terms__tiers">
+          <div><small>Indtil 14 dage før kursusstart</small><strong>Ingen betaling</strong></div>
+          <div><small>7–13 dage før</small><strong>50 % af kursusprisen</strong></div>
+          <div><small>Senere end 7 dage før</small><strong>Fuld betaling</strong></div>
+        </div>
+        <ul class="sg-terms__list">
+          <li><?php echo sg_icon('user'); ?><span>Ved udeblivelse opkræves fuld kursuspris.</span></li>
+          <li><?php echo sg_icon('calendar'); ?><span>Simply Guiding forbeholder sig ret til at aflyse kurset ved for få tilmeldte.</span></li>
+          <li><?php echo sg_icon('tag'); ?><span>Alle priser er ekskl. moms.</span></li>
         </ul>
       </div>
     </div>
