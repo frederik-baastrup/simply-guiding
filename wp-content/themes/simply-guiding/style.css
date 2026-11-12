@@ -2209,3 +2209,17 @@ Text Domain: simply-guiding
 .sg-reasons--rows li, .sg-reasons--rows li:nth-child(odd), .sg-reasons--rows li:last-child:nth-child(odd) { display: grid; grid-template-columns: 72px minmax(0, 1fr); align-items: baseline; padding: 26px 0; border-right: 0; grid-column: auto; }
 .sg-reasons--rows .sg-reasons__n { font-size: 28px; }
 .sg-reasons--rows p { margin: 0; max-width: none; font-size: 17px; }
+
+/* ===== Brødtekst 17 px på hele sitet ===== */
+:root { --sg-body: 17px; }
+.sg-about__copy p, .sg-band2__cols p, .sg-band__copy p, .sg-cform__intro p, .sg-checks li, .sg-cols3 p, .sg-cols3--rich p,
+.sg-consult__lead, .sg-course__body > p, .sg-faq__a p, .sg-faq__intro, .sg-mind2__card, .sg-mind3__copy p, .sg-mind__copy p,
+.sg-more p, .sg-more2__copy p, .sg-pdetail__body > p, .sg-pdetail__sidetext, .sg-principles8__grid p, .sg-principles8__intro,
+.sg-project__text, .sg-quote__case-text, .sg-quote__num-text, .sg-sol__copy > p, .sg-sol__clip > p, .sg-step__text,
+.sg-tablesec__head p, .sg-tile2 p, .sg-tile__text, .sg-belief p, .sg-card3 p, .sg-index__text, .sg-meet__p, .sg-meet__t,
+.sg-mind3__copy .sg-belief p, .sg-mind3__copy .sg-meet__p, .sg-mind3__copy .sg-meet__t, .sg-mv__list dd, .sg-reasons p,
+.sg-sechead > p, .sg-stage__lead, .sg-statement__cols p + p, .sg-who__cell p, .sg-who__lead, .sg-why__intro, .sg-why__p,
+.sg-principles li, .sg-story__body p, .sg-story__body li, .sg-post__content p, .sg-post__content li, .sg-legal p, .sg-legal li,
+.sg-cinfo__card p, .sg-project__body p, .sg-pdetail__body li {
+  font-size: var(--sg-body) !important; line-height: 1.75;
+}
