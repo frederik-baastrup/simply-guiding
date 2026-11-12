@@ -2703,5 +2703,3 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-fcard__name { justify-content: flex-start !important; gap: 12px !important; }
 /* Tal-båndet: gul accent på tallene (samme gul som temadag-loddet) */
 .sg-kpis .sg-kpi__num { color: #F6C552 !important; }
-/* Tal-båndet: samme grønne som temadag-materialet (dyb grøn med blød lysning), uden mønster – passer til de gule tal */
-.sg-kpis { background: radial-gradient(ellipse 70% 90% at 50% 100%, #1F4A3E 0%, rgba(31,74,62,0) 70%), #17342F !important; }
