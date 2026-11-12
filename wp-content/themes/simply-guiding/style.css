@@ -2433,10 +2433,10 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-doc__steps h3 svg { width: 30px; height: 30px; }
 .sg-doc__steps p { font-size: 15px !important; line-height: 1.6; }
 @media (max-width: 760px) { .sg-doc__steps { grid-template-columns: 1fr; } .sg-doc__steps .sg-doc__tag { margin-bottom: 14px; } }
-/* FAQ flugter med kontaktformularen: 5 | 1 | 6 */
+/* Kontaktformularen flugter med FAQ: 4 | 1 | 7 */
 @media (min-width: 961px) {
-  .sg-faq .sg-faq__list { grid-column: 7 / span 6 !important; }
-  .sg-faq .sg-faq__list { margin-left: 0 !important; }
+  .sg-cform__grid > :first-child { grid-column: 1 / span 4 !important; }
+  .sg-cform__grid > .sg-cform__box { grid-column: 6 / span 7 !important; }
 }
 /* Forsidens områdekort: lidt mindre brødtekst */
 .sg-card .sg-card__text { font-size: 15px !important; line-height: 1.6 !important; }
