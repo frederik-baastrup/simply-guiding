@@ -2604,3 +2604,9 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   body:not(.home) .sg-hero--full .sg-split { min-height: min(780px, 87vh); }
   body:not(.home) .sg-split__copy { padding-top: 104px; padding-bottom: 104px; }
 }
+/* Områdesider: mindre luft mellem venstre og højre kolonne (som på IPS-siden: 5 kolonner | tekst fra kolonne 6 + 56 px) */
+@media (min-width: 961px) {
+  .sg-why .sg-why__grid, .sg-meet .sg-mind3__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important; }
+  .sg-why .sg-why__grid > :first-child, .sg-meet .sg-mind3__media { grid-column: 1 / span 5 !important; grid-row: 1; }
+  .sg-why .sg-why__grid > :last-child, .sg-meet .sg-mind3__copy { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
+}
