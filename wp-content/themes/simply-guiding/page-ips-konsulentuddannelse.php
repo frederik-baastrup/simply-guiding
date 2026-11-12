@@ -35,7 +35,7 @@ get_template_part('template-parts/page-hero', null, [
     <div class="sg-trio__grid">
       <div class="sg-trio__item"><span class="sg-trio__no">01</span><span class="sg-trio__ico"><?php echo sg_icon('bookopen'); ?></span><h3>Metoden og de otte principper</h3><p>På konsulentuddannelsen bliver du undervist i IPS-metoden og de otte principper, som metoden bygger på. Du lærer at screene kandidater til IPS-forløb og at arbejde tværfagligt med IPS-kandidaten i centrum.</p></div>
       <div class="sg-trio__item"><span class="sg-trio__no">02</span><span class="sg-trio__ico"><?php echo sg_icon('briefcase'); ?></span><h3>Værktøjer til jobskabelse</h3><p>Uddannelsen giver dig konkrete værktøjer til arbejdet med at støtte psykisk sårbare i at opnå job eller uddannelse, herunder virksomhedskontakt, etablering af praktikker og jobmatch.</p></div>
-      <div class="sg-trio__item"><span class="sg-trio__no">03</span><span class="sg-trio__ico"><?php echo sg_icon('spark'); ?></span><h3>Kortlægning og en realistisk plan</h3><p>Du lærer at kortlægge dine kandidaters muligheder på arbejdsmarkedet og at udarbejde en ambitiøs og realistisk plan med fokus på beskæftigelse på det ordinære arbejdsmarked eller adgang til uddannelse.</p></div>
+      <div class="sg-trio__item"><span class="sg-trio__no">03</span><span class="sg-trio__ico"><?php echo sg_icon('map'); ?></span><h3>Kortlægning og en realistisk plan</h3><p>Du lærer at kortlægge dine kandidaters muligheder på arbejdsmarkedet og at udarbejde en ambitiøs og realistisk plan med fokus på beskæftigelse på det ordinære arbejdsmarked eller adgang til uddannelse.</p></div>
     </div>
   </div>
 </section>
