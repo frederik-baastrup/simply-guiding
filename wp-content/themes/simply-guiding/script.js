@@ -282,3 +282,19 @@
     window.addEventListener('load', measure);
     var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(measure, 150); });
   })();
+
+  /* Dokument-layout: marker det afsnit, man læser, i indholdsfortegnelsen */
+  (function () {
+    var toc = document.querySelector('.sg-doc__toc');
+    if (!toc) return;
+    var links = Array.prototype.slice.call(toc.querySelectorAll('a'));
+    var secs = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);
+    function spy() {
+      var y = window.innerHeight * 0.3, cur = 0;
+      secs.forEach(function (s, i) { if (s.getBoundingClientRect().top <= y) cur = i; });
+      links.forEach(function (a, i) { a.classList.toggle('is-active', i === cur); if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    }
+    spy();
+    window.addEventListener('scroll', spy, { passive: true });
+    window.addEventListener('resize', spy);
+  })();

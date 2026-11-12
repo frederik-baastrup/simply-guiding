@@ -12,6 +12,10 @@ get_template_part('template-parts/page-hero', null, [
 ]);
 ?>
 <div id="indhold"></div>
+<?php if (isset($_GET['ny'])) { /* forslag: lodret dokument-layout med sidebar */
+  sg_doc(require get_template_directory() . '/content/doc/ips-konsulentuddannelse.php');
+  get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
+} ?>
 
 <section class="sg-mind3 sg-mind3--plain" aria-labelledby="sgEduTitle">
   <div class="sg-wrap sg-mind3__grid">

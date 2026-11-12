@@ -225,6 +225,10 @@ function sg_icon($name) {
         'bolt'   => '<path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/>',
         'user'   => '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
         'puzzle' => '<path d="m12 3 8.5 4.5L12 12 3.5 7.5z"/><path d="m3.5 12 8.5 4.5 8.5-4.5M3.5 16.5 12 21l8.5-4.5"/>',
+        'clock'  => '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+        'card'   => '<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/>',
+        'tag'    => '<path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9-8-8z"/><circle cx="8.5" cy="8.5" r="1.5"/>',
+        'calendar' => '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/>',
         'handshake' => '<path d="m3 12 4-4 4 2 3-2 3 1 4 3"/><path d="m7 12 3 3a1.4 1.4 0 0 0 2-2M10 15l1.5 1.5a1.4 1.4 0 0 0 2-2M12.5 16.5l.8.8a1.4 1.4 0 0 0 2-2l-2.3-2.3"/>',
     ];
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($p[$name] ?? $p['arrow']) . '</svg>';
@@ -321,3 +325,11 @@ if (!defined('RANK_MATH_VERSION')) {
 add_action('wp_head', function () {
     echo '<meta name="google-site-verification" content="rI9cWHHXule_HqpSp0AMqRU5LfUoHfhlJy_925qK6_A" />' . "\n";
 }, 2);
+
+/* Dokument-layout (lodret side med sidebar) – se inc/doc.php */
+require_once get_template_directory() . '/inc/doc.php';
+
+/* Forslag i dokument-layout vises på ?ny=1 og skal ikke indekseres */
+add_filter('wp_robots', function ($r) { if (isset($_GET['ny'])) { $r['noindex'] = true; $r['nofollow'] = true; } return $r; });
+add_filter('rank_math/frontend/robots', function ($r) { if (isset($_GET['ny'])) { $r['index'] = 'noindex'; $r['follow'] = 'nofollow'; } return $r; });
+
