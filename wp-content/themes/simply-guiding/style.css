@@ -2495,12 +2495,12 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-flow .sg-learnsec .sg-pdetail__body p:last-child { margin-bottom: 0; }
 /* Mobil: overskrift med streg må ombrydes (stak 3 px ud og gav vandret scroll) */
 @media (max-width: 600px) { .sg-headline .sg-h2 { flex: 1 1 auto; min-width: 0; } }
-/* Tre tekstkolonner med ikon og underoverskrift (genbrugelig: .sg-cols3) */
-.sg-cols3__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--sg-gut); row-gap: 36px; }
-.sg-cols3__item > svg { width: 30px; height: 30px; color: var(--sg-cta); stroke-width: 1.4; }
-.sg-cols3__item h3 { margin: 18px 0 10px; font-size: 19px; font-weight: 500; line-height: 1.3; color: var(--sg-text); }
-.sg-cols3__item p { margin: 0; font-size: var(--sg-body) !important; line-height: 1.75; color: var(--sg-body-color) !important; }
-@media (max-width: 860px) { .sg-cols3__grid { grid-template-columns: 1fr; } }
+/* Tre tekstkolonner med ikon og underoverskrift (genbrugelig: .sg-trio) */
+.sg-trio__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--sg-gut); row-gap: 36px; }
+.sg-trio__item > svg { width: 30px; height: 30px; color: var(--sg-cta); stroke-width: 1.4; }
+.sg-trio__item h3 { margin: 18px 0 10px; font-size: 19px; font-weight: 500; line-height: 1.3; color: var(--sg-text); }
+.sg-trio__item p { margin: 0; font-size: var(--sg-body) !important; line-height: 1.75; color: var(--sg-body-color) !important; }
+@media (max-width: 860px) { .sg-trio__grid { grid-template-columns: 1fr; } }
 /* Indrykkede sektioner (18 px margin): samme indholdsbredde som alt andet på alle skærmbredder */
 @media (min-width: 961px) {
   .sg-mind3 > .sg-wrap, .sg-sol > .sg-wrap, .sg-stage > .sg-wrap { max-width: var(--sg-max); }
