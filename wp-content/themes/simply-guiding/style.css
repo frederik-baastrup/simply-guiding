@@ -2600,3 +2600,9 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 :root { --sg-max: 1352px; }
 /* Områdesider: mindre tekst i 2x2-grundene */
 .sg-reasons li p, .sg-reasons p { font-size: 15px !important; line-height: 1.65 !important; }
+/* Undersider (alt undtagen forsiden): lavere hero */
+@media (min-width: 1046px) {
+  body:not(.home) .sg-split { min-height: min(660px, 74vh); }
+  body:not(.home) .sg-hero--full .sg-split { min-height: min(700px, 80vh); }
+  body:not(.home) .sg-split__copy { padding-top: 104px; padding-bottom: 104px; }
+}
