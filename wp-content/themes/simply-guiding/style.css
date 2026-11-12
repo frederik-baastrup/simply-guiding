@@ -2440,3 +2440,6 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 }
 /* Forsidens områdekort: lidt mindre brødtekst */
 .sg-card .sg-card__text { font-size: 15px !important; line-height: 1.6 !important; }
+/* Om os, "Tro kan ikke flytte bjerge alene": ingen streg, begge afsnit samme størrelse */
+.sg-statement__cols p, .sg-statement__cols p:first-child, .sg-statement__cols p + p { border-top: 0 !important; padding-top: 0 !important; font-size: var(--sg-body) !important; line-height: 1.75 !important; color: var(--sg-body-color) !important; }
+.sg-statement__cols { gap: 18px !important; }
