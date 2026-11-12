@@ -75,13 +75,16 @@ $faq = [
   </div>
 </section>
 
-<section class="sg-mind3 sg-relevant" aria-labelledby="sgRelTitle">
+<section class="sg-mind3 sg-relevant sg-relevant--dark" aria-labelledby="sgRelTitle">
   <div class="sg-wrap sg-pdetail__grid">
-    <div class="sg-pdetail__side"><h2 class="sg-h2" id="sgRelTitle">Er dette kursus relevant for mig?</h2></div>
+    <div class="sg-pdetail__side">
+      <h2 class="sg-h2" id="sgRelTitle">Er dette kursus relevant for mig?</h2>
+      <p class="sg-relevant__text">Hvis du stadig er i tvivl, er du altid velkommen til at kontakte os for en kort rådgivning om, hvordan kurset matcher dine behov.</p>
+      <p class="sg-textlink"><a href="/kontakt/">Kontakt os <?php echo sg_arrow(); ?></a></p>
+    </div>
     <div class="sg-pdetail__body">
-      <p>Dette kursus er relevant for dig, der:</p>
+      <p class="sg-relevant__lead">Dette kursus er relevant for dig, der:</p>
       <?php $checks(['Ønsker at arbejde med IPS og Supported Employment', 'Arbejder inden for beskæftigelse, mental sundhed eller socialområdet', 'Vil opbygge kompetencer, der gør dig kvalificeret til IPS-stillinger', 'Er ledig og vil opkvalificere dig til fremtidig beskæftigelse']); ?>
-      <p>Hvis du stadig er i tvivl, er du altid velkommen til at kontakte os for en kort rådgivning om, hvordan kurset matcher dine behov.</p>
     </div>
   </div>
 </section>
