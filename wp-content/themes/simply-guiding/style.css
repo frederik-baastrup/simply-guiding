@@ -2223,3 +2223,4 @@ Text Domain: simply-guiding
 .sg-cinfo__card p, .sg-project__body p, .sg-pdetail__body li {
   font-size: var(--sg-body) !important; line-height: 1.75;
 }
+.sg-card__text, .sg-kpi__text, .sg-stat__text, .sg-step p, .sg-step__text { font-size: var(--sg-body) !important; line-height: 1.65; }
