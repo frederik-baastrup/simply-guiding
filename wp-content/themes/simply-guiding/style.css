@@ -2304,3 +2304,8 @@ Text Domain: simply-guiding
 .sg-mind3__cols .sg-mind3__h3 { font-size: 15px; }
 /* Fast afstand mellem sektionsoverskrift og brødtekst */
 .sg-mind3__copy > .sg-h2 + p, .sg-sol__copy > .sg-h2 + p, .sg-sol__clip > .sg-h2 + p, .sg-consult__copy > .sg-h2 + p, .sg-pdetail__side > .sg-h2 + p, .sg-band2__head .sg-h2 + div, .sg-who__side .sg-h2 + p, .sg-why__grid .sg-h2 + p { margin-top: 22px !important; }
+/* "IPS-metoden bliver …": billedet i samme kolonner som listen ovenover (5 | 1 | 6) */
+@media (min-width: 961px) {
+  .sg-sol--small .sg-sol__copy { grid-column: 1 / span 5 !important; }
+  .sg-sol--small .sg-sol__media { grid-column: 7 / span 6 !important; aspect-ratio: 4 / 3; align-self: start; }
+}
