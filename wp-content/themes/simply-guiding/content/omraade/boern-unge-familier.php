@@ -1,6 +1,6 @@
 <?php
 return [
-  'label' => 'Børn, unge og familier',
+  'label' => 'Områder',
   'title' => 'Børn, unge og familier',
   'lead' => 'Simply Guiding fungerer som ekstern aktør for børne- og familieafdelinger og ungeenheder. Vi hjælper børn, unge og familier tilbage i trivsel, i skole og til et nyt ståsted i livet.',
   'hero_img' => 'borgere.jpg', 'hero_alt' => 'To unge mænd går og snakker på en sti i skoven',

@@ -1,6 +1,6 @@
 <?php
 return [
-  'label' => 'Forsikring og pension',
+  'label' => 'Områder',
   'title' => 'Forsikring og pension',
   'lead' => 'Simply Guiding tilbyder beskæftigelsesindsatser til forsikrings- og pensionsselskabers sygemeldte kunder. Vi hjælper sygemeldte tilbage i arbejde – hurtigt, trygt og med afsæt i den enkeltes situation.',
   'hero_img' => 'loesninger-forsikring.jpg', 'hero_alt' => 'Samtale mellem en sygemeldt og en konsulent',

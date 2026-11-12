@@ -1,6 +1,6 @@
 <?php
 return [
-  'label' => 'Jobcentre',
+  'label' => 'Områder',
   'title' => 'Jobcentre',
   'lead' => 'Simply Guiding fungerer som ekstern beskæftigelsesaktør til jobcentre. Vi hjælper jobcentre med at skabe et nyt ståsted i livet for borgere i en sårbar situation.',
   'hero_img' => 'indsats-jobcenter.jpg', 'hero_alt' => 'Konsulent fra Simply Guiding i samtale med en borger',
