@@ -2550,3 +2550,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-why2__main { margin-top: 40px; }
   .sg-why2__list li { grid-template-columns: 40px 1fr; gap: 10px; padding: 20px 0; }
 }
+/* Mørke bokse: brødtekst er hvid (den fælles #212121-regel ramte nyhedsbrevsboksen) */
+.sg-tile--dark .sg-tile__text, .sg-tile--dark p { color: rgba(255,255,255,.85) !important; }
