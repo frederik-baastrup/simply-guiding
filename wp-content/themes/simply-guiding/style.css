@@ -2672,12 +2672,10 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Kontaktformular v3: ét kort delt i mørk kontaktside og hvid formular med synlige labels */
 .sg-cform--v3 { padding-block: var(--sg-gap) !important; background: none !important; }
 @media (min-width: 961px) {
-  .sg-cform--v3 .sg-cform__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: 0 !important; align-items: stretch !important; border-radius: var(--sg-radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(10,47,42,.08), 0 30px 70px rgba(10,47,42,.10); padding: 0 !important; max-width: calc(var(--sg-max) - 72px); }
-  .sg-cform--v3 > .sg-wrap { padding-inline: 0 !important; }
+  .sg-cform--v3 .sg-cform__grid { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: 0 !important; align-items: stretch !important; border-radius: var(--sg-radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(10,47,42,.08), 0 30px 70px rgba(10,47,42,.10); padding: 0 !important; }
   .sg-cform--v3 .sg-cform__intro { grid-column: 1 / span 5 !important; }
   .sg-cform--v3 .sg-cform__box { grid-column: 6 / span 7 !important; }
 }
-@media (min-width: 961px) and (max-width: 1460px) { .sg-cform--v3 .sg-cform__grid { margin-inline: var(--sg-gutter); } }
 .sg-cform--v3 .sg-cform__intro { display: flex; flex-direction: column; padding: 56px 48px; background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
 .sg-cform--v3 .sg-h2 { color: #DBE7DD !important; }
 .sg-cform--v3 .sg-cform__intro > p { margin-top: 22px !important; color: rgba(255,255,255,.82) !important; font-size: var(--sg-body) !important; line-height: 1.75; }
