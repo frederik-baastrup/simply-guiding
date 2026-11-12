@@ -55,7 +55,7 @@ get_template_part('template-parts/page-hero', null, [
 <section class="sg-tablesec sg-forloeb" id="forloeb" aria-labelledby="sgForTitle">
   <div class="sg-wrap">
     <div class="sg-sechead"><h2 class="sg-h2" id="sgForTitle"><?php echo esc_html($c['table_title']); ?></h2></div>
-    <?php sg_table(array_merge([['Forløb', 'Målgruppe', 'Indsats']], $c['table'])); ?>
+    <?php sg_forloeb_cards($c['table']); ?>
   </div>
 </section>
 

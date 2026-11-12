@@ -333,3 +333,17 @@ require_once get_template_directory() . '/inc/doc.php';
 add_filter('wp_robots', function ($r) { if (isset($_GET['ny'])) { $r['noindex'] = true; $r['nofollow'] = true; } return $r; });
 add_filter('rank_math/frontend/robots', function ($r) { if (isset($_GET['ny'])) { $r['index'] = 'noindex'; $r['follow'] = 'nofollow'; } return $r; });
 
+/* Forløb på områdesiderne som kort: mørkegrønt navnefelt + Målgruppe / Indsats (afløser tabellen) */
+function sg_forloeb_cards($rows) {
+    echo '<ol class="sg-fcards">';
+    foreach ($rows as $i => $r) {
+        $fmt = function ($t) { return str_replace("\n", '</p><p>', esc_html($t)); };
+        echo '<li class="sg-fcard">';
+        echo '<div class="sg-fcard__name"><span class="sg-fcard__no">' . sprintf('%02d', $i + 1) . '</span><h3>' . esc_html($r[0]) . '</h3></div>';
+        echo '<div class="sg-fcard__col"><p class="sg-fcard__label">' . sg_icon('people') . 'Målgruppe</p><p>' . $fmt($r[1]) . '</p></div>';
+        echo '<div class="sg-fcard__col"><p class="sg-fcard__label">' . sg_icon('spark') . 'Indsats</p><p>' . $fmt($r[2]) . '</p></div>';
+        echo '</li>';
+    }
+    echo '</ol>';
+}
+
