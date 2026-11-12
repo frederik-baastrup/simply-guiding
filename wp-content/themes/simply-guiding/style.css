@@ -2438,3 +2438,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-faq .sg-faq__list { grid-column: 7 / span 6 !important; }
   .sg-faq .sg-faq__list { margin-left: 0 !important; }
 }
+/* Forsidens områdekort: lidt mindre brødtekst */
+.sg-card .sg-card__text { font-size: 15px !important; line-height: 1.6 !important; }
