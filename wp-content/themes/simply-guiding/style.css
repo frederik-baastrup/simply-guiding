@@ -2668,3 +2668,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-relevant--dark .sg-principles svg { width: 26px !important; height: 26px !important; margin: 0 !important; color: #8FC7AE !important; }
 @media (min-width: 961px) { .sg-relevant--dark .sg-pdetail__grid { align-items: center; } }
 @media (max-width: 700px) { .sg-relevant--dark .sg-principles { grid-template-columns: 1fr; } .sg-relevant--dark .sg-pdetail__body { margin-top: 32px; } }
+.sg-relevant.sg-relevant--dark .sg-pdetail__body > p.sg-relevant__lead.sg-relevant__lead { color: #8FC7AE !important; }
