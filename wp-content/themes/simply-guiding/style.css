@@ -2294,3 +2294,7 @@ Text Domain: simply-guiding
 .sg-table__row:not(.sg-band2 *, .sg-stage *, .sg-kpis *, .sg-card *, .sg-band *, .sg-method *, .sg-final *, .sg-footer *, .sg-course__card *, .sg-split *, .sg-quoteimg *),
 .sg-forloeb .sg-table__row:not(.sg-band2 *, .sg-stage *, .sg-kpis *, .sg-card *, .sg-band *, .sg-method *, .sg-final *, .sg-footer *, .sg-course__card *, .sg-split *, .sg-quoteimg *) { color: var(--sg-body-color) !important; }
 .sg-statement__cols p, .sg-faq__a p, .sg-checks li span, .sg-checks li { color: var(--sg-body-color) !important; }
+/* Ingen streger mellem afsnit i billede/tekst-sektioner */
+.sg-mind3__copy p { border-top: 0; padding-block: 0; margin-top: 18px; }
+.sg-mind3__copy > .sg-h2 + p, .sg-mind3__copy > p:first-child { margin-top: 0; }
+.sg-mind3__copy .sg-mind3__lead { margin-top: 22px; }
