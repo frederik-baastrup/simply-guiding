@@ -2433,3 +2433,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-doc__steps h3 svg { width: 30px; height: 30px; }
 .sg-doc__steps p { font-size: 15px !important; line-height: 1.6; }
 @media (max-width: 760px) { .sg-doc__steps { grid-template-columns: 1fr; } .sg-doc__steps .sg-doc__tag { margin-bottom: 14px; } }
+/* FAQ flugter med kontaktformularen: 5 | 1 | 6 */
+@media (min-width: 961px) {
+  .sg-faq .sg-faq__list { grid-column: 7 / span 6 !important; }
+  .sg-faq .sg-faq__list { margin-left: 0 !important; }
+}
