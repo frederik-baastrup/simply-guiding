@@ -2736,3 +2736,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   section[aria-labelledby="sgConsultTitle"] .sg-consult__media { grid-column: 1 / span 5 !important; grid-row: 1; order: 0 !important; }
   section[aria-labelledby="sgConsultTitle"] .sg-consult__copy { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
 }
+/* Forløbskort: det mørke navnefelt som et afrundet kort inde i det lyse (ingen lige kant mod det lysegrønne) */
+.sg-fcard { padding: 8px; }
+.sg-fcard__name { border-radius: 10px; }
+.sg-fcard__col { padding-top: 22px !important; padding-bottom: 22px !important; }
+@media (max-width: 960px) { .sg-fcard__col { padding: 18px 16px 0 !important; } .sg-fcard__col:last-child { padding: 14px 16px 18px !important; } }
