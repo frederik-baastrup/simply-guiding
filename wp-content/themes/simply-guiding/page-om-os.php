@@ -11,6 +11,10 @@ get_template_part('template-parts/page-hero', null, [
 ]);
 ?>
 <div id="indhold"></div>
+<?php if (isset($_GET['ny'])) { /* ny opbygning – samme tekst */
+  require get_template_directory() . '/om-os-ny.php';
+  get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
+} ?>
 
 <section class="sg-who" aria-labelledby="sgWhoTitle">
   <div class="sg-wrap sg-who__grid">

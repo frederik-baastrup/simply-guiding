@@ -2859,3 +2859,43 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-gk-price__btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .sg-gk-price__btn--ghost { background: transparent !important; border-color: rgba(255,255,255,.35) !important; color: #fff !important; }
 @media (max-width: 600px) { .sg-gk-price__btns { grid-template-columns: 1fr; } .sg-gk-price__rows > div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* ================= Om os – ny opbygning (?ny=1) ================= */
+.sg-os-who .sg-gk-split__side { position: static; }
+.sg-os-cells { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sg-os-cells li { display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: var(--sg-radius-sm); background: var(--sg-sand); }
+.sg-os-cells h3 { margin: 8px 0 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 20px; font-weight: 500; color: var(--sg-text); }
+.sg-os-cells p { margin: -6px 0 0; font-size: 15px !important; line-height: 1.6; color: var(--sg-body-color) !important; }
+.sg-os-who + .sg-band-wrap { margin-top: 48px; }
+.sg-os-floor { padding-top: 96px; }
+.sg-os-tall { aspect-ratio: 4 / 5 !important; }
+.sg-os-tall img { object-position: 50% 30%; }
+.sg-os-belief { margin: 48px max(18px, env(safe-area-inset-right, 0px)); border-radius: var(--sg-radius); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-os-belief > .sg-wrap { padding-block: 96px; align-items: center; }
+@media (min-width: 961px) { .sg-os-belief > .sg-wrap { max-width: var(--sg-max); padding-inline: calc(var(--sg-gutter) - 18px); } }
+.sg-os-belief__title { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(34px, 3.4vw, 52px); font-weight: 500; line-height: 1.05; letter-spacing: -.02em; color: #DBE7DD; }
+.sg-os-belief .sg-gk-split__main p { margin: 0 0 16px; font-size: var(--sg-body) !important; line-height: 1.75; color: rgba(255,255,255,.85) !important; }
+.sg-os-belief .sg-gk-split__main p:first-child { font-size: clamp(18px, 1.4vw, 21px) !important; line-height: 1.6; color: #fff !important; }
+.sg-os-belief .sg-gk-split__main p:last-child { margin-bottom: 0; }
+.sg-os-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--sg-gut); align-items: end; margin-bottom: 36px; }
+.sg-os-head .sg-h2 { grid-column: 1 / span 5; margin: 0; }
+.sg-os-head p { grid-column: 6 / span 7; padding-left: 56px; margin: 0; font-size: var(--sg-body) !important; line-height: 1.75; color: var(--sg-body-color) !important; }
+.sg-os-values { padding-block: 48px 96px; }
+.sg-os-values .sg-h2 { margin: 0 0 28px; }
+.sg-os-values__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(10,47,42,.12); }
+.sg-os-values__grid li { padding: 28px 24px 8px 0; border-right: 1px solid rgba(10,47,42,.12); }
+.sg-os-values__grid li + li { padding-left: 24px; }
+.sg-os-values__grid li:last-child { border-right: 0; }
+.sg-os-values__ico { display: block; width: 28px; height: 28px; color: var(--sg-cta); }
+.sg-os-values__ico svg { width: 28px; height: 28px; stroke-width: 1.4; }
+.sg-os-values__grid h3 { margin: 18px 0 6px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(26px, 2.4vw, 36px); font-weight: 500; letter-spacing: -.02em; color: var(--sg-text); }
+.sg-os-values__grid p { margin: 0; font-size: 15px !important; line-height: 1.6; color: var(--sg-body-color) !important; }
+@media (max-width: 960px) {
+  .sg-os-head .sg-h2, .sg-os-head p { grid-column: 1 / -1; padding-left: 0; }
+  .sg-os-head p { margin-top: 18px; }
+  .sg-os-belief { margin-inline: 0; border-radius: 0; }
+  .sg-os-belief > .sg-wrap { padding-block: 64px; }
+  .sg-os-values__grid { grid-template-columns: 1fr 1fr; }
+  .sg-os-values__grid li { padding: 22px 16px 22px 0 !important; border-right: 0; border-bottom: 1px solid rgba(10,47,42,.12); }
+}
+@media (max-width: 560px) { .sg-os-cells { grid-template-columns: 1fr; } }
