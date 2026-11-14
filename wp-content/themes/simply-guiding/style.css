@@ -2746,3 +2746,15 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Grundkursus "Er dette kursus relevant for mig?": venstre side står stille, overskriften øverst til venstre */
 .sg-relevant .sg-pdetail__side { position: static !important; }
 @media (min-width: 961px) { .sg-relevant--dark .sg-pdetail__grid { align-items: start !important; } }
+/* Handelsbetingelser v3: rolig tabel over afbud og pris */
+.sg-terms--v3 { margin-top: 36px !important; padding: 28px 30px 26px !important; border: 0 !important; border-radius: var(--sg-radius-sm); background: var(--sg-sand); }
+.sg-terms--v3 .sg-terms__title { margin: 0 0 10px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 20px; font-weight: 500; color: var(--sg-text); }
+.sg-terms--v3 .sg-terms__intro { margin: 0 0 18px !important; font-size: 15px !important; line-height: 1.6 !important; color: var(--sg-body-color) !important; }
+.sg-terms--v3 .sg-terms__intro a { color: var(--sg-cta); }
+.sg-terms__table { margin: 0; border-radius: 12px; background: #fff; overflow: hidden; }
+.sg-terms__table > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 15px 18px; border-top: 1px solid rgba(10,47,42,.08); }
+.sg-terms__table > div:first-child { border-top: 0; }
+.sg-terms__table dt { font-size: 15px; line-height: 1.4; color: var(--sg-body-color); }
+.sg-terms__table dd { margin: 0; flex: none; font-size: 15px; font-weight: 500; color: var(--sg-text); text-align: right; }
+.sg-terms__table > div:first-child dd { color: var(--sg-cta); }
+.sg-terms--v3 .sg-terms__note { margin: 16px 0 0 !important; font-size: 13.5px !important; line-height: 1.55 !important; color: var(--sg-muted) !important; }

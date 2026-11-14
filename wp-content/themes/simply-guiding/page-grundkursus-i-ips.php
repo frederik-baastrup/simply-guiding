@@ -118,23 +118,15 @@ $faq = [
     <div class="sg-cform__intro">
       <h2 class="sg-h2" id="sgRegTitle">Tilmelding til kurset</h2>
       <p>Udfyld formularen for at tilmelde dig Grundkursus i IPS hos Simply Guiding. Når vi har modtaget din tilmelding, fremsender vi en bekræftelse samt praktisk information om kurset.</p>
-      <div class="sg-terms sg-terms--v2" id="handelsbetingelser">
-        <h3 class="sg-terms__title">Handelsbetingelser – Grundkursus i IPS</h3>
-        <ul class="sg-terms__list">
-          <li><?php echo sg_icon('shield'); ?><span>Tilmelding er bindende.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Afbud skal ske skriftligt til <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a></span></li>
-        </ul>
-        <p class="sg-terms__sub">Ved afbud</p>
-        <div class="sg-terms__tiers">
-          <div><small>Indtil 14 dage før kursusstart</small><strong>Ingen betaling</strong></div>
-          <div><small>7–13 dage før</small><strong>50 % af kursusprisen</strong></div>
-          <div><small>Senere end 7 dage før</small><strong>Fuld betaling</strong></div>
-        </div>
-        <ul class="sg-terms__list">
-          <li><?php echo sg_icon('user'); ?><span>Ved udeblivelse opkræves fuld kursuspris.</span></li>
-          <li><?php echo sg_icon('calendar'); ?><span>Simply Guiding forbeholder sig ret til at aflyse kurset ved for få tilmeldte.</span></li>
-          <li><?php echo sg_icon('tag'); ?><span>Alle priser er ekskl. moms.</span></li>
-        </ul>
+      <div class="sg-terms sg-terms--v3" id="handelsbetingelser">
+        <h3 class="sg-terms__title">Handelsbetingelser</h3>
+        <p class="sg-terms__intro">Tilmeldingen er bindende. Skal du melde afbud, så skriv til <a href="mailto:kontakt@simplyguiding.dk">kontakt@simplyguiding.dk</a>.</p>
+        <dl class="sg-terms__table">
+          <div><dt>Afbud senest 14 dage før kursusstart</dt><dd>Gratis</dd></div>
+          <div><dt>Afbud 7–13 dage før</dt><dd>50 % af prisen</dd></div>
+          <div><dt>Afbud under 7 dage før eller udeblivelse</dt><dd>Fuld pris</dd></div>
+        </dl>
+        <p class="sg-terms__note">Alle priser er ekskl. moms. Simply Guiding kan aflyse kurset ved for få tilmeldte.</p>
       </div>
     </div>
     <div class="sg-cform__box" id="formular">
