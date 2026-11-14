@@ -2725,3 +2725,9 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (min-width: 961px) { .sg-band2--side .sg-band2__head { padding-left: 56px; } }
 /* Case-sider: hvid tekst i den mørke "IPS-essensen"-boks */
 .sg-story__essence.sg-story__essence li, .sg-story__essence.sg-story__essence li span, .sg-story__essence.sg-story__essence p { color: rgba(255,255,255,.88) !important; }
+/* Sådan arbejder vi: "Mindset og metoder" og "Hvordan arbejder … med borgere?" – samme opdeling og afstand mellem billede og tekst (5 kolonner | 88 px | tekst) */
+@media (min-width: 961px) {
+  section[aria-labelledby="sgMindTitle"] .sg-mind3__grid, section[aria-labelledby="sgCitizensTitle"] .sg-band2__side { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important; }
+  section[aria-labelledby="sgMindTitle"] .sg-mind3__media, section[aria-labelledby="sgCitizensTitle"] .sg-band2__media { grid-column: 1 / span 5 !important; grid-row: 1; }
+  section[aria-labelledby="sgMindTitle"] .sg-mind3__copy, section[aria-labelledby="sgCitizensTitle"] .sg-band2__head { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
+}
