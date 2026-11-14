@@ -2743,3 +2743,6 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (max-width: 960px) { .sg-fcard__col { padding: 18px 16px 0 !important; } .sg-fcard__col:last-child { padding: 14px 16px 18px !important; } }
 /* Grundkursus: tilmeldingsboksen lige så bred som menuen (455 px) og flugter med dens højre kant */
 @media (min-width: 1101px) { .sg-course__side { grid-column: 8 / span 5 !important; justify-self: end; width: 455px; max-width: 100%; } }
+/* Grundkursus "Er dette kursus relevant for mig?": venstre side står stille, overskriften øverst til venstre */
+.sg-relevant .sg-pdetail__side { position: static !important; }
+@media (min-width: 961px) { .sg-relevant--dark .sg-pdetail__grid { align-items: start !important; } }
