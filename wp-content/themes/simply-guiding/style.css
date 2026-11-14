@@ -2758,3 +2758,85 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-terms__table dd { margin: 0; flex: none; font-size: 15px; font-weight: 500; color: var(--sg-text); text-align: right; }
 .sg-terms__table > div:first-child dd { color: var(--sg-cta); }
 .sg-terms--v3 .sg-terms__note { margin: 16px 0 0 !important; font-size: 13.5px !important; line-height: 1.55 !important; color: var(--sg-muted) !important; }
+
+/* ================= Grundkursus i IPS – nyt bud (?ny=1) ================= */
+.sg-gk-label { margin: 0 0 14px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta) !important; }
+.sg-gk-split { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--sg-gut); align-items: start; }
+.sg-gk-split__side { grid-column: 1 / span 5; }
+.sg-gk-split__main { grid-column: 6 / span 7; padding-left: 56px; }
+.sg-gk-split--media { align-items: center; }
+.sg-gk-split__media { grid-column: 1 / span 5; aspect-ratio: 4 / 3; border-radius: var(--sg-radius-sm); overflow: hidden; }
+.sg-gk-split__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sg-gk-split .sg-h2 { margin: 0; }
+.sg-gk-split__main > p, .sg-gk-split__side > p:not(.sg-gk-label):not(.sg-textlink) { margin: 0 0 16px; font-size: var(--sg-body) !important; line-height: 1.75; color: var(--sg-body-color) !important; }
+.sg-gk-split__main .sg-h2 + p, .sg-gk-split__side .sg-h2 + p { margin-top: 22px !important; }
+.sg-gk-lead { font-size: clamp(18px, 1.4vw, 21px) !important; line-height: 1.6 !important; color: var(--sg-text) !important; }
+
+/* nøglefakta */
+.sg-gk-facts { padding-block: 56px 0; }
+.sg-gk-facts__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.sg-gk-facts__list li { display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: var(--sg-radius-sm); background: var(--sg-topbar); font-size: 15px; font-weight: 500; line-height: 1.35; color: var(--sg-text); }
+.sg-gk-facts__list svg { flex: none; width: 24px; height: 24px; color: var(--sg-cta); stroke-width: 1.4; }
+.sg-gk-facts__list small { display: block; margin-bottom: 3px; font-size: 12px; font-weight: 400; letter-spacing: .04em; color: var(--sg-muted); }
+
+.sg-gk-intro, .sg-gk-topics, .sg-gk-format, .sg-gk-value { padding-block: 48px; }
+.sg-gk-intro { padding-top: 96px; }
+
+/* indhold */
+.sg-gk-topics__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.sg-gk-topics__grid li { display: flex; flex-direction: column; gap: 28px; min-height: 190px; padding: 28px; border-radius: var(--sg-radius-sm); background: var(--sg-sand); }
+.sg-gk-topics__grid h3 { margin: auto 0 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(19px, 1.5vw, 22px); font-weight: 500; line-height: 1.2; color: var(--sg-text); }
+.sg-gk-ico { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #0A2F2A url("assets/pattern.png") center / 300px repeat; color: #DBE7DD; }
+.sg-gk-ico svg { width: 22px; height: 22px; stroke-width: 1.4; }
+.sg-gk-topics__quote { justify-content: flex-end; background: #0A2F2A url("assets/pattern.png") center / 601px repeat !important; }
+.sg-gk-topics__quote p { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(19px, 1.5vw, 22px); line-height: 1.3; color: #DBE7DD !important; }
+
+/* format */
+.sg-gk-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 20px; padding: 0; }
+.sg-gk-chips li { padding: 8px 14px; border-radius: 99px; background: var(--sg-topbar); font-size: 14px; font-weight: 500; color: var(--sg-cta); }
+
+/* målgruppe */
+.sg-gk-who { margin: 48px max(18px, env(safe-area-inset-right, 0px)); border-radius: var(--sg-radius); background: var(--sg-sand); }
+.sg-gk-who > .sg-wrap { padding-block: 88px; }
+@media (min-width: 961px) { .sg-gk-who > .sg-wrap { max-width: var(--sg-max); padding-inline: calc(var(--sg-gutter) - 18px); } }
+.sg-gk-sub { margin: 0 0 12px !important; font-size: 15px !important; font-weight: 500; color: var(--sg-text) !important; }
+.sg-gk-who__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sg-gk-who__list li { display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; border-radius: 12px; background: #fff; font-size: var(--sg-body); line-height: 1.5; color: var(--sg-text); }
+.sg-gk-who__list li span::first-letter { text-transform: uppercase; }
+.sg-gk-who__list svg { flex: none; width: 20px; height: 20px; margin-top: 2px; color: var(--sg-cta); }
+
+/* udbytte + pris */
+.sg-gk-gain { list-style: none; margin: 26px 0 0; padding: 0; }
+.sg-gk-gain li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid rgba(10,47,42,.1); font-size: var(--sg-body); line-height: 1.5; color: var(--sg-text); }
+.sg-gk-gain li:last-child { border-bottom: 1px solid rgba(10,47,42,.1); }
+.sg-gk-gain span { font-size: var(--sg-small); letter-spacing: .06em; color: var(--sg-cta); padding-top: 3px; }
+.sg-gk-note { display: flex; align-items: flex-start; gap: 12px; margin: 22px 0 0 !important; font-size: 15px !important; line-height: 1.55; color: var(--sg-body-color) !important; }
+.sg-gk-note svg { flex: none; width: 22px; height: 22px; color: var(--sg-cta); }
+.sg-gk-price { padding: 36px; border-radius: var(--sg-radius); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-gk-price__title { margin: 0; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(24px, 2vw, 30px); font-weight: 500; color: #DBE7DD; }
+.sg-gk-price__sub { margin: 8px 0 24px; font-size: 15px; color: rgba(255,255,255,.75); }
+.sg-gk-price__tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sg-gk-price__tiers div { display: flex; flex-direction: column; justify-content: space-between; gap: 18px; padding: 20px; border: 1px solid rgba(255,255,255,.14); border-radius: 12px; background: rgba(255,255,255,.05); }
+.sg-gk-price__tiers span { font-size: 14px; line-height: 1.4; color: rgba(255,255,255,.78); }
+.sg-gk-price__tiers strong { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: clamp(28px, 2.4vw, 36px); font-weight: 500; line-height: 1; color: #fff; }
+.sg-gk-price__tiers small { display: block; margin-top: 6px; font-family: inherit; font-size: 12px; font-weight: 400; color: rgba(255,255,255,.6); }
+.sg-gk-price__incl-title { margin: 26px 0 10px; font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #8FC7AE; }
+.sg-gk-price__incl { list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 8px; }
+.sg-gk-price__incl li { display: flex; align-items: center; gap: 10px; font-size: 15px; color: #fff; }
+.sg-gk-price__incl svg { width: 18px; height: 18px; color: #8FC7AE; }
+.sg-gk-price__btn { display: flex; justify-content: center; width: 100%; }
+
+@media (max-width: 960px) {
+  .sg-gk-split__side, .sg-gk-split__main, .sg-gk-split__media { grid-column: 1 / -1; padding-left: 0; }
+  .sg-gk-split__main { margin-top: 28px; }
+  .sg-gk-facts__list { grid-template-columns: 1fr 1fr; }
+  .sg-gk-topics__grid { grid-template-columns: 1fr 1fr; }
+  .sg-gk-who { margin-inline: 0; border-radius: 0; }
+  .sg-gk-who > .sg-wrap { padding-block: 56px; }
+  .sg-gk-intro { padding-top: 64px; }
+}
+@media (max-width: 600px) {
+  .sg-gk-facts__list, .sg-gk-topics__grid, .sg-gk-price__tiers { grid-template-columns: 1fr; }
+  .sg-gk-topics__grid li { min-height: 0; }
+  .sg-gk-price { padding: 26px 22px; }
+}
