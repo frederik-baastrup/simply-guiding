@@ -15,7 +15,7 @@ $u = get_template_directory_uri();
       <?php foreach ([
         ['heart', 'Vores opgave', 'Vi hjælper mennesker i en sårbar position tilbage til fællesskabet, til jobbet eller i uddannelse.'],
         ['people', 'Brobygger', 'Vi bygger bro mellem det kommunale system, erhvervslivet og det enkelte menneske.'],
-        ['book', 'Evidensbaseret', 'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment.'],
+        ['bookopen', 'Evidensbaseret', 'Vores arbejde bygger på en evidensbaseret tilgang med fokus på IPS og Supported Employment.'],
         ['shield', 'Holdbare løsninger', 'Vi tror på holdbare løsninger frem for hurtige quickfixes.'],
       ] as $c) : ?>
         <li><span class="sg-gk-ico"><?php echo sg_icon($c[0]); ?></span><h3><?php echo esc_html($c[1]); ?></h3><p><?php echo esc_html($c[2]); ?></p></li>
@@ -78,7 +78,7 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
     <h2 class="sg-h2" id="sgValuesTitle">Vores værdier</h2>
     <ul class="sg-os-values__grid">
       <li><span class="sg-os-values__ico"><?php echo sg_icon('heart'); ?></span><h3>Tro</h3><p>Vi tror på mennesket og fremtiden.</p></li>
-      <li><span class="sg-os-values__ico"><?php echo sg_icon('book'); ?></span><h3>Faglighed</h3><p>Vi bygger vores indsatser på evidens og erfaring.</p></li>
+      <li><span class="sg-os-values__ico"><?php echo sg_icon('bookopen'); ?></span><h3>Faglighed</h3><p>Vi bygger vores indsatser på evidens og erfaring.</p></li>
       <li><span class="sg-os-values__ico"><?php echo sg_icon('bolt'); ?></span><h3>Handling</h3><p>Vi sætter mennesker i bevægelse.</p></li>
       <li><span class="sg-os-values__ico"><?php echo sg_icon('user'); ?></span><h3>Autenticitet</h3><p>Vi kommer med, hvad og hvem vi er.</p></li>
     </ul>
