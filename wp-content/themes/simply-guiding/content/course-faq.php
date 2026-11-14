@@ -2,7 +2,7 @@
 /* FAQ til Grundkursus i IPS */
 return [
   ['Hvem kan deltage på kurset?', '<p>Kurset er åbent for alle fagprofessionelle samt ledige og selvbetalere, der ønsker viden om IPS-metoden. Du behøver ikke være ansat i et jobcenter for at deltage.</p>'],
-  ['Er kurset relevant, hvis jeg ikke arbejder med IPS i dag?', '<p>Grundkurset er et åbent kursus med fokus på individuel kompetenceudvikling. En IPS-temadag er en skræddersyet ydelse målrettet en konkret organisation og dens praksis.</p>'],
+  ['Er kurset relevant, hvis jeg ikke arbejder med IPS i dag?', '<p>Ja. Kurset er for dig, der arbejder – eller ønsker at arbejde – med beskæftigelse, mental sundhed og recovery, og der stilles ingen formelle forudsætninger. Arbejder I allerede med IPS og ønsker et forløb målrettet jeres organisation, kan en IPS-temadag være et alternativ.</p>'],
   ['Er prisen inkl. forplejning?', '<p>Ja, prisen inkluderer forplejning begge kursusdage.</p>'],
   ['Hvordan foregår betaling?', '<p>Offentlige og private arbejdsgivere betaler via faktura. Ledige og selvbetalere modtager faktura og skal have betalt inden kursusstart.</p>'],
   ['Hvornår er min tilmelding bindende?', '<p>Tilmelding er bindende, når den er modtaget.</p>'],

@@ -42,7 +42,6 @@
           <a href="/loesninger/#academy" aria-haspopup="true" aria-expanded="false">Academy <svg class="sg-nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="sg-sub">
             <div class="sg-sub__col">
-              <a class="sg-sub__link" href="/loesninger/#academy">Academy</a>
               <a class="sg-sub__link" href="/ips-konsulentuddannelse/">IPS Konsulentuddannelse</a>
               <a class="sg-sub__link" href="/grundkursus-i-ips/">Grundkursus i IPS</a>
             </div>

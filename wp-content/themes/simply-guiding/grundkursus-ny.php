@@ -1,9 +1,7 @@
 <?php
-/* Grundkursus i IPS – nyt bud (vises på /grundkursus-i-ips/?ny=1). Samme oplysninger som siden, stillet op på ny. */
+/* Grundkursus i IPS – sidens indhold (bruges af page-grundkursus-i-ips.php) */
 $u = get_template_directory_uri();
 $faq = require get_template_directory() . '/content/course-faq.php';
-/* Svaret passede ikke til spørgsmålet – skrevet ud fra sidens egne oplysninger */
-$faq[1][1] = '<p>Ja. Kurset er for dig, der arbejder – eller ønsker at arbejde – med beskæftigelse, mental sundhed og recovery, og der stilles ingen formelle forudsætninger. Arbejder I allerede med IPS og ønsker et forløb målrettet jeres organisation, kan en IPS-temadag være et alternativ.</p>';
 
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'Grundkursus i IPS',
