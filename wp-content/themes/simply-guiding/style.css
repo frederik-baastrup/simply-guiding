@@ -2945,3 +2945,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-kt-info .sg-gk-facts__list li > a { display: flex; align-items: center; gap: 14px; color: inherit; text-decoration: none; width: 100%; }
 .sg-kt-info .sg-gk-facts__list li { font-size: 16px; }
 .sg-kt-info + .sg-cform { margin-top: 48px !important; padding-top: 0 !important; }
+.sg-kt-info ~ .sg-cform .sg-cform__direct { display: none; }
