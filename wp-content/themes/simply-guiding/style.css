@@ -2916,3 +2916,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-ar-points p { margin: 0; font-size: 15px !important; line-height: 1.6 !important; color: var(--sg-body-color) !important; }
 .sg-ar-how { padding-block: 48px 96px; }
 @media (max-width: 600px) { .sg-ar-reasons { grid-template-columns: 1fr; } }
+.sg-ar-how { padding-bottom: 0 !important; }
