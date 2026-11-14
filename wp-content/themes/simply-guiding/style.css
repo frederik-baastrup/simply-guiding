@@ -2899,3 +2899,20 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-os-values__grid li { padding: 22px 16px 22px 0 !important; border-right: 0; border-bottom: 1px solid rgba(10,47,42,.12); }
 }
 @media (max-width: 560px) { .sg-os-cells { grid-template-columns: 1fr; } }
+
+/* ================= Områdesider – ny version (?ny=1) ================= */
+.sg-ar-reasons { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sg-ar-reasons--odd li:last-child { grid-column: 1 / -1; }
+.sg-ar-reasons li { display: flex; flex-direction: column; gap: 18px; padding: 24px 24px 26px; border-radius: var(--sg-radius-sm); background: var(--sg-sand); }
+.sg-ar-reasons span { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 34px; font-weight: 500; line-height: 1; letter-spacing: -.02em; color: var(--sg-cta); }
+.sg-ar-reasons p { margin: 0; font-size: var(--sg-body) !important; line-height: 1.55 !important; color: var(--sg-text) !important; }
+.sg-ar-reasons p::first-letter { text-transform: uppercase; }
+.sg-ar-meet { padding-top: 96px; }
+.sg-ar-meet .sg-textlink { margin: 4px 0 22px !important; }
+.sg-ar-points { list-style: none; margin: 0; padding: 0; }
+.sg-ar-points li { display: grid; grid-template-columns: 48px 1fr; gap: 16px; align-items: start; padding: 18px 0; border-top: 1px solid rgba(10,47,42,.1); }
+.sg-ar-points li:last-child { border-bottom: 1px solid rgba(10,47,42,.1); }
+.sg-ar-points h3 { margin: 2px 0 4px; font-size: 18px; font-weight: 500; color: var(--sg-text); }
+.sg-ar-points p { margin: 0; font-size: 15px !important; line-height: 1.6 !important; color: var(--sg-body-color) !important; }
+.sg-ar-how { padding-block: 48px 96px; }
+@media (max-width: 600px) { .sg-ar-reasons { grid-template-columns: 1fr; } }
