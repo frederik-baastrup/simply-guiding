@@ -11,6 +11,10 @@ $u = get_template_directory_uri();
 ]); ?>
 
 <div id="indhold"></div>
+<?php if (isset($_GET['ny'])) { /* overhaling – samme tekst og rækkefølge */
+  require get_template_directory() . '/saadan-ny.php';
+  get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
+} ?>
 
 
 <!-- Mindset og metoder: billedet står stille til venstre, mens teksten løber i en spalte til højre -->
