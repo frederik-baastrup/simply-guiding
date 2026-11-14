@@ -12,8 +12,8 @@ get_template_part('template-parts/page-hero', null, [
 ]);
 ?>
 <div id="indhold"></div>
-<?php if (isset($_GET['ny'])) { /* forslag: lodret dokument-layout med sidebar */
-  sg_doc(require get_template_directory() . '/content/doc/ips-konsulentuddannelse.php');
+<?php if (isset($_GET['ny'])) { /* nyt bud i samme stil som Grundkursus */
+  require get_template_directory() . '/ips-ny.php';
   get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
 } ?>
 

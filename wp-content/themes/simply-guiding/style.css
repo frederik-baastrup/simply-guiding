@@ -2841,3 +2841,21 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-gk-price { padding: 26px 22px; }
 }
 .sg-gk-split .sg-gk-split__main > p.sg-gk-label.sg-gk-label, .sg-gk-split .sg-gk-split__side > p.sg-gk-label.sg-gk-label { color: var(--sg-cta) !important; font-size: 12px !important; margin: 0 0 14px !important; }
+/* IPS-konsulentuddannelse nyt bud: kort med brødtekst, trin-liste og info-rækker i det mørke kort */
+.sg-gk-topics__grid--text li { gap: 22px; min-height: 0; }
+.sg-gk-topics__grid--text h3 { margin: 6px 0 0; }
+.sg-gk-topics__grid--text p { margin: -8px 0 0; font-size: 15px !important; line-height: 1.65; color: var(--sg-body-color) !important; }
+.sg-gk-steps { list-style: none; margin: 24px 0 0; padding: 0; }
+.sg-gk-steps li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 16px 0; border-top: 1px solid rgba(10,47,42,.1); }
+.sg-gk-steps li:last-child { border-bottom: 1px solid rgba(10,47,42,.1); }
+.sg-gk-steps > li > span { font-size: var(--sg-small); letter-spacing: .06em; color: var(--sg-cta); padding-top: 4px; }
+.sg-gk-steps h3 { margin: 0 0 4px; font-size: 18px; font-weight: 500; color: var(--sg-text); }
+.sg-gk-steps p { margin: 0; font-size: 15px !important; line-height: 1.6; color: var(--sg-body-color) !important; }
+.sg-gk-split__side > .sg-gk-note { margin-top: 22px !important; }
+.sg-gk-price__rows { margin: 0 0 24px; }
+.sg-gk-price__rows > div { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,.12); }
+.sg-gk-price__rows dt { font-size: 13px; letter-spacing: .04em; color: #8FC7AE; padding-top: 2px; }
+.sg-gk-price__rows dd { margin: 0; font-size: 16px; line-height: 1.45; color: #fff; }
+.sg-gk-price__btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sg-gk-price__btn--ghost { background: transparent !important; border-color: rgba(255,255,255,.35) !important; color: #fff !important; }
+@media (max-width: 600px) { .sg-gk-price__btns { grid-template-columns: 1fr; } .sg-gk-price__rows > div { grid-template-columns: 1fr; gap: 4px; } }
