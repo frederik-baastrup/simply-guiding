@@ -2728,6 +2728,11 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Sådan arbejder vi: "Mindset og metoder" og "Hvordan arbejder … med borgere?" – samme opdeling og afstand mellem billede og tekst (5 kolonner | 88 px | tekst) */
 @media (min-width: 961px) {
   section[aria-labelledby="sgMindTitle"] .sg-mind3__grid, section[aria-labelledby="sgCitizensTitle"] .sg-band2__side { display: grid !important; grid-template-columns: repeat(12, minmax(0, 1fr)) !important; column-gap: var(--sg-gut) !important; }
-  section[aria-labelledby="sgMindTitle"] .sg-mind3__media, section[aria-labelledby="sgCitizensTitle"] .sg-band2__media { grid-column: 1 / span 5 !important; grid-row: 1; }
-  section[aria-labelledby="sgMindTitle"] .sg-mind3__copy, section[aria-labelledby="sgCitizensTitle"] .sg-band2__head { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
+  section[aria-labelledby="sgMindTitle"] .sg-mind3__media { grid-column: 1 / span 5 !important; grid-row: 1; }
+  section[aria-labelledby="sgMindTitle"] .sg-mind3__copy { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
+  /* grøn borger-sektion: billedet til højre; konsulenter: billedet til venstre */
+  section[aria-labelledby="sgCitizensTitle"] .sg-band2__head { grid-column: 1 / span 7 !important; grid-row: 1; padding-left: 0 !important; padding-right: 56px !important; }
+  section[aria-labelledby="sgCitizensTitle"] .sg-band2__media { grid-column: 8 / span 5 !important; grid-row: 1; }
+  section[aria-labelledby="sgConsultTitle"] .sg-consult__media { grid-column: 1 / span 5 !important; grid-row: 1; order: 0 !important; }
+  section[aria-labelledby="sgConsultTitle"] .sg-consult__copy { grid-column: 6 / span 7 !important; grid-row: 1; padding-left: 56px !important; }
 }
