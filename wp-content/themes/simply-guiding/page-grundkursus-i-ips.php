@@ -66,6 +66,7 @@ $faq = [
           <div class="sg-course__tier"><span class="sg-course__who">Ledige og selvbetalere</span><span class="sg-course__amount">4.900 kr.<small>ekskl. moms</small></span></div>
         </div>
         <ul class="sg-course__incl">
+          <li><?php echo sg_check_svg(); ?>12 timers praksisnær undervisning</li>
           <li><?php echo sg_check_svg(); ?>Forplejning begge kursusdage</li>
           <li><?php echo sg_check_svg(); ?>Kursusbevis</li>
         </ul>

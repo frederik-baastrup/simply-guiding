@@ -2741,3 +2741,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-fcard__name { border-radius: 10px; }
 .sg-fcard__col { padding-top: 22px !important; padding-bottom: 22px !important; }
 @media (max-width: 960px) { .sg-fcard__col { padding: 18px 16px 0 !important; } .sg-fcard__col:last-child { padding: 14px 16px 18px !important; } }
+/* Grundkursus: tilmeldingsboksen lige så bred som menuen (455 px) og flugter med dens højre kant */
+@media (min-width: 1101px) { .sg-course__side { grid-column: 8 / span 5 !important; justify-self: end; width: 455px; max-width: 100%; } }
