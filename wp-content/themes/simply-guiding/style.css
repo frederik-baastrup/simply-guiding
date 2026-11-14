@@ -2840,3 +2840,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-gk-topics__grid li { min-height: 0; }
   .sg-gk-price { padding: 26px 22px; }
 }
+.sg-gk-split .sg-gk-split__main > p.sg-gk-label.sg-gk-label, .sg-gk-split .sg-gk-split__side > p.sg-gk-label.sg-gk-label { color: var(--sg-cta) !important; font-size: 12px !important; margin: 0 0 14px !important; }
