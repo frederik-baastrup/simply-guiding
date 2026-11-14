@@ -2940,3 +2940,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-gk-split--flip .sg-gk-split__main { padding-right: 0; grid-row: 2; }
   .sg-gk-split--flip .sg-gk-split__media { grid-column: 1 / -1; grid-row: 1; }
 }
+/* Kontakt – overhaling: info som fliser med ikoner (klikbare for telefon/mail) */
+.sg-kt-info { padding-block: 56px 0; }
+.sg-kt-info .sg-gk-facts__list li > a { display: flex; align-items: center; gap: 14px; color: inherit; text-decoration: none; width: 100%; }
+.sg-kt-info .sg-gk-facts__list li { font-size: 16px; }
+.sg-kt-info + .sg-cform { margin-top: 48px !important; padding-top: 0 !important; }
