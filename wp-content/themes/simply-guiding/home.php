@@ -4,7 +4,6 @@ get_header();
 get_template_part('template-parts/site-header');
 $title = is_home() ? 'Nyheder' : wp_strip_all_tags(get_the_archive_title());
 ?>
-<?php if (isset($_GET['ny'])) { require get_template_directory() . '/blog-ny.php'; return; } ?>
 <div class="sg-hero-wrap">
   <section class="sg-hero sg-hero--split sg-hero--noimg sg-hero--blog" aria-labelledby="sgPageTitle">
     <div class="sg-split"><div class="sg-split__copy">
