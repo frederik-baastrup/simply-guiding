@@ -2998,3 +2998,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (min-width: 961px) { .sg-fcard__col::before, .sg-fcard__col:last-child::before { background: repeating-linear-gradient(to bottom, rgba(10,47,42,.28) 0 4px, transparent 4px 8px) !important; } }
 /* Kontaktformular v3: samme afstand til venstre (mørkt felt) og højre (kortets kant), 40 px */
 @media (min-width: 961px) { .sg-cform--v3 .sg-cform__box { padding-right: 32px !important; } }
+/* Grundene: alle bokse lige høje (rækker deler højden ligeligt) */
+@media (min-width: 601px) { .sg-ar-reasons { grid-auto-rows: 1fr; } }
