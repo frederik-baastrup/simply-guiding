@@ -2977,3 +2977,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 }
 /* Områdesider: mere luft under "Mennesket bag …" ned til det grønne tal-bånd */
 .sg-ar-meet { padding-bottom: 96px !important; }
+/* Forløbskort: stiplet linje mellem Målgruppe og Indsats */
+@media (min-width: 961px) {
+  .sg-fcard__col:last-child { position: relative; }
+  .sg-fcard__col:last-child::before { content: ""; position: absolute; left: calc(var(--sg-gut) / -2); top: 22px; bottom: 22px; border-left: 1.5px dashed rgba(10,47,42,.22); }
+}
