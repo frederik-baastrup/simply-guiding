@@ -15,7 +15,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
 };
 ?>
 <div class="sg-hero-wrap">
-  <section class="sg-hero sg-hero--split<?php echo ($a['img'] || $a['video']) ? '' : ' sg-hero--noimg'; echo $a['full'] ? ' sg-hero--full' : ''; ?>" aria-labelledby="sgPageTitle">
+  <section class="sg-hero sg-hero--split<?php echo ($a['img'] || $a['video']) ? '' : ' sg-hero--noimg'; echo $a['full'] ? ' sg-hero--full' : ''; echo (isset($_GET['hero']) && $_GET['hero'] === 'cover' && ($a['img'] || $a['video'])) ? ' sg-hero--cover' : ''; ?>" aria-labelledby="sgPageTitle">
     <div class="sg-split">
       <div class="sg-split__copy">
         <?php if ($a['label']) : ?><p class="sg-pill"><?php echo esc_html($a['label']); ?></p><?php endif; ?>
