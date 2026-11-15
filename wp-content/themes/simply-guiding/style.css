@@ -2987,3 +2987,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-cform--v3 .sg-cform__intro { border-radius: 14px; }
 .sg-cform--v3 .sg-cform__box { padding-left: 40px !important; }
 @media (max-width: 960px) { .sg-cform--v3 .sg-cform__box { padding: 28px 16px 20px !important; } }
+/* Forløbskort v2: stiplet linje foran begge kolonner, mere luft til teksten og længere mellem stregerne */
+@media (min-width: 961px) {
+  .sg-fcard__col { position: relative; padding-left: 30px !important; }
+  .sg-fcard__col::before, .sg-fcard__col:last-child::before { content: ""; position: absolute; left: 0; top: 22px; bottom: 22px; width: 1.5px; border: 0 !important; background: repeating-linear-gradient(to bottom, rgba(10,47,42,.28) 0 4px, transparent 4px 12px); }
+}
