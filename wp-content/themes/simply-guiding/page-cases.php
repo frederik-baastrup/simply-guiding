@@ -5,7 +5,7 @@ get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Cases', 'title' => 'Se vores cases her',
-  'lead'  => 'Her har vi samlet en række historier om kandidater, der har været gennem et forløb hos os. Der er forskellige vinkler på historierne, og det vil sige, at det enten er kandidaten, virksomheden eller Simply Guiding, der fortæller om forløbet.',
+  'lead'  => 'Historier om kandidater, der har været gennem et forløb hos os – fortalt af kandidaten, virksomheden eller Simply Guiding.',
   'img' => 'cases-hero.jpg', 'img_w' => 1422, 'img_h' => 1067, 'alt' => 'Samtale i et jobcenter', 'btn2_href' => '#cases',
 ]);
 $cases = [
