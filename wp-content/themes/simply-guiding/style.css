@@ -3167,3 +3167,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-bl-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) { .sg-bl-grid { grid-template-columns: 1fr; grid-auto-rows: auto; } }
+.sg-bl-hero { margin: 0 !important; }
