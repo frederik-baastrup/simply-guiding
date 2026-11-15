@@ -3000,3 +3000,10 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (min-width: 961px) { .sg-cform--v3 .sg-cform__box { padding-right: 32px !important; } }
 /* Grundene: alle bokse lige høje (rækker deler højden ligeligt) */
 @media (min-width: 601px) { .sg-ar-reasons { grid-auto-rows: 1fr; } }
+/* Grundene: ved ulige antal bliver sidste boks en mørkegrøn "ring"-boks */
+.sg-ar-reasons--odd li.sg-ar-reasons__cta { grid-column: auto; justify-content: space-between; color: #fff; background: #0A2F2A url("assets/pattern.png") center / 601px repeat; }
+.sg-ar-reasons li.sg-ar-reasons__cta .sg-gk-ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.1); color: #fff; }
+.sg-ar-reasons li.sg-ar-reasons__cta .sg-gk-ico svg { width: 20px; height: 20px; }
+.sg-ar-reasons li.sg-ar-reasons__cta p { color: rgba(255,255,255,.85) !important; }
+.sg-ar-reasons li.sg-ar-reasons__cta p strong { display: block; margin-bottom: 4px; color: #fff; font-weight: 500; }
+.sg-ar-reasons li.sg-ar-reasons__cta a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }

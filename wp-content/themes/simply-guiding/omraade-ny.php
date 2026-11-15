@@ -15,6 +15,9 @@ $odd = count($c['why_items']) % 2;
         <?php foreach ($c['why_items'] as $i => $it) : ?>
         <li><span><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($it); ?></p></li>
         <?php endforeach; ?>
+        <?php if ($odd) : ?>
+        <li class="sg-ar-reasons__cta"><span class="sg-gk-ico"><?php echo sg_icon('phone'); ?></span><p><strong>Genkender I situationen?</strong>Ring på <a href="tel:+4526344454">26 34 44 54</a>, så tager vi en snak om, hvordan vi kan hjælpe.</p></li>
+        <?php endif; ?>
       </ol>
     </div>
   </div>
