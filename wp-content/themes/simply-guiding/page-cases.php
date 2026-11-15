@@ -18,6 +18,15 @@ $cases = [
 ];
 ?>
 <div id="indhold"></div>
+<?php if (isset($_GET['ny'])) {
+  require get_template_directory() . '/cases-ny.php';
+  get_template_part('template-parts/quote', null, [
+    'label' => 'Gunhilds historie',
+    'quote' => '"Min IPS-konsulent spurgte mig, hvad jeg ønskede at få ud af at arbejde, og hvad jeg drømte om. Jeg havde slet ikke tænkt på mit arbejdsliv på den måde. Jeg havde nærmere tænkt på, hvad jeg som lærer burde give mine elever i stedet for at fokusere på, hvad jeg selv ville have ud af undervisningen og jobbet."',
+    'name' => 'Gunhild', 'role' => 'Deltager på IPS-forløb', 'btn_text' => 'Læs Gunhilds historie', 'btn_href' => '/cases/gunhilds-historie/',
+  ]);
+  get_template_part('template-parts/final-cta'); get_template_part('template-parts/site-footer'); get_footer(); return;
+} ?>
 
 <section class="sg-mind3" aria-labelledby="sgSuccessTitle">
   <div class="sg-wrap sg-mind3__grid">
