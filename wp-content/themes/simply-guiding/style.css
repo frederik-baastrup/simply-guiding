@@ -2975,3 +2975,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-kt__form { padding: 28px 22px; }
   .sg-kt__ico { margin-bottom: 14px; }
 }
+/* Områdesider: mere luft under "Mennesket bag …" ned til det grønne tal-bånd */
+.sg-ar-meet { padding-bottom: 96px !important; }
