@@ -21,9 +21,9 @@ return [
     'Bag vores forløb ligger mere end 10 års erfaring, høj metodefidelitet og en solid faglighed.',
   ],
   'meet_points' => [
-    ['heart', 'Ingen diagnose påkrævet', 'Barnet eller den unge behøver hverken at have en diagnose eller at være klar til skole, når vi kommer ind i billedet.'],
-    ['user', 'En voksen at læne sig op ad', 'Simply Guiding er en ekstern aktør, som barnet, den unge og familien kan læne sig op ad, når tingene er svære.'],
-    ['arrow', 'Altid et næste skridt', 'Vi arbejder mod skole, uddannelse, fritidsjob eller praktik, og vi formulerer altid et konkret næste skridt for barnet eller den unge.'],
+    ['unlock', 'Ingen diagnose påkrævet', 'Barnet eller den unge behøver hverken at have en diagnose eller at være klar til skole, når vi kommer ind i billedet.'],
+    ['family', 'En voksen at læne sig op ad', 'Simply Guiding er en ekstern aktør, som barnet, den unge og familien kan læne sig op ad, når tingene er svære.'],
+    ['steps', 'Altid et næste skridt', 'Vi arbejder mod skole, uddannelse, fritidsjob eller praktik, og vi formulerer altid et konkret næste skridt for barnet eller den unge.'],
   ],
   'stats_title' => 'Tallene taler for sig selv',
   'stats' => [

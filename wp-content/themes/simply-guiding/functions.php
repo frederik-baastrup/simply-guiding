@@ -235,6 +235,9 @@ function sg_icon($name) {
         'card'   => '<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/>',
         'tag'    => '<path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9-8-8z"/><circle cx="8.5" cy="8.5" r="1.5"/>',
         'calendar' => '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/>',
+        'unlock' => '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 7.6-1.7"/><path d="M12 15v2"/>',
+        'family' => '<circle cx="8.5" cy="6.5" r="2.5"/><path d="M4 20v-5a4.5 4.5 0 0 1 9 0"/><circle cx="16.5" cy="11" r="1.8"/><path d="M13.5 20v-2.6a3 3 0 0 1 6 0V20"/>',
+        'steps'  => '<path d="M3 20h5v-5h5v-5h5V5h3"/>',
         'handshake' => '<path d="m3 12 4-4 4 2 3-2 3 1 4 3"/><path d="m7 12 3 3a1.4 1.4 0 0 0 2-2M10 15l1.5 1.5a1.4 1.4 0 0 0 2-2M12.5 16.5l.8.8a1.4 1.4 0 0 0 2-2l-2.3-2.3"/>',
     ];
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . ($p[$name] ?? $p['arrow']) . '</svg>';
