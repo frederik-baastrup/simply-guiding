@@ -3131,3 +3131,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero--cover .sg-split__copy { padding: 112px 24px 140px !important; width: 100%; }
 .sg-hero--cover .sg-pill { align-self: center; }
 .sg-hero--cover .sg-split__copy h1 { font-size: clamp(40px, 4.4vw, 64px); }
+.sg-cs-intro { padding-bottom: 64px; } .sg-cs-intro .sg-sw2-head { margin-bottom: 0; } .sg-cs-intro + * + .sg-cs-list, .sg-cs-list { padding-top: 96px; }

@@ -10,13 +10,14 @@ $rest = array_slice($cases, 1);
       <h2 class="sg-h2" id="sgSuccessTitle">Succeshistorier fra vores kandidater</h2>
       <div><p class="sg-gk-lead">Vi har eksisteret siden 2015, og siden starten har vi hjulpet flere end 1500 mennesker med at finde retning mod job eller uddannelse gennem individuelle forløb, der tager højde for den enkelte borgers særlige behov. Du kan læse nogle af vores succeshistorier og få indblik i vores metoder her.</p></div>
     </div>
-    <ul class="sg-cs-stats">
-      <li><strong>1500+</strong><h3>Individuel støtte til over 1500 mennesker</h3><p>Vi har hjulpet flere end 1500 mennesker med at finde retning mod job eller uddannelse gennem individuelle forløb, der tager højde for den enkelte borgers særlige behov.</p></li>
-      <li><strong>2015</strong><h3>Simply Guiding har eksisteret siden 2015</h3><p>I de sidste 10 år har Simply Guiding leveret ydelser til kommuner og jobcentre, gennem evidensbaserede metoder med det mål at hjælpe ledige borgere tilbage i arbejdslivet.</p></li>
-      <li><strong>25+</strong><h3>Samarbejde med +25 kommuner</h3><p>Vi har samarbejdet med flere end 25 kommuner i hele landet. Det har givet os en indsigt i kommunernes organisering og forståelse for de lokale forhold, herunder samarbejdet med det lokale erhvervsliv.</p></li>
-    </ul>
   </div>
 </section>
+
+<?php get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfaren aktør', 'items' => [
+  ['25+', 'kommuner', 'Tæt og tillidsfuldt samarbejde om at løfte beskæftigelses- og ungeindsatsen.'],
+  ['1.500+', 'mennesker', 'Individuel støtte tilbage til job, uddannelse eller fællesskab.'],
+  ['10+', 'år i branchen', 'Siden 2015 har vi fungeret som en specialiseret og resultatskabende ekstern aktør.'],
+]]); ?>
 
 <!-- Historierne -->
 <section class="sg-cs-list" id="cases" aria-label="Succeshistorier" style="scroll-margin-top:90px">
