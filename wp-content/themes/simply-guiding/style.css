@@ -3133,3 +3133,7 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero--cover .sg-split__copy h1 { font-size: clamp(40px, 4.4vw, 64px); }
 .sg-cs-intro { padding-bottom: 64px; } .sg-cs-intro .sg-sw2-head { margin-bottom: 0; } .sg-cs-intro + * + .sg-cs-list, .sg-cs-list { padding-top: 96px; }
 .sg-hero--cover .sg-split__media::after { background: linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,.58) 50%, rgba(0,0,0,.7) 100%); }
+/* 15. nov.: lidt bredere layout på hele sitet (indhold 1360 px i stedet for 1280) */
+:root { --sg-max: 1432px; }
+/* Forsidens områdekort: kun mørk gradient i bunden, så billedet ses i toppen */
+.sg-card__media::after { background: linear-gradient(0deg, rgb(var(--sg-hero-base)) 0%, rgb(var(--sg-hero-base)) 30%, rgba(var(--sg-hero-base), .82) 46%, rgba(var(--sg-hero-base), .25) 66%, rgba(0,0,0,.05) 82%, rgba(0,0,0,.28) 100%); opacity: 1; }
