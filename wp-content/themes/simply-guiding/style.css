@@ -2982,3 +2982,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-fcard__col:last-child { position: relative; }
   .sg-fcard__col:last-child::before { content: ""; position: absolute; left: calc(var(--sg-gut) / -2); top: 22px; bottom: 22px; border-left: 1.5px dashed rgba(10,47,42,.22); }
 }
+/* Kontaktformular v3: det mørke felt som afrundet kort inde i det hvide (ingen brat lige kant) */
+.sg-cform--v3 .sg-cform__grid { padding: 8px !important; background: #fff; }
+.sg-cform--v3 .sg-cform__intro { border-radius: 14px; }
+.sg-cform--v3 .sg-cform__box { padding-left: 40px !important; }
+@media (max-width: 960px) { .sg-cform--v3 .sg-cform__box { padding: 28px 16px 20px !important; } }
