@@ -3101,3 +3101,15 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-cs-feat__txt { padding: 28px 20px 24px; }
 }
 @media (max-width: 700px) { .sg-cs-grid { grid-template-columns: 1fr; grid-auto-rows: auto; } }
+/* Cases-tal v2: uden baggrund – store tal, tynd grøn streg øverst og stiplet skillelinje som forløbskortene */
+.sg-cs-stats { gap: 0; }
+.sg-cs-stats li { position: relative; gap: 14px; padding: 36px 40px 8px 32px; border-radius: 0; background: none; }
+.sg-cs-stats li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1.5px; background: repeating-linear-gradient(to bottom, rgba(10,47,42,.28) 0 4px, transparent 4px 8px); }
+.sg-cs-stats li::after { content: ""; position: absolute; left: 0; top: 0; width: 48px; height: 3px; border-radius: 0 3px 3px 0; background: var(--sg-cta); }
+.sg-cs-stats strong { font-size: clamp(64px, 6.4vw, 92px); letter-spacing: -.045em; margin-bottom: 28px; background: linear-gradient(180deg, #0A2F2A 10%, var(--sg-cta) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sg-cs-stats h3 { min-height: 2.6em; font-size: 21px; }
+@media (max-width: 960px) {
+  .sg-cs-stats { gap: 40px; }
+  .sg-cs-stats li { padding: 28px 0 0 24px; }
+  .sg-cs-stats h3 { min-height: 0; }
+}
