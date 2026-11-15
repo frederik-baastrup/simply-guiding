@@ -1,5 +1,5 @@
 <?php
-/* Cases – nyt bud (vises på /cases/?ny=1). Samme tekst; ny opbygning. Bruger $cases og $u fra page-cases.php. */
+/* Cases – nyt bud (live 15. nov. 2026). Samme tekst; ny opbygning. Bruger $cases og $u fra page-cases.php. */
 $feat = $cases[0];
 $rest = array_slice($cases, 1);
 ?>

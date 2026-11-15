@@ -1,5 +1,5 @@
 <?php
-/* Sådan arbejder vi (/saadan-arbejder-vi/) – samme adresse som på det gamle site; ny opbygning 14. nov. 2026 i saadan-ny.php */
+/* Sådan arbejder vi (/saadan-arbejder-vi/) – samme adresse som på det gamle site; ny opbygning 15. nov. 2026 i saadan-v2.php */
 get_header();
 get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
@@ -12,7 +12,7 @@ $u = get_template_directory_uri();
 
 <div id="indhold"></div>
 <?php
-require get_template_directory() . (isset($_GET['ny']) ? '/saadan-v2.php' : '/saadan-ny.php');
+require get_template_directory() . '/saadan-v2.php';
 get_template_part('template-parts/final-cta');
 get_template_part('template-parts/site-footer');
 get_footer();

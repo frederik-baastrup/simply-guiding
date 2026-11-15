@@ -1,5 +1,5 @@
 <?php
-/* Sådan arbejder vi – nyt bud v2 (vises på /saadan-arbejder-vi/?ny=1). Samme tekst; ny opbygning og rækkefølge. */
+/* Sådan arbejder vi – nyt bud v2 (live 15. nov. 2026). Samme tekst; ny opbygning og rækkefølge. */
 $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på, og arbejder efter ”place then train” modellen'];
 ?>
 <!-- Mindset og metoder -->
