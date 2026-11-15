@@ -69,7 +69,7 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
         <p>Samarbejdet med det enkelte jobcenter er funderet i et partnerskab, hvor vi tilbyder at inspirere med specifik viden og evt. undervisning til jobcentrets medarbejdere med den opnåede specialisterfaring, som Simply Guiding har erhvervet gennem årene.</p>
         <div class="sg-sw-btns">
           <a class="sg-btn sg-btn--lg" href="/kontakt">Kontakt os og hør mere</a>
-          <a class="sg-btn sg-btn--lg sg-btn--outline sg-gk-price__btn--ghost" href="/om-os/">Læs mere om os</a>
+          <a class="sg-btn sg-btn--lg sg-btn--outline" href="/om-os/">Læs mere om os</a>
         </div>
       </div>
     </div>

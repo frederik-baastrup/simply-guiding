@@ -3062,3 +3062,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-sw2-panel__txt { padding: 32px 20px 24px; }
 }
 @media (max-width: 600px) { .sg-sw2-principles { grid-template-columns: 1fr; } .sg-sw2-principles li { gap: 14px; } }
+.sg-sw2-card { justify-content: space-between; }
+.sg-sw2-card h3 { margin-top: auto; }
+.sg-sw2-trio__img { min-height: 320px; }
+.sg-sw2 .sg-sw2-head > div > p:not(.sg-gk-lead):not(.sg-textlink), .sg-sw2-panel__txt > p:not(.sg-gk-label), .sg-sw2-card p { font-size: var(--sg-body) !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-sw2-panel .sg-btn--outline { background: transparent; color: var(--sg-cta) !important; border: 1px solid var(--sg-cta) !important; }
