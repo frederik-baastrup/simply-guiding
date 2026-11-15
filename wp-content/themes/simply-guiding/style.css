@@ -3007,3 +3007,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-ar-reasons li.sg-ar-reasons__cta p { color: rgba(255,255,255,.85) !important; }
 .sg-ar-reasons li.sg-ar-reasons__cta p strong { display: block; margin-bottom: 4px; color: #fff; font-weight: 500; }
 .sg-ar-reasons li.sg-ar-reasons__cta a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+/* Forløbskort: alle kort lige så høje som det højeste (desktop) */
+@media (min-width: 961px) { .sg-fcards { grid-auto-rows: 1fr; } }
