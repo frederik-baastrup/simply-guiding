@@ -3544,3 +3544,6 @@ samme tekst ---------- */
 .sg-sw3-proof2__quote figcaption { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
 .sg-sw3-proof2__quote figcaption span { align-items: center; text-align: center; }
 .sg-sw3-proof2__quote figcaption img { width: 64px; height: 64px; }
+/* Kontakt: holdet med lige meget luft over og under */
+.sg-cform:has(+ .sg-team) { padding-bottom: 0 !important; }
+.sg-cform + .sg-team { padding-top: 112px !important; padding-bottom: 112px !important; }
