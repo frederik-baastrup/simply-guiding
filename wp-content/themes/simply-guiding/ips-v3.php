@@ -117,7 +117,13 @@ $topics = [
   <div class="sg-wrap">
     <div class="sg-gk3-price__head">
       <h2 class="sg-h2" id="ipsInfoTitle">Praktisk information</h2>
-      <p>Uddannelsen planlægges i samarbejde med jer. Ring for en drøftelse af indhold og pris, eller hent folderen med alle detaljer.</p>
+      <div>
+        <p>Uddannelsen planlægges i samarbejde med jer. Ring for en drøftelse af indhold og pris, eller hent folderen med alle detaljer.</p>
+        <div class="sg-gk3-info__btns">
+      <a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a>
+      <a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($folder); ?>" target="_blank" rel="noopener">Se folder</a>
+    </div>
+      </div>
     </div>
     <ul class="sg-gk3-info">
       <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span><small>Varighed</small><strong>Typisk 54 uger med 15 kursusdage</strong></li>
@@ -125,9 +131,5 @@ $topics = [
       <li><span class="sg-gk-ico"><?php echo sg_icon('card'); ?></span><small>Betaling</small><strong>Almindelig faktura eller EAN-nummer</strong></li>
       <li><span class="sg-gk-ico"><?php echo sg_icon('phone'); ?></span><small>Booking</small><strong>Ring eller skriv til os</strong></li>
     </ul>
-    <div class="sg-gk3-info__btns">
-      <a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a>
-      <a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($folder); ?>" target="_blank" rel="noopener">Se folder</a>
-    </div>
   </div>
 </section>

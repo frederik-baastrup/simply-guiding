@@ -3679,3 +3679,6 @@ samme tekst ---------- */
   .sg-gk3-price:has(.sg-gk3-info) { padding-bottom: 72px; }
 }
 @media (max-width: 600px) { .sg-gk3-info { grid-template-columns: 1fr; } }
+.sg-gk3-price__head > div { grid-column: 7 / 13; }
+.sg-gk3-price__head > div > p { margin: 0; font-size: 17px !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-gk3-price__head .sg-gk3-info__btns { margin-top: 20px; }
