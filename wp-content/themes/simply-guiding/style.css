@@ -4099,3 +4099,13 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-cta .sg-btn--outline { color: #fff !important; border-color: rgba(255,255,255,.45) !important; }
 .sg-gk3-cta .sg-btn--outline:hover { border-color: #fff !important; }
 .sg-gk3-cta .sg-btn:not(.sg-btn--outline) { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
+/* Grundkursus-tilmelding: mørkegrøn formular */
+.sg-signupform .sg-cform__box { background: #0A2F2A url("assets/pattern.png") center / 601px repeat !important; border: 0 !important; box-shadow: none !important; color: #fff; }
+.sg-signupform .sg-cform__box label, .sg-signupform .sg-cform__box legend, .sg-signupform .sg-cform__box .sg-field > span, .sg-signupform .sg-cform__box p { color: rgba(255,255,255,.88) !important; }
+.sg-signupform .sg-field input, .sg-signupform .sg-field select, .sg-signupform .sg-field textarea { background: rgba(255,255,255,.06) !important; border: 1px solid rgba(255,255,255,.18) !important; color: #fff !important; }
+.sg-signupform .sg-field input::placeholder, .sg-signupform .sg-field textarea::placeholder { color: rgba(255,255,255,.45) !important; }
+.sg-signupform .sg-field select option { color: #212121; }
+.sg-signupform .sg-field input:focus, .sg-signupform .sg-field select:focus, .sg-signupform .sg-field textarea:focus { border-color: #F2AE45 !important; box-shadow: 0 0 0 3px rgba(242,174,69,.18) !important; }
+.sg-signupform .sg-cform__box a { color: #F2AE45 !important; }
+.sg-signupform .sg-cform__box input[type=checkbox] { accent-color: #F2AE45; }
+.sg-signupform .sg-cform__box button[type=submit], .sg-signupform .sg-cform__box .sg-btn { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }

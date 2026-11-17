@@ -128,7 +128,6 @@ $topics = [
   </div>
 </section>
 
-<?php get_template_part('template-parts/course-signup'); ?>
 
 <section class="sg-faq" aria-labelledby="sgFaqTitle">
   <div class="sg-wrap sg-faq__grid">
@@ -146,6 +145,8 @@ $topics = [
     </ul>
   </div>
 </section>
+
+<?php get_template_part('template-parts/course-signup'); ?>
 
 <!-- Skræddersyet forløb -->
 <section class="sg-gk3-custom" aria-labelledby="gkCustomTitle">
