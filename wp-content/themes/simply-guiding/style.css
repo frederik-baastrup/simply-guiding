@@ -4191,3 +4191,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-price__incl li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
 .sg-gk3-price__incl svg { flex: none; width: 20px; height: 20px; color: #F2AE45; }
 @media (max-width: 960px) { .sg-gk3-price--3 .sg-gk3-price__cards { grid-template-columns: 1fr !important; } }
+.sg-gk3-ticket strong { font-family: "General Sans", -apple-system, system-ui, sans-serif !important; font-weight: 500 !important; font-size: 26px !important; letter-spacing: -.01em; }
