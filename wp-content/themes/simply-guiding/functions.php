@@ -158,7 +158,7 @@ add_action('init', function () {
 /* Indlæg, hvis udvalgte billede ikke kom med i importen, får det samme billede som på det gamle site */
 function sg_post_fallback_img($post = null) {
     $map = [
-        'uddannelsesprogram-for-kommunale-medarbejdere-der-arbejder-med-ungeloeft-initiativet' => 'uddannelse-integreret.jpg',
+        'uddannelsesprogram-for-kommunale-medarbejdere-der-arbejder-med-ungeloeft-initiativet' => 'gen-jobcentermoede.jpg',
         'evaluering-af-ips-ung' => 'barista.jpg',
         'unges-stemme-i-eget-liv' => 'drivhus.jpg',
         'recharge-tilpasset-forloeb-for-12-17-aarige-med-sociale-og-psykiske-udfordringer' => 'loesninger-boern-unge-v2.jpg',

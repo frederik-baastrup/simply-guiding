@@ -59,7 +59,7 @@ return [
     ['id' => 'i-hverdagen', 'nav' => 'IPS i hverdagen', 'title' => 'IPS-metoden bliver en integreret del af din arbejdsdag', 'blocks' => [
       ['type' => 'lead', 'text' => 'IPS er en beskæftigelsesindsats målrettet mennesker med psykiske diagnoser eller psykisk sårbarhed, som har et ønske om – og er motiverede for – at komme i arbejde eller uddannelse.'],
       ['type' => 'p', 'text' => 'Med IPS-indsatsens principper og værktøjer lærer du, hvordan du følger borgerens vej og sætter deres ønsker og drømme i centrum. Det sker blandt andet ved at afdække, hvad der interesserer den enkelte, samt at kortlægge og beskrive deres kompetencer. Målet er at give den rette støtte og finde det bedst mulige jobmatch.'],
-      ['type' => 'img', 'src' => 'uddannelse-integreret.jpg', 'alt' => 'IPS-konsulent i samtale'],
+      ['type' => 'img', 'src' => 'gen-jobcentermoede.jpg', 'alt' => 'IPS-konsulent i samtale'],
       ['type' => 'p', 'text' => 'IPS-opgaverne er ofte mere omfattende end i en traditionel jobindsats. De spænder fra jobafklaring til håndtering af konkrete vanskeligheder og udfordringer i borgerens hverdag. Arbejdet koordineres, hvor det er relevant, med andre støttepersoner som fx bostøtte, sociale mentorer eller psykiatriske behandlere.'],
       ['type' => 'p', 'text' => 'Som IPS-konsulent arbejder du aktivt med dine IPS-kandidater – uanset deres sygdomsstatus – så længe de er motiverede for at komme i arbejde eller uddannelse. Det er deres motivation og fremtidsønsker, der er omdrejningspunktet i indsatsen. Det ønskede slutmål for IPS er job, uddannelse og hel eller delvis selvforsørgelse. Metoden læner sig op ad principperne om empowerment og mestring af eget liv.'],
     ]],
