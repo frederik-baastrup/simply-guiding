@@ -45,11 +45,11 @@ get_template_part('template-parts/page-hero', null, [
   <div class="sg-wrap">
     <div class="sg-headline"><h2 class="sg-h2" id="gkTopicsTitle">Det arbejder vi med på kurset</h2></div>
     <ul class="sg-gk-topics__grid">
-      <li><span class="sg-gk-ico"><?php echo sg_icon('bookopen'); ?></span><h3>IPS-mindset og de 8 principper</h3></li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('heart'); ?></span><h3>Recovery- og beskæftigelses&shy;perspektivet i IPS</h3></li>
+      <li><span class="sg-gk-ico"><?php echo sg_icon('bookopen'); ?></span><h3>IPS-mindset og de 8 principper bag metoden</h3></li>
+      <li><span class="sg-gk-ico"><?php echo sg_icon('heart'); ?></span><h3>Recovery og beskæftigelse i IPS-perspektiv</h3></li>
       <li><span class="sg-gk-ico"><?php echo sg_icon('handshake'); ?></span><h3>Job development og samarbejde med virksomheder</h3></li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('briefcase'); ?></span><h3>Konkrete redskaber i arbejdet med borgere og deltagere</h3></li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('puzzle'); ?></span><h3>Overførsel af IPS til forskellige organisatoriske og faglige sammenhænge</h3></li>
+      <li><span class="sg-gk-ico"><?php echo sg_icon('briefcase'); ?></span><h3>Konkrete redskaber til borgere og deltagere</h3></li>
+      <li><span class="sg-gk-ico"><?php echo sg_icon('puzzle'); ?></span><h3>IPS i organisatoriske og faglige sammenhænge</h3></li>
       <li class="sg-gk-topics__quote"><p>Fokus er på, hvordan IPS omsættes til praksis – ikke kun hvad metoden er i teorien.</p></li>
     </ul>
   </div>
