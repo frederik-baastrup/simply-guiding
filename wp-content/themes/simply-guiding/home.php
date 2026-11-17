@@ -11,11 +11,11 @@ $title = is_home() ? 'Nyheder' : wp_strip_all_tags(get_the_archive_title());
       <h1 id="sgPageTitle"><?php echo esc_html($title); ?></h1>
       <?php if (is_home()) : ?><p class="sg-hero__lead">Her kan du læse nyheder, artikler og pressemeddelelser fra Simply Guiding – om vores indsatser, metoder og de mennesker, vi arbejder med.</p><?php endif; ?>
     </div></div>
-  </section>
-</div>
-<section class="sg-latest sg-bloglist">
-  <div class="sg-wrap">
-    <?php
+    <div class="sg-hero-bottom">
+      <div class="sg-hero__notch sg-hero__notch--cats">
+        <svg class="sg-hero__curve sg-hero__curve--left" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M200 0 C100 0 100 64 0 64 L200 64 Z" fill="#fff"/></svg>
+        <div class="sg-hero__notch-inner">
+            <?php
     $cats = get_categories(['hide_empty' => true]);
     if ($cats && count($cats) > 1) : ?>
     <nav class="sg-catnav" aria-label="Kategorier">
@@ -23,6 +23,14 @@ $title = is_home() ? 'Nyheder' : wp_strip_all_tags(get_the_archive_title());
       <?php foreach ($cats as $c) : ?><a href="<?php echo esc_url(get_category_link($c)); ?>"<?php echo is_category($c->term_id) ? ' aria-current="page"' : ''; ?>><?php echo esc_html($c->name); ?></a><?php endforeach; ?>
     </nav>
     <?php endif; ?>
+        </div>
+        <svg class="sg-hero__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="sg-latest sg-bloglist">
+  <div class="sg-wrap">
     <?php if (have_posts()) : ?>
     <div class="sg-posts">
       <?php while (have_posts()) : the_post(); get_template_part('template-parts/post-card'); endwhile; ?>

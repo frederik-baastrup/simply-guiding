@@ -3770,3 +3770,10 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-os-values__ico { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--sg-cta); color: #fff; }
 .sg-os-values__ico svg { width: 26px; height: 26px; stroke-width: 1.5; }
 .sg-os-values__grid h3 { margin: 22px 0 8px !important; font-size: 24px !important; }
+/* Nyheder: kategori-tags i den hvide bølge nederst i hero'en */
+.sg-hero--blog .sg-hero__notch--cats { left: 50%; transform: translateX(-50%); width: auto; padding-inline: 8px; }
+.sg-hero--blog .sg-hero__notch--cats .sg-hero__curve { width: 160px; }
+.sg-hero__notch--cats .sg-hero__notch-inner { padding: 10px 0 0 !important; justify-content: center; }
+.sg-hero__notch--cats .sg-catnav { margin: 0; flex-wrap: nowrap; }
+.sg-bloglist { padding-top: 64px; }
+@media (max-width: 1024px) { .sg-hero--blog .sg-hero__notch--cats { transform: none; left: 0; width: 100%; } .sg-hero__notch--cats .sg-catnav { flex-wrap: wrap; justify-content: center; } }
