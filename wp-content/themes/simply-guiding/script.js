@@ -364,7 +364,7 @@
       var r = el.parentElement.getBoundingClientRect();
       if (r.bottom < -200 || r.top > vh + 200) return;
       var p = ((r.top + r.height / 2) - vh / 2) / vh; // -1..1
-      el.style.transform = 'translate3d(0,' + (p * -70).toFixed(1) + 'px,0)';
+      el.style.transform = 'translate3d(0,' + (p * -28).toFixed(1) + 'px,0)';
     });
   }
   window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
