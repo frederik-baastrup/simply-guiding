@@ -13,7 +13,7 @@ $logo_list = function ($hidden) use ($u, $logos) {
   }
   echo '</ul>';
 };
-$front = isset($_GET['hero']) && $_GET['hero'] === 'front' && ($a['img'] || $a['video']);
+$front = !(isset($_GET['hero']) && $_GET['hero'] === 'old') && ($a['img'] || $a['video']);
 if ($front) : ?>
 <div class="sg-hero-wrap">
   <section class="sg-hero sg-hero--sub" aria-labelledby="sgPageTitle">
