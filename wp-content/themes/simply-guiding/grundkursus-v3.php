@@ -54,7 +54,7 @@ $topics = [
     </div>
     <ol class="sg-gk3-prog__list">
       <?php foreach ($topics as $i => $t) : ?>
-      <li><span class="sg-gk3-prog__no"><?php echo sprintf('%02d', $i + 1); ?></span><div><h3><?php echo esc_html($t[0]); ?></h3><p><?php echo esc_html($t[1]); ?></p></div></li>
+      <li><span class="sg-gk3-prog__ico"><?php echo sg_icon(['bookopen', 'spark', 'briefcase', 'puzzle', 'building'][$i] ?? 'spark'); ?></span><div><h3><?php echo esc_html($t[0]); ?></h3><p><?php echo esc_html($t[1]); ?></p></div></li>
       <?php endforeach; ?>
     </ol>
   </div>

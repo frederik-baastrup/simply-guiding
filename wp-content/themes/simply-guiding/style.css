@@ -3925,3 +3925,7 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-tile .sg-tile__body p.sg-tile__label--y, p.sg-gk-label.sg-tile__label--y { color: #F2AE45 !important; }
 .sg-figures .sg-stat { justify-content: flex-start !important; } .sg-figures .sg-stat > div { margin: 0 !important; }
 .sg-gk3-prog__no { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; font-size: 21px !important; font-weight: 600 !important; line-height: 1.3 !important; letter-spacing: 0 !important; }
+/* Uddannelsesprogram: ikon i stedet for tal; venstre side følger ikke med ned */
+.sg-gk3-prog__side { position: static !important; }
+.sg-gk3-prog__ico { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sg-cta); color: #fff; margin-top: -4px; }
+.sg-gk3-prog__ico svg { width: 19px; height: 19px; stroke-width: 1.5; }
