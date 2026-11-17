@@ -301,7 +301,7 @@
 
 /* Tælle-animation på nøgletal (fx 25+, 1.500+, 10+) når de kommer til syne */
 (function () {
-  var els = document.querySelectorAll('.sg-kpi__num');
+  var els = document.querySelectorAll('.sg-kpi__num, .sg-sw3-proof2__stats strong');
   if (!els.length || !('IntersectionObserver' in window)) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   function fmt(n, dots) { var s = String(n); return dots ? s.replace(/\B(?=(\d{3})+(?!\d))/g, '.') : s; }
