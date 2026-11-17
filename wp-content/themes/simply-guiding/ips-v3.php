@@ -119,10 +119,6 @@ $topics = [
       <h2 class="sg-h2" id="ipsInfoTitle">Praktisk information</h2>
       <div>
         <p>Uddannelsen planlægges i samarbejde med jer. Ring for en drøftelse af indhold og pris, eller hent folderen med alle detaljer.</p>
-        <div class="sg-gk3-info__btns">
-      <a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a>
-      <a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($folder); ?>" target="_blank" rel="noopener">Se folder</a>
-    </div>
       </div>
     </div>
     <ul class="sg-gk3-info">
@@ -131,5 +127,16 @@ $topics = [
       <li><span class="sg-gk-ico"><?php echo sg_icon('card'); ?></span><small>Betaling</small><strong>Almindelig faktura eller EAN-nummer</strong></li>
       <li><span class="sg-gk-ico"><?php echo sg_icon('phone'); ?></span><small>Booking</small><strong>Ring eller skriv til os</strong></li>
     </ul>
+    <div class="sg-gk3-cta">
+      <span class="sg-gk-ico"><?php echo sg_icon('bookopen'); ?></span>
+      <div class="sg-gk3-cta__txt">
+        <h3>Vil du vide mere om uddannelsen?</h3>
+        <p>Hent folderen med alle detaljer, eller ring på 26 34 44 54 for en drøftelse af indhold og pris.</p>
+      </div>
+      <div class="sg-gk3-cta__btns">
+        <a class="sg-btn sg-btn--lg sg-btn--outline" href="<?php echo esc_url($folder); ?>" target="_blank" rel="noopener">Hent folder (PDF)</a>
+        <a class="sg-btn sg-btn--lg" href="/kontakt/">Kontakt os</a>
+      </div>
+    </div>
   </div>
 </section>

@@ -3682,3 +3682,13 @@ samme tekst ---------- */
 .sg-gk3-price__head > div { grid-column: 7 / 13; }
 .sg-gk3-price__head > div > p { margin: 0; font-size: 17px !important; line-height: 1.6 !important; color: #212121 !important; }
 .sg-gk3-price__head .sg-gk3-info__btns { margin-top: 20px; }
+/* IPS v3: CTA-bjælke under praktisk information */
+.sg-gk3-cta { display: flex; align-items: center; gap: 24px; margin-top: 16px; padding: 28px 32px; border-radius: var(--sg-radius-sm); border: 1px solid rgba(0,114,93,.25); background: #fff; }
+.sg-gk3-cta .sg-gk-ico { flex: none; width: 56px; height: 56px; }
+.sg-gk3-cta .sg-gk-ico svg { width: 24px; height: 24px; }
+.sg-gk3-cta__txt { flex: 1 1 auto; }
+.sg-gk3-cta__txt h3 { margin: 0 0 4px; font-size: 21px; font-weight: 500; color: #212121; }
+.sg-gk3-cta__txt p { margin: 0; font-size: 15px !important; line-height: 1.55 !important; color: #212121 !important; }
+.sg-gk3-cta__btns { display: flex; gap: 10px; flex: none; }
+.sg-gk3-cta .sg-btn--outline { background: transparent !important; color: var(--sg-cta) !important; border: 1px solid var(--sg-cta) !important; }
+@media (max-width: 960px) { .sg-gk3-cta { flex-direction: column; align-items: flex-start; padding: 24px; } .sg-gk3-cta__btns { flex-wrap: wrap; } }
