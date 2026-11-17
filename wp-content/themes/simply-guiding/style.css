@@ -3698,3 +3698,5 @@ samme tekst ---------- */
 .sg-gk3-band__intro { font-size: 17px !important; line-height: 1.5 !important; }
 .sg-gk3-band__grid h2 { text-wrap: balance; }
 @media (min-width: 961px) { .sg-gk3-band__grid h2 { min-height: 2.4em; display: flex; align-items: flex-end; } }
+/* Intro: alle afsnit i samme store størrelse som indledningen */
+.sg-gk3-intro__txt > p:not(.sg-gk-lead) { font-size: clamp(18px, 1.4vw, 21px) !important; line-height: 1.6 !important; color: var(--sg-text) !important; }
