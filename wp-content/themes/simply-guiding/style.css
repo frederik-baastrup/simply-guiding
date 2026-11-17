@@ -3717,3 +3717,5 @@ samme tekst ---------- */
 @media (prefers-reduced-motion: reduce) { .sg-news-letter { animation: none; } }
 @media (max-width: 1100px) { .sg-news-letter { width: 150px; right: -56px; } }
 @media (max-width: 700px) { .sg-news-letter { width: 120px; right: -44px; top: 32px; } .sg-tile--news .sg-tile__text { max-width: 78%; } }
+/* Kontaktformularens mørke panel: gule ikoner som lille accent (17. nov.) */
+.sg-cform--v3 .sg-cform__ico { background: rgba(251,195,60,.14) !important; color: #FBC33C !important; }

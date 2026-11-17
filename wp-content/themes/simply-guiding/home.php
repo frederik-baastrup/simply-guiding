@@ -9,6 +9,7 @@ $title = is_home() ? 'Nyheder' : wp_strip_all_tags(get_the_archive_title());
     <div class="sg-split"><div class="sg-split__copy">
       <p class="sg-pill">Nyheder</p>
       <h1 id="sgPageTitle"><?php echo esc_html($title); ?></h1>
+      <?php if (is_home()) : ?><p class="sg-hero__lead">Her kan du læse nyheder, artikler og pressemeddelelser fra Simply Guiding – om vores indsatser, metoder og de mennesker, vi arbejder med.</p><?php endif; ?>
     </div></div>
   </section>
 </div>
