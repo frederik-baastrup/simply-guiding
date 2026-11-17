@@ -3797,3 +3797,5 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 /* Nyheder-bølgen: kurverne overlapper boksen 2 px, så der ikke opstår en synlig søm */
 .sg-hero--blog .sg-hero__notch--cats .sg-hero__curve { left: calc(100% - 2px); }
 .sg-hero--blog .sg-hero__notch--cats .sg-hero__curve--left { left: auto; right: calc(100% - 2px); }
+.sg-hero__notch--cats .sg-catnav { gap: 10px; }
+.sg-hero__notch--cats .sg-catnav a { padding: 10px 20px; font-size: 15px; }
