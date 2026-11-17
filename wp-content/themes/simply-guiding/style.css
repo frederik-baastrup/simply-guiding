@@ -3718,3 +3718,5 @@ samme tekst ---------- */
 .sg-cform--v3 .sg-cform__ico { background: rgba(251,195,60,.14) !important; color: #FBC33C !important; }
 /* Nøgletal-båndet: tal i gul (17. nov.) */
 .sg-kpi__num { color: #FBC33C !important; -webkit-text-fill-color: #FBC33C; }
+/* Forsidens områdekort: titler i Nohemi */
+.sg-card__title { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
