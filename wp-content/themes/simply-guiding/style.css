@@ -4054,3 +4054,18 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-mini li::before { left: 24px !important; top: 24px !important; width: 42px !important; height: 42px !important; }
 .sg-gk3-mini h3 { font-size: 20px !important; margin-bottom: 6px !important; }
 @media (max-width: 960px) { .sg-gk3-format__img .sg-ls-sol__badge { right: 24px; bottom: -28px; } }
+/* "Tre måder at lære på" v3: bredt billede i indholdsbredde med tekst og punkter lagt ovenpå, venstrestillet */
+@media (min-width: 961px) {
+  .sg-gk3-format__grid { display: block !important; position: relative; }
+  .sg-gk3-format__img, .sg-gk3-format__img--tall { position: relative; margin: 0 !important; height: 700px; aspect-ratio: auto !important; border-radius: var(--sg-radius-sm); overflow: hidden !important; }
+  .sg-gk3-format__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center; border-radius: 0; }
+  .sg-gk3-format__img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,47,42,.92) 0%, rgba(10,47,42,.82) 34%, rgba(10,47,42,.25) 62%, rgba(10,47,42,0) 80%); pointer-events: none; }
+  .sg-gk3-format__txt { position: absolute; z-index: 2; top: 0; bottom: 0; left: calc(max(var(--sg-gutter), env(safe-area-inset-left, 0px)) + 56px); width: min(500px, 40%); display: flex; flex-direction: column; justify-content: center; }
+  .sg-gk3-format__txt .sg-gk-label { color: #F2AE45 !important; }
+  .sg-gk3-format__txt h2 { color: #fff !important; }
+  .sg-gk3-format .sg-gk3-mini li { background: rgba(255,255,255,.07) !important; border-color: rgba(255,255,255,.16) !important; box-shadow: none !important; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .sg-gk3-format .sg-gk3-mini li:hover { border-color: rgba(255,255,255,.35) !important; }
+  .sg-gk3-format .sg-gk3-mini li::before { background: #F2AE45 !important; color: #0A2F2A !important; }
+  .sg-gk3-format .sg-gk3-mini h3 { color: #fff !important; }
+  .sg-gk3-format .sg-gk3-mini p { color: rgba(255,255,255,.82) !important; }
+}
