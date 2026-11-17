@@ -3719,3 +3719,9 @@ samme tekst ---------- */
 @media (max-width: 700px) { .sg-news-letter { width: 120px; right: -44px; top: 32px; } .sg-tile--news .sg-tile__text { max-width: 78%; } }
 /* Kontaktformularens mørke panel: gule ikoner som lille accent (17. nov.) */
 .sg-cform--v3 .sg-cform__ico { background: rgba(251,195,60,.14) !important; color: #FBC33C !important; }
+/* Nyhedsbrev-boksen: al tekst i gul */
+.sg-tile--news .sg-tile__text, .sg-tile--news p.sg-tile__text { color: #FBC33C !important; }
+.sg-tile--news .sg-signup__label { color: #FBC33C !important; }
+.sg-tile--news .sg-signup__note, .sg-tile--news .sg-signup__note a { color: rgba(251,195,60,.75) !important; }
+.sg-tile--news .sg-signup__field::placeholder { color: rgba(251,195,60,.55); }
+.sg-tile--news .sg-signup__field { color: #FBC33C; }
