@@ -3924,3 +3924,4 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-ls-sol__media { position: relative !important; top: auto !important; }
 .sg-tile .sg-tile__body p.sg-tile__label--y, p.sg-gk-label.sg-tile__label--y { color: #F2AE45 !important; }
 .sg-figures .sg-stat { justify-content: flex-start !important; } .sg-figures .sg-stat > div { margin: 0 !important; }
+.sg-gk3-prog__no { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; font-size: 21px !important; font-weight: 600 !important; line-height: 1.3 !important; letter-spacing: 0 !important; }
