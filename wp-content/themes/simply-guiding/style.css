@@ -3189,3 +3189,7 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (max-width: 1024px) { .sg-hero-rule { display: none; } }
 .sg-hero-rule { max-width: var(--sg-max) !important; }
 .sg-hero--sub .sg-hero__stat a { color: #fff; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+/* Under logo-striben: første sektion får meget lysegrøn baggrund som på det gamle site (17. nov.) */
+.sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type { background: #F1F4F2; }
+.sg-hero-wrap:has(.sg-hero--sub) .sg-hero-rule { display: none; }
+.sg-hero-wrap:has(.sg-hero--sub) { padding-bottom: 28px; }
