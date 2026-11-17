@@ -3552,3 +3552,4 @@ samme tekst ---------- */
 .sg-hero--sub .sg-hero__inner > * { max-width: 620px; }
 @media (max-width: 1024px) { .sg-hero--sub h1, .sg-split__copy h1 { font-size: clamp(30px, 8vw, 48px) !important; } }
 .sg-hero h1, .sg-split__copy h1 { hyphens: manual !important; -webkit-hyphens: manual !important; overflow-wrap: normal !important; }
+.sg-cinfo + .sg-cform { padding-top: 40px !important; }
