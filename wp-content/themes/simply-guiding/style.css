@@ -3183,3 +3183,7 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-hero--sub .sg-hero__inner { width: 100%; padding-block: 140px calc(var(--sg-notch-h) + 72px); }
   .sg-hero--sub__media::after { background: linear-gradient(180deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,.22) 50%, rgba(0,0,0,.5) 78%, rgba(0,0,0,.85) 100%); }
 }
+/* Tynd streg under logo-rækken (hero-prøven) */
+.sg-hero-rule { max-width: calc(var(--sg-max) + 36px - 2 * var(--sg-gutter) + 36px); margin: 28px auto 0; padding: 0 calc(var(--sg-gutter) - 18px); }
+.sg-hero-rule::before { content: ""; display: block; height: 1px; background: rgba(10,47,42,.12); }
+@media (max-width: 1024px) { .sg-hero-rule { display: none; } }

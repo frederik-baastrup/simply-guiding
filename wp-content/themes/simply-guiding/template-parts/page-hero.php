@@ -40,6 +40,7 @@ if ($front) : ?>
       <p class="sg-hero__stat">Vi har samarbejdet med 25+ kommuner</p>
     </div>
   </section>
+  <div class="sg-hero-rule" aria-hidden="true"></div>
 </div>
 <?php return; endif; ?>
 <div class="sg-hero-wrap">
