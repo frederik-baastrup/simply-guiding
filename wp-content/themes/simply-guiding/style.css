@@ -3449,3 +3449,8 @@ samme tekst ---------- */
   .sg-sw3-proof__quote { padding-right: 0; margin-bottom: 40px; }
 }
 .sg-final__title { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
+/* Sådan v3 intro: roligere – top-justeret, tekst starter på linje med overskriften, ingen mærker */
+.sg-sw3-intro__grid { align-items: start; }
+.sg-sw3-intro__txt { padding-top: 28px; }
+.sg-sw3-intro__txt .sg-gk-lead { margin-bottom: 28px; }
+@media (max-width: 960px) { .sg-sw3-intro__txt { padding-top: 0; } }

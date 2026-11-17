@@ -19,9 +19,6 @@ $steps = [
     </div>
     <div class="sg-sw3-intro__txt">
       <p class="sg-gk-lead">Vores indsatser er tilrettelagt ud fra mindset, principper og redskaber fra Supported Employment og IPS-metoden. Der er evidens for at opnå en højere effekt, når man arbejder ud fra disse metoder.</p>
-      <ul class="sg-sw3-tags" aria-label="Metoder vi arbejder med">
-        <li>IPS</li><li>Supported Employment</li><li>Supported Education (SEd)</li>
-      </ul>
       <p class="sg-textlink"><a href="/hvad-er-ips/">Læs mere om IPS her <?php echo sg_arrow(); ?></a></p>
     </div>
   </div>
