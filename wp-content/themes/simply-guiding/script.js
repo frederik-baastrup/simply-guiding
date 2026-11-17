@@ -328,3 +328,26 @@
     io.observe(el);
   });
 })();
+
+/* Knap ned til kontaktformularen: blød scroll, formularen lyser op, og første felt får fokus */
+(function () {
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.sg-btn--down');
+    if (!a) return;
+    var t = document.querySelector(a.getAttribute('href'));
+    if (!t) return;
+    e.preventDefault();
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var y = t.getBoundingClientRect().top + window.pageYOffset - 90;
+    window.scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
+    var done = false;
+    function arrive() {
+      if (done) return; done = true;
+      t.classList.remove('sg-arrive'); void t.offsetWidth; t.classList.add('sg-arrive');
+      var f = t.querySelector('input:not([type=hidden]), textarea');
+      if (f) f.focus({ preventScroll: true });
+    }
+    if ('onscrollend' in window) window.addEventListener('scrollend', arrive, { once: true });
+    setTimeout(arrive, reduce ? 0 : 900);
+  });
+})();

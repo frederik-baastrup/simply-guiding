@@ -26,8 +26,8 @@ if ($front) : ?>
       <h1 id="sgPageTitle"><?php echo esc_html($a['title']); ?></h1>
       <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
       <div class="sg-hero__actions">
-        <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
-        <?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?>
+        <a class="sg-btn sg-btn--lg<?php echo strpos($a['btn1_href'], '#') === 0 ? ' sg-btn--down' : ''; ?>" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?><?php if (strpos($a['btn1_href'], '#') === 0) : ?><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg><?php endif; ?></a>
+        <?php if ($a['btn2']) : ?><?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?><?php endif; ?>
       </div>
     </div>
     <div class="sg-hero-bottom">
@@ -51,8 +51,8 @@ if ($front) : ?>
         <h1 id="sgPageTitle"><?php echo esc_html($a['title']); ?></h1>
         <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
         <div class="sg-hero__actions">
-          <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
-          <?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?>
+          <a class="sg-btn sg-btn--lg<?php echo strpos($a['btn1_href'], '#') === 0 ? ' sg-btn--down' : ''; ?>" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?><?php if (strpos($a['btn1_href'], '#') === 0) : ?><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg><?php endif; ?></a>
+          <?php if ($a['btn2']) : ?><?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?><?php endif; ?>
         </div>
       </div>
       <?php if ($a['video']) : ?>
