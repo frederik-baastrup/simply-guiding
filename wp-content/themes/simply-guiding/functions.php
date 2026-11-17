@@ -356,3 +356,8 @@ function sg_forloeb_cards($rows) {
     echo '</ol>';
 }
 
+
+/* Nyheder: 18 indlæg pr. side på /blog/ og i kategorier/arkiver (17. nov. 2026) */
+add_action('pre_get_posts', function ($q) {
+    if (!is_admin() && $q->is_main_query() && ($q->is_home() || $q->is_archive())) $q->set('posts_per_page', 18);
+});
