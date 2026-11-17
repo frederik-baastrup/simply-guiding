@@ -4003,3 +4003,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-hero--sub__media, .sg-split__media { overflow: hidden; }
 .sg-hero--sub__media > img, .sg-hero--sub__media > video, .sg-split__media > img, .sg-split__media > video { transform: scale(1.1); transform-origin: center top; will-change: transform; }
 @media (prefers-reduced-motion: reduce) { .sg-hero--sub__media > img, .sg-hero--sub__media > video, .sg-split__media > img, .sg-split__media > video { transform: none; } }
+.sg-wide-img { margin-left: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; margin-right: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; border-radius: var(--sg-radius-sm); }
