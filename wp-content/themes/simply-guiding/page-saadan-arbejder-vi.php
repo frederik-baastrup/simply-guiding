@@ -12,7 +12,7 @@ $u = get_template_directory_uri();
 
 <div id="indhold"></div>
 <?php
-require get_template_directory() . '/saadan-v2.php';
+require get_template_directory() . (isset($_GET['ny']) ? '/saadan-v3.php' : '/saadan-v2.php');
 get_template_part('template-parts/final-cta');
 get_template_part('template-parts/site-footer');
 get_footer();
