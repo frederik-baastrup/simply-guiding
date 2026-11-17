@@ -4130,3 +4130,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-ticket__btn { margin-top: 28px; width: 100%; justify-content: center; }
 @media (max-width: 960px) { .sg-gk3-days__grid { display: block; } .sg-gk3-ticket { margin-top: 40px; padding: 28px; } }
 .sg-gk3-cta .sg-gk-ico { background: var(--sg-cta) !important; color: #fff !important; }
+.sg-gk3-fid__goal svg { width: 20px !important; fill: none !important; }

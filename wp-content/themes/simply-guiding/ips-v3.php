@@ -120,7 +120,7 @@ $topics = [
     <ol class="sg-gk3-fid__steps sg-gk3-fid__steps--line">
       <li><span>01</span><p>Jeres indsats vurderes ud fra Fidelity-skalaen</p></li>
       <li><span>02</span><p>I får en mundtlig tilbagemelding og en skriftlig rapport med score</p></li>
-      <li class="is-goal"><span>03</span><p>Du opnår titlen Certificeret Advanced Practitioner</p><i class="sg-gk3-fid__goal" aria-hidden="true"><svg viewBox="0 0 37 25"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></i></li>
+      <li class="is-goal"><span>03</span><p>Du opnår titlen Certificeret Advanced Practitioner</p><i class="sg-gk3-fid__goal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></li>
     </ol>
   </div>
 </section>
