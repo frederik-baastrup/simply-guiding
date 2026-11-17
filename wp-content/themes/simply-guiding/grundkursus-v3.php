@@ -132,7 +132,7 @@ $topics = [
 <section class="sg-faq" aria-labelledby="sgFaqTitle">
   <div class="sg-wrap sg-faq__grid">
     <div>
-      <h2 class="sg-faq__title" id="sgFaqTitle">Ofte stillede spørgsmål</h2>
+      <h2 class="sg-faq__title" id="sgFaqTitle">Få svar på dine spørgsmål</h2>
       <p class="sg-faq__intro">Her finder du svar på de mest almindelige spørgsmål om grundkurset. Finder du ikke svaret, er du altid velkommen til at kontakte os.</p>
     </div>
     <ul class="sg-faq__list">
