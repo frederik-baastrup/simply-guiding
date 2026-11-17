@@ -1,5 +1,5 @@
 <?php
-/* Grundkursus i IPS – forslag v3 (vises på /grundkursus-i-ips/?ny=1, 17. nov. 2026).
+/* Grundkursus i IPS – v3 (live 17. nov. 2026).
    Struktur: overblik (intro + nøglefakta) → program → sådan foregår det → for hvem / udbytte (mørkt bånd) → pris → tilmelding → FAQ → skræddersyet forløb.
    Samme tekst og fakta som nu; kun opbygning og små forkortelser. */
 $u = get_template_directory_uri();
