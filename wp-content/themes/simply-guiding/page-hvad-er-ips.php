@@ -42,7 +42,7 @@ $principles = [
       </div>
       <ol class="sg-principles8__grid">
         <?php foreach ($principles as $i => $p) : ?>
-        <li><span class="sg-principles8__num"><?php echo $i + 1; ?></span><p><?php echo esc_html($p); ?></p></li>
+        <li><span class="sg-principles8__num"><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($p); ?></p></li>
         <?php endforeach; ?>
       </ol>
     </div>
