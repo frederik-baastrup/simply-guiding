@@ -3238,3 +3238,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p { font-size: 15px !important; line-height: 1.6 !important; color: #212121 !important; padding-top: 14px; border-top: 1px solid rgba(10,47,42,.14); }
 .sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p strong { color: #212121; font-size: 15px; }
 .sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta a { color: var(--sg-cta); }
+.sg-ar-why__main .sg-gk-sub { text-wrap: balance; max-width: 22em; }
