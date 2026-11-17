@@ -4024,3 +4024,12 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-ar-how .sg-gk-topics__grid li .sg-gk-ico { display: block; width: 28px !important; height: 28px !important; margin: 0 0 0 auto !important; background: none !important; color: var(--sg-cta) !important; border-radius: 0 !important; }
 .sg-ar-how .sg-gk-topics__grid li .sg-gk-ico svg { width: 26px !important; height: 26px !important; stroke-width: 1.4; }
 .sg-ar-how .sg-gk-topics__grid li h3 { margin-top: 20px !important; }
+/* "Tre måder at lære på": billede til venstre, tekst til højre, punkterne som små kort (adskiller sig fra programlisten ovenover) */
+.sg-gk3-format__txt { grid-column: 8 / 13 !important; grid-row: 1; }
+.sg-gk3-format__img { grid-column: 1 / 7 !important; grid-row: 1; }
+.sg-gk3-mini { display: grid; gap: 12px; margin-top: 28px !important; }
+.sg-gk3-mini li { padding: 20px 22px 20px 76px !important; border: 1px solid rgba(10,47,42,.12) !important; border-radius: 12px; background: #fff; transition: border-color .25s ease; }
+.sg-gk3-mini li:last-child { border-bottom: 1px solid rgba(10,47,42,.12) !important; }
+.sg-gk3-mini li::before { left: 22px !important; top: 20px !important; width: 38px; height: 38px; border-radius: 50%; background: #2C654E; color: #fff !important; display: grid; place-items: center; font-size: 14px !important; font-weight: 600 !important; line-height: 1; }
+.sg-gk3-mini li:hover { border-color: rgba(10,47,42,.3) !important; }
+@media (max-width: 960px) { .sg-gk3-format__img { margin: 0 0 32px !important; } }
