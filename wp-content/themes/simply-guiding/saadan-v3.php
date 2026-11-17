@@ -4,10 +4,10 @@
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
 $principles = ['Suspender din forforståelse og mød mennesket, hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på og arbejder efter ”place then train”-modellen'];
 $steps = [
-  ['user', 'Egen konsulent', 'Vi tror på bæredygtige og trygge relationer. Derfor får borgeren sin egen konsulent tilknyttet.'],
-  ['map', 'Fælles kortlægning', 'Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.'],
-  ['calendar', 'Tæt kontakt', 'Konsulenten har et tæt samarbejde med kandidaten, og der er altid ugentlig kontakt.'],
-  ['people', 'Netværket inddrages', 'Vi inddrager pårørende, netværk eller andre relevante personer, så de understøtter vejen mod job, uddannelse, bedre trivsel eller raskmelding.'],
+  ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
+  ['map', 'Fælles kortlægning', 'Sammen kortlægger de borgerens kompetencer, ressourcer og drømme for fremtiden.'],
+  ['calendar', 'Tæt kontakt', 'Konsulenten arbejder tæt sammen med kandidaten, og der er altid ugentlig kontakt.'],
+  ['people', 'Netværket inddrages', 'Pårørende og netværk inddrages, så de understøtter vejen mod job, uddannelse eller trivsel.'],
 ];
 ?>
 <!-- 1. Metoder: sidens påstand -->
