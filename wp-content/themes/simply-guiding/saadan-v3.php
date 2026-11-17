@@ -3,11 +3,11 @@
    Struktur: metoder (påstand) → borgerforløbet (4 trin) → principper (mørkt bånd) → konsulenterne (uddannelse + supervision) → jobcentre (handling).
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
 $principles = [
-  ['Mød mennesket,', 'hvor det er, og suspender din forforståelse'],
-  ['Tro på borgeren', 'og vedkommendes muligheder for fremtiden'],
-  ['Hav blik for', 'borgerens ressourcer, kompetencer og drømme'],
-  ['Indgyd håb', 'om et varigt, nyt ståsted i livet for borgeren'],
-  ['Place then train:', 'vi arbejder altid henimod løntimer og job'],
+  ['Mød mennesket,', 'hvor det er, uden forforståelse'],
+  ['Tro på borgeren', 'og mulighederne for fremtiden'],
+  ['Hav blik for', 'borgerens ressourcer og drømme'],
+  ['Indgyd håb', 'om et varigt, nyt ståsted i livet'],
+  ['Place then train:', 'vi arbejder altid mod job'],
 ];
 $steps = [
   ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
