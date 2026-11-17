@@ -3916,3 +3916,6 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
             mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 54' preserveAspectRatio='none'%3E%3Cpath d='M0 54C50 54 50 0 100 0V54Z'/%3E%3C/svg%3E") left / calc(var(--lb-slope) + 1px) 100% no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 54' preserveAspectRatio='none'%3E%3Cpath d='M100 54C50 54 50 0 0 0V54Z'/%3E%3C/svg%3E") right / calc(var(--lb-slope) + 1px) 100% no-repeat, linear-gradient(#000, #000) center / calc(100% - 2 * var(--lb-slope) + 2px) 100% no-repeat;
   }
 }
+.sg-tile__label { margin: 0 0 12px !important; }
+.sg-tile__label + .sg-tile__title { margin-top: 0 !important; }
+.sg-tile__label--y { color: #F2AE45 !important; }

@@ -149,6 +149,7 @@
     <article class="sg-tile sg-tile--light">
       <div class="sg-tile__body">
         <svg class="sg-tile__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 10 4 19l20 9 20-9-20-9Z"/><path d="M12 23.5V32c0 2.6 5.4 5 12 5s12-2.4 12-5v-8.5"/><path d="M44 19v10"/><circle cx="44" cy="31" r="1.4"/></svg>
+        <p class="sg-gk-label sg-tile__label">Uddannelse</p>
         <h2 class="sg-tile__title">Simply Guiding Academy</h2>
         <p class="sg-tile__text">Styrk fagligheden og skab endnu bedre resultater. Vores Academy bygger bro mellem viden og virkelighed. Vi uddanner og sparrer med kommunale teams, ledere og beskæftigelsesaktører med afsæt i IPS, Supported Employment og pædagogiske virkemidler.</p>
       </div>
@@ -158,6 +159,7 @@
       <div class="sg-news-letter" aria-hidden="true"><svg viewBox="0 0 200 260"><rect x="0" y="0" width="200" height="260" rx="14" fill="#F2AE45"/><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z" fill="#0A2F2A" transform="translate(28 34) scale(1.35)"/><rect x="28" y="96" width="120" height="12" rx="6" fill="#0A2F2A" opacity=".85"/><rect x="28" y="126" width="144" height="7" rx="3.5" fill="#0A2F2A" opacity=".22"/><rect x="28" y="143" width="132" height="7" rx="3.5" fill="#0A2F2A" opacity=".22"/><rect x="28" y="160" width="140" height="7" rx="3.5" fill="#0A2F2A" opacity=".22"/><rect x="28" y="177" width="96" height="7" rx="3.5" fill="#0A2F2A" opacity=".22"/><rect x="28" y="206" width="64" height="22" rx="6" fill="#0A2F2A" opacity=".85"/></svg></div>
       <div class="sg-tile__body">
         <svg class="sg-tile__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="38" height="27" rx="4"/><path d="m6 13 18 13 18-13"/><path d="M6 37l13-12M42 37 29 25"/></svg>
+        <p class="sg-gk-label sg-tile__label sg-tile__label--y">Nyhedsbrev</p>
         <h2 class="sg-tile__title">Praksis &amp; Perspektiv</h2>
         <p class="sg-tile__text">I vores nyhedsbrev, Praksis &amp; Perspektiv, tager vi dig med helt ind i maskinrummet og deler ud af vores erfaringer, metoder og historier fra hverdagen.</p>
       </div>
