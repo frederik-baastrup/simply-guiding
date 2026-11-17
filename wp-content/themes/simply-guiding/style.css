@@ -3741,3 +3741,4 @@ samme tekst ---------- */
 .sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type + .sg-band-wrap { margin-top: 18px !important; }
 .sg-band-wrap + .sg-sol { margin-top: 18px !important; }
 .sg-sol__copy .sg-principles, .sg-pdetail .sg-principles { margin-top: 32px !important; }
+.sg-tiles2 .sg-tablesec__head + .sg-tiles2--lines { margin-top: 72px !important; }
