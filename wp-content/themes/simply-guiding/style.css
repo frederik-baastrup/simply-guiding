@@ -3720,3 +3720,8 @@ samme tekst ---------- */
 .sg-kpi__num { color: #FBC33C !important; -webkit-text-fill-color: #FBC33C; }
 /* Forsidens områdekort: titler i Nohemi */
 .sg-card__title { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
+/* Om os – "Tro kan ikke flytte bjerge alene": samme bredde som indholdet (flugter med kortene nedenunder) */
+@media (min-width: 961px) {
+  .sg-os-belief { margin-left: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; margin-right: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; border-radius: var(--sg-radius-sm); }
+  .sg-os-belief > .sg-wrap { max-width: none !important; padding-inline: 64px !important; }
+}
