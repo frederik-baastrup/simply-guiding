@@ -3785,3 +3785,12 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 /* Områdesider – "Mød mennesket"-punkter: grøn accent på stregen, som tjeklisterne */
 .sg-ar-points li { position: relative; padding: 24px 0 !important; border-top-color: rgba(10,47,42,.12) !important; }
 .sg-ar-points li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+/* Forsiden – "Tallene fortæller": ingen bokse; store tal, streg med grøn accent, titel og tekst */
+.sg-figures .sg-stats { gap: 0 56px; }
+.sg-figures .sg-stat { background: none !important; border-radius: 0 !important; padding: 0 !important; display: flex; flex-direction: column; gap: 0; }
+.sg-figures .sg-stat__num { position: relative; display: block; font-size: clamp(56px, 5.4vw, 80px) !important; line-height: 1 !important; letter-spacing: -.03em; color: var(--sg-cta); padding-bottom: 28px; margin: 0 0 28px !important; border-bottom: 1px solid rgba(10,47,42,.12); }
+.sg-figures .sg-stat__num::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-figures .sg-stat__title { font-size: 20px !important; font-weight: 500 !important; line-height: 1.3; color: #212121; }
+.sg-figures .sg-stat__text { margin-top: 10px !important; font-size: 15px !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-figures .sg-figures__title { margin-bottom: 56px !important; }
+@media (max-width: 760px) { .sg-figures .sg-stats { gap: 48px; } }
