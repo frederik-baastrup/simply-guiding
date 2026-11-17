@@ -7,6 +7,7 @@ return [
   'btn1' => 'Henvis en sygemeldt', 'btn2' => 'Se vores indsatser',
   'why_title' => 'Når en sygemelding handler om mere end sygdom',
   'why_intro' => 'Simply Guiding er en specialiseret aktør med mere end 10 års erfaring fra beskæftigelsesområdet.',
+  'why_img' => 'indsats-forsikring.jpg',
   'why_lead' => 'Forsikrings- og pensionsselskaber vælger Simply Guiding, når de …',
   'why_items' => [
     'har en sygemeldt eller opsagt medarbejder, hvor årsagen findes i hjemmet, for eksempel et barn i mistrivsel',

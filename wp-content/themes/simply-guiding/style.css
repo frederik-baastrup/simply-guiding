@@ -3199,3 +3199,19 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type li { background: #fff !important; }
 .sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) { margin-inline: max(18px, env(safe-area-inset-left, 0px)); border-radius: var(--sg-radius); }
 @media (max-width: 600px) { .sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) { margin-inline: 10px; } }
+/* "Derfor ringer …" v4 (17. nov.): billedkort med overskrift til venstre, tal uden bokse til højre */
+.sg-ar-why__grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; align-items: stretch; }
+.sg-ar-why__card { grid-column: 1 / 7; position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; min-height: 460px; padding: 40px; border-radius: var(--sg-radius-sm); overflow: hidden; color: #fff; }
+.sg-ar-why__card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.sg-ar-why__card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.15) 40%, rgba(0,0,0,.15) 60%, rgba(0,0,0,.6) 100%); }
+.sg-ar-why__card h2 { margin: 0; max-width: 11em; color: #fff !important; }
+.sg-ar-why__card p { margin: 0; max-width: 34em; font-size: var(--sg-body) !important; line-height: 1.55 !important; color: rgba(255,255,255,.92) !important; }
+.sg-ar-why__main { grid-column: 8 / 13; display: flex; flex-direction: column; justify-content: center; }
+.sg-ar-why__main .sg-gk-sub { margin: 0 0 40px !important; }
+.sg-ar-why .sg-ar-reasons { gap: 44px 32px; }
+.sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) { padding: 0; background: none; border-radius: 0; gap: 14px; }
+.sg-ar-why .sg-ar-reasons span { font-size: 40px; font-weight: 400; }
+@media (max-width: 960px) {
+  .sg-ar-why__grid { display: block; }
+  .sg-ar-why__card { min-height: 340px; padding: 28px 24px; margin-bottom: 40px; }
+}

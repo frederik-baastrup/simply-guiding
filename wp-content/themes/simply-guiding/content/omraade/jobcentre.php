@@ -7,6 +7,7 @@ return [
   'btn1' => 'Henvis en borger', 'btn2' => 'Se alle indsatser',
   'why_title' => 'Derfor ringer jobcentre til Simply Guiding',
   'why_intro' => 'Simply Guiding er en specialiseret beskæftigelsesaktør (anden aktør).',
+  'why_img' => 'cases-hero.jpg',
   'why_lead' => 'Jobcentre ringer til os, når de …',
   'why_items' => [
     'vil undgå uendelige afklaringsforløb og har brug for specialister i IPS og Supported Employment, der arbejder direkte mod løntimer',

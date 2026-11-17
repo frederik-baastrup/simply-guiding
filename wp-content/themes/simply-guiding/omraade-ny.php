@@ -4,12 +4,13 @@ $odd = count($c['why_items']) % 2;
 ?>
 <!-- Hvornår ringer man til os -->
 <section class="sg-gk-intro sg-ar-why" aria-labelledby="sgWhyTitle">
-  <div class="sg-wrap sg-gk-split">
-    <div class="sg-gk-split__side">
+  <div class="sg-wrap sg-ar-why__grid">
+    <div class="sg-ar-why__card">
+      <img src="<?php echo esc_url($u . '/assets/' . $c['why_img']); ?>" alt="" loading="lazy">
       <h2 class="sg-h2" id="sgWhyTitle"><?php echo esc_html($c['why_title']); ?></h2>
-      <p class="sg-gk-lead"><?php echo esc_html($c['why_intro']); ?></p>
+      <p><?php echo esc_html($c['why_intro']); ?></p>
     </div>
-    <div class="sg-gk-split__main">
+    <div class="sg-ar-why__main">
       <p class="sg-gk-sub"><?php echo esc_html($c['why_lead']); ?></p>
       <ol class="sg-ar-reasons<?php echo $odd ? ' sg-ar-reasons--odd' : ''; ?>">
         <?php foreach ($c['why_items'] as $i => $it) : ?>
