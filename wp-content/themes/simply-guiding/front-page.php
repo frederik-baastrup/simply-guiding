@@ -143,7 +143,6 @@
     </div>
   </div>
 </section>
-<div class="sg-wrap"><hr class="sg-divider"></div>
 <section class="sg-duo" aria-label="Nyhedsbrev og Academy">
   <div class="sg-wrap sg-duo__grid">
     <article class="sg-tile sg-tile--light">
