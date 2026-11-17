@@ -3962,3 +3962,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-faq__q { transition: padding-left .3s ease, color .3s ease; }
 .sg-faq__item:hover .sg-faq__q { padding-left: 10px; color: var(--sg-cta); }
 @media (prefers-reduced-motion: reduce) { .sg-faq__item::before, .sg-faq__q { transition: none; } }
+.sg-os-values--v2 .sg-os-values__grid p { max-width: 16em; text-wrap: balance; }
