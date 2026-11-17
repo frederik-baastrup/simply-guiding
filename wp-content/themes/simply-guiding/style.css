@@ -4158,4 +4158,3 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
   .sg-gk3-prog--grid .sg-gk3-prog__claim { margin-top: 14px !important; }
   .sg-gk3-prog--grid .sg-gk3-prog__list { grid-template-columns: 1fr; gap: 32px; }
 }
-.sg-gk3-prog--grid .sg-gk3-prog__list > li.sg-gk3-prog__cta { padding: 32px !important; border-top: 0 !important; display: flex !important; }
