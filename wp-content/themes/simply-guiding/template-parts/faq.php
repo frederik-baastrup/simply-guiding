@@ -1,6 +1,6 @@
 <?php
 /* FAQ (samme opbygning og script som på forsiden). Args: title, items = [[spørgsmål, svar], ...] */
-$fq = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['title' => 'FAQ - ofte stillede spørgsmål', 'items' => []]);
+$fq = wp_parse_args(isset($args) && is_array($args) ? $args : [], ['title' => 'Få svar på dine spørgsmål', 'items' => []]);
 ?>
 <section class="sg-faq" aria-labelledby="sgFaqTitle">
   <div class="sg-wrap sg-faq__grid">

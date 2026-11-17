@@ -115,7 +115,7 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
 
 <?php
 get_template_part('template-parts/team', null, ['title' => 'Mød holdet bag Simply Guiding']);
-get_template_part('template-parts/faq', null, ['title' => 'Det spørger folk os tit om', 'items' => [
+get_template_part('template-parts/faq', null, ['title' => 'Få svar på dine spørgsmål', 'items' => [
   ['Hvad er historien bag Simply Guiding?', 'Siden 2015 har vi arbejdet som ekstern aktør og samarbejdspartner på beskæftigelses- og socialområdet. Vi startede med et ønske om at skabe reelle, varige forandringer for mennesker i sårbare positioner. Vores navn, organisation og forretningsområder har udviklet sig over mere end ti år, men vores grundlæggende DNA er uændret: Vi ser mennesket før sagsnummeret.'],
   ['Hvad betyder "Et nyt ståsted i livet" i praksis?', 'Et nyt ståsted betyder, at vi ikke arbejder med quickfixes eller symptombehandling. Vi hjælper det enkelte menneske med at opbygge et stabilt og holdbart fundament, uanset om det handler om at vende tilbage til arbejdsmarkedet, komme i uddannelse, genvinde trivslen i familien eller finde tilbage til fællesskabet.'],
   ['Hvilket menneskesyn arbejder Simply Guiding ud fra?', 'Vi møder det enkelte menneske med summen af sin datid, sin nutid og sine drømme for fremtiden. Vi tror på, at alle har ressourcer og potentiale til at udvikle sig, når de mødes med tro, empati og en fordomsfri tilgang frem for at blive defineret af diagnoser, paragraffer eller tidligere nederlag.'],

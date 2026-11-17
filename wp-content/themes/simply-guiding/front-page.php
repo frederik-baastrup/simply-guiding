@@ -170,7 +170,7 @@
 
 <section class="sg-faq" aria-labelledby="sgFaqTitle">
   <div class="sg-wrap sg-faq__grid">
-    <h2 class="sg-faq__title" id="sgFaqTitle">FAQ - ofte stillede spørgsmål</h2>
+    <h2 class="sg-faq__title" id="sgFaqTitle">Få svar på dine spørgsmål</h2>
     <ul class="sg-faq__list">
           <li class="sg-faq__item">
             <button class="sg-faq__q" id="faq-q0" aria-expanded="false" aria-controls="faq-a0">Hvem henvender Simply Guidings indsatser sig til?<span class="sg-faq__icon" aria-hidden="true"></span></button>
