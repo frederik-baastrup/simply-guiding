@@ -3955,3 +3955,10 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
 .sg-ls-sol__badge, .sg-os-values__badge { will-change: transform; }
+/* FAQ: tydelig hover – grøn streg vokser fra venstre over punktet, og spørgsmålet glider lidt til højre */
+.sg-faq__item { position: relative; }
+.sg-faq__item::before { content: ""; position: absolute; left: 0; top: -1px; height: 2px; width: 100%; background: var(--sg-cta); transform: scaleX(0); transform-origin: left center; transition: transform .45s cubic-bezier(.22,.61,.36,1); pointer-events: none; }
+.sg-faq__item:hover::before, .sg-faq__item:focus-within::before { transform: scaleX(1); }
+.sg-faq__q { transition: padding-left .3s ease, color .3s ease; }
+.sg-faq__item:hover .sg-faq__q { padding-left: 10px; color: var(--sg-cta); }
+@media (prefers-reduced-motion: reduce) { .sg-faq__item::before, .sg-faq__q { transition: none; } }
