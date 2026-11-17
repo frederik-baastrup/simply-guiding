@@ -66,10 +66,10 @@ $principles = [
       <h2 class="sg-h2" id="sgStartTitle">Kom i gang med IPS</h2>
       <p>Simply Guiding er specialiseret i IPS-metoden. Vi tilbyder IPS-forløb til psykisk syge eller psykisk sårbare mennesker i tæt samarbejde med landets jobcentre og det psykiatriske behandlingssystem. Med IPS-metodens principper og værktøjer gennemfører vi forløb, der er skræddersyet til det enkelte menneske, så det matcher deres ønsker og drømme for et liv med arbejde. Udover at gennemføre enkeltpladsforløb, der udføres af egne IPS-konsulenter, tilbyder vi kurser og uddannelser i IPS-metoden.</p>
     </div>
-    <div class="sg-tiles2__grid">
-      <div class="sg-tile2"><h3>Jobcenter:</h3><p>Kontakt os for at høre nærmere om IPS-indsatsen, eller book et uforpligtende møde, hvor vi præsenterer IPS og mulighederne for at implementere IPS i din kommune.</p></div>
-      <div class="sg-tile2"><h3>Borger:</h3><p>Hvis du er interesseret i at deltage i et IPS-forløb, så kontakt os for mere information om IPS, og hør om mulighederne for at komme i et forløb hos os.</p></div>
-      <div class="sg-tile2"><h3>Virksomhed:</h3><p>Er du arbejdsgiver, og har du lyst til at give et menneske, der står i en udsat position, en chance på arbejdsmarkedet, så kontakt os.</p></div>
+    <div class="sg-tiles2__grid sg-tiles2--lines">
+      <div class="sg-tile2"><span class="sg-gk-ico"><?php echo sg_icon('building'); ?></span><h3>Jobcenter</h3><p>Kontakt os for at høre nærmere om IPS-indsatsen, eller book et uforpligtende møde, hvor vi præsenterer IPS og mulighederne for at implementere IPS i din kommune.</p></div>
+      <div class="sg-tile2"><span class="sg-gk-ico"><?php echo sg_icon('user'); ?></span><h3>Borger</h3><p>Hvis du er interesseret i at deltage i et IPS-forløb, så kontakt os for mere information om IPS, og hør om mulighederne for at komme i et forløb hos os.</p></div>
+      <div class="sg-tile2"><span class="sg-gk-ico"><?php echo sg_icon('briefcase'); ?></span><h3>Virksomhed</h3><p>Er du arbejdsgiver, og har du lyst til at give et menneske, der står i en udsat position, en chance på arbejdsmarkedet, så kontakt os.</p></div>
     </div>
   </div>
 </section>

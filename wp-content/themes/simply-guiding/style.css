@@ -3729,3 +3729,11 @@ samme tekst ---------- */
 .sg-final__label { margin: 0 0 18px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #F2AE45 !important; }
 /* Cases: introen på hvid baggrund, så den ikke flyder sammen med det mørke tal-bånd */
 .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-cs-intro:first-of-type { background: none !important; margin-inline: 0 !important; border-radius: 0 !important; }
+/* Hvad er IPS – "Kom i gang": ingen kasser, ikon + tynd streg med grøn accent */
+.sg-tiles2--lines { gap: 40px !important; }
+.sg-tiles2--lines .sg-tile2 { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 28px 0 0 !important; background: none !important; border-radius: 0 !important; border-top: 1px solid rgba(10,47,42,.14); }
+.sg-tiles2--lines .sg-tile2::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; border-radius: 0 3px 3px 0; background: var(--sg-cta); }
+.sg-tiles2--lines .sg-gk-ico { width: 48px; height: 48px; margin-bottom: 8px; }
+.sg-tiles2--lines .sg-gk-ico svg { width: 21px; height: 21px; }
+.sg-tiles2--lines h3 { margin: 0 !important; font-size: 21px !important; font-weight: 500; color: #212121; }
+.sg-tiles2--lines p { margin: 0 !important; font-size: 17px !important; line-height: 1.6 !important; color: #212121 !important; }
