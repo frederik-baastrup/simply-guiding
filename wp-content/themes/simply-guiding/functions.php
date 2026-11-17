@@ -159,8 +159,8 @@ add_action('init', function () {
 function sg_post_fallback_img($post = null) {
     $map = [
         'uddannelsesprogram-for-kommunale-medarbejdere-der-arbejder-med-ungeloeft-initiativet' => 'uddannelse-integreret.jpg',
-        'evaluering-af-ips-ung' => 'ips-match.jpg',
-        'unges-stemme-i-eget-liv' => 'loesninger-beskaeftigelse.jpg',
+        'evaluering-af-ips-ung' => 'barista.jpg',
+        'unges-stemme-i-eget-liv' => 'drivhus.jpg',
         'recharge-tilpasset-forloeb-for-12-17-aarige-med-sociale-og-psykiske-udfordringer' => 'loesninger-boern-unge-v2.jpg',
         'naar-ips-teamet-faar-professionel-hjaelp-bliver-resultaterne-endnu-bedre' => 'news/naar-ips-teamet.jpg',
         '25-millioner-skal-sikre-at-psykisk-syge-kommer-i-arbejde' => 'ips-hero-v2.jpg',

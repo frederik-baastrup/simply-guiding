@@ -6,7 +6,7 @@ $u = get_template_directory_uri();
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Cases', 'title' => 'Læs vores succeshistorier',
   'lead'  => 'Historier om kandidater, der har været gennem et forløb hos os – fortalt af kandidaten, virksomheden eller Simply Guiding.',
-  'img' => 'cases-hero.jpg', 'img_w' => 1422, 'img_h' => 1067, 'alt' => 'Samtale i et jobcenter', 'btn2_href' => '#cases',
+  'img' => 'samtale-vindue.jpg', 'img_w' => 1422, 'img_h' => 1067, 'alt' => 'Samtale ved et vindue', 'btn2_href' => '#cases',
 ]);
 $cases = [
   ['sannes-historie', 'Sannes historie', 'Min IPS-konsulent troede på mig', 'Da Sanne startede i sit IPS-forløb havde hun været uden job i 7 år. Og selv om hun altid havde sagt til sig selv, at hun nok skulle komme tilbage på arbejdsmarkedet, var hun for alvor begyndt at tvivle. Læs historien om, hvordan vi med IPS-metoden hjalp Sanne i job.', 'Læs Sannes historie'],

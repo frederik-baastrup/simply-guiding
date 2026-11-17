@@ -44,7 +44,7 @@ $sol = [
 <section class="sg-ls-sol" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
-      <img src="<?php echo esc_url($u); ?>/assets/loesninger-beskaeftigelse.jpg" alt="Beskæftigelsesindsats hos Simply Guiding" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/drivhus.jpg" alt="Kvinde potter planter i et drivhus" loading="lazy">
       <span class="sg-ls-sol__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><?php echo SG_LS_ARROW; ?></svg></span>
     </figure>
     <div class="sg-ls-sol__copy">

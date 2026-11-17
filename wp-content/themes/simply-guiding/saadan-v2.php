@@ -31,7 +31,7 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
       </div>
     </div>
     <figure class="sg-sw2-cit__band">
-      <img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/borger-campus.jpg" alt="En ung og en vejleder kigger på en computer på en bænk" loading="lazy">
       <ul class="sg-sw2-cit__bar" aria-label="Kort fortalt">
         <li><span class="sg-gk-ico"><?php echo sg_icon('user'); ?></span>Egen konsulent</li>
         <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span>Altid ugentlig kontakt</li>

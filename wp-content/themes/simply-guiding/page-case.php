@@ -7,7 +7,7 @@ get_header();
 get_template_part('template-parts/site-header');
 $u = get_template_directory_uri();
 if (!$c) { echo '<main class="sg-wrap" style="padding:160px 0">Historien findes ikke.</main>'; get_template_part('template-parts/site-footer'); get_footer(); return; }
-$img = 'cases-hero.jpg';
+$img = 'samtale-vindue.jpg';
 foreach ($c['blocks'] as $b) { if ($b['t'] === 'img') { $img = $b['src']; break; } }
 get_template_part('template-parts/page-hero', null, [
   'label' => $c['label'], 'title' => $c['title'], 'lead' => $c['lead'], 'img' => $img, 'alt' => '',

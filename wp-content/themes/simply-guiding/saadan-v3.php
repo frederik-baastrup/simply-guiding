@@ -33,7 +33,7 @@ $steps = [
 <!-- 2. Borgerforløbet -->
 <section class="sg-sw3-flow" aria-labelledby="sgCitizensTitle">
   <div class="sg-wrap sg-sw3-flow__grid">
-    <figure class="sg-sw3-flow__img"><img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" loading="lazy"></figure>
+    <figure class="sg-sw3-flow__img"><img src="<?php echo esc_url($u); ?>/assets/borger-campus.jpg" alt="En ung og en vejleder kigger på en computer på en bænk" loading="lazy"></figure>
     <div class="sg-sw3-flow__main">
       <h2 class="sg-h2" id="sgCitizensTitle">Sådan arbejder vi med borgere</h2>
       <p class="sg-sw3-flow__goal">Målet er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet på lige fod med alle andre, uanset udfordringer.</p>

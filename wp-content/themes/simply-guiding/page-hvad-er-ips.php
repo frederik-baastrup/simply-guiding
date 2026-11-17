@@ -51,7 +51,7 @@ $principles = [
 
 <section class="sg-sol" aria-labelledby="sgMatchTitle">
   <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/ips-match.jpg" alt="Kandidatsamtale med en ung" loading="lazy"></div>
+    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/barista.jpg" alt="Ung barista ved espressomaskinen" loading="lazy"></div>
     <div class="sg-sol__copy">
       <h2 class="sg-h2" id="sgMatchTitle">Matcher mennesker og virksomheder</h2>
       <p>IPS matcher mennesker med en psykisk lidelse eller psykisk sårbarhed, der står uden for arbejdsmarkedet, med virksomhedernes behov for arbejdskraft eller støtter mennesker i at starte og fastholde en uddannelse.</p>

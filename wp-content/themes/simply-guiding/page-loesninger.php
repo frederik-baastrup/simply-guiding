@@ -42,7 +42,7 @@ $sol = [
 
 <section class="sg-sol sg-sol--half" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
   <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-beskaeftigelse.jpg" alt="Beskæftigelsesindsats hos Simply Guiding" loading="lazy"></div>
+    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/drivhus.jpg" alt="Kvinde potter planter i et drivhus" loading="lazy"></div>
     <div class="sg-sol__copy">
       <h3 class="sg-h2" id="sgSol1">Beskæftigelsesindsatser</h3>
       <p>Vores indsatser fokuserer på, hvordan borgerens motivation og ønske om deltagelse på arbejdsmarkedet, eller i uddannelse kan realiseres. Vores samarbejde med en borger er altid baseret på et gensidigt engagement i det fælles mål, der skal opnås.</p>

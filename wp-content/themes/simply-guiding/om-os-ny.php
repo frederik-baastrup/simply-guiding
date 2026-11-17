@@ -107,7 +107,7 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
         </div>
         <p class="sg-band2__btn"><a class="sg-btn sg-btn--lg" href="/loesninger/#academy">Læs mere om Academy</a></p>
       </div>
-      <div class="sg-band2__media"><img src="<?php echo esc_url($u); ?>/assets/indsats-academy.jpg" alt="Undervisning i Simply Guiding Academy" loading="lazy"></div>
+      <div class="sg-band2__media"><img src="<?php echo esc_url($u); ?>/assets/akademi-gruppe.jpg" alt="Undervisning i Simply Guiding Academy" loading="lazy"></div>
     </div>
   </section>
 </div>
