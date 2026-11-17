@@ -166,7 +166,6 @@
 </section>
 
 
-<?php get_template_part('template-parts/final-cta'); ?>
 <section class="sg-faq" aria-labelledby="sgFaqTitle">
   <div class="sg-wrap sg-faq__grid">
     <h2 class="sg-faq__title" id="sgFaqTitle">FAQ - ofte stillede spørgsmål</h2>
@@ -202,6 +201,7 @@
     </ul>
   </div>
 </section>
+<?php get_template_part('template-parts/final-cta'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 
 
