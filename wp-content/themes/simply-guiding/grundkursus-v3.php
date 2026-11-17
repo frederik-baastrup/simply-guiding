@@ -110,7 +110,7 @@ $topics = [
 <section class="sg-gk3-price" aria-labelledby="gkPriceTitle">
   <div class="sg-wrap">
     <div class="sg-gk3-price__head">
-      <h2 class="sg-h2" id="gkPriceTitle">Pris og tilmelding</h2>
+      <h2 class="sg-h2" id="gkPriceTitle">Pris</h2>
       <p>Reservér din plads på kurset 1.–2. september 2026. Prisen inkluderer 12 timers praksisnær undervisning, forplejning begge kursusdage og kursusbevis.</p>
     </div>
     <div class="sg-gk3-price__cards">
