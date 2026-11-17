@@ -4175,3 +4175,19 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-price__card:first-child .sg-gk3-price__inc svg { color: #F2AE45; }
 .sg-gk3-price__card:first-child .sg-gk3-price__date { background: rgba(255,255,255,.1); color: #fff; }
 .sg-gk3-price__card:first-child .sg-gk3-price__date svg { color: #F2AE45; }
+/* Pris v3: overskrift med streg; to priskort + mørkegrøn "inkluderet"-kolonne */
+.sg-gk3-price--3 .sg-headline { margin-bottom: 48px; }
+.sg-gk3-price--3 .sg-gk3-price__cards { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 16px; }
+.sg-gk3-price--3 .sg-gk3-price__card, .sg-gk3-price--3 .sg-gk3-price__card:first-child { background: #fff !important; border: 1px solid rgba(10,47,42,.12) !important; padding: 40px !important; }
+.sg-gk3-price--3 .sg-gk3-price__card:first-child .sg-gk3-price__who { color: var(--sg-cta) !important; }
+.sg-gk3-price--3 .sg-gk3-price__card:first-child .sg-gk3-price__amt { color: #0A2F2A !important; }
+.sg-gk3-price--3 .sg-gk3-price__card:first-child .sg-gk3-price__vat { color: inherit !important; }
+.sg-gk3-price--3 .sg-gk3-price__who { margin: 0 0 18px !important; }
+.sg-gk3-price--3 .sg-gk3-price__vat { margin: 6px 0 32px !important; }
+.sg-gk3-price__incl { padding: 40px; border-radius: var(--sg-radius-sm); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-gk3-price__incl .sg-gk3-price__who { color: #F2AE45 !important; margin-bottom: 24px !important; }
+.sg-gk3-price__incl ul { list-style: none; margin: 0; padding: 0; }
+.sg-gk3-price__incl li { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.14); font-size: 17px; color: #fff; }
+.sg-gk3-price__incl li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
+.sg-gk3-price__incl svg { flex: none; width: 20px; height: 20px; color: #F2AE45; }
+@media (max-width: 960px) { .sg-gk3-price--3 .sg-gk3-price__cards { grid-template-columns: 1fr !important; } }

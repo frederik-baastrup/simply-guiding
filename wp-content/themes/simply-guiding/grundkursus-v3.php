@@ -116,24 +116,23 @@ $topics = [
 </section>
 
 <!-- 5. Pris -->
-<section class="sg-gk3-price" aria-labelledby="gkPriceTitle">
+<section class="sg-gk3-price sg-gk3-price--3" aria-labelledby="gkPriceTitle">
   <div class="sg-wrap">
-    <div class="sg-gk3-price__head">
-      <h2 class="sg-h2" id="gkPriceTitle">Pris</h2>
-      <p>Reservér din plads på kurset 1.–2. september 2026. Prisen inkluderer 12 timers praksisnær undervisning, forplejning begge kursusdage og kursusbevis.</p>
-    </div>
+    <div class="sg-headline"><h2 class="sg-h2" id="gkPriceTitle">Pris</h2></div>
     <div class="sg-gk3-price__cards">
       <div class="sg-gk3-price__card">
-        <div class="sg-gk3-price__top"><p class="sg-gk3-price__who">Offentlige og private arbejdsgivere</p><span class="sg-gk3-price__date"><?php echo sg_icon('calendar'); ?>1.–2. sep. 2026</span></div>
+        <p class="sg-gk3-price__who">Offentlige og private arbejdsgivere</p>
         <p class="sg-gk3-price__amt">6.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p>
-        <ul class="sg-gk3-price__inc"><li><?php echo sg_icon('check'); ?>12 timers praksisnær undervisning</li><li><?php echo sg_icon('check'); ?>Forplejning begge kursusdage</li><li><?php echo sg_icon('check'); ?>Kursusbevis</li></ul>
         <a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig</a>
       </div>
       <div class="sg-gk3-price__card">
-        <div class="sg-gk3-price__top"><p class="sg-gk3-price__who">Ledige og selvbetalere</p><span class="sg-gk3-price__date"><?php echo sg_icon('calendar'); ?>1.–2. sep. 2026</span></div>
+        <p class="sg-gk3-price__who">Ledige og selvbetalere</p>
         <p class="sg-gk3-price__amt">4.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p>
-        <ul class="sg-gk3-price__inc"><li><?php echo sg_icon('check'); ?>12 timers praksisnær undervisning</li><li><?php echo sg_icon('check'); ?>Forplejning begge kursusdage</li><li><?php echo sg_icon('check'); ?>Kursusbevis</li></ul>
         <a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig</a>
+      </div>
+      <div class="sg-gk3-price__incl">
+        <p class="sg-gk3-price__who">Inkluderet i prisen</p>
+        <ul><li><?php echo sg_icon('check'); ?>12 timers praksisnær undervisning</li><li><?php echo sg_icon('check'); ?>Forplejning begge kursusdage</li><li><?php echo sg_icon('check'); ?>Kursusbevis</li></ul>
       </div>
     </div>
   </div>
