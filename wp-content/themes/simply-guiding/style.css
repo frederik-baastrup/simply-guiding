@@ -3704,3 +3704,5 @@ samme tekst ---------- */
 @media (min-width: 961px) { .sg-gk3-band__intro { min-height: 4.6em; } }
 /* Afsluttende CTA-knap i gul (17. nov.) */
 .sg-final__btn { background: #FBC33C !important; border-color: #FBC33C !important; color: #0A2F2A !important; }
+/* Nyhedsbrev: Tilmeld-knap i gul (17. nov.) */
+.sg-signup__btn { background: #FBC33C !important; border-color: #FBC33C !important; color: #0A2F2A !important; }
