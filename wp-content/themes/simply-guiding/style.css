@@ -3147,3 +3147,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-gk-callout strong { display: block; margin-bottom: 4px; font-size: 19px; font-weight: 500; color: #0A2F2A; }
 /* Øvrige ikoncirkler også i CTA-grøn (ikke i mørke paneler) */
 .sg-trio__ico, .sg-why3__ico, .sg-course__bico, .sg-kt__ico { background: var(--sg-cta) !important; color: #fff !important; }
+/* Hero uden billede: centreret indhold (17. nov.) */
+.sg-hero--noimg .sg-split__copy { max-width: 900px !important; margin: 0 auto !important; padding-left: 24px !important; padding-right: 24px !important; text-align: center; align-items: center; }
+.sg-hero--noimg .sg-pill { align-self: center; }
+.sg-hero--noimg .sg-hero__lead { margin-left: auto; margin-right: auto; }
+.sg-hero--noimg .sg-hero__actions { justify-content: center; }
