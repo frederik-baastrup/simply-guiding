@@ -3526,3 +3526,4 @@ samme tekst ---------- */
   .sg-sw3-proof2__stats li + li { border-left: 0; padding-top: 28px; border-top: 1px solid rgba(10,47,42,.12); }
   .sg-sw3-proof2__stats strong { font-size: 42px; }
 }
+@media (min-width: 961px) { .sg-sw3-partner__txt { padding-left: 56px !important; } }
