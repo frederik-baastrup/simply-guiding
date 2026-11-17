@@ -3476,3 +3476,20 @@ samme tekst ---------- */
 .sg-sw3-prin li span.sg-sw3-prin__t { font-size: 19px; line-height: 1.35; color: rgba(255,255,255,.55); }
 .sg-sw3-prin li.is-active span.sg-sw3-prin__no, .sg-sw3-prin li.is-active span.sg-sw3-prin__t { color: #fff; }
 .sg-sw3-prin li span.sg-sw3-prin__bar { font-size: 0; line-height: 0; }
+/* Principslider v2: aktivt punkt bredere og større, bløde overgange, 12 sek. pr. punkt */
+@media (min-width: 961px) {
+  .sg-sw3-prin { display: flex !important; gap: 28px; min-height: 250px; }
+  .sg-sw3-prin li { flex: 1 1 0; min-width: 0; transition: flex-grow .9s cubic-bezier(.22,.7,.18,1); }
+  .sg-sw3-prin li.is-active { flex-grow: 1.9; }
+}
+.sg-sw3-prin li span.sg-sw3-prin__t { display: block; transform-origin: left top; transition: color .6s ease, font-size .7s cubic-bezier(.22,.7,.18,1); text-wrap: balance; }
+.sg-sw3-prin li.is-active span.sg-sw3-prin__t { font-size: 26px; line-height: 1.2; }
+.sg-sw3-prin li span.sg-sw3-prin__no { transition: color .6s ease; }
+.sg-sw3-prin__bar { transition: background-color .6s ease; }
+.sg-sw3-prin li.is-active .sg-sw3-prin__bar i { animation-duration: 12s !important; }
+.sg-sw3-prin__body { display: grid; grid-template-rows: 0fr; opacity: 0; transform: translateY(8px); transition: grid-template-rows .8s cubic-bezier(.22,.7,.18,1), opacity .5s ease, transform .8s cubic-bezier(.22,.7,.18,1); }
+.sg-sw3-prin__body > p { display: block !important; overflow: hidden; min-height: 0; margin: 0 !important; padding-top: 14px; font-size: 16px !important; line-height: 1.6 !important; color: rgba(255,255,255,.82) !important; }
+@media (min-width: 961px) { .sg-sw3-prin__body > p { width: 320px; } }
+.sg-sw3-prin li.is-active .sg-sw3-prin__body { grid-template-rows: 1fr; opacity: 1; transform: none; transition-delay: .25s, .35s, .25s; }
+.sg-sw3-prin li > p { display: none !important; }
+@media (prefers-reduced-motion: reduce) { .sg-sw3-prin li, .sg-sw3-prin__body, .sg-sw3-prin li span.sg-sw3-prin__t { transition: none !important; } }

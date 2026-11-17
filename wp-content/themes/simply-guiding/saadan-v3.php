@@ -3,11 +3,11 @@
    Struktur: metoder (påstand) → borgerforløbet (4 trin) → principper (mørkt bånd) → konsulenterne (uddannelse + supervision) → jobcentre (handling).
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
 $principles = [
-  ['Suspender din forforståelse og mød mennesket, hvor det er', 'Vi møder det enkelte menneske med summen af sin fortid, nutid og drømme om fremtiden.'],
-  ['Tro på borgeren', 'Tro kan ikke flytte bjerge alene, hvis den ikke følges af handling. Intet sker af sig selv, og vi venter ikke på, at tiden heler alle sår.'],
-  ['Hav blik for borgerens ressourcer', 'Sammen kortlægger konsulent og borger kompetencer, ressourcer og drømme for fremtiden.'],
-  ['Indgyd borgeren håb', 'Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.'],
-  ['Vi tror på og arbejder efter ”place then train”-modellen', 'Vi arbejder altid henimod løntimer, uddannelse eller selvhjulpenhed, og vi formulerer altid et konkret næste skridt.'],
+  ['Mød mennesket, hvor det er', 'Vi suspenderer vores forforståelse og møder mennesket med summen af sin fortid, nutid og drømme.'],
+  ['Tro på borgeren', 'Tro flytter ikke bjerge alene. Intet sker af sig selv, så troen skal altid følges af handling.'],
+  ['Se borgerens ressourcer', 'Vi har blik for borgerens ressourcer og kortlægger sammen kompetencer og drømme for fremtiden.'],
+  ['Indgyd håb', 'Vi indgyder håb og går aldrig efter et quickfix. Målet er altid et varigt, nyt ståsted i livet.'],
+  ['Place then train', 'Vi arbejder efter ”place then train” og altid henimod løntimer, uddannelse eller selvhjulpenhed.'],
 ];
 $steps = [
   ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
@@ -58,7 +58,7 @@ $steps = [
         <?php foreach ($principles as $i => $pr) : ?>
         <li class="<?php echo $i === 0 ? 'is-active' : ''; ?>">
           <button type="button" aria-expanded="<?php echo $i === 0 ? 'true' : 'false'; ?>"><span class="sg-sw3-prin__bar" aria-hidden="true"><i></i></span><span class="sg-sw3-prin__no"><?php echo sprintf('%02d', $i + 1); ?></span><span class="sg-sw3-prin__t"><?php echo esc_html($pr[0]); ?></span></button>
-          <p><?php echo esc_html($pr[1]); ?></p>
+          <div class="sg-sw3-prin__body"><p><?php echo esc_html($pr[1]); ?></p></div>
         </li>
         <?php endforeach; ?>
       </ol>
