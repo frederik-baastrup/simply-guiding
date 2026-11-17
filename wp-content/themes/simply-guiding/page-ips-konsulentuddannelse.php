@@ -3,7 +3,7 @@
 get_header();
 get_template_part('template-parts/site-header');
 get_template_part('template-parts/page-hero', null, [
-  'label' => 'Academy', 'title' => 'IPS-konsulentuddannelse',
+  'label' => 'Academy', 'title' => 'Uddannelse til IPS-konsulent',
   'lead'  => 'Tag Danmarks mest omfattende IPS-uddannelse og bliv klædt på til at arbejde som IPS-konsulent. Her kan du læse mere om, hvad du lærer på kurset.',
   'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding', 'img_pos' => '50% 0%',
 ]);
