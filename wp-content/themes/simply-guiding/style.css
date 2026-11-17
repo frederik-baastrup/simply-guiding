@@ -3737,3 +3737,7 @@ samme tekst ---------- */
 .sg-tiles2--lines .sg-gk-ico svg { width: 21px; height: 21px; }
 .sg-tiles2--lines h3 { margin: 0 !important; font-size: 21px !important; font-weight: 500; color: #212121; }
 .sg-tiles2--lines p { margin: 0 !important; font-size: 17px !important; line-height: 1.6 !important; color: #212121 !important; }
+/* Hvad er IPS: afstand mellem lyse og mørke kasser = sidemargen (18 px); mere luft fra tekst til tjekliste */
+.sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type + .sg-band-wrap { margin-top: 18px !important; }
+.sg-band-wrap + .sg-sol { margin-top: 18px !important; }
+.sg-sol__copy .sg-principles, .sg-pdetail .sg-principles { margin-top: 32px !important; }
