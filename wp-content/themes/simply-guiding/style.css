@@ -3698,3 +3698,6 @@ samme tekst ---------- */
 .sg-gk3-band__intro { font-size: 17px !important; line-height: 1.5 !important; }
 .sg-gk3-band__grid h2 { text-wrap: balance; }
 @media (min-width: 961px) { .sg-gk3-band__grid h2 { min-height: 2.4em; display: flex; align-items: flex-end; } }
+/* Mørkt bånd: introlinjen federe, mere luft til listen og lige høje intro-felter */
+.sg-gk3-band__intro { font-weight: 500 !important; color: #fff !important; margin: 0 0 24px !important; }
+@media (min-width: 961px) { .sg-gk3-band__intro { min-height: 3em; } }

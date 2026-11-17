@@ -88,7 +88,7 @@ $topics = [
     <div class="sg-gk3-band__grid">
       <div>
         <p class="sg-gk3-band__label">Målgruppe</p>
-        <h2 class="sg-h2" id="ipsWhoTitle">Er uddannelsen noget for dig?</h2>
+        <h2 class="sg-h2" id="ipsWhoTitle">Er uddannelsen til IPS-konsulent noget for dig?</h2>
         <p class="sg-gk3-band__intro">Uddannelsen er for dig, der:</p>
         <ul class="sg-gk3-band__list">
           <li><?php echo sg_check_svg(); ?><span>ønsker at kunne arbejde selvstændigt med IPS-opgaver i hverdagen</span></li>
