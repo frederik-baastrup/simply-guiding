@@ -4091,3 +4091,11 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
   .sg-gk3-days__stats { grid-template-columns: 1fr; gap: 28px; }
   .sg-gk3-days__foot p { margin-top: 20px !important; }
 }
+/* "Vil du vide mere"-bjælken: mørk, fyldt flade i stedet for tynd ramme, så den står som en afslutning på kortene */
+.sg-gk3-cta { margin-top: 24px !important; padding: 32px 40px !important; border: 0 !important; background: #0A2F2A url("assets/pattern.png") center / 601px repeat !important; }
+.sg-gk3-cta .sg-gk-ico { background: #F2AE45 !important; color: #0A2F2A !important; }
+.sg-gk3-cta__txt h3 { color: #fff !important; }
+.sg-gk3-cta__txt p { color: rgba(255,255,255,.8) !important; }
+.sg-gk3-cta .sg-btn--outline { color: #fff !important; border-color: rgba(255,255,255,.45) !important; }
+.sg-gk3-cta .sg-btn--outline:hover { border-color: #fff !important; }
+.sg-gk3-cta .sg-btn:not(.sg-btn--outline) { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
