@@ -37,7 +37,7 @@ if ($front) : ?>
         </div>
         <svg class="sg-hero__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
       </div>
-      <p class="sg-hero__stat">Vi har samarbejdet med 25+ kommuner</p>
+      <p class="sg-hero__stat">Ring på&nbsp;<a href="tel:+4526344454">26 34 44 54</a>&nbsp;for at høre mere</p>
     </div>
   </section>
   <div class="sg-hero-rule" aria-hidden="true"></div>

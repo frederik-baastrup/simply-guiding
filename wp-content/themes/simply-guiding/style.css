@@ -3187,3 +3187,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero-rule { max-width: calc(var(--sg-max) + 36px - 2 * var(--sg-gutter) + 36px); margin: 28px auto 0; padding: 0 calc(var(--sg-gutter) - 18px); }
 .sg-hero-rule::before { content: ""; display: block; height: 1px; background: rgba(10,47,42,.12); }
 @media (max-width: 1024px) { .sg-hero-rule { display: none; } }
+.sg-hero-rule { max-width: var(--sg-max) !important; }
+.sg-hero--sub .sg-hero__stat a { color: #fff; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
