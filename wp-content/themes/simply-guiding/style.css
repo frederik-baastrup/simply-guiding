@@ -3529,3 +3529,10 @@ samme tekst ---------- */
 @media (min-width: 961px) { .sg-sw3-partner__txt { padding-left: 56px !important; } }
 /* 17. nov.: tal skrives i Nohemi (overskrifter i General Sans) */
 .sg-ar-reasons span, .sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) > span, .sg-card3__num, .sg-index__num, .sg-kpi__num, .sg-principles8__num, .sg-quote__num, .sg-reasons__n, .sg-stat__num, .sg-cs-stats strong, .sg-course__amount, .sg-course__price b, .sg-gk-price__tiers strong, .sg-sw2-principles span, .sg-sw3-prin0 span, .sg-sw3-proof2__stats strong, .sg-sw3-proof__stats strong, .sg-sw3-steps__no, .sg-fcard__no { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
+/* Kontakt: infokort v2 med ikon, lille label og tydelig værdi (17. nov.) */
+.sg-cinfo--v2 .sg-cinfo__card { position: relative; display: flex; flex-direction: column; gap: 0; padding: 28px 28px 26px !important; border-radius: var(--sg-radius-sm); background: #fff !important; border: 1px solid rgba(10,47,42,.1); box-shadow: 0 1px 2px rgba(10,47,42,.04), 0 12px 32px -18px rgba(10,47,42,.18); text-decoration: none; color: inherit; }
+.sg-cinfo--v2 .sg-cinfo__card .sg-gk-ico { width: 48px; height: 48px; margin-bottom: 22px; }
+.sg-cinfo--v2 .sg-cinfo__card .sg-gk-ico svg { width: 21px; height: 21px; }
+.sg-cinfo--v2 .sg-cinfo__l { margin: 0 0 6px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta) !important; }
+.sg-cinfo--v2 .sg-cinfo__k { margin: 0 0 4px !important; font-size: 19px !important; font-weight: 500; line-height: 1.3; color: #212121 !important; overflow-wrap: anywhere; }
+.sg-cinfo--v2 .sg-cinfo__card > p:last-child { margin: 0 !important; font-size: 14px !important; color: #555 !important; }
