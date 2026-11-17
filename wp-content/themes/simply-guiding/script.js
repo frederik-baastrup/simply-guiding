@@ -389,3 +389,17 @@
   window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
   window.addEventListener('resize', upd); upd();
 })();
+
+/* Let parallax på hero-billedet til højre */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.sg-hero--sub__media > img, .sg-hero--sub__media > video, .sg-split__media > img, .sg-split__media > video'));
+  if (!els.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var t = false;
+  function upd() {
+    t = false; var y = window.pageYOffset;
+    if (y > window.innerHeight * 1.2) return;
+    els.forEach(function (el) { el.style.transform = 'translate3d(0,' + (y * 0.12).toFixed(1) + 'px,0) scale(1.1)'; });
+  }
+  window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
+  upd();
+})();
