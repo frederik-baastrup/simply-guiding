@@ -82,33 +82,41 @@ $topics = [
   </div>
 </section>
 
-<!-- 5. For hvem + afslutning -->
-<section class="sg-gk3-band" aria-labelledby="ipsWhoTitle">
+<!-- 5. For hvem -->
+<section class="sg-gk3-band sg-gk3-band--who" aria-labelledby="ipsWhoTitle">
   <div class="sg-gk3-band__box">
-    <div class="sg-gk3-band__grid">
-      <div>
+    <div class="sg-gk3-who">
+      <div class="sg-gk3-who__head">
         <p class="sg-gk3-band__label">Målgruppe</p>
         <h2 class="sg-h2" id="ipsWhoTitle">Er uddannelsen til IPS-konsulent noget for dig?</h2>
         <p class="sg-gk3-band__intro">Uddannelsen er for dig, der:</p>
-        <ul class="sg-gk3-band__list">
+      </div>
+      <ul class="sg-gk3-band__list">
           <li><?php echo sg_check_svg(); ?><span>ønsker at kunne arbejde selvstændigt med IPS-opgaver i hverdagen</span></li>
           <li><?php echo sg_check_svg(); ?><span>er kreativ og vedholdende i din problemløsning og ser muligheder – uanset borgerens forudsætninger</span></li>
           <li><?php echo sg_check_svg(); ?><span>vil have indgående viden om IPS-metoden og tilgangen til jobskabelse</span></li>
           <li><?php echo sg_check_svg(); ?><span>vil oplæres i metoder som den motiverende samtale, den værdsættende samtale og andre relevante tilgange</span></li>
           <li><?php echo sg_check_svg(); ?><span>allerede arbejder med borgerrettede eller virksomhedsrettede aktiviteter i et jobcenter</span></li>
         </ul>
-      </div>
-      <div>
-        <p class="sg-gk3-band__label">Afslutning</p>
-        <h2 class="sg-h2" id="ipsValueTitle">Afslut med Fidelity og bliv Advanced Practitioner</h2>
-        <p class="sg-gk3-band__intro">Som afsluttende led kan der gennemføres en Fidelity-evaluering, udført af vores egne IPS-konsulenter – jeres blåstempling af, at I udfører IPS-indsatsen korrekt og effektivt.</p>
-        <ol class="sg-gk3-band__gain">
-          <li><span>01</span>Jeres indsats vurderes ud fra Fidelity-skalaen</li>
-          <li><span>02</span>I får en mundtlig tilbagemelding og en skriftlig rapport med score</li>
-          <li><span>03</span>Du opnår titlen Certificeret Advanced Practitioner</li>
-        </ol>
-      </div>
     </div>
+  </div>
+</section>
+
+<!-- 5b. Afslutning: Fidelity -->
+<section class="sg-gk3-fid" aria-labelledby="ipsValueTitle">
+  <div class="sg-wrap">
+    <div class="sg-gk3-fid__head">
+      <div>
+        <p class="sg-gk-label">Afslutning</p>
+        <h2 class="sg-h2" id="ipsValueTitle">Afslut med Fidelity og bliv Advanced Practitioner</h2>
+      </div>
+      <p class="sg-gk3-fid__lead">Som afsluttende led kan der gennemføres en Fidelity-evaluering, udført af vores egne IPS-konsulenter – jeres blåstempling af, at I udfører IPS-indsatsen korrekt og effektivt.</p>
+    </div>
+    <ol class="sg-gk3-fid__steps">
+      <li><span>01</span><p>Jeres indsats vurderes ud fra Fidelity-skalaen</p></li>
+      <li><span>02</span><p>I får en mundtlig tilbagemelding og en skriftlig rapport med score</p></li>
+      <li><span>03</span><p>Du opnår titlen Certificeret Advanced Practitioner</p></li>
+    </ol>
   </div>
 </section>
 

@@ -3929,3 +3929,25 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-gk3-prog__side { position: static !important; }
 .sg-gk3-prog__ico { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sg-cta); color: #fff; margin-top: -4px; }
 .sg-gk3-prog__ico svg { width: 19px; height: 19px; stroke-width: 1.5; }
+/* IPS-uddannelse: målgruppe alene i det mørke bånd; Fidelity som egen lys sektion */
+.sg-gk3-who { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: start; }
+.sg-gk3-who__head { grid-column: 1 / 6; }
+.sg-gk3-who .sg-gk3-band__list { grid-column: 7 / 13; margin: 0 !important; }
+.sg-gk3-who .sg-gk3-band__intro { min-height: 0 !important; margin-bottom: 0 !important; }
+.sg-gk3-fid { padding-block: 112px; }
+.sg-gk3-fid__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: end; margin-bottom: 56px; }
+.sg-gk3-fid__head > div { grid-column: 1 / 6; }
+.sg-gk3-fid__head .sg-h2 { margin: 0 !important; }
+.sg-gk3-fid__lead { grid-column: 7 / 13; margin: 0 !important; font-size: 17px !important; line-height: 1.7 !important; color: #212121 !important; }
+.sg-gk3-fid__steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; counter-reset: none; }
+.sg-gk3-fid__steps li { position: relative; padding-top: 24px; border-top: 1px solid rgba(10,47,42,.12); }
+.sg-gk3-fid__steps li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-gk3-fid__steps span { display: block; margin-bottom: 14px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600; font-size: 17px; color: var(--sg-cta); }
+.sg-gk3-fid__steps p { margin: 0 !important; font-size: 20px !important; font-weight: 500; line-height: 1.4 !important; color: #212121 !important; }
+@media (max-width: 960px) {
+  .sg-gk3-who, .sg-gk3-fid__head { display: block; }
+  .sg-gk3-who .sg-gk3-band__list { margin-top: 32px !important; }
+  .sg-gk3-fid { padding-block: 72px; }
+  .sg-gk3-fid__lead { margin-top: 20px !important; }
+  .sg-gk3-fid__steps { grid-template-columns: 1fr; }
+}
