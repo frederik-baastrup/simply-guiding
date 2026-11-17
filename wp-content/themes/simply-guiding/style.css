@@ -3551,3 +3551,4 @@ samme tekst ---------- */
 .sg-hero h1, .sg-split__copy h1, .sg-hero--sub h1, .sg-hero--full .sg-split__copy h1, .sg-hero--noimg .sg-split__copy h1 { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; font-size: clamp(44px, 4.9vw, 70px) !important; font-weight: 600 !important; line-height: .95 !important; letter-spacing: -.01em; color: var(--sg-hero-ink) !important; -webkit-text-fill-color: var(--sg-hero-ink); }
 .sg-hero--sub .sg-hero__inner > * { max-width: 620px; }
 @media (max-width: 1024px) { .sg-hero--sub h1, .sg-split__copy h1 { font-size: clamp(30px, 8vw, 48px) !important; } }
+.sg-hero h1, .sg-split__copy h1 { hyphens: manual !important; -webkit-hyphens: manual !important; overflow-wrap: normal !important; }
