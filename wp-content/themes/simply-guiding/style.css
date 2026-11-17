@@ -4110,3 +4110,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-signupform .sg-cform__box input[type=checkbox] { accent-color: #F2AE45; }
 .sg-signupform .sg-cform__box button[type=submit], .sg-signupform .sg-cform__box .sg-btn { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
 .sg-gk3-cta .sg-btn:not(.sg-btn--outline) { background: var(--sg-cta) !important; border-color: var(--sg-cta) !important; color: #fff !important; }
+.sg-gk3-custom__box p { max-width: 600px; }
