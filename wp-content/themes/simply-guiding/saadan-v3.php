@@ -2,7 +2,13 @@
 /* Sådan arbejder vi – forslag v3 (vises på /saadan-arbejder-vi/?ny=1, 17. nov. 2026).
    Struktur: metoder (påstand) → borgerforløbet (4 trin) → principper (mørkt bånd) → konsulenterne (uddannelse + supervision) → jobcentre (handling).
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
-$principles = ['Suspender din forforståelse og mød mennesket, hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på og arbejder efter ”place then train”-modellen'];
+$principles = [
+  ['Mød mennesket,', 'hvor det er, og suspender din forforståelse'],
+  ['Tro på borgeren', 'og vedkommendes muligheder for fremtiden'],
+  ['Hav blik for', 'borgerens ressourcer, kompetencer og drømme'],
+  ['Indgyd håb', 'om et varigt, nyt ståsted i livet for borgeren'],
+  ['Place then train:', 'vi arbejder altid henimod løntimer og job'],
+];
 $steps = [
   ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
   ['map', 'Fælles kortlægning', 'Sammen kortlægger de borgerens kompetencer, ressourcer og drømme for fremtiden.'],
@@ -50,7 +56,7 @@ $steps = [
       </div>
       <ol class="sg-sw3-prin0">
         <?php foreach ($principles as $i => $pr) : ?>
-        <li><span><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($pr); ?></p></li>
+        <li><span><?php echo sprintf('%02d', $i + 1); ?></span><p><strong><?php echo esc_html($pr[0]); ?></strong> <?php echo esc_html($pr[1]); ?></p></li>
         <?php endforeach; ?>
       </ol>
     </div>

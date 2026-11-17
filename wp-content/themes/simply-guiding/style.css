@@ -3500,3 +3500,4 @@ samme tekst ---------- */
 .sg-sw3-prin0 p { margin: 0; font-size: 17px !important; line-height: 1.45 !important; color: rgba(255,255,255,.9) !important; }
 @media (max-width: 1100px) { .sg-sw3-prin0 { grid-template-columns: repeat(3, 1fr); row-gap: 36px; } }
 @media (max-width: 960px) { .sg-sw3-prin0 { grid-template-columns: 1fr; row-gap: 28px; } }
+.sg-sw3-prin0 p strong { font-weight: 600; color: #fff; }
