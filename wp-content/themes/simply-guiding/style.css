@@ -3703,10 +3703,10 @@ samme tekst ---------- */
 @media (min-width: 961px) { .sg-gk3-band__intro { min-height: 3em; } }
 @media (min-width: 961px) { .sg-gk3-band__intro { min-height: 4.6em; } }
 /* Afsluttende CTA-knap i gul (17. nov.) */
-.sg-final__btn { background: #FBC33C !important; border-color: #FBC33C !important; color: #0A2F2A !important; }
+.sg-final__btn { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
 /* Nyhedsbrev-boksen (17. nov.): gul ikon og overskrift + gult brev der svæver i højre side, beskåret af boksens kant */
 .sg-tile--news { position: relative; overflow: hidden; isolation: isolate; }
-.sg-tile--news .sg-tile__icon { color: #FBC33C !important; opacity: 1; }
+.sg-tile--news .sg-tile__icon { color: #F2AE45 !important; opacity: 1; }
 .sg-tile--news .sg-tile__text { max-width: 30em; }
 .sg-news-letter { position: absolute; top: 56px; right: -64px; width: 200px; z-index: -1; transform: rotate(8deg); filter: drop-shadow(0 18px 30px rgba(0,0,0,.35)); animation: sgLetterFloat 6s ease-in-out infinite alternate; }
 .sg-news-letter svg { display: block; width: 100%; height: auto; }
@@ -3715,9 +3715,9 @@ samme tekst ---------- */
 @media (max-width: 1100px) { .sg-news-letter { width: 150px; right: -56px; } }
 @media (max-width: 700px) { .sg-news-letter { width: 120px; right: -44px; top: 32px; } .sg-tile--news .sg-tile__text { max-width: 78%; } }
 /* Kontaktformularens mørke panel: gule ikoner som lille accent (17. nov.) */
-.sg-cform--v3 .sg-cform__ico { background: rgba(251,195,60,.14) !important; color: #FBC33C !important; }
+.sg-cform--v3 .sg-cform__ico { background: rgba(242,174,69,.14) !important; color: #F2AE45 !important; }
 /* Nøgletal-båndet: tal i gul (17. nov.) */
-.sg-kpi__num { color: #FBC33C !important; -webkit-text-fill-color: #FBC33C; }
+.sg-kpi__num { color: #F2AE45 !important; -webkit-text-fill-color: #F2AE45; }
 /* Forsidens områdekort: titler i Nohemi */
 .sg-card__title { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
 /* Om os – "Tro kan ikke flytte bjerge alene": samme bredde som indholdet (flugter med kortene nedenunder) */
