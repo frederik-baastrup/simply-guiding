@@ -3472,3 +3472,7 @@ samme tekst ---------- */
 .sg-sw3-prin li > p { display: none; margin: 14px 0 0 !important; font-size: 15px !important; line-height: 1.6 !important; color: rgba(255,255,255,.8) !important; }
 .sg-sw3-prin li.is-active > p { display: block; }
 @media (max-width: 960px) { .sg-sw3-prin { min-height: 0; } }
+.sg-sw3-prin li span.sg-sw3-prin__no { font-size: 15px; line-height: 1; color: rgba(255,255,255,.5); }
+.sg-sw3-prin li span.sg-sw3-prin__t { font-size: 19px; line-height: 1.35; color: rgba(255,255,255,.55); }
+.sg-sw3-prin li.is-active span.sg-sw3-prin__no, .sg-sw3-prin li.is-active span.sg-sw3-prin__t { color: #fff; }
+.sg-sw3-prin li span.sg-sw3-prin__bar { font-size: 0; line-height: 0; }
