@@ -3,11 +3,11 @@ return [
   'label' => 'Områder',
   'title' => 'Forsikring og pension',
   'lead' => 'Simply Guiding tilbyder beskæftigelsesindsatser til forsikrings- og pensionsselskabers sygemeldte kunder. Vi hjælper sygemeldte tilbage i arbejde – hurtigt, trygt og med afsæt i den enkeltes situation.',
-  'hero_img' => 'loesninger-forsikring.jpg', 'hero_alt' => 'Samtale mellem en sygemeldt og en konsulent',
+  'hero_img' => 'loesninger-forsikring-v2.jpg', 'hero_alt' => 'Samtale mellem en sygemeldt og en konsulent',
   'btn1' => 'Henvis en sygemeldt', 'btn2' => 'Se vores indsatser',
   'why_title' => 'Når en sygemelding handler om mere end sygdom',
   'why_intro' => 'Simply Guiding er en specialiseret aktør med mere end 10 års erfaring fra beskæftigelsesområdet.',
-  'why_img' => 'indsats-forsikring.jpg',
+  'why_img' => 'indsats-forsikring-v2.jpg',
   'why_lead' => 'Forsikrings- og pensionsselskaber vælger Simply Guiding, når de …',
   'why_items' => [
     'har en sygemeldt eller opsagt medarbejder, hvor årsagen findes i hjemmet, for eksempel et barn i mistrivsel',
@@ -16,7 +16,7 @@ return [
     'har brug for en aktør, der skaber fremdrift, så den sygemeldte igen kan fokusere på arbejdslivet',
   ],
   'meet_title' => 'Mennesket bag policen',
-  'meet_img' => 'samarbejde.jpg', 'meet_alt' => 'To personer i samtale ved et bord',
+  'meet_img' => 'samarbejde-v2.jpg', 'meet_alt' => 'To personer i samtale ved et bord',
   'meet_text' => [
     'Et menneske rykker sig, når det bliver mødt som det menneske, det er. Det gælder også de mennesker, som er sygemeldte.',
     'Bag vores forløb ligger høj metodefidelitet og en solid beskæftigelsesfaglighed. Vi møder mennesket, hvor det er, uanset hvilken police vedkommende måtte have.',

@@ -7,7 +7,7 @@ return [
   'btn1' => 'Henvis et barn eller en ung', 'btn2' => 'Se alle indsatser',
   'why_title' => 'Hvornår kontakter I Simply Guiding?',
   'why_intro' => 'Simply Guiding er en specialiseret aktør (anden aktør) på børn- og ungeområdet.',
-  'why_img' => 'loesninger-boern-unge.jpg',
+  'why_img' => 'loesninger-boern-unge-v2.jpg',
   'why_lead' => 'Børn- og familieafdelinger og ungeenheder kontakter os, når de …',
   'why_items' => [
     'har en ung, der fx ikke går i skole, og har brug for en indsats, som får den unge tilbage i trivsel',
@@ -15,7 +15,7 @@ return [
     'møder en ung, der endnu ikke er diagnosticeret, men hvor der er brug for hjælp',
   ],
   'meet_title' => 'Vi ser barnet og den unge, før vi ser diagnosen',
-  'meet_img' => 'loesninger-unge.jpg', 'meet_alt' => 'Ung i praktik',
+  'meet_img' => 'loesninger-unge-v2.jpg', 'meet_alt' => 'Ung i praktik',
   'meet_text' => [
     'Børn og unge rykker sig, når de bliver mødt som de mennesker, de er.',
     'Nogle har en diagnose, nogle har det bare svært. Vi kigger på det hele menneske inklusive historien, hverdagen og den enkeltes drømme for fremtiden.',

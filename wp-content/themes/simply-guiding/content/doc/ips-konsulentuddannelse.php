@@ -52,7 +52,7 @@ return [
     ]],
     ['id' => 'fidelity', 'nav' => 'Fidelity', 'title' => 'Afslut med Fidelity og bliv Advanced Practitioner', 'blocks' => [
       ['type' => 'p', 'text' => 'Som det afsluttende led i konsulentuddannelsen kan der gennemføres en Fidelity-evaluering, udført af vores egne IPS-konsulenter. Fidelity er din blåstempling af, at du – sammen med dine kollegaer – udfører IPS-indsatsen korrekt og effektivt i overensstemmelse med metoden.'],
-      ['type' => 'img', 'src' => 'uddannelse-fidelity.jpg', 'alt' => 'IPS-team til evaluering'],
+      ['type' => 'img', 'src' => 'uddannelse-fidelity-v2.jpg', 'alt' => 'IPS-team til evaluering'],
       ['type' => 'p', 'text' => 'Jeres indsats bliver vurderet ud fra Fidelity-skalaen, og I modtager både en mundtlig tilbagemelding og en skriftlig rapport med score.'],
       ['type' => 'callout', 'icon' => 'shield', 'title' => 'Certificeret Advanced Practitioner', 'text' => 'Når du har gennemført en Fidelity, opnår du titlen Certificeret Advanced Practitioner.'],
     ]],

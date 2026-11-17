@@ -109,7 +109,7 @@ get_header(); ?>
     </div>
     <div class="sg-cards" id="sgCards">
       <article class="sg-card is-active">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge-v2.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
         <a class="sg-card__link" href="/loesninger/#boern-unge-og-familieindsatser" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
@@ -120,7 +120,7 @@ get_header(); ?>
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring-v2.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
         <a class="sg-card__link" href="/loesninger/#forsikrings-og-pensionsindsatser" aria-label="Læs om indsatsen: Forsikring og pension"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
@@ -177,7 +177,7 @@ get_header(); ?>
 </div>
 <section class="sg-about" aria-labelledby="sgAboutTitle">
   <div class="sg-about__inner">
-    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/samarbejde.jpg" alt="To kolleger i fortrolig samtale" loading="lazy"></div>
+    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/samarbejde-v2.jpg" alt="To kolleger i fortrolig samtale" loading="lazy"></div>
     <div class="sg-about__copy">
       <h2 class="sg-about__title" id="sgAboutTitle">Vores samarbejde bygger på forståelse, faglighed og erfaring</h2>
       <p>Bag vores indsatser ligger mere end 10 års erfaring, dyb metodefidelitet og en solid beskæftigelsesfaglighed inden for IPS og Supported Employment.</p>

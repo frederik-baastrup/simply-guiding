@@ -61,7 +61,7 @@ $sol = [
 <section class="sg-ls-sol sg-ls-sol--flip" id="ungeindsatser" aria-labelledby="sgSol2">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
-      <img src="<?php echo esc_url($u); ?>/assets/loesninger-unge.jpg" alt="Ung i praktik" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/loesninger-unge-v2.jpg" alt="Ung i praktik" loading="lazy">
       <span class="sg-ls-sol__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><?php echo SG_LS_ARROW; ?></svg></span>
     </figure>
     <div class="sg-ls-sol__copy">
@@ -79,7 +79,7 @@ $sol = [
 <section class="sg-ls-sol" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
-      <img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring-v2.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy">
       <span class="sg-ls-sol__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><?php echo SG_LS_ARROW; ?></svg></span>
     </figure>
     <div class="sg-ls-sol__copy">
@@ -98,7 +98,7 @@ $sol = [
 <section class="sg-ls-sol sg-ls-sol--flip" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
-      <img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge.jpg" alt="Børne-, unge- og familieindsats" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge-v2.jpg" alt="Børne-, unge- og familieindsats" loading="lazy">
       <span class="sg-ls-sol__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><?php echo SG_LS_ARROW; ?></svg></span>
     </figure>
     <div class="sg-ls-sol__copy">

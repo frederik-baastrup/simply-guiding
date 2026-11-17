@@ -6,7 +6,7 @@ $u = get_template_directory_uri();
 get_template_part('template-parts/page-hero', null, [
   'title' => 'Om Simply Guiding',
   'lead'  => 'Hos Simply Guiding sørger vi for, at historien ikke gentager sig. Sammen skaber vi et nyt ståsted i livet for mennesket bag borgeren.',
-  'video' => 'om-os-hero.mp4', 'full' => true, 'poster' => 'om-os-hero.jpg',
+  'video' => 'om-os-hero.mp4', 'full' => true, 'poster' => 'om-os-hero-v2.jpg',
   'btn1' => 'Kontakt os for en uforpligtende snak', 'btn2' => 'Mød holdet', 'btn2_href' => '#holdet',
 ]);
 ?>

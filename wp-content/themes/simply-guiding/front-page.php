@@ -44,7 +44,7 @@
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-unge-v2.jpg" alt="" style="object-position:center 45%" loading="lazy"><span class="sg-card__tag">Familier</span></div>
         <a class="sg-card__link" href="/omraade/boern-unge-familier/" aria-label="Læs om indsatsen: Børn, unge og familier"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
@@ -55,7 +55,7 @@
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-forsikring-v2.jpg" alt="" style="object-position:35% center" loading="lazy"><span class="sg-card__tag">Forsikring</span></div>
         <a class="sg-card__link" href="/omraade/forsikring-pension/" aria-label="Læs om indsatsen: Forsikring og pension"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
@@ -109,7 +109,7 @@
           <li class="sg-step"><span class="sg-step__num">3</span><div><h3 class="sg-step__title">Vi skaber holdbare løsninger</h3><p class="sg-step__text">Vi går aldrig efter et quickfix på en kompleks problemstilling. Målet er altid et varigt, nyt ståsted i livet.</p></div></li>
         </ol>
       </div>
-      <div class="sg-method__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/metode-samtale.jpg" alt="To kvinder i samtale ved et bord" loading="lazy"></div>
+      <div class="sg-method__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/metode-samtale-v2.jpg" alt="Samtale over en kop kaffe på en café" loading="lazy"></div>
     </div>
   </section>
 </div>

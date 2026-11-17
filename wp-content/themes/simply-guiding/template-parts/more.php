@@ -10,7 +10,7 @@ $m = wp_parse_args(isset($args) && is_array($args) ? $args : [], [
 <section class="sg-more2" aria-labelledby="sgMoreTitle">
   <div class="sg-wrap">
     <div class="sg-more2__box">
-      <div class="sg-more2__media"><img src="<?php echo esc_url($u); ?>/assets/vide-mere.jpg" alt="Møde omkring et bord med tablets og kaffe" width="2000" height="1333" loading="lazy"></div>
+      <div class="sg-more2__media"><img src="<?php echo esc_url($u); ?>/assets/vide-mere-v2.jpg" alt="Kolleger i en kaffepause på kontoret" width="2000" height="1333" loading="lazy"></div>
       <div class="sg-more2__copy">
         <h2 class="sg-h2" id="sgMoreTitle"><?php echo esc_html($m['title']); ?></h2>
         <p><?php echo esc_html($m['text']); ?></p>

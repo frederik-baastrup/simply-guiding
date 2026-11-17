@@ -45,7 +45,7 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
 <section class="sg-sw2 sg-sw2-consult" aria-labelledby="sgConsultTitle">
   <div class="sg-wrap">
     <div class="sg-sw2-split">
-      <figure class="sg-sw2-split__img"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></figure>
+      <figure class="sg-sw2-split__img"><img src="<?php echo esc_url($u); ?>/assets/konsulenter-v2.jpg" alt="To kolleger i en varm snak på kontoret" width="1536" height="1024" loading="lazy"></figure>
       <div class="sg-sw2-split__txt">
         <h2 class="sg-h2" id="sgConsultTitle">Simply Guiding’s konsulenter</h2>
         <p class="sg-gk-lead">Vores jobspecialister har en bred vifte af kompetencer og forskellige faglige baggrunde, der understøtter forløbet for den enkelte borger. Men det vigtigste er deres mindset, som vi løbende superviserer og træner dem i at bevare og udvikle, nemlig at de tror på borgeren og vedkommendes muligheder for fremtiden.</p>
@@ -64,7 +64,7 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
 <section class="sg-sw2 sg-sw2-partner" aria-labelledby="sgPartnerTitle">
   <div class="sg-wrap">
     <div class="sg-sw2-panel">
-      <figure><img src="<?php echo esc_url($u); ?>/assets/samarbejde.jpg" alt="" loading="lazy"></figure>
+      <figure><img src="<?php echo esc_url($u); ?>/assets/samarbejde-v2.jpg" alt="" loading="lazy"></figure>
       <div class="sg-sw2-panel__txt">
         <p class="sg-gk-label">Jobcentre</p>
         <h2 class="sg-h2" id="sgPartnerTitle">Tæt samarbejde med landets jobcentre</h2>

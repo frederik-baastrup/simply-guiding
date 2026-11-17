@@ -36,7 +36,7 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
 <!-- Når gulvet vipper -->
 <section class="sg-gk-format sg-os-floor" aria-labelledby="sgFloorTitle">
   <div class="sg-wrap sg-gk-split sg-gk-split--media">
-    <div class="sg-gk-split__media sg-os-tall"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission.jpg" alt="Medarbejder i arbejde" width="1200" height="1800" loading="lazy"></div>
+    <div class="sg-gk-split__media sg-os-tall"><img src="<?php echo esc_url($u); ?>/assets/om-os-mission-v2.jpg" alt="Samtale i et træværksted" width="1200" height="1800" loading="lazy"></div>
     <div class="sg-gk-split__main">
       <h2 class="sg-h2" id="sgFloorTitle">Når gulvet vipper, griber vi dig</h2>
       <p class="sg-gk-lead">Når et menneske mister fodfæstet, omdannes den personlige historie alt for ofte til en sag, en paragraf og en diagnose. Det er ikke af ond vilje.</p>
@@ -90,7 +90,7 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
       </ul>
     </div>
     <figure class="sg-os-values__media">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/metode-samtale.jpg" alt="" loading="lazy">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/metode-samtale-v2.jpg" alt="" loading="lazy">
       <span class="sg-os-values__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span>
     </figure>
   </div>

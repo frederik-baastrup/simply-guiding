@@ -47,7 +47,7 @@
 <!-- Konsulenter -->
 <section class="sg-gk-format sg-sw-consult" aria-labelledby="sgConsultTitle">
   <div class="sg-wrap sg-gk-split sg-gk-split--media">
-    <div class="sg-gk-split__media sg-os-tall"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></div>
+    <div class="sg-gk-split__media sg-os-tall"><img src="<?php echo esc_url($u); ?>/assets/konsulenter-v2.jpg" alt="To kolleger i en varm snak på kontoret" width="1536" height="1024" loading="lazy"></div>
     <div class="sg-gk-split__main">
       <h2 class="sg-h2" id="sgConsultTitle">Simply Guiding’s konsulenter</h2>
       <p class="sg-gk-lead">Vores jobspecialister har en bred vifte af kompetencer og forskellige faglige baggrunde, der understøtter forløbet for den enkelte borger. Men det vigtigste er deres mindset, som vi løbende superviserer og træner dem i at bevare og udvikle, nemlig at de tror på borgeren og vedkommendes muligheder for fremtiden.</p>

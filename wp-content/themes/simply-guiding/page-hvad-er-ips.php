@@ -8,7 +8,7 @@ $checks = function ($items) use ($check) { echo '<ul class="sg-principles">'; fo
 get_template_part('template-parts/page-hero', null, [
   'label' => 'IPS-metoden', 'title' => 'Hvad er IPS?',
   'lead'  => 'IPS står for Individuelt Planlagt job eller uddannelse med Støtte. Det er en beskæftigelsesindsats, som er målrettet mennesker med en psykisk lidelse eller psykisk sårbarhed, og som er motiverede for at komme i job eller uddannelse. Læs mere om IPS her.',
-  'img' => 'ips-maal.jpg', 'img_w' => 1200, 'img_h' => 800, 'alt' => 'Samtale mellem to personer ved et bord',
+  'img' => 'ips-maal-v2.jpg', 'img_w' => 1200, 'img_h' => 800, 'alt' => 'Samtale mellem to personer ved et bord',
 ]);
 $principles = [
   'Målet med IPS-indsatsen er at få kandidaten i beskæftigelse på det ordinære jobmarked.',

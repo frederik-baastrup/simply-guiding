@@ -74,7 +74,7 @@ $steps = [
         <article><span class="sg-gk-ico"><?php echo sg_icon('people'); ?></span><h3>Praktisk læring og feedback</h3><p>Praktisk læring mellem medarbejder og supervisor, baseret på en tillidsfuld feedbackkultur, sikrer momentum i hvert forløb.</p></article>
       </div>
     </div>
-    <figure class="sg-sw3-team__img"><img src="<?php echo esc_url($u); ?>/assets/konsulenter.jpg" alt="Konsulent fra Simply Guiding i samtale med en borger" width="840" height="1050" loading="lazy"></figure>
+    <figure class="sg-sw3-team__img"><img src="<?php echo esc_url($u); ?>/assets/konsulenter-v2.jpg" alt="To kolleger i en varm snak på kontoret" width="1536" height="1024" loading="lazy"></figure>
   </div>
 </section>
 
@@ -100,7 +100,7 @@ $steps = [
 <section class="sg-sw3-partner" aria-labelledby="sgPartnerTitle">
   <div class="sg-wrap">
     <div class="sg-sw3-partner__box">
-      <figure><img src="<?php echo esc_url($u); ?>/assets/samarbejde.jpg" alt="" loading="lazy"></figure>
+      <figure><img src="<?php echo esc_url($u); ?>/assets/samarbejde-v2.jpg" alt="" loading="lazy"></figure>
       <div class="sg-sw3-partner__txt">
         <p class="sg-gk-label">Til jobcentre</p>
         <h2 class="sg-h2" id="sgPartnerTitle">Tæt samarbejde med landets jobcentre</h2>

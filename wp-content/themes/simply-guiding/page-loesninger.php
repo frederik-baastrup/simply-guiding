@@ -55,7 +55,7 @@ $sol = [
 
 <section class="sg-sol sg-sol--half sg-sol--flip" id="ungeindsatser" aria-labelledby="sgSol2">
   <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-unge.jpg" alt="Ung i praktik" loading="lazy"></div>
+    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-unge-v2.jpg" alt="Ung i praktik" loading="lazy"></div>
     <div class="sg-sol__copy">
       <h3 class="sg-h2" id="sgSol2">Ungeindsatser</h3>
       <p>Simply Guidings ungeindsatser er inspireret af flere forskellige traditioner og grundtanker, som fx det narrative, det systemiske, det kognitive og recovery-tilgangen. Tilgange som hviler på mindset og principper fra IPS-metoden, hvor det mest centrale princip i arbejdet med de unge er; ’At samarbejde med afsæt i de unges drømme, erfaringer, ressourcer, behov og tempo’.</p>
@@ -69,7 +69,7 @@ $sol = [
 
 <section class="sg-sol sg-sol--half" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
   <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy"></div>
+    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring-v2.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy"></div>
     <div class="sg-sol__copy">
       <h3 class="sg-h2" id="sgSol3">Forsikrings- og pensionsindsatser</h3>
       <p>Simply Guiding samarbejder med flere af landets forsikrings- og pensionsselskaber med det formål at understøtte processen fra sygemeldt til rask for deres kunder.</p>
@@ -84,7 +84,7 @@ $sol = [
 
 <section class="sg-sol sg-sol--half sg-sol--flip" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
   <div class="sg-wrap sg-sol__grid">
-    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge.jpg" alt="Børne-, unge- og familieindsats" loading="lazy"></div>
+    <div class="sg-sol__media"><img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge-v2.jpg" alt="Børne-, unge- og familieindsats" loading="lazy"></div>
     <div class="sg-sol__copy">
       <h3 class="sg-h2" id="sgSol4">Børne-, unge- og familieindsatser</h3>
       <p>Vores indsatser er for børn og unge i aldersgruppen 12-17 år, hvor kommunens familieforvaltning vurderer, at de eksisterende tilbud efter Barnets Lov ikke er tilstrækkelige til at hjælpe den unge med at komme i gang med uddannelse eller job. Det er unge der ikke modtager tilbud i det almindelige skolesystem eller er i stor risiko for at falde ud, ofte lever de med social marginalisering og psykisk mistrivsel, og nogle af de unge kæmper med misbrug og en opvækst med mange svigt og brud.</p>

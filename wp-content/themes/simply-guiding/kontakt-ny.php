@@ -3,7 +3,7 @@
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Kontakt os', 'title' => 'Vil du vide mere? Vi er klar til at hjælpe',
   'lead'  => 'Har du spørgsmål, eller ønsker du at indgå et samarbejde med os? Så er vi klar til at hjælpe dig videre. Du kan ringe til os på 26 34 44 54, sende os en mail eller udfylde kontaktformularen herunder.',
-  'img' => 'metode-samtale.jpg', 'img_w' => 1600, 'img_h' => 1067, 'alt' => 'To kvinder i samtale ved et bord',
+  'img' => 'metode-samtale-v2.jpg', 'img_w' => 1600, 'img_h' => 1067, 'alt' => 'Samtale over en kop kaffe på en café',
   'btn1' => 'Ring på 26 34 44 54', 'btn1_href' => 'tel:+4526344454', 'btn2' => 'Skriv til os', 'btn2_href' => '#formular',
 ]);
 ?>
