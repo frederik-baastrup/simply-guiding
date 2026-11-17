@@ -3993,3 +3993,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
   .sg-gk3-who__mark { display: none; }
   .sg-gk3-fid + section.sg-gk3-price { padding-top: 72px !important; }
 }
+.sg-gk3-who__mark { display: none !important; }
