@@ -3760,3 +3760,10 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-cs-card--cta .sg-gk-ico { margin: 0 auto 8px; }
 .sg-cs-card--cta h3 { white-space: normal; text-wrap: balance; }
 .sg-cs-card--cta .sg-cs-card__btn { margin-top: 12px; background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
+/* Hvad er IPS – tjekliste som linjer med grøn accent (samme greb som "Kom i gang"-kolonnerne) */
+.sg-pdetail__body .sg-principles { list-style: none; padding: 0; counter-reset: sgp; }
+.sg-pdetail__body .sg-principles li { position: relative; display: grid; grid-template-columns: 48px 1fr; align-items: baseline; padding: 22px 0 !important; border: 0 !important; border-top: 1px solid rgba(10,47,42,.12) !important; counter-increment: sgp; }
+.sg-pdetail__body .sg-principles li:last-child { border-bottom: 1px solid rgba(10,47,42,.12) !important; }
+.sg-pdetail__body .sg-principles li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-pdetail__body .sg-principles li::after { content: counter(sgp, decimal-leading-zero); grid-column: 1; grid-row: 1; font-family: 'Nohemi', sans-serif; font-weight: 600; font-size: 17px; color: var(--sg-cta); }
+.sg-pdetail__body .sg-principles li svg { display: none; }
