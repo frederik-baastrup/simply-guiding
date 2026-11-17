@@ -4041,3 +4041,16 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 }
 /* Metode-intro: mindre overskrift, så den balancerer med teksten */
 .sg-sw3-intro .sg-h2 { font-size: clamp(28px, 2.4vw, 34px) !important; line-height: 1.2 !important; max-width: 16em; }
+/* Områdesider: ingen streg efter "Sådan går vi til ..." */
+.sg-ar-how .sg-headline::after, .sg-ar-how .sg-headline::before { display: none !important; }
+
+/* "Tre måder at lære på": logo-pil-cirkel på billedkanten (som Løsninger), større kort med tydeligere hierarki */
+.sg-gk3-format__img { position: relative; overflow: visible !important; }
+.sg-gk3-format__img img { border-radius: var(--sg-radius-sm); }
+.sg-gk3-format__img .sg-ls-sol__badge { right: -38px; bottom: 56px; }
+.sg-gk3-format__txt h2 { margin-bottom: 8px !important; }
+.sg-gk3-mini { gap: 14px !important; margin-top: 32px !important; }
+.sg-gk3-mini li { padding: 24px 26px 24px 84px !important; box-shadow: 0 1px 0 rgba(10,47,42,.04), 0 10px 30px -18px rgba(10,47,42,.25); }
+.sg-gk3-mini li::before { left: 24px !important; top: 24px !important; width: 42px !important; height: 42px !important; }
+.sg-gk3-mini h3 { font-size: 20px !important; margin-bottom: 6px !important; }
+@media (max-width: 960px) { .sg-gk3-format__img .sg-ls-sol__badge { right: 24px; bottom: -28px; } }
