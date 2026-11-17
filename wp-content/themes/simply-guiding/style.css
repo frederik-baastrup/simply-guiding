@@ -3427,3 +3427,4 @@ samme tekst ---------- */
   .sg-sw3-partner__box figure { min-height: 240px; }
   .sg-sw3-partner__txt { padding: 28px 16px 20px; }
 }
+.sg-sw3-partner .sg-btn--outline { background: transparent !important; color: var(--sg-cta) !important; border: 1px solid var(--sg-cta) !important; }
