@@ -1,5 +1,5 @@
 <?php
-/* Sådan arbejder vi – forslag v3 (vises på /saadan-arbejder-vi/?ny=1, 17. nov. 2026).
+/* Sådan arbejder vi – v3 (live 17. nov. 2026).
    Struktur: metoder (påstand) → borgerforløbet (4 trin) → principper (mørkt bånd) → konsulenterne (uddannelse + supervision) → jobcentre (handling).
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
 $principles = [
