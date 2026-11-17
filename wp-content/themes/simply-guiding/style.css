@@ -4155,3 +4155,23 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-price__card .sg-btn--outline { background: var(--sg-cta) !important; color: #fff !important; border-color: var(--sg-cta) !important; }
 .sg-gk3-price__card + .sg-gk3-price__card { background: #F1F4F2 !important; border-color: transparent; }
 @media (max-width: 960px) { .sg-gk3-ticket { margin: 0 0 40px !important; } }
+/* Priskort v2: dato-pille, hvad prisen dækker, fuld-bredde knap; to ens hvide kort */
+.sg-gk3-price__card, .sg-gk3-price__card + .sg-gk3-price__card { background: #fff !important; border: 1px solid rgba(10,47,42,.12) !important; display: flex; flex-direction: column; }
+.sg-gk3-price__card::before { display: none !important; }
+.sg-gk3-price__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.sg-gk3-price__top .sg-gk3-price__who { margin: 0 !important; }
+.sg-gk3-price__date { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 100px; background: #F1F4F2; font-size: 14px; color: #212121; white-space: nowrap; }
+.sg-gk3-price__date svg { width: 16px; height: 16px; color: var(--sg-cta); }
+.sg-gk3-price__amt { margin: 0 !important; }
+.sg-gk3-price__inc { list-style: none; margin: 28px 0 32px; padding: 24px 0 0; border-top: 1px solid rgba(10,47,42,.12); display: grid; gap: 12px; }
+.sg-gk3-price__inc li { display: flex; align-items: center; gap: 12px; font-size: 16px; color: #212121; }
+.sg-gk3-price__inc svg { flex: none; width: 20px; height: 20px; color: var(--sg-cta); }
+.sg-gk3-price__card .sg-btn { margin-top: auto; width: 100%; justify-content: center; background: var(--sg-cta) !important; border-color: var(--sg-cta) !important; color: #fff !important; }
+.sg-gk3-price__card:first-child { background: #0A2F2A url("assets/pattern.png") center / 601px repeat !important; border-color: transparent !important; }
+.sg-gk3-price__card:first-child .sg-gk3-price__who { color: #F2AE45 !important; }
+.sg-gk3-price__card:first-child .sg-gk3-price__amt { color: #fff !important; }
+.sg-gk3-price__card:first-child .sg-gk3-price__vat, .sg-gk3-price__card:first-child .sg-gk3-price__inc li { color: rgba(255,255,255,.85) !important; }
+.sg-gk3-price__card:first-child .sg-gk3-price__inc { border-top-color: rgba(255,255,255,.16); }
+.sg-gk3-price__card:first-child .sg-gk3-price__inc svg { color: #F2AE45; }
+.sg-gk3-price__card:first-child .sg-gk3-price__date { background: rgba(255,255,255,.1); color: #fff; }
+.sg-gk3-price__card:first-child .sg-gk3-price__date svg { color: #F2AE45; }

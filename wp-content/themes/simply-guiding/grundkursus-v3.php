@@ -123,8 +123,18 @@ $topics = [
       <p>Reservér din plads på kurset 1.–2. september 2026. Prisen inkluderer 12 timers praksisnær undervisning, forplejning begge kursusdage og kursusbevis.</p>
     </div>
     <div class="sg-gk3-price__cards">
-      <div class="sg-gk3-price__card"><p class="sg-gk3-price__who">Offentlige og private arbejdsgivere</p><p class="sg-gk3-price__amt">6.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p><a class="sg-btn sg-btn--lg sg-btn--outline" href="#tilmelding">Tilmeld</a></div>
-      <div class="sg-gk3-price__card"><p class="sg-gk3-price__who">Ledige og selvbetalere</p><p class="sg-gk3-price__amt">4.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p><a class="sg-btn sg-btn--lg sg-btn--outline" href="#tilmelding">Tilmeld</a></div>
+      <div class="sg-gk3-price__card">
+        <div class="sg-gk3-price__top"><p class="sg-gk3-price__who">Offentlige og private arbejdsgivere</p><span class="sg-gk3-price__date"><?php echo sg_icon('calendar'); ?>1.–2. sep. 2026</span></div>
+        <p class="sg-gk3-price__amt">6.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p>
+        <ul class="sg-gk3-price__inc"><li><?php echo sg_icon('check'); ?>12 timers praksisnær undervisning</li><li><?php echo sg_icon('check'); ?>Forplejning begge kursusdage</li><li><?php echo sg_icon('check'); ?>Kursusbevis</li></ul>
+        <a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig</a>
+      </div>
+      <div class="sg-gk3-price__card">
+        <div class="sg-gk3-price__top"><p class="sg-gk3-price__who">Ledige og selvbetalere</p><span class="sg-gk3-price__date"><?php echo sg_icon('calendar'); ?>1.–2. sep. 2026</span></div>
+        <p class="sg-gk3-price__amt">4.900 kr.</p><p class="sg-gk3-price__vat">ekskl. moms</p>
+        <ul class="sg-gk3-price__inc"><li><?php echo sg_icon('check'); ?>12 timers praksisnær undervisning</li><li><?php echo sg_icon('check'); ?>Forplejning begge kursusdage</li><li><?php echo sg_icon('check'); ?>Kursusbevis</li></ul>
+        <a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig</a>
+      </div>
     </div>
   </div>
 </section>
