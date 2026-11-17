@@ -3228,3 +3228,13 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 @media (min-width: 961px) { .sg-ar-why { padding-top: 96px !important; padding-bottom: 96px !important; } .sg-ar-why__card { min-height: 500px; } .sg-ar-why .sg-ar-reasons { gap: 40px 48px; } }
 .sg-ar-why__main .sg-gk-sub { font-size: 24px !important; line-height: 1.3 !important; font-weight: 500; color: #212121 !important; }
 .sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) > span { display: block; padding-bottom: 14px; border-bottom: 1px solid rgba(10,47,42,.14); }
+/* Derfor ringer: ingen strakte rækker; ring-punktet uden mørk boks, samme stil som tallene */
+.sg-ar-why .sg-ar-reasons { grid-auto-rows: auto !important; align-content: end; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta { padding: 0; background: none; color: inherit; border-radius: 0; gap: 12px; justify-content: flex-start; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta .sg-gk-ico { width: 30px; height: 30px; margin: 0 0 4px; background: var(--sg-cta) !important; color: #fff; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta .sg-gk-ico svg { width: 15px; height: 15px; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta .sg-gk-ico { box-shadow: 0 14px 0 -13px rgba(10,47,42,.14); }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta { border-top: 0; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p { font-size: 15px !important; line-height: 1.6 !important; color: #212121 !important; padding-top: 14px; border-top: 1px solid rgba(10,47,42,.14); }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p strong { color: #212121; font-size: 15px; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta a { color: var(--sg-cta); }
