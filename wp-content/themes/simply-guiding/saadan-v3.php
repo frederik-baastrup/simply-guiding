@@ -79,20 +79,19 @@ $steps = [
 </section>
 
 <!-- Bevis: kundecitat + nøgletal (samme citat og tal som på forsiden og Om os) -->
-<section class="sg-sw3-proof" aria-label="Det siger vores kunder">
-  <div class="sg-wrap sg-sw3-proof__grid">
-    <figure class="sg-sw3-proof__quote">
-      <p class="sg-gk-label">Det siger vores kunder</p>
+<section class="sg-sw3-proof2" aria-label="Kundecitat og nøgletal">
+  <div class="sg-wrap">
+    <figure class="sg-sw3-proof2__quote">
       <blockquote>“Vi oplever, at Simply Guiding har investeret både tid og ressourcer i at bygge et fornuftigt samarbejde op, og der er generelt stor tillid til fagligheden mellem os i Gladsaxe Kommune og IPS UNG-indsatsen.”</blockquote>
       <figcaption>
-        <img src="<?php echo esc_url($u); ?>/assets/anne-madsen.jpg" alt="" width="56" height="56" loading="lazy">
+        <img src="<?php echo esc_url($u); ?>/assets/anne-madsen.jpg" alt="" width="48" height="48" loading="lazy">
         <span><strong>Anne Madsen</strong>Leder for Ungeenheden, Gladsaxe Kommune</span>
       </figcaption>
     </figure>
-    <ul class="sg-sw3-proof__stats">
-      <li><strong>25+</strong><span>kommuner</span><p>Tæt og tillidsfuldt samarbejde om at løfte beskæftigelses- og ungeindsatsen.</p></li>
-      <li><strong>1.500+</strong><span>mennesker</span><p>Individuel støtte tilbage til job, uddannelse eller fællesskab.</p></li>
-      <li><strong>10+</strong><span>år i branchen</span><p>Siden 2015 har vi fungeret som en specialiseret og resultatskabende ekstern aktør.</p></li>
+    <ul class="sg-sw3-proof2__stats">
+      <li><strong>25+</strong><span>kommuner samarbejder med os</span></li>
+      <li><strong>1.500+</strong><span>mennesker har fået støtte</span></li>
+      <li><strong>10+</strong><span>år i branchen</span></li>
     </ul>
   </div>
 </section>
