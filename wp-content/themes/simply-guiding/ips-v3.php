@@ -124,6 +124,9 @@ $topics = [
   </div>
 </section>
 
+<!-- Stort billede mellem Fidelity og praktisk information -->
+<figure class="sg-wide-img" aria-hidden="true"><img src="<?php echo esc_url($u); ?>/assets/samtale-vindue.jpg" alt="" loading="lazy"></figure>
+
 <!-- 6. Praktisk information -->
 <section class="sg-gk3-price" aria-labelledby="ipsInfoTitle">
   <div class="sg-wrap">

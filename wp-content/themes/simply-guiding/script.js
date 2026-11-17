@@ -371,3 +371,21 @@
   window.addEventListener('resize', update);
   update();
 })();
+
+/* Let parallax i store billeder (.sg-wide-img) */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.sg-wide-img img'));
+  if (!els.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var t = false;
+  function upd() {
+    t = false; var vh = window.innerHeight;
+    els.forEach(function (img) {
+      var r = img.parentElement.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) return;
+      var p = ((r.top + r.height / 2) - vh / 2) / (vh / 2 + r.height / 2); // -1..1
+      img.style.transform = 'translate3d(0,' + (p * -8).toFixed(2) + '%,0)';
+    });
+  }
+  window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
+  window.addEventListener('resize', upd); upd();
+})();
