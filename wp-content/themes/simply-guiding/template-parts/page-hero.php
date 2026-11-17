@@ -27,7 +27,7 @@ if ($front) : ?>
       <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
       <div class="sg-hero__actions">
         <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
-        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a>
+        <?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?>
       </div>
     </div>
     <div class="sg-hero-bottom">
@@ -52,7 +52,7 @@ if ($front) : ?>
         <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
         <div class="sg-hero__actions">
           <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
-          <a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a>
+          <?php if ($a['btn2']) : ?><a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a><?php endif; ?>
         </div>
       </div>
       <?php if ($a['video']) : ?>

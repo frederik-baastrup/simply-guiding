@@ -8,6 +8,7 @@ if (isset($_GET['ny'])) { /* overhaling */
 }
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Kontakt os', 'title' => 'Vil du vide mere? Vi er klar til at hjælpe',
+  'btn1' => 'Send en besked til os', 'btn1_href' => '#formular', 'btn2' => '',
   'lead'  => 'Har du spørgsmål, eller ønsker du at indgå et samarbejde med os? Så er vi klar til at hjælpe dig videre. Du kan ringe til os på 26 34 44 54, sende os en mail eller udfylde kontaktformularen herunder.',
 ]);
 ?>
