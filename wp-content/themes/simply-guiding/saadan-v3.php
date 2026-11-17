@@ -11,7 +11,7 @@ $principles = [
 ];
 $steps = [
   ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
-  ['map', 'Fælles kortlægning', 'Sammen kortlægger de borgerens kompetencer, ressourcer og drømme for fremtiden.'],
+  ['map', 'Fælles kortlægning', 'Sammen kortlægger konsulent og borger kompetencer, ressourcer og drømme.'],
   ['calendar', 'Tæt kontakt', 'Konsulenten arbejder tæt sammen med kandidaten, og der er altid ugentlig kontakt.'],
   ['people', 'Netværket inddrages', 'Pårørende og netværk inddrages og støtter vejen mod job, uddannelse eller trivsel.'],
 ];
