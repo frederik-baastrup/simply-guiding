@@ -45,17 +45,17 @@ $topics = [
 </section>
 
 <!-- 2. Program -->
-<section class="sg-gk3-prog sg-gk3-prog--grid" aria-labelledby="gkTopicsTitle">
+<section class="sg-gk3-prog" aria-labelledby="gkTopicsTitle">
   <div class="sg-wrap sg-gk3-prog__grid">
     <div class="sg-gk3-prog__side">
       <h2 class="sg-h2" id="gkTopicsTitle">Det arbejder vi med på kurset</h2>
       <p class="sg-gk3-prog__claim">Fokus er på, hvordan IPS omsættes til praksis – ikke kun hvad metoden er i teorien.</p>
+      <a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig kurset</a>
     </div>
     <ol class="sg-gk3-prog__list">
       <?php foreach ($topics as $i => $t) : ?>
       <li><span class="sg-gk3-prog__ico"><?php echo sg_icon(['bookopen', 'spark', 'briefcase', 'puzzle', 'building'][$i] ?? 'spark'); ?></span><div><h3><?php echo esc_html($t[0]); ?></h3><p><?php echo esc_html($t[1]); ?></p></div></li>
       <?php endforeach; ?>
-      <li class="sg-gk3-prog__cta"><p>Klar til at komme i gang?</p><a class="sg-btn sg-btn--lg" href="#tilmelding">Tilmeld dig kurset</a></li>
     </ol>
   </div>
 </section>
@@ -71,6 +71,7 @@ $topics = [
       <p>Du kan arbejde med dine egne cases eller med cases, der afspejler virkelige IPS-forløb i både kommunale og private sammenhænge.</p>
     </div>
     <aside class="sg-gk3-ticket" aria-label="Kurset kort fortalt">
+      <svg class="sg-gk3-ticket__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
       <p class="sg-gk3-ticket__label">Kurset kort fortalt</p>
       <ul>
         <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span><div><strong>2 dage</strong><small>sammenhængende kursusdage</small></div></li>
