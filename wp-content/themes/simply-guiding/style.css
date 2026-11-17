@@ -3646,3 +3646,36 @@ samme tekst ---------- */
   .sg-gk3-custom__box { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
 }
 @media (max-width: 600px) { .sg-gk3-facts { grid-template-columns: 1fr; } .sg-gk3-facts li + li { border-left: 0; border-top: 1px solid rgba(10,47,42,.1); } }
+/* IPS-konsulentuddannelse v3 (?ny=1) – ekstra dele til gk3 */
+.sg-gk3-prog__list li p { font-size: 15px !important; }
+.sg-gk3-mini { list-style: none; margin: 24px 0 0; padding: 0; counter-reset: m; }
+.sg-gk3-mini li { counter-increment: m; position: relative; padding: 18px 0 18px 48px; border-top: 1px solid rgba(10,47,42,.12); }
+.sg-gk3-mini li:last-child { border-bottom: 1px solid rgba(10,47,42,.12); }
+.sg-gk3-mini li::before { content: counter(m, decimal-leading-zero); position: absolute; left: 0; top: 20px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-size: 17px; font-weight: 500; color: var(--sg-cta); }
+.sg-gk3-mini h3 { margin: 0 0 4px; font-size: 19px; font-weight: 500; color: #212121; }
+.sg-gk3-mini p { margin: 0; font-size: 15px !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-gk3-format__img--tall { aspect-ratio: 4 / 5; }
+.sg-gk3-daily { padding: 0 0 120px; }
+.sg-gk3-daily__box { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; padding: 64px 56px; border-radius: var(--sg-radius-sm); background: #F1F4F2; }
+.sg-gk3-daily__box > div:first-child { grid-column: 1 / 6; }
+.sg-gk3-daily__box h2 { margin: 0 0 20px; }
+.sg-gk3-daily__lead { margin: 0 !important; font-size: 19px !important; line-height: 1.55 !important; color: #212121 !important; }
+.sg-gk3-daily__txt { grid-column: 7 / 13; }
+.sg-gk3-daily__txt p { margin: 0 0 16px; font-size: 17px !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-gk3-daily__txt p:last-child { margin-bottom: 0; }
+.sg-gk3-info { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.sg-gk3-info li { display: flex; flex-direction: column; padding: 28px; border-radius: var(--sg-radius-sm); background: #F1F4F2; }
+.sg-gk3-info .sg-gk-ico { width: 44px; height: 44px; margin-bottom: 20px; }
+.sg-gk3-info small { margin-bottom: 6px; font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta); }
+.sg-gk3-info strong { font-size: 17px; font-weight: 500; line-height: 1.4; color: #212121; }
+.sg-gk3-info__btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.sg-gk3-info__btns .sg-btn--outline { background: transparent !important; color: var(--sg-cta) !important; border: 1px solid var(--sg-cta) !important; }
+.sg-gk3-price:has(.sg-gk3-info) { padding-bottom: 112px; }
+@media (max-width: 960px) {
+  .sg-gk3-daily { padding-bottom: 72px; }
+  .sg-gk3-daily__box { display: block; padding: 36px 24px; }
+  .sg-gk3-daily__txt { margin-top: 28px; }
+  .sg-gk3-info { grid-template-columns: 1fr 1fr; }
+  .sg-gk3-price:has(.sg-gk3-info) { padding-bottom: 72px; }
+}
+@media (max-width: 600px) { .sg-gk3-info { grid-template-columns: 1fr; } }
