@@ -1,4 +1,5 @@
 <?php
+if (isset($_GET['ny'])) { require __DIR__ . '/loesninger-ny.php'; return; }
 /* Løsninger (/loesninger/) – samme adresse, tekst og ankre som på det gamle site */
 get_header();
 get_template_part('template-parts/site-header');
