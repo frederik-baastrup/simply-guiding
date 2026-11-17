@@ -3137,3 +3137,6 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 :root { --sg-max: 1432px; }
 /* Forsidens områdekort: kun mørk gradient i bunden, så billedet ses i toppen */
 .sg-card__media::after { background: linear-gradient(0deg, rgb(var(--sg-hero-base)) 0%, rgb(var(--sg-hero-base)) 30%, rgba(var(--sg-hero-base), .82) 46%, rgba(var(--sg-hero-base), .25) 66%, rgba(0,0,0,.05) 82%, rgba(0,0,0,.28) 100%); opacity: 1; }
+/* Ikoncirkler i CTA-grøn (17. nov.) – ikke i de mørke bokse */
+.sg-gk-ico { background: var(--sg-cta) !important; color: #fff; }
+.sg-ar-reasons__cta .sg-gk-ico, .sg-cs-card--cta .sg-gk-ico { background: rgba(255,255,255,.1) !important; }
