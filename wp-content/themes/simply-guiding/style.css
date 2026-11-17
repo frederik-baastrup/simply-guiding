@@ -3262,3 +3262,28 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 }
 .sg-sw2-principles span { display: block; padding-bottom: 16px; border-bottom: 1px solid rgba(10,47,42,.14); }
 .sg-sw2-principles li { gap: 16px; }
+/* 17. nov.: principper uden streg ved tallene – i stedet større overskrift med streg til højre */
+.sg-sw2-principles span { padding-bottom: 0 !important; border-bottom: 0 !important; }
+.sg-sw2-rulehead { display: flex; align-items: center; gap: 32px; margin: 80px 0 28px; }
+.sg-sw2-rulehead h3 { margin: 0; flex: none; max-width: 100%; font-size: 26px; font-weight: 500; line-height: 1.25; color: #212121; }
+.sg-sw2-rulehead::after { content: ""; flex: 1 1 auto; height: 1px; background: rgba(10,47,42,.14); }
+/* Mindset: mere luft mellem tekst og link */
+.sg-sw2-head .sg-textlink { margin-top: 32px !important; }
+/* Borgere v4: overskrift + tekst øverst, bredt billede med hvid bjælke med de tre punkter */
+.sg-sw2-citizens .sg-sw2-head { margin-bottom: 56px; }
+.sg-sw2-citizens .sg-sw2-head > div > p:not(.sg-gk-lead) { margin: 0; }
+.sg-sw2-cit__band { position: relative; margin: 0; height: 520px; border-radius: var(--sg-radius-sm); overflow: hidden; }
+.sg-sw2-cit__band img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; }
+.sg-sw2-cit__bar { position: absolute; left: 24px; right: 24px; bottom: 24px; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border-radius: var(--sg-radius-sm); box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+.sg-sw2-cit__bar li { display: flex; align-items: center; gap: 16px; padding: 22px 26px; font-size: 17px; font-weight: 500; color: #212121; }
+.sg-sw2-cit__bar li + li { border-left: 1px solid rgba(10,47,42,.12); }
+.sg-sw2-cit__bar .sg-gk-ico { flex: none; width: 44px; height: 44px; }
+.sg-sw2-cit__bar .sg-gk-ico svg { width: 20px; height: 20px; }
+@media (max-width: 960px) {
+  .sg-sw2-cit__band { height: auto; overflow: visible; }
+  .sg-sw2-cit__band img { height: 280px; border-radius: var(--sg-radius-sm); }
+  .sg-sw2-cit__bar { position: static; grid-template-columns: 1fr; margin-top: 12px; box-shadow: none; border: 1px solid rgba(10,47,42,.12); }
+  .sg-sw2-cit__bar li + li { border-left: 0; border-top: 1px solid rgba(10,47,42,.12); }
+  .sg-sw2-rulehead h3 { flex: 1 1 auto; font-size: 22px; }
+  .sg-sw2-rulehead::after { display: none; }
+}
