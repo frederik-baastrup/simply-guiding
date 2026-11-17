@@ -8,7 +8,7 @@ $faq = require get_template_directory() . '/content/course-faq.php';
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'Grundkursus i IPS',
   'lead'  => 'Et praksisnært grundkursus, der giver dig et solidt og anvendeligt fundament i IPS-metoden. Du bliver klædt på til at omsætte metoden direkte i praksis.',
-  'img' => 'gen-supervision.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Supervision med en erfaren supervisor og tre konsulenter',
+  'img' => 'akademi-gruppe.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Underviser fortæller for en gruppe kursister',
   'btn1' => 'Tilmeld dig kurset', 'btn1_href' => '#tilmelding', 'btn2' => 'Se indhold', 'btn2_href' => '#om-kurset',
 ]);
 $topics = [
