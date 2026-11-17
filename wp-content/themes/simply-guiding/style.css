@@ -3244,3 +3244,19 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section { background: #F1F4F2; margin-inline: max(18px, env(safe-area-inset-left, 0px)); border-radius: 0 0 var(--sg-radius) var(--sg-radius); --sg-sand: #fff; }
 .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section .sg-gk-callout { background: #fff; }
 @media (max-width: 600px) { .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section { margin-inline: 10px; } }
+/* Sådan arbejder vi – borgere v3 (17. nov.): billedkort med overskrift til venstre, tekst og tre punkter med tynde streger til højre */
+.sg-sw2-citizens { background: none !important; padding-top: 112px !important; }
+.sg-sw2-cit__card { grid-column: 1 / 6 !important; min-height: 560px; justify-content: flex-start; }
+.sg-sw2-cit__card::after { background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.1) 45%, rgba(0,0,0,0) 100%) !important; }
+.sg-sw2-cit__main { grid-column: 7 / 13; display: flex; flex-direction: column; justify-content: center; }
+.sg-sw2-cit__main .sg-gk-lead { margin: 0 0 18px; }
+.sg-sw2-cit__main > p:not(.sg-gk-lead) { margin: 0; font-size: var(--sg-body) !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-sw2-cit__list { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.sg-sw2-cit__list li { display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(10,47,42,.14); font-size: 15px; font-weight: 500; line-height: 1.4; color: #212121; }
+.sg-sw2-cit__list .sg-gk-ico { width: 40px; height: 40px; }
+.sg-sw2-cit__list .sg-gk-ico svg { width: 18px; height: 18px; }
+@media (max-width: 960px) {
+  .sg-sw2-cit__card { min-height: 320px; }
+  .sg-sw2-cit__list { grid-template-columns: 1fr; gap: 0; }
+  .sg-sw2-cit__list li { flex-direction: row; align-items: center; padding: 14px 0; }
+}

@@ -22,20 +22,20 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
 
 <!-- Borgere -->
 <section class="sg-sw2 sg-sw2-citizens" aria-labelledby="sgCitizensTitle">
-  <div class="sg-wrap">
-    <figure class="sg-sw2-banner"><img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" width="1200" height="715" loading="lazy"></figure>
-    <div class="sg-sw2-head">
+  <div class="sg-wrap sg-ar-why__grid">
+    <div class="sg-ar-why__card sg-sw2-cit__card">
+      <img src="<?php echo esc_url($u); ?>/assets/borgere.jpg" alt="To unge mænd går og snakker på en sti i skoven" loading="lazy">
       <h2 class="sg-h2" id="sgCitizensTitle">Hvordan arbejder Simply Guiding med borgere?</h2>
-      <div>
-        <p class="sg-gk-lead">Målet med vores støtte er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet, på lige fod med alle andre, uanset udfordringer. Vi tror på bæredygtige og trygge relationer. Hos Simply Guiding får borgeren derfor sin egen konsulent tilknyttet. Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.</p>
-        <p>Konsulenten har et tæt samarbejde med kandidaten og der er altid ugentligt kontakt. Vi er uddannet i at inddrage pårørende, netværk eller andre personer, som er relevante at inddrage for at understøtte kandidatens progression mod job, uddannelse, bedre trivsel, raskmelding, etc.</p>
-      </div>
     </div>
-    <ul class="sg-sw2-chips" aria-label="Kort fortalt">
-      <li><span class="sg-gk-ico"><?php echo sg_icon('user'); ?></span>Egen konsulent</li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span>Altid ugentlig kontakt</li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('people'); ?></span>Pårørende og netværk inddrages</li>
-    </ul>
+    <div class="sg-sw2-cit__main">
+      <p class="sg-gk-lead">Målet med vores støtte er, at hver person får udviklet sine evner og kan deltage i arbejdslivet eller uddannelsessystemet, på lige fod med alle andre, uanset udfordringer. Vi tror på bæredygtige og trygge relationer. Hos Simply Guiding får borgeren derfor sin egen konsulent tilknyttet. Sammen kortlægger de kompetencer, ressourcer og drømme for fremtiden.</p>
+      <p>Konsulenten har et tæt samarbejde med kandidaten og der er altid ugentligt kontakt. Vi er uddannet i at inddrage pårørende, netværk eller andre personer, som er relevante at inddrage for at understøtte kandidatens progression mod job, uddannelse, bedre trivsel, raskmelding, etc.</p>
+      <ul class="sg-sw2-cit__list" aria-label="Kort fortalt">
+        <li><span class="sg-gk-ico"><?php echo sg_icon('user'); ?></span><span>Egen konsulent</span></li>
+        <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span><span>Altid ugentlig kontakt</span></li>
+        <li><span class="sg-gk-ico"><?php echo sg_icon('people'); ?></span><span>Pårørende og netværk inddrages</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 
