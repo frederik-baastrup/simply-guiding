@@ -3225,3 +3225,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-ar-why .sg-ar-reasons span { font-size: 30px; }
 .sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) { gap: 12px; }
 .sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) p { font-size: 15px !important; line-height: 1.6 !important; }
+@media (min-width: 961px) { .sg-ar-why { padding-top: 96px !important; padding-bottom: 96px !important; } .sg-ar-why__card { min-height: 500px; } .sg-ar-why .sg-ar-reasons { gap: 40px 48px; } }
