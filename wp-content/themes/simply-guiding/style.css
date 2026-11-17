@@ -4111,3 +4111,21 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-signupform .sg-cform__box button[type=submit], .sg-signupform .sg-cform__box .sg-btn { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
 .sg-gk3-cta .sg-btn:not(.sg-btn--outline) { background: var(--sg-cta) !important; border-color: var(--sg-cta) !important; color: #fff !important; }
 .sg-gk3-custom__box p { max-width: 600px; }
+/* Grundkursus – "To intensive dage" v2: tekst til venstre, "billet"-kort med fakta til højre */
+.sg-gk3-days__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: center; }
+.sg-gk3-days__txt { grid-column: 1 / 7; }
+.sg-gk3-days__txt .sg-h2 { margin: 0 0 20px !important; }
+.sg-gk3-days__txt > p:not(.sg-gk-label) { margin: 0 !important; font-size: 17px !important; line-height: 1.7 !important; color: #212121 !important; }
+.sg-gk3-days__txt .sg-gk3-days__chips { margin: 24px 0 !important; }
+.sg-gk3-days__chips li { background: #F1F4F2 !important; border-color: transparent !important; }
+.sg-gk3-ticket { grid-column: 8 / 13; position: relative; overflow: hidden; padding: 40px; border-radius: var(--sg-radius-sm); background: #0A2F2A url("assets/pattern.png") center / 601px repeat; color: #fff; }
+.sg-gk3-ticket__mark { position: absolute; right: -24px; top: -18px; width: 170px; height: auto; fill: none; stroke: #DBE7DD; stroke-width: .3; opacity: .22; }
+.sg-gk3-ticket__label { margin: 0 0 18px !important; font-size: 13px !important; letter-spacing: .08em; text-transform: uppercase; color: #F2AE45 !important; }
+.sg-gk3-ticket ul { list-style: none; margin: 0; padding: 0; }
+.sg-gk3-ticket li { display: flex; align-items: center; gap: 18px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.14); }
+.sg-gk3-ticket li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
+.sg-gk3-ticket .sg-gk-ico { flex: none; width: 48px !important; height: 48px !important; background: rgba(255,255,255,.08) !important; color: #F2AE45 !important; }
+.sg-gk3-ticket strong { display: block; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600; font-size: 30px; line-height: 1.1; color: #fff; }
+.sg-gk3-ticket small { display: block; margin-top: 4px; font-size: 15px; color: rgba(255,255,255,.75); }
+.sg-gk3-ticket__btn { margin-top: 28px; width: 100%; justify-content: center; }
+@media (max-width: 960px) { .sg-gk3-days__grid { display: block; } .sg-gk3-ticket { margin-top: 40px; padding: 28px; } }
