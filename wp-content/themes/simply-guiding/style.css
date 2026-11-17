@@ -3527,3 +3527,5 @@ samme tekst ---------- */
   .sg-sw3-proof2__stats strong { font-size: 42px; }
 }
 @media (min-width: 961px) { .sg-sw3-partner__txt { padding-left: 56px !important; } }
+/* 17. nov.: tal skrives i Nohemi (overskrifter i General Sans) */
+.sg-ar-reasons span, .sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) > span, .sg-card3__num, .sg-index__num, .sg-kpi__num, .sg-principles8__num, .sg-quote__num, .sg-reasons__n, .sg-stat__num, .sg-cs-stats strong, .sg-course__amount, .sg-course__price b, .sg-gk-price__tiers strong, .sg-sw2-principles span, .sg-sw3-prin0 span, .sg-sw3-proof2__stats strong, .sg-sw3-proof__stats strong, .sg-sw3-steps__no, .sg-fcard__no { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; }
