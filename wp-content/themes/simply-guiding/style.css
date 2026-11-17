@@ -3260,3 +3260,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
   .sg-sw2-cit__list { grid-template-columns: 1fr; gap: 0; }
   .sg-sw2-cit__list li { flex-direction: row; align-items: center; padding: 14px 0; }
 }
+.sg-sw2-principles span { display: block; padding-bottom: 16px; border-bottom: 1px solid rgba(10,47,42,.14); }
+.sg-sw2-principles li { gap: 16px; }
