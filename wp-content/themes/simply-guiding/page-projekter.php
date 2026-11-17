@@ -12,7 +12,7 @@ $checks = function ($items) use ($check) {
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Projekter', 'title' => 'Vores projekter',
   'lead'  => 'Simply Guiding udvikler indsatser, der går nye veje i støtten til mennesker, som har brug for hjælp til at finde deres ståsted i livet. Læs mere om vores projekter her.',
-  'img' => 'projekter.jpg', 'img_w' => 1100, 'img_h' => 774, 'alt' => 'Fire unge arbejder sammen med planter i et grønt område',
+  'img' => 'gen-supermarked.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Ung kvinde i job i et supermarked får hjælp af sin chef',
 ]);
 ?>
 

@@ -6,7 +6,7 @@ $faq = require get_template_directory() . '/content/course-faq.php';
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'Grundkursus i IPS',
   'lead'  => 'Et praksisnært grundkursus, der giver dig et solidt og anvendeligt fundament i IPS-metoden. Du bliver klædt på til at omsætte metoden direkte i praksis.',
-  'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding',
+  'img' => 'gen-supervision.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Supervision med en erfaren supervisor og tre konsulenter',
   'btn1' => 'Tilmeld dig kurset', 'btn1_href' => '#tilmelding', 'btn2' => 'Se indhold', 'btn2_href' => '#om-kurset',
 ]);
 ?>
@@ -58,7 +58,7 @@ get_template_part('template-parts/page-hero', null, [
 <!-- Sådan foregår kurset -->
 <section class="sg-gk-format" aria-labelledby="gkFormatTitle">
   <div class="sg-wrap sg-gk-split sg-gk-split--media">
-    <div class="sg-gk-split__media"><img src="<?php echo esc_url($u); ?>/assets/kursus-lbi.jpg" alt="Deltagere på kursus hos Simply Guiding" loading="lazy"></div>
+    <div class="sg-gk-split__media"><img src="<?php echo esc_url($u); ?>/assets/gen-kursusdag.jpg" alt="Undervisning på en kursusdag" loading="lazy"></div>
     <div class="sg-gk-split__main">
       <p class="sg-gk-label">Sådan foregår det</p>
       <h2 class="sg-h2" id="gkFormatTitle">To intensive dage tæt på praksis</h2>

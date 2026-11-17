@@ -3,7 +3,7 @@ return [
   'label' => 'Områder',
   'title' => 'Jobcentre',
   'lead' => 'Simply Guiding fungerer som ekstern beskæftigelsesaktør til jobcentre. Vi hjælper jobcentre med at skabe et nyt ståsted i livet for borgere i en sårbar situation.',
-  'hero_img' => 'indsats-jobcenter.jpg', 'hero_alt' => 'Konsulent fra Simply Guiding i samtale med en borger',
+  'hero_img' => 'gen-jobcentermoede.jpg', 'hero_alt' => 'Konsulent fra Simply Guiding i samtale med en borger',
   'btn1' => 'Henvis en borger', 'btn2' => 'Se alle indsatser',
   'why_title' => 'Derfor ringer jobcentre til Simply Guiding',
   'why_intro' => 'Simply Guiding er en specialiseret beskæftigelsesaktør (anden aktør).',
@@ -16,7 +16,7 @@ return [
     'møder en borger, der ikke er »systemklar«, og har brug for en aktør, der tager udgangspunkt i den enkeltes situation',
   ],
   'meet_title' => 'Vi møder mennesket bag borgeren',
-  'meet_img' => 'mindset.jpg', 'meet_alt' => 'Konsulenter fra Simply Guiding i samtale',
+  'meet_img' => 'gen-supervision.jpg', 'meet_alt' => 'Konsulenter fra Simply Guiding i samtale',
   'meet_text' => [
     'Mennesker rykker sig kun, når de bliver mødt som dem, de er. Det er inklusiv den enkeltes historie, ønsker og drømme for fremtiden.',
     'Bag vores forløb ligger mere end 10 års erfaring, høj metodefidelitet og en solid beskæftigelsesfaglighed.',

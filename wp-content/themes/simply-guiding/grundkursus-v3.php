@@ -8,7 +8,7 @@ $faq = require get_template_directory() . '/content/course-faq.php';
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Academy', 'title' => 'Grundkursus i IPS',
   'lead'  => 'Et praksisnært grundkursus, der giver dig et solidt og anvendeligt fundament i IPS-metoden. Du bliver klædt på til at omsætte metoden direkte i praksis.',
-  'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding',
+  'img' => 'gen-supervision.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Supervision med en erfaren supervisor og tre konsulenter',
   'btn1' => 'Tilmeld dig kurset', 'btn1_href' => '#tilmelding', 'btn2' => 'Se indhold', 'btn2_href' => '#om-kurset',
 ]);
 $topics = [
@@ -70,7 +70,7 @@ $topics = [
       <ul class="sg-gk3-chips"><li>Oplæg</li><li>Dialog</li><li>Øvelser</li><li>Praksisnære cases</li></ul>
       <p>Du kan arbejde med dine egne cases eller med cases, der afspejler virkelige IPS-forløb i både kommunale og private sammenhænge.</p>
     </div>
-    <figure class="sg-gk3-format__img"><img src="<?php echo esc_url($u); ?>/assets/kursus-lbi.jpg" alt="Deltagere på kursus hos Simply Guiding" loading="lazy"></figure>
+    <figure class="sg-gk3-format__img"><img src="<?php echo esc_url($u); ?>/assets/gen-kursusdag.jpg" alt="Undervisning på en kursusdag" loading="lazy"></figure>
   </div>
 </section>
 

@@ -60,7 +60,7 @@ $topics = [
         <li><h3>Rollespil</h3><p>Du trænes i de situationer, der kan opstå i et IPS-forløb – fx at screene kandidater og arbejde tværfagligt med kandidaten i fokus.</p></li>
       </ol>
     </div>
-    <figure class="sg-gk3-format__img sg-gk3-format__img--tall"><img src="<?php echo esc_url($u); ?>/assets/kursus-tilmeld.jpg" alt="Kursusdeltagere hos Simply Guiding" loading="lazy"></figure>
+    <figure class="sg-gk3-format__img sg-gk3-format__img--tall"><img src="<?php echo esc_url($u); ?>/assets/gen-gruppearbejde.jpg" alt="Kursister i gruppearbejde med post-its" loading="lazy"></figure>
   </div>
 </section>
 

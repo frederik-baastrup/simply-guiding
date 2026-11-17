@@ -47,7 +47,7 @@ $folder = $u . '/assets/ips-konsulentuddannelse-folder.pdf';
 <!-- Sådan foregår uddannelsen -->
 <section class="sg-gk-format" aria-labelledby="ipsFormatTitle">
   <div class="sg-wrap sg-gk-split sg-gk-split--media">
-    <div class="sg-gk-split__media"><img src="<?php echo esc_url($u); ?>/assets/kursus-tilmeld.jpg" alt="Kursusdeltagere hos Simply Guiding" loading="lazy"></div>
+    <div class="sg-gk-split__media"><img src="<?php echo esc_url($u); ?>/assets/gen-gruppearbejde.jpg" alt="Kursister i gruppearbejde med post-its" loading="lazy"></div>
     <div class="sg-gk-split__main">
       <p class="sg-gk-label">Sådan foregår det</p>
       <h2 class="sg-h2" id="ipsFormatTitle">Tre måder at lære på</h2>

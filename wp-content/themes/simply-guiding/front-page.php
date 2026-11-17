@@ -33,7 +33,7 @@
     </div>
     <div class="sg-cards" id="sgCards">
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/gen-jobcentermoede.jpg" alt="Møde mellem en IPS-konsulent og to medarbejdere fra et jobcenter" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
         <a class="sg-card__link" href="/omraade/jobcentre/" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">
@@ -115,7 +115,7 @@
 </div>
 <section class="sg-about" aria-labelledby="sgAboutTitle">
   <div class="sg-about__inner">
-    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/kursus-lbi.jpg" alt="Konsulent fra Simply Guiding i samtale med to borgere" loading="lazy"></div>
+    <div class="sg-about__media"><img src="<?php echo get_template_directory_uri(); ?>/assets/gen-kursusdag.jpg" alt="Undervisning på en kursusdag" loading="lazy"></div>
     <div class="sg-about__copy">
       <h2 class="sg-about__title" id="sgAboutTitle">Vores samarbejde bygger på forståelse, faglighed og erfaring</h2>
       <p>Bag vores indsatser ligger mere end 10 års erfaring, dyb metodefidelitet og en solid beskæftigelsesfaglighed inden for IPS og Supported Employment.</p>

@@ -34,7 +34,7 @@ return [
     ]],
     ['id' => 'om-uddannelsen', 'nav' => 'Om uddannelsen', 'title' => 'Bliv uddannet til IPS-konsulent hos Simply Guiding', 'blocks' => [
       ['type' => 'lead', 'text' => 'Med uddannelsen til IPS-konsulent får du indgående viden om metoden og bliver klædt på til at praktisere alle elementer i metoden. Lær om on-boarding af kandidater, at virksomhedsmatche og at opstarte et arbejdsrettet forløb, samt tværfagligt samarbejde og fastholdelse af kandidaten i job eller uddannelse.'],
-      ['type' => 'img', 'src' => 'kursus-tilmeld.jpg', 'alt' => 'Kursusdeltagere hos Simply Guiding'],
+      ['type' => 'img', 'src' => 'gen-gruppearbejde.jpg', 'alt' => 'Kursister i gruppearbejde med post-its'],
       ['type' => 'p', 'text' => 'Du og dine kolleger får løbende supervision af din praksis som IPS-konsulent med vejledning på dine kandidatforløb. I jobcentre, der ønsker at introducere IPS som ny praksis, uddannes typisk flere medarbejdere til rollen som IPS-konsulent, så de sammen udgør et IPS-team.'],
     ]],
     ['id' => 'det-laerer-du', 'nav' => 'Det lærer du', 'title' => 'Hvad lærer du på konsulentuddannelsen?', 'blocks' => [

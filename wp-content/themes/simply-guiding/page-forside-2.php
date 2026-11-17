@@ -131,7 +131,7 @@ get_header(); ?>
         </div>
       </article>
       <article class="sg-card">
-        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/indsats-jobcenter.jpg" alt="" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
+        <div class="sg-card__media"><img class="sg-card__img" src="<?php echo get_template_directory_uri(); ?>/assets/gen-jobcentermoede.jpg" alt="Møde mellem en IPS-konsulent og to medarbejdere fra et jobcenter" style="object-position:center 40%" loading="lazy"><span class="sg-card__tag">Kommuner</span></div>
         <a class="sg-card__link" href="/loesninger/#beskaeftigelsesindsatser" aria-label="Læs om indsatsen: Jobcentre"></a>
         <div class="sg-card__body">
           <div class="sg-card__copy">

@@ -9,7 +9,7 @@ $checks = function ($items) use ($check) { echo '<ul class="sg-principles">'; fo
 get_template_part('template-parts/page-hero', null, [
   'label' => 'Løsninger', 'title' => 'Se vores løsninger',
   'lead'  => 'Simply Guiding tilbyder en række løsninger der er skræddersyet til specifikke målgrupper. Her kan du læse mere om de forskellige modeller og indholdet af de konkrete indsatser og metoder som vi praktiserer.',
-  'img' => 'loesninger-hero.jpg', 'img_w' => 1600, 'img_h' => 1067, 'alt' => 'Kandidatsamtale hos Simply Guiding',
+  'img' => 'gen-samtale.jpg', 'img_w' => 1536, 'img_h' => 1024, 'alt' => 'Konsulent og borger i samtale ved et bord',
 ]);
 $sol = [
   ['beskaeftigelsesindsatser', 'Beskæftigelsesindsatser', 'Simply Guiding leverer beskæftigelsesindsatser til ledige på alle forsørgelsesgrundlag. Forløbet er altid individuelt tilrettelagt, håndholdt og skræddersyet til borgerens behov.'],
@@ -115,7 +115,7 @@ $sol = [
 <section class="sg-ls-sol sg-ls-sol--dark" id="academy" aria-labelledby="sgSol5">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
-      <img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="Undervisning i Simply Guiding Academy" loading="lazy">
+      <img src="<?php echo esc_url($u); ?>/assets/gen-supervision.jpg" alt="Supervision med en erfaren supervisor og tre konsulenter" loading="lazy">
       <span class="sg-ls-sol__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><?php echo SG_LS_ARROW; ?></svg></span>
     </figure>
     <div class="sg-ls-sol__copy">

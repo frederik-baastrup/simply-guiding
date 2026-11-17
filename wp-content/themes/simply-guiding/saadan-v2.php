@@ -13,7 +13,7 @@ $principles = ['Suspender din forforståelse og mød mennesket hvor det er', 'Tr
       </div>
     </div>
     <div class="sg-sw2-trio">
-      <figure class="sg-sw2-trio__img"><img src="<?php echo esc_url($u); ?>/assets/mindset.jpg" alt="" loading="lazy"></figure>
+      <figure class="sg-sw2-trio__img"><img src="<?php echo esc_url($u); ?>/assets/gen-supervision.jpg" alt="Supervision med en erfaren supervisor og tre konsulenter" loading="lazy"></figure>
       <article class="sg-sw2-card"><span class="sg-gk-ico"><?php echo sg_icon('bookopen'); ?></span><h3>Uddannelse og supervision</h3><p>Vores medarbejdere uddannes af certificerede undervisere og arbejder metodebaseret – fx med Supported Employment, IPS og Supported Education (SEd). Alle har en individuel supervisor.</p></article>
       <article class="sg-sw2-card"><span class="sg-gk-ico"><?php echo sg_icon('people'); ?></span><h3>Praktisk læring og feedback</h3><p>Praktisk læring mellem medarbejder og supervisor holder fast i metoden og vores mindset, baseret på en tillidsfuld feedbackkultur – og sikrer momentum i hvert forløb.</p></article>
     </div>
