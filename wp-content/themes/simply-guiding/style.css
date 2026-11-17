@@ -4004,3 +4004,12 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-hero--sub__media > img, .sg-hero--sub__media > video, .sg-split__media > img, .sg-split__media > video { transform: scale(1.1); transform-origin: center top; will-change: transform; }
 @media (prefers-reduced-motion: reduce) { .sg-hero--sub__media > img, .sg-hero--sub__media > video, .sg-split__media > img, .sg-split__media > video { transform: none; } }
 .sg-wide-img { margin-left: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; margin-right: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; border-radius: var(--sg-radius-sm); }
+/* "I praksis"-boksen: logo-pil som tynd grafik nederst til venstre, afsnit adskilt af streger med grøn accent */
+.sg-gk3-daily__box { position: relative; overflow: hidden; }
+.sg-gk3-daily__box > div:first-child { display: flex; flex-direction: column; }
+.sg-gk3-daily__mark { margin-top: auto; padding-top: 48px; width: 170px; height: auto; fill: none; stroke: var(--sg-cta); stroke-width: .3; opacity: .4; box-sizing: content-box; }
+.sg-gk3-daily__txt p { position: relative; margin: 0 !important; padding: 20px 0 !important; border-top: 1px solid rgba(10,47,42,.12); }
+.sg-gk3-daily__txt p:first-child { padding-top: 0 !important; border-top: 0; }
+.sg-gk3-daily__txt p + p::before { content: ""; position: absolute; left: 0; top: -1px; width: 40px; height: 2px; background: var(--sg-cta); }
+.sg-gk3-daily__txt p:last-child { padding-bottom: 0 !important; }
+@media (max-width: 960px) { .sg-gk3-daily__mark { display: none; } }

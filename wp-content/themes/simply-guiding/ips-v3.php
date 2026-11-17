@@ -72,6 +72,7 @@ $topics = [
         <p class="sg-gk-label">I praksis</p>
         <h2 class="sg-h2" id="ipsDailyTitle">IPS bliver en integreret del af din arbejdsdag</h2>
         <p class="sg-gk3-daily__lead">IPS er en beskæftigelsesindsats for mennesker med psykiske diagnoser eller psykisk sårbarhed, som ønsker – og er motiverede for – at komme i arbejde eller uddannelse.</p>
+        <svg class="sg-gk3-daily__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
       </div>
       <div class="sg-gk3-daily__txt">
         <p>Med IPS-indsatsens principper og værktøjer lærer du at følge borgerens vej og sætte deres ønsker og drømme i centrum. Du afdækker, hvad der interesserer den enkelte, og kortlægger og beskriver deres kompetencer – så du kan give den rette støtte og finde det bedst mulige jobmatch.</p>
