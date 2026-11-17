@@ -3727,3 +3727,5 @@ samme tekst ---------- */
 }
 /* Afsluttende CTA: lille gul label over overskriften */
 .sg-final__label { margin: 0 0 18px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #F2AE45 !important; }
+/* Cases: introen på hvid baggrund, så den ikke flyder sammen med det mørke tal-bånd */
+.sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-cs-intro:first-of-type { background: none !important; margin-inline: 0 !important; border-radius: 0 !important; }
