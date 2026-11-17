@@ -71,7 +71,6 @@ $topics = [
       <p>Du kan arbejde med dine egne cases eller med cases, der afspejler virkelige IPS-forløb i både kommunale og private sammenhænge.</p>
     </div>
     <aside class="sg-gk3-ticket" aria-label="Kurset kort fortalt">
-      <svg class="sg-gk3-ticket__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
       <p class="sg-gk3-ticket__label">Kurset kort fortalt</p>
       <ul>
         <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span><div><strong>2 dage</strong><small>sammenhængende kursusdage</small></div></li>
@@ -103,6 +102,7 @@ $topics = [
       <div>
         <p class="sg-gk3-band__label">Udbytte</p>
         <h2 class="sg-h2" id="gkValueTitle">Det tager du med hjem</h2>
+        <p class="sg-gk3-band__intro">Efter kurset har du:</p>
         <ol class="sg-gk3-band__gain">
           <li><span>01</span>Grundlæggende viden om IPS-metoden og dens principper</li>
           <li><span>02</span>Indsigt i IPS-mindset og metodens praksis</li>
