@@ -3706,3 +3706,14 @@ samme tekst ---------- */
 .sg-final__btn { background: #FBC33C !important; border-color: #FBC33C !important; color: #0A2F2A !important; }
 /* Nyhedsbrev: Tilmeld-knap i gul (17. nov.) */
 .sg-signup__btn { background: #FBC33C !important; border-color: #FBC33C !important; color: #0A2F2A !important; }
+/* Nyhedsbrev-boksen (17. nov.): gul ikon og overskrift + gult brev der svæver i højre side, beskåret af boksens kant */
+.sg-tile--news { position: relative; overflow: hidden; isolation: isolate; }
+.sg-tile--news .sg-tile__icon { color: #FBC33C !important; opacity: 1; }
+.sg-tile--news .sg-tile__title { color: #FBC33C !important; }
+.sg-tile--news .sg-tile__text { max-width: 30em; }
+.sg-news-letter { position: absolute; top: 56px; right: -64px; width: 200px; z-index: -1; transform: rotate(8deg); filter: drop-shadow(0 18px 30px rgba(0,0,0,.35)); animation: sgLetterFloat 6s ease-in-out infinite alternate; }
+.sg-news-letter svg { display: block; width: 100%; height: auto; }
+@keyframes sgLetterFloat { from { transform: rotate(8deg) translateY(0); } to { transform: rotate(6deg) translateY(-16px); } }
+@media (prefers-reduced-motion: reduce) { .sg-news-letter { animation: none; } }
+@media (max-width: 1100px) { .sg-news-letter { width: 150px; right: -56px; } }
+@media (max-width: 700px) { .sg-news-letter { width: 120px; right: -44px; top: 32px; } .sg-tile--news .sg-tile__text { max-width: 78%; } }
