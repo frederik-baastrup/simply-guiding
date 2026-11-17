@@ -3748,3 +3748,15 @@ samme tekst ---------- */
 /* Nummererede trin/emner: tal i samme størrelse og på linje med overskriften */
 .sg-sw3-steps__no { font-size: 19px !important; line-height: 1.3 !important; padding-top: 0 !important; }
 .sg-gk3-prog__no { font-size: 21px !important; line-height: 1.3 !important; }
+/* Cases-kort (17. nov.): overskrift på én linje, mindre beskrivelse, subtil hover med pil der glider */
+.sg-cs-card h3 { font-size: 20px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sg-cs-card:not(.sg-cs-card--cta) > p:not(.sg-gk-label) { font-size: 15px !important; }
+a.sg-cs-card { transition: background-color .25s ease, box-shadow .25s ease; }
+a.sg-cs-card:hover { background: #EEEDEA; box-shadow: inset 0 0 0 1px rgba(10,47,42,.08); }
+.sg-cs-card__link svg { transition: transform .25s ease; }
+a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
+/* Ring-kortet: centreret både vandret og lodret, knap i stedet for link */
+.sg-cs-card--cta { align-items: center; justify-content: center; text-align: center; padding: 40px 48px !important; }
+.sg-cs-card--cta .sg-gk-ico { margin: 0 auto 8px; }
+.sg-cs-card--cta h3 { white-space: normal; text-wrap: balance; }
+.sg-cs-card--cta .sg-cs-card__btn { margin-top: 12px; background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }

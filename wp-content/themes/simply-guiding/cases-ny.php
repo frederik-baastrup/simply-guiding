@@ -44,7 +44,7 @@ $rest = array_slice($cases, 1);
         <span class="sg-gk-ico"><?php echo sg_icon('phone'); ?></span>
         <h3>Vil I høre mere om vores forløb?</h3>
         <p>Ring på <a href="tel:+4526344454">26 34 44 54</a>, eller skriv til os, så fortæller vi mere.</p>
-        <a class="sg-cs-card__link" href="/kontakt/">Kontakt os <?php echo sg_arrow(); ?></a>
+        <a class="sg-btn sg-btn--lg sg-cs-card__btn" href="/kontakt/">Kontakt os</a>
       </div>
     </div>
   </div>

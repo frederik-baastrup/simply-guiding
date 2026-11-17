@@ -298,3 +298,33 @@
     window.addEventListener('scroll', spy, { passive: true });
     window.addEventListener('resize', spy);
   })();
+
+/* Tælle-animation på nøgletal (fx 25+, 1.500+, 10+) når de kommer til syne */
+(function () {
+  var els = document.querySelectorAll('.sg-kpi__num');
+  if (!els.length || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function fmt(n, dots) { var s = String(n); return dots ? s.replace(/\B(?=(\d{3})+(?!\d))/g, '.') : s; }
+  els.forEach(function (el) {
+    var txt = el.textContent.trim(), m = txt.match(/^([\d.]+)(.*)$/);
+    if (!m) return;
+    var target = parseInt(m[1].replace(/\./g, ''), 10), suffix = m[2], dots = m[1].indexOf('.') > -1;
+    el.style.minWidth = el.offsetWidth + 'px';
+    el.textContent = fmt(0, dots) + suffix;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        var t0 = null, dur = 1800;
+        function step(t) {
+          if (!t0) t0 = t;
+          var p = Math.min(1, (t - t0) / dur), ease = 1 - Math.pow(1 - p, 3);
+          el.textContent = fmt(Math.round(target * ease), dots) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }, { threshold: .4 });
+    io.observe(el);
+  });
+})();
