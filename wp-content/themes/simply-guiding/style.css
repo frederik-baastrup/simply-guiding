@@ -3725,3 +3725,5 @@ samme tekst ---------- */
   .sg-os-belief { margin-left: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; margin-right: calc((100% - min(100%, var(--sg-max) + 36px)) / 2 + var(--sg-gutter)) !important; border-radius: var(--sg-radius-sm); }
   .sg-os-belief > .sg-wrap { max-width: none !important; padding-inline: 64px !important; }
 }
+/* Afsluttende CTA: lille gul label over overskriften */
+.sg-final__label { margin: 0 0 18px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #F2AE45 !important; }

@@ -17,6 +17,7 @@ $p = wp_parse_args(isset($args) && is_array($args) ? $args : [], [
       <svg class="sg-final__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
     </div>
     <div class="sg-final__inner">
+      <p class="sg-final__label">Kom i gang</p>
       <h2 class="sg-final__title" id="sgFinalTitle">Skal vi skabe det næste<br> ståsted sammen?</h2>
       <div class="sg-final__actions">
         <a class="sg-final__btn" href="/kontakt/">Kontakt os for en uforpligtende snak</a>
