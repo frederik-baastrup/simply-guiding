@@ -4139,3 +4139,19 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-ticket .sg-gk-ico { background: var(--sg-cta) !important; color: #fff !important; }
 .sg-gk3-ticket strong { color: #212121; }
 .sg-gk3-ticket small { color: #212121; opacity: .75; }
+/* Grundkursus: faktakort til venstre, tekst til højre */
+.sg-gk3-ticket { grid-column: 1 / 6 !important; grid-row: 1; }
+.sg-gk3-days__txt { grid-column: 7 / 13 !important; grid-row: 1; }
+/* Mørkt bånd: labels, overskrifter, intro og lister på samme linjer i begge kolonner */
+.sg-gk3-band__grid { align-items: start !important; }
+.sg-gk3-band__intro { min-height: 0 !important; margin: 0 0 28px !important; }
+.sg-gk3-band h2 { min-height: 0 !important; }
+/* Pris: lækrere kort – hvid med tynd ramme, grøn accentstreg, pris i Nohemi, fyldt knap */
+.sg-gk3-price__card { position: relative; overflow: hidden; background: #fff !important; border: 1px solid rgba(10,47,42,.12); padding: 40px 44px !important; transition: border-color .25s ease, box-shadow .25s ease; }
+.sg-gk3-price__card::before { content: ""; position: absolute; left: 44px; top: 0; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-gk3-price__card:hover { border-color: rgba(10,47,42,.28); box-shadow: 0 18px 40px -24px rgba(10,47,42,.35); }
+.sg-gk3-price__who { font-size: 13px !important; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta) !important; font-weight: 500 !important; }
+.sg-gk3-price__amt { font-family: "Nohemi", -apple-system, system-ui, sans-serif !important; color: #0A2F2A !important; }
+.sg-gk3-price__card .sg-btn--outline { background: var(--sg-cta) !important; color: #fff !important; border-color: var(--sg-cta) !important; }
+.sg-gk3-price__card + .sg-gk3-price__card { background: #F1F4F2 !important; border-color: transparent; }
+@media (max-width: 960px) { .sg-gk3-ticket { margin: 0 0 40px !important; } }
