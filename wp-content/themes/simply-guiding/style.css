@@ -3171,3 +3171,4 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Menuen uden kant */
 .sg-nav { border: 0 !important; }
 @media (max-width: 1024px) { .sg-hero--sub h1 { font-size: clamp(28px, 8vw, 48px); line-height: 1; } }
+@media (max-width: 1024px) { .sg-hero--sub .sg-hero__inner { padding-inline: 20px !important; } .sg-hero--sub h1 { font-size: clamp(26px, 7vw, 48px); } }
