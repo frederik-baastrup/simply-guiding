@@ -3766,3 +3766,7 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-principles li:last-child { border-bottom: 1px solid rgba(10,47,42,.12) !important; }
 .sg-principles li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
 .sg-principles li svg { display: block !important; flex: none; width: 36px !important; height: 36px !important; padding: 9px; margin: -4px 0 0 !important; border-radius: 50%; background: var(--sg-cta); color: #fff !important; stroke: #fff; box-sizing: border-box; }
+/* Om os – værdier: større ikoner (grøn cirkel), mindre overskrift */
+.sg-os-values__ico { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--sg-cta); color: #fff; }
+.sg-os-values__ico svg { width: 26px; height: 26px; stroke-width: 1.5; }
+.sg-os-values__grid h3 { margin: 22px 0 8px !important; font-size: 24px !important; }
