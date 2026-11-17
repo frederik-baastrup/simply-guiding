@@ -3777,3 +3777,8 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-hero__notch--cats .sg-catnav { margin: 0; flex-wrap: nowrap; }
 .sg-bloglist { padding-top: 64px; }
 @media (max-width: 1024px) { .sg-hero--blog .sg-hero__notch--cats { transform: none; left: 0; width: 100%; } .sg-hero__notch--cats .sg-catnav { flex-wrap: wrap; justify-content: center; } }
+/* Derfor ringer: grøn accent på stregen under tallene */
+.sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) > span { position: relative; }
+.sg-ar-why .sg-ar-reasons li:not(.sg-ar-reasons__cta) > span::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p { position: relative; }
+.sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
