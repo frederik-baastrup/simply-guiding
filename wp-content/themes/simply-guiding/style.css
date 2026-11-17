@@ -3140,3 +3140,10 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Ikoncirkler i CTA-grøn (17. nov.) – ikke i de mørke bokse */
 .sg-gk-ico { background: var(--sg-cta) !important; color: #fff; }
 .sg-ar-reasons__cta .sg-gk-ico, .sg-cs-card--cta .sg-gk-ico { background: rgba(255,255,255,.1) !important; }
+/* Fremhævet udsagn (IPS-konsulentuddannelse): lysegrøn boks med ikoncirkel og kort overskrift */
+.sg-gk-callout { display: flex; align-items: flex-start; gap: 20px; margin-top: 32px; padding: 26px 28px; border-radius: var(--sg-radius-sm); background: rgba(0,114,93,.07); border: 1px solid rgba(0,114,93,.14); }
+.sg-gk-callout .sg-gk-ico { flex: none; }
+.sg-gk-callout p { margin: 0 !important; font-size: var(--sg-body) !important; line-height: 1.6 !important; color: #212121 !important; }
+.sg-gk-callout strong { display: block; margin-bottom: 4px; font-size: 19px; font-weight: 500; color: #0A2F2A; }
+/* Øvrige ikoncirkler også i CTA-grøn (ikke i mørke paneler) */
+.sg-trio__ico, .sg-why3__ico, .sg-course__bico, .sg-kt__ico { background: var(--sg-cta) !important; color: #fff !important; }

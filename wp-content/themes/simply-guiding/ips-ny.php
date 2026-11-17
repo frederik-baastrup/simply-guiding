@@ -27,7 +27,7 @@ $folder = $u . '/assets/ips-konsulentuddannelse-folder.pdf';
     <div class="sg-gk-split__main">
       <p class="sg-gk-lead">Med uddannelsen til IPS-konsulent får du indgående viden om metoden og bliver klædt på til at praktisere alle dens elementer – fra on-boarding af kandidater, virksomhedsmatch og opstart af et arbejdsrettet forløb til tværfagligt samarbejde og fastholdelse i job eller uddannelse.</p>
       <p>Du og dine kolleger får løbende supervision af jeres praksis med vejledning på jeres kandidatforløb. I jobcentre, der vil introducere IPS som ny praksis, uddannes typisk flere medarbejdere, så de sammen udgør et IPS-team.</p>
-      <p class="sg-gk-note"><?php echo sg_icon('shield'); ?>Simply Guiding er den førende leverandør af den evidensbaserede IPS-metode, som hjælper psykisk sårbare tilbage til et stabilt og givende arbejdsliv.</p>
+      <div class="sg-gk-callout"><span class="sg-gk-ico"><?php echo sg_icon('shield'); ?></span><p><strong>Den førende leverandør af IPS</strong>Simply Guiding er den førende leverandør af den evidensbaserede IPS-metode, som hjælper psykisk sårbare tilbage til et stabilt og givende arbejdsliv.</p></div>
     </div>
   </div>
 </section>
