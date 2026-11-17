@@ -3197,3 +3197,5 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 /* Kort i den lysegrønne sektion bliver hvide, så de står tydeligt */
 .sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) { --sg-sand: #fff; }
 .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type li { background: #fff !important; }
+.sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) { margin-inline: max(18px, env(safe-area-inset-left, 0px)); border-radius: var(--sg-radius); }
+@media (max-width: 600px) { .sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) { margin-inline: 10px; } }
