@@ -38,7 +38,7 @@ $principles = [
     <div class="sg-wrap">
       <div class="sg-band2__head">
         <h2 class="sg-h2 sg-h2--light" id="sgPrinTitle">Principperne bag IPS-metoden</h2>
-        <p class="sg-principles8__intro">IPS er forankret i 8 principper, der sætter rammen og retningen for indsatsen. De 8 IPS-principper guider IPS-konsulenten i implementeringen af indsatsen. Sammen med indsatsmanualer og værktøjer udgør principperne metodegrundlaget for det systematiske arbejde med at støtte og vejlede IPS-kandidaten på vejen mod job eller uddannelse.</p>
+        <p class="sg-principles8__intro">IPS er forankret i 8 principper, der sætter rammen og retningen for indsatsen. Sammen med indsatsmanualer og værktøjer udgør de metodegrundlaget for at støtte IPS-kandidaten på vejen mod job eller uddannelse.</p>
       </div>
       <ol class="sg-principles8__grid">
         <?php foreach ($principles as $i => $p) : ?>
