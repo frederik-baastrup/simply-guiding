@@ -3964,3 +3964,32 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 @media (prefers-reduced-motion: reduce) { .sg-faq__item::before, .sg-faq__q { transition: none; } }
 .sg-os-values--v2 .sg-os-values__grid p { max-width: 16em; text-wrap: balance; }
 .sg-os-values--v2 .sg-os-values__grid p { max-width: 225px; }
+/* IPS-uddannelse v2: målgruppe-boks med knap og logo-pil; gule flueben; Fidelity som tidslinje; ensartet luft */
+.sg-gk3-band--who .sg-gk3-who { align-items: stretch; }
+.sg-gk3-who__head { display: flex; flex-direction: column; }
+.sg-gk3-who__foot { margin-top: auto; padding-top: 40px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.sg-gk3-who__btn { background: #F2AE45 !important; border-color: #F2AE45 !important; color: #0A2F2A !important; }
+.sg-gk3-who__mark { width: 120px; height: auto; fill: none; stroke: #DBE7DD; stroke-width: .3; opacity: .35; }
+.sg-gk3-band--who .sg-gk3-band__list li svg { color: #F2AE45 !important; }
+.sg-gk3-band--who .sg-gk3-band__list li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
+.sg-gk3-fid { padding: 112px 0 0 !important; }
+.sg-gk3-fid__head { align-items: start !important; margin-bottom: 64px !important; }
+.sg-gk3-fid__lead { padding-top: 34px; }
+.sg-gk3-fid__steps--line { position: relative; gap: 40px !important; }
+.sg-gk3-fid__steps--line::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 1px; background: linear-gradient(90deg, var(--sg-cta), rgba(0,114,93,.25)); }
+.sg-gk3-fid__steps--line li { border-top: 0 !important; padding-top: 40px !important; }
+.sg-gk3-fid__steps--line li::before { top: 0 !important; width: 15px !important; height: 15px !important; border-radius: 50%; background: #fff !important; border: 2px solid var(--sg-cta); box-sizing: border-box; }
+.sg-gk3-fid__steps--line li.is-goal::before { background: var(--sg-cta) !important; }
+.sg-gk3-fid__steps--line p { font-size: 18px !important; max-width: 18em; }
+.sg-gk3-fid__goal { position: absolute; right: 0; top: -14px; width: 44px; height: 44px; border-radius: 50%; background: #2C654E; display: grid; place-items: center; box-shadow: 0 0 0 6px #fff; }
+.sg-gk3-fid__goal svg { width: 18px; height: auto; fill: #fff; }
+.sg-gk3-fid + section.sg-gk3-price { padding-top: 112px !important; }
+@media (max-width: 960px) {
+  .sg-gk3-fid { padding-top: 72px !important; }
+  .sg-gk3-fid__lead { padding-top: 0; }
+  .sg-gk3-fid__steps--line::before { left: 7px; right: auto; top: 0; bottom: 0; width: 1px; height: auto; }
+  .sg-gk3-fid__steps--line li { padding: 0 0 0 40px !important; }
+  .sg-gk3-fid__goal { display: none; }
+  .sg-gk3-who__mark { display: none; }
+  .sg-gk3-fid + section.sg-gk3-price { padding-top: 72px !important; }
+}

@@ -90,6 +90,10 @@ $topics = [
         <p class="sg-gk3-band__label">Målgruppe</p>
         <h2 class="sg-h2" id="ipsWhoTitle">Er uddannelsen til IPS-konsulent noget for dig?</h2>
         <p class="sg-gk3-band__intro">Uddannelsen er for dig, der:</p>
+        <div class="sg-gk3-who__foot">
+          <a class="sg-btn sg-btn--lg sg-gk3-who__btn" href="/kontakt/">Kontakt os</a>
+          <svg class="sg-gk3-who__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
+        </div>
       </div>
       <ul class="sg-gk3-band__list">
           <li><?php echo sg_check_svg(); ?><span>ønsker at kunne arbejde selvstændigt med IPS-opgaver i hverdagen</span></li>
@@ -112,10 +116,10 @@ $topics = [
       </div>
       <p class="sg-gk3-fid__lead">Som afsluttende led kan der gennemføres en Fidelity-evaluering, udført af vores egne IPS-konsulenter – jeres blåstempling af, at I udfører IPS-indsatsen korrekt og effektivt.</p>
     </div>
-    <ol class="sg-gk3-fid__steps">
+    <ol class="sg-gk3-fid__steps sg-gk3-fid__steps--line">
       <li><span>01</span><p>Jeres indsats vurderes ud fra Fidelity-skalaen</p></li>
       <li><span>02</span><p>I får en mundtlig tilbagemelding og en skriftlig rapport med score</p></li>
-      <li><span>03</span><p>Du opnår titlen Certificeret Advanced Practitioner</p></li>
+      <li class="is-goal"><span>03</span><p>Du opnår titlen Certificeret Advanced Practitioner</p><i class="sg-gk3-fid__goal" aria-hidden="true"><svg viewBox="0 0 37 25"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></i></li>
     </ol>
   </div>
 </section>
