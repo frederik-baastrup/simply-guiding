@@ -72,16 +72,23 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
   </div>
 </section>
 
-<!-- Vores værdier -->
-<section class="sg-os-values" aria-labelledby="sgValuesTitle">
-  <div class="sg-wrap">
-    <h2 class="sg-h2" id="sgValuesTitle">Vores værdier</h2>
-    <ul class="sg-os-values__grid">
-      <li><span class="sg-os-values__ico"><?php echo sg_icon('heart'); ?></span><h3>Tro</h3><p>Vi tror på mennesket og fremtiden.</p></li>
-      <li><span class="sg-os-values__ico"><?php echo sg_icon('bookopen'); ?></span><h3>Faglighed</h3><p>Vi bygger vores indsatser på evidens og erfaring.</p></li>
-      <li><span class="sg-os-values__ico"><?php echo sg_icon('bolt'); ?></span><h3>Handling</h3><p>Vi sætter mennesker i bevægelse.</p></li>
-      <li><span class="sg-os-values__ico"><?php echo sg_icon('user'); ?></span><h3>Autenticitet</h3><p>Vi kommer med, hvad og hvem vi er.</p></li>
-    </ul>
+<!-- Vores værdier: 2×2 til venstre, billede til højre -->
+<section class="sg-os-values sg-os-values--v2" aria-labelledby="sgValuesTitle">
+  <div class="sg-wrap sg-os-values__layout">
+    <div class="sg-os-values__main">
+      <svg class="sg-os-values__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
+      <h2 class="sg-h2" id="sgValuesTitle">Vores værdier</h2>
+      <ul class="sg-os-values__grid">
+        <li><div class="sg-os-values__top"><span class="sg-os-values__n">01</span><span class="sg-os-values__ico"><?php echo sg_icon('heart'); ?></span></div><h3>Tro</h3><p>Vi tror på mennesket og fremtiden.</p></li>
+        <li><div class="sg-os-values__top"><span class="sg-os-values__n">02</span><span class="sg-os-values__ico"><?php echo sg_icon('bookopen'); ?></span></div><h3>Faglighed</h3><p>Vi bygger vores indsatser på evidens og erfaring.</p></li>
+        <li><div class="sg-os-values__top"><span class="sg-os-values__n">03</span><span class="sg-os-values__ico"><?php echo sg_icon('bolt'); ?></span></div><h3>Handling</h3><p>Vi sætter mennesker i bevægelse.</p></li>
+        <li><div class="sg-os-values__top"><span class="sg-os-values__n">04</span><span class="sg-os-values__ico"><?php echo sg_icon('user'); ?></span></div><h3>Autenticitet</h3><p>Vi kommer med, hvad og hvem vi er.</p></li>
+      </ul>
+    </div>
+    <figure class="sg-os-values__media">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/metode-samtale.jpg" alt="" loading="lazy">
+      <span class="sg-os-values__badge" aria-hidden="true"><svg viewBox="0 0 37 25"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg></span>
+    </figure>
   </div>
 </section>
 

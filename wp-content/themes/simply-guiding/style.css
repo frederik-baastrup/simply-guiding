@@ -3800,3 +3800,30 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-hero__notch--cats .sg-catnav { gap: 10px; }
 .sg-hero__notch--cats .sg-catnav a { padding: 10px 20px; font-size: 15px; }
 .sg-gk-split__main .sg-gk-lead + .sg-ar-points { margin-top: 40px !important; }
+/* Om os – værdier v2: 2×2 til venstre, billede til højre, logo-pil som subtil grafik */
+.sg-os-values--v2 { padding-block: 72px 112px; }
+.sg-os-values__layout { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: stretch; }
+.sg-os-values__main { grid-column: 1 / 8; position: relative; display: flex; flex-direction: column; justify-content: center; padding-right: 24px; }
+.sg-os-values__mark { position: absolute; right: 8px; top: -8px; width: 150px; height: auto; fill: none; stroke: var(--sg-cta); stroke-width: .35; opacity: .35; pointer-events: none; }
+.sg-os-values--v2 .sg-h2 { margin: 0 0 56px !important; }
+.sg-os-values--v2 .sg-os-values__grid { grid-template-columns: 1fr 1fr !important; gap: 56px 48px; border: 0 !important; }
+.sg-os-values--v2 .sg-os-values__grid li { position: relative; padding: 24px 0 0 !important; border: 0 !important; border-top: 1px solid rgba(10,47,42,.12) !important; }
+.sg-os-values--v2 .sg-os-values__grid li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-os-values__top { display: flex; align-items: center; justify-content: space-between; }
+.sg-os-values__n { font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600; font-size: 17px; color: var(--sg-cta); }
+.sg-os-values--v2 .sg-os-values__ico { display: block; width: 28px; height: 28px; border-radius: 0; background: none; color: var(--sg-cta); }
+.sg-os-values--v2 .sg-os-values__ico svg { width: 28px; height: 28px; stroke-width: 1.4; }
+.sg-os-values--v2 .sg-os-values__grid h3 { margin: 18px 0 8px !important; font-size: 24px !important; }
+.sg-os-values--v2 .sg-os-values__grid p { font-size: var(--sg-body) !important; color: #212121 !important; }
+.sg-os-values__media { grid-column: 8 / 13; position: relative; margin: 0; min-height: 560px; border-radius: var(--sg-radius); overflow: visible; }
+.sg-os-values__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: var(--sg-radius); }
+.sg-os-values__badge { position: absolute; left: -36px; bottom: 48px; width: 88px; height: 88px; border-radius: 50%; background: #0A2F2A; display: grid; place-items: center; box-shadow: 0 0 0 8px #fff; }
+.sg-os-values__badge svg { width: 36px; height: auto; fill: #F2AE45; }
+@media (max-width: 960px) {
+  .sg-os-values__layout { display: block; }
+  .sg-os-values__main { padding-right: 0; }
+  .sg-os-values__mark { width: 90px; }
+  .sg-os-values__media { min-height: 360px; margin-top: 56px; }
+  .sg-os-values__badge { left: 24px; bottom: -28px; width: 72px; height: 72px; }
+}
+@media (max-width: 600px) { .sg-os-values--v2 .sg-os-values__grid { grid-template-columns: 1fr !important; gap: 40px; } }
