@@ -3919,3 +3919,6 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-tile__label { margin: 0 0 12px !important; }
 .sg-tile__label + .sg-tile__title { margin-top: 0 !important; }
 .sg-tile__label--y { color: #F2AE45 !important; }
+/* Badges med logo-pil: logoets grønne; billederne følger ikke med ved scroll */
+.sg-ls-sol__badge, .sg-os-values__badge { background: #2C654E !important; }
+.sg-ls-sol__media { position: relative !important; top: auto !important; }
