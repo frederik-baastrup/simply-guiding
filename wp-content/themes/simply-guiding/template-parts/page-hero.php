@@ -13,7 +13,35 @@ $logo_list = function ($hidden) use ($u, $logos) {
   }
   echo '</ul>';
 };
-?>
+$front = isset($_GET['hero']) && $_GET['hero'] === 'front' && ($a['img'] || $a['video']);
+if ($front) : ?>
+<div class="sg-hero-wrap">
+  <section class="sg-hero sg-hero--sub" aria-labelledby="sgPageTitle">
+    <div class="sg-hero--sub__media">
+      <?php if ($a['video']) : ?><video src="<?php echo esc_url($u . '/assets/' . $a['video']); ?>" poster="<?php echo esc_url($u . '/assets/' . $a['poster']); ?>" autoplay muted loop playsinline aria-hidden="true"></video>
+      <?php else : ?><img src="<?php echo esc_url($u . '/assets/' . $a['img']); ?>" alt="<?php echo esc_attr($a['alt']); ?>" width="<?php echo (int) $a['img_w']; ?>" height="<?php echo (int) $a['img_h']; ?>"<?php echo $a['img_pos'] ? ' style="object-position:' . esc_attr($a['img_pos']) . '"' : ''; ?> fetchpriority="high"><?php endif; ?>
+    </div>
+    <div class="sg-hero__inner">
+      <?php if ($a['label']) : ?><p class="sg-pill"><?php echo esc_html($a['label']); ?></p><?php endif; ?>
+      <h1 id="sgPageTitle"><?php echo esc_html($a['title']); ?></h1>
+      <p class="sg-hero__lead"><?php echo esc_html($a['lead']); ?></p>
+      <div class="sg-hero__actions">
+        <a class="sg-btn sg-btn--lg" href="<?php echo esc_url($a['btn1_href'], ['tel', 'https', 'http']); ?>"><?php echo esc_html($a['btn1']); ?></a>
+        <a class="sg-btn sg-btn--lg sg-btn--ghost" href="<?php echo esc_url($a['btn2_href']); ?>"><?php echo esc_html($a['btn2']); ?></a>
+      </div>
+    </div>
+    <div class="sg-hero-bottom">
+      <div class="sg-hero__notch">
+        <div class="sg-hero__notch-inner">
+          <div class="sg-logos" aria-label="Kommuner vi har samarbejdet med"><div class="sg-logos__track"><?php $logo_list(false); $logo_list(true); ?></div></div>
+        </div>
+        <svg class="sg-hero__curve" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C100 0 100 64 200 64 L0 64 Z" fill="#fff"/></svg>
+      </div>
+      <p class="sg-hero__stat">Vi har samarbejdet med 25+ kommuner</p>
+    </div>
+  </section>
+</div>
+<?php return; endif; ?>
 <div class="sg-hero-wrap">
   <section class="sg-hero sg-hero--split<?php echo ($a['img'] || $a['video']) ? '' : ' sg-hero--noimg'; echo $a['full'] ? ' sg-hero--full' : ''; echo (isset($_GET['hero']) && $_GET['hero'] === 'cover' && ($a['img'] || $a['video'])) ? ' sg-hero--cover' : ''; ?>" aria-labelledby="sgPageTitle">
     <div class="sg-split">

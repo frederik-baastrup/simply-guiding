@@ -3152,3 +3152,21 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-hero--noimg .sg-pill { align-self: center; }
 .sg-hero--noimg .sg-hero__lead { margin-left: auto; margin-right: auto; }
 .sg-hero--noimg .sg-hero__actions { justify-content: center; }
+/* Prøve (?hero=front): undersidehero som forsidens – grønt mønster til venstre, billede skråt ind fra højre, logo-notch i bunden */
+.sg-hero--sub { background: #0A2F2A url("assets/pattern.png") center / 601px repeat; }
+.sg-hero--sub::before { display: none; }
+.sg-hero--sub__media { position: absolute; top: 0; right: 0; bottom: 0; width: 56%; z-index: -1; clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%); }
+.sg-hero--sub__media img, .sg-hero--sub__media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sg-hero--sub .sg-hero__inner { padding-block: 168px calc(var(--sg-notch-h) + 100px); }
+.sg-hero--sub .sg-hero__inner > * { max-width: 560px; }
+.sg-hero--sub h1 { margin-top: 22px; font-size: clamp(44px, 4.4vw, 64px); line-height: .95; }
+.sg-hero--sub .sg-pill { display: inline-block; }
+.sg-hero--sub .sg-hero__stat { text-shadow: 0 1px 8px rgba(0,0,0,.45); }
+@media (max-width: 1024px) {
+  .sg-hero--sub__media { position: relative; width: 100%; height: 300px; clip-path: none; z-index: 0; }
+  .sg-hero--sub { display: flex; flex-direction: column; }
+  .sg-hero--sub .sg-hero__inner { order: -1; padding-block: 128px 56px; }
+  .sg-hero--sub .sg-hero__inner > * { max-width: none; }
+}
+/* Menuen uden kant */
+.sg-nav { border: 0 !important; }
