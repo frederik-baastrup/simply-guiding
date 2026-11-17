@@ -4069,3 +4069,25 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
   .sg-gk3-format .sg-gk3-mini h3 { color: #fff !important; }
   .sg-gk3-format .sg-gk3-mini p { color: rgba(255,255,255,.82) !important; }
 }
+/* Grundkursus – "To intensive dage": store tal i stedet for billede + boks */
+.sg-gk3-days { padding: 0 0 120px; }
+.sg-gk3-days__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: end; margin-bottom: 56px; }
+.sg-gk3-days__head > div { grid-column: 1 / 7; }
+.sg-gk3-days__head .sg-h2 { margin: 0 !important; }
+.sg-gk3-days__lead { grid-column: 7 / 13; margin: 0 !important; font-size: 17px !important; line-height: 1.7 !important; color: #212121 !important; }
+.sg-gk3-days__stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.sg-gk3-days__stats li { position: relative; padding-top: 28px; border-top: 1px solid rgba(10,47,42,.12); }
+.sg-gk3-days__stats li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-gk3-days__stats strong { display: block; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600; font-size: clamp(56px, 5.6vw, 88px); line-height: 1; letter-spacing: -.03em; color: var(--sg-cta); }
+.sg-gk3-days__stats span { display: block; margin-top: 14px; font-size: 17px; color: #212121; }
+.sg-gk3-days__foot { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: center; margin-top: 56px; padding: 28px 32px; border-radius: var(--sg-radius-sm); background: #F1F4F2; }
+.sg-gk3-days__chips { grid-column: 1 / 7; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.sg-gk3-days__chips li { padding: 9px 16px; border-radius: 100px; background: #fff; border: 1px solid rgba(10,47,42,.12); font-size: 15px; color: #212121; }
+.sg-gk3-days__foot p { grid-column: 7 / 13; margin: 0 !important; font-size: 17px !important; line-height: 1.7 !important; color: #212121 !important; }
+@media (max-width: 960px) {
+  .sg-gk3-days { padding-bottom: 72px; }
+  .sg-gk3-days__head, .sg-gk3-days__foot { display: block; }
+  .sg-gk3-days__lead { margin-top: 16px !important; }
+  .sg-gk3-days__stats { grid-template-columns: 1fr; gap: 28px; }
+  .sg-gk3-days__foot p { margin-top: 20px !important; }
+}

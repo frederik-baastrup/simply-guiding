@@ -61,16 +61,24 @@ $topics = [
 </section>
 
 <!-- 3. Sådan foregår det -->
-<section class="sg-gk3-format" aria-labelledby="gkFormatTitle">
-  <div class="sg-wrap sg-gk3-format__grid">
-    <div class="sg-gk3-format__txt">
-      <p class="sg-gk-label">Sådan foregår det</p>
-      <h2 class="sg-h2" id="gkFormatTitle">To intensive dage tæt på praksis</h2>
-      <p>Kurset består af to sammenhængende kursusdage med i alt 12 timers undervisning på Simply Guidings faciliteter i Odense.</p>
-      <ul class="sg-gk3-chips"><li>Oplæg</li><li>Dialog</li><li>Øvelser</li><li>Praksisnære cases</li></ul>
+<section class="sg-gk3-days" aria-labelledby="gkFormatTitle">
+  <div class="sg-wrap">
+    <div class="sg-gk3-days__head">
+      <div>
+        <p class="sg-gk-label">Sådan foregår det</p>
+        <h2 class="sg-h2" id="gkFormatTitle">To intensive dage tæt på praksis</h2>
+      </div>
+      <p class="sg-gk3-days__lead">Kurset består af to sammenhængende kursusdage med i alt 12 timers undervisning på Simply Guidings faciliteter i Odense.</p>
+    </div>
+    <ul class="sg-gk3-days__stats">
+      <li><strong>2</strong><span>sammenhængende kursusdage</span></li>
+      <li><strong>12</strong><span>timers undervisning i alt</span></li>
+      <li><strong>Odense</strong><span>på Simply Guidings faciliteter</span></li>
+    </ul>
+    <div class="sg-gk3-days__foot">
+      <ul class="sg-gk3-days__chips"><li>Oplæg</li><li>Dialog</li><li>Øvelser</li><li>Praksisnære cases</li></ul>
       <p>Du kan arbejde med dine egne cases eller med cases, der afspejler virkelige IPS-forløb i både kommunale og private sammenhænge.</p>
     </div>
-    <figure class="sg-gk3-format__img"><img src="<?php echo esc_url($u); ?>/assets/gen-kursusdag.jpg" alt="Undervisning på en kursusdag" loading="lazy"></figure>
   </div>
 </section>
 
