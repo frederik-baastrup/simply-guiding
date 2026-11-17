@@ -26,7 +26,7 @@ $odd = count($c['why_items']) % 2;
 
 <!-- Mennesket bag -->
 <section class="sg-gk-format sg-ar-meet" aria-labelledby="sgMeetTitle">
-  <div class="sg-wrap sg-gk-split sg-gk-split--media">
+  <div class="sg-wrap sg-gk-split sg-gk-split--media sg-gk-split--flip">
     <div class="sg-gk-split__media sg-os-tall"><img src="<?php echo esc_url($u . '/assets/' . $c['meet_img']); ?>" alt="<?php echo esc_attr($c['meet_alt']); ?>" loading="lazy"></div>
     <div class="sg-gk-split__main">
       <h2 class="sg-h2" id="sgMeetTitle"><?php echo esc_html($c['meet_title']); ?></h2>
