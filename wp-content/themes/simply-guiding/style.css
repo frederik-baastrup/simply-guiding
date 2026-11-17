@@ -3239,3 +3239,8 @@ body.admin-bar .sg-doc__sticky { top: 164px; }
 .sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta p strong { color: #212121; font-size: 15px; }
 .sg-ar-why .sg-ar-reasons li.sg-ar-reasons__cta a { color: var(--sg-cta); }
 .sg-ar-why__main .sg-gk-sub { text-wrap: balance; max-width: 22em; }
+/* Academy-sider: den lysegrønne flade fortsætter fra faktaboksene ned gennem intro-sektionen */
+.sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section { background: #F1F4F2; margin-inline: max(18px, env(safe-area-inset-left, 0px)); border-radius: 0 0 var(--sg-radius) var(--sg-radius); --sg-sand: #fff; }
+.sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section .sg-gk-callout { background: #fff; }
+@media (max-width: 600px) { .sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section { margin-inline: 10px; } }
