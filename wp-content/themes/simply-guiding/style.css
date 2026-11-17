@@ -4013,3 +4013,6 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-daily__txt p + p::before { content: ""; position: absolute; left: 0; top: -1px; width: 40px; height: 2px; background: var(--sg-cta); }
 .sg-gk3-daily__txt p:last-child { padding-bottom: 0 !important; }
 @media (max-width: 960px) { .sg-gk3-daily__mark { display: none; } }
+/* Intro og "I praksis": én tekststørrelse i stedet for stor + lille */
+.sg-gk3-intro p:not(.sg-gk-label), .sg-gk3-daily__lead, .sg-gk3-daily__txt p { font-size: 17px !important; line-height: 1.7 !important; font-weight: 400 !important; color: #212121 !important; }
+.sg-gk3-intro p:not(.sg-gk-label) + p { margin-top: 16px !important; }
