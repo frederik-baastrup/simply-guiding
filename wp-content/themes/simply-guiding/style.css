@@ -3829,3 +3829,19 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 @media (max-width: 600px) { .sg-os-values--v2 .sg-os-values__grid { grid-template-columns: 1fr !important; gap: 40px; } }
 .sg-os-values__badge { background: var(--sg-cta); }
 .sg-os-values__badge svg { fill: #fff; }
+/* Om os – "Tro kan ikke flytte bjerge alene": én tekststørrelse, kæde Tro → Handling → Faglighed, logo-pil som stor, tynd grafik */
+.sg-os-belief { position: relative; overflow: hidden; }
+.sg-os-belief > .sg-wrap { position: relative; z-index: 1; }
+.sg-os-belief__mark { position: absolute; right: -60px; bottom: -70px; width: 420px; height: auto; fill: none; stroke: #fff; stroke-width: .12; opacity: .16; pointer-events: none; }
+.sg-os-belief .sg-gk-split__main p { font-size: 17px !important; line-height: 1.7 !important; font-weight: 400 !important; color: rgba(255,255,255,.86) !important; margin: 0 0 18px !important; }
+.sg-os-belief .sg-gk-split__main p:last-child { margin-bottom: 0 !important; }
+.sg-os-belief .sg-gk-split__main p:first-child::first-line { color: #fff; }
+.sg-os-belief .sg-gk-split__side { display: flex; flex-direction: column; justify-content: center; gap: 40px; }
+.sg-os-belief__chain { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 0; max-width: 440px; }
+.sg-os-belief__chain li { position: relative; display: flex; align-items: center; gap: 10px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.9); white-space: nowrap; }
+.sg-os-belief__chain li::before { content: ""; width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid #F2AE45; box-sizing: border-box; }
+.sg-os-belief__chain li:first-child::before { background: #F2AE45; }
+.sg-os-belief__chain li + li { flex: 1; }
+.sg-os-belief__chain li + li::after { content: ""; order: -1; flex: 1; height: 1px; margin-right: 10px; background: linear-gradient(90deg, rgba(242,174,69,.15), rgba(242,174,69,.7)); }
+.sg-os-belief__chain li + li { margin-left: 10px; }
+@media (max-width: 960px) { .sg-os-belief__mark { width: 260px; } .sg-os-belief .sg-gk-split__side { gap: 28px; margin-bottom: 28px; } }

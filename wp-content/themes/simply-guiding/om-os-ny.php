@@ -48,8 +48,12 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
 
 <!-- Tro kan ikke flytte bjerge alene -->
 <section class="sg-os-belief" aria-labelledby="sgBeliefTitle">
+  <svg class="sg-os-belief__mark" viewBox="0 0 37 25" aria-hidden="true"><path d="M36.0685 24.4063H28.8548V12.3145L26.3312 14.8382C20.2048 20.9646 11.8956 24.4063 3.2316 24.4063H0V17.1926H0.243599C8.9076 17.1926 17.2168 13.7509 23.3432 7.62446L23.754 7.21366H11.7824V0L36.0685 9.53674e-06V24.4063Z"/></svg>
   <div class="sg-wrap sg-gk-split">
-    <div class="sg-gk-split__side"><h2 class="sg-os-belief__title" id="sgBeliefTitle">Tro kan ikke flytte bjerge alene</h2></div>
+    <div class="sg-gk-split__side">
+      <h2 class="sg-os-belief__title" id="sgBeliefTitle">Tro kan ikke flytte bjerge alene</h2>
+      <ol class="sg-os-belief__chain" aria-label="Tro, handling og faglighed"><li>Tro</li><li>Handling</li><li>Faglighed</li></ol>
+    </div>
     <div class="sg-gk-split__main">
       <p>Vi tror på, at alle mennesker har muligheder og potentiale. Vi begrænser os ikke af kassetænkning eller diagnoser. Vi tror også på, at det enkelte menneske nogle gange skal have et kærligt skub i den rigtige retning.</p>
       <p>Men tro kan ikke flytte bjerge eller mennesker alene, og heldigvis for det. Troen skal ledsages af handling og faglighed. Intet sker af sig selv, og vi venter heller ikke på, at tiden heler alle sår.</p>
