@@ -3794,3 +3794,6 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
 .sg-figures .sg-stat__text { margin-top: 10px !important; font-size: 15px !important; line-height: 1.6 !important; color: #212121 !important; }
 .sg-figures .sg-figures__title { margin-bottom: 56px !important; }
 @media (max-width: 760px) { .sg-figures .sg-stats { gap: 48px; } }
+/* Nyheder-bølgen: kurverne overlapper boksen 2 px, så der ikke opstår en synlig søm */
+.sg-hero--blog .sg-hero__notch--cats .sg-hero__curve { left: calc(100% - 2px); }
+.sg-hero--blog .sg-hero__notch--cats .sg-hero__curve--left { left: auto; right: calc(100% - 2px); }
