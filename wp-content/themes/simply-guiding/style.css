@@ -3827,3 +3827,5 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
   .sg-os-values__badge { left: 24px; bottom: -28px; width: 72px; height: 72px; }
 }
 @media (max-width: 600px) { .sg-os-values--v2 .sg-os-values__grid { grid-template-columns: 1fr !important; gap: 40px; } }
+.sg-os-values__badge { background: var(--sg-cta); }
+.sg-os-values__badge svg { fill: #fff; }
