@@ -26,7 +26,7 @@ $topics = [
     <ul class="sg-gk3-facts" aria-label="Uddannelsen kort fortalt">
       <li><span class="sg-gk-ico"><?php echo sg_icon('calendar'); ?></span><span><small>Varighed</small>Typisk 54 uger · 15 dage</span></li>
       <li><span class="sg-gk-ico"><?php echo sg_icon('people'); ?></span><span><small>Form</small>Teori, øvelser og rollespil</span></li>
-      <li><span class="sg-gk-ico"><?php echo sg_icon('shield'); ?></span><span><small>Afslutning</small>Fidelity og Advanced Practitioner</span></li>
+      <li><span class="sg-gk-ico"><?php echo sg_icon('shield'); ?></span><span><small>Afslutning</small>Fidelity-evaluering</span></li>
       <li><span class="sg-gk-ico"><?php echo sg_icon('tag'); ?></span><span><small>Pris</small>Efter aftale</span></li>
     </ul>
   </div>
