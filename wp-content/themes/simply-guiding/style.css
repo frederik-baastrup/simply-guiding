@@ -4016,3 +4016,11 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 /* Intro og "I praksis": én tekststørrelse i stedet for stor + lille */
 .sg-gk3-intro p:not(.sg-gk-label), .sg-gk3-daily__lead, .sg-gk3-daily__txt p { font-size: 17px !important; line-height: 1.7 !important; font-weight: 400 !important; color: #212121 !important; }
 .sg-gk3-intro p:not(.sg-gk-label) + p { margin-top: 16px !important; }
+/* Områdesider – "Sådan arbejder vi": ingen bokse; streg med grøn accent, nummer og tyndt ikon (som værdierne på Om os) */
+.sg-ar-how .sg-gk-topics__grid { counter-reset: sgHow; gap: 40px 48px !important; }
+.sg-ar-how .sg-gk-topics__grid li { position: relative; counter-increment: sgHow; background: none !important; border-radius: 0 !important; padding: 24px 0 0 !important; border-top: 1px solid rgba(10,47,42,.12); box-shadow: none !important; }
+.sg-ar-how .sg-gk-topics__grid li::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-ar-how .sg-gk-topics__grid li::after { content: counter(sgHow, decimal-leading-zero); position: absolute; left: 0; top: 24px; font-family: "Nohemi", -apple-system, system-ui, sans-serif; font-weight: 600; font-size: 17px; line-height: 28px; color: var(--sg-cta); }
+.sg-ar-how .sg-gk-topics__grid li .sg-gk-ico { display: block; width: 28px !important; height: 28px !important; margin: 0 0 0 auto !important; background: none !important; color: var(--sg-cta) !important; border-radius: 0 !important; }
+.sg-ar-how .sg-gk-topics__grid li .sg-gk-ico svg { width: 26px !important; height: 26px !important; stroke-width: 1.4; }
+.sg-ar-how .sg-gk-topics__grid li h3 { margin-top: 20px !important; }
