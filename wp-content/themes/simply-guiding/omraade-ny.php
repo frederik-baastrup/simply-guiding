@@ -31,7 +31,6 @@ $odd = count($c['why_items']) % 2;
     <div class="sg-gk-split__main">
       <h2 class="sg-h2" id="sgMeetTitle"><?php echo esc_html($c['meet_title']); ?></h2>
       <p class="sg-gk-lead"><?php echo esc_html(implode(' ', $c['meet_text'])); ?></p>
-      <p class="sg-textlink"><a href="/saadan-arbejder-vi/">Læs mere om vores mindset <?php echo sg_arrow(); ?></a></p>
       <ul class="sg-ar-points">
         <?php foreach ($c['meet_points'] as $pt) : ?>
         <li><span class="sg-gk-ico"><?php echo sg_icon($pt[0]); ?></span><div><h3><?php echo esc_html($pt[1]); ?></h3><p><?php echo esc_html($pt[2]); ?></p></div></li>
