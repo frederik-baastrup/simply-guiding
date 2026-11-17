@@ -351,3 +351,23 @@
     setTimeout(arrive, reduce ? 0 : 900);
   });
 })();
+
+/* Let parallax på logo-pil-cirklerne (Løsninger, Om os) */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.sg-ls-sol__badge, .sg-os-values__badge'));
+  if (!els.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var vh = window.innerHeight;
+    els.forEach(function (el) {
+      var r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < -200 || r.top > vh + 200) return;
+      var p = ((r.top + r.height / 2) - vh / 2) / vh; // -1..1
+      el.style.transform = 'translate3d(0,' + (p * -70).toFixed(1) + 'px,0)';
+    });
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();

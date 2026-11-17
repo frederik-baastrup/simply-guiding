@@ -3951,3 +3951,7 @@ a.sg-cs-card:hover .sg-cs-card__link svg { transform: translateX(5px); }
   .sg-gk3-fid__lead { margin-top: 20px !important; }
   .sg-gk3-fid__steps { grid-template-columns: 1fr; }
 }
+/* Blød scroll til ankre på hele sitet */
+html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
+.sg-ls-sol__badge, .sg-os-values__badge { will-change: transform; }
