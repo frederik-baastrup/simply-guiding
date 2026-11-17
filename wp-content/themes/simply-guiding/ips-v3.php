@@ -1,5 +1,5 @@
 <?php
-/* IPS-konsulentuddannelse – forslag v3 (vises på /ips-konsulentuddannelse/?ny=1, 17. nov. 2026). Samme opbygning som Grundkursus v3 (sg-gk3-*). Samme tekst og fakta. */
+/* IPS-konsulentuddannelse – v3 (live 17. nov. 2026). Samme opbygning som Grundkursus v3 (sg-gk3-*). Samme tekst og fakta. */
 $u = get_template_directory_uri();
 $folder = $u . '/assets/ips-konsulentuddannelse-folder.pdf';
 $topics = [

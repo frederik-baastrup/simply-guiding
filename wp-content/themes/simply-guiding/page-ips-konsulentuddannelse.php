@@ -8,7 +8,7 @@ get_template_part('template-parts/page-hero', null, [
   'img' => 'mindset.jpg', 'img_w' => 840, 'img_h' => 1050, 'alt' => 'Undervisning hos Simply Guiding', 'img_pos' => '50% 0%',
 ]);
 echo '<div id="indhold"></div>';
-require get_template_directory() . (isset($_GET['ny']) ? '/ips-v3.php' : '/ips-ny.php');
+require get_template_directory() . '/ips-v3.php';
 get_template_part('template-parts/final-cta');
 get_template_part('template-parts/site-footer');
 get_footer();
