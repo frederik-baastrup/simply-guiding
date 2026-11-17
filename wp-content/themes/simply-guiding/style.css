@@ -4139,3 +4139,22 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-ticket .sg-gk-ico { background: var(--sg-cta) !important; color: #fff !important; }
 .sg-gk3-ticket strong { color: #212121; }
 .sg-gk3-ticket small { color: #212121; opacity: .75; }
+/* Grundkursus – "Det arbejder vi med": 3-kolonne gitter med linjer + grøn accent og tyndt ikon; 6. felt er en tilmeld-flise */
+.sg-gk3-prog--grid .sg-gk3-prog__grid { display: block !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__side { position: static !important; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 32px; align-items: end; margin-bottom: 56px; }
+.sg-gk3-prog--grid .sg-gk3-prog__side h2 { grid-column: 1 / 7; margin: 0 !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__claim { grid-column: 7 / 13; margin: 0 !important; font-size: 17px !important; line-height: 1.7 !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__list { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 40px; border: 0 !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__list > li { position: relative; display: block !important; padding: 26px 0 0 !important; border: 0 !important; border-top: 1px solid rgba(10,47,42,.12) !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__list > li:not(.sg-gk3-prog__cta)::before { content: ""; position: absolute; left: 0; top: -1px; width: 56px; height: 3px; background: var(--sg-cta); }
+.sg-gk3-prog--grid .sg-gk3-prog__ico { display: block !important; width: 30px !important; height: 30px !important; margin: 0 0 18px !important; background: none !important; color: var(--sg-cta) !important; border-radius: 0 !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__ico svg { width: 28px !important; height: 28px !important; stroke-width: 1.4; }
+.sg-gk3-prog--grid .sg-gk3-prog__list h3 { margin: 0 0 8px !important; font-size: 20px !important; }
+.sg-gk3-prog--grid .sg-gk3-prog__list p { margin: 0 !important; font-size: 15px !important; line-height: 1.6 !important; }
+.sg-gk3-prog__cta { border-top: 0 !important; padding: 32px !important; border-radius: var(--sg-radius-sm); background: #F1F4F2; display: flex !important; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; }
+.sg-gk3-prog__cta p { font-size: 20px !important; font-weight: 500; color: #212121 !important; }
+@media (max-width: 960px) {
+  .sg-gk3-prog--grid .sg-gk3-prog__side { display: block; margin-bottom: 32px; }
+  .sg-gk3-prog--grid .sg-gk3-prog__claim { margin-top: 14px !important; }
+  .sg-gk3-prog--grid .sg-gk3-prog__list { grid-template-columns: 1fr; gap: 32px; }
+}
