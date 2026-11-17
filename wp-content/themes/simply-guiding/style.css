@@ -3725,3 +3725,5 @@ samme tekst ---------- */
 .sg-tile--news .sg-signup__note, .sg-tile--news .sg-signup__note a { color: rgba(251,195,60,.75) !important; }
 .sg-tile--news .sg-signup__field::placeholder { color: rgba(251,195,60,.55); }
 .sg-tile--news .sg-signup__field { color: #FBC33C; }
+/* Nøgletal-båndet: tal i gul (17. nov.) */
+.sg-kpi__num { color: #FBC33C !important; -webkit-text-fill-color: #FBC33C; }
