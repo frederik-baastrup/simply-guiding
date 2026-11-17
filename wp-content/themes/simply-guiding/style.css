@@ -3493,3 +3493,10 @@ samme tekst ---------- */
 .sg-sw3-prin li.is-active .sg-sw3-prin__body { grid-template-rows: 1fr; opacity: 1; transform: none; transition-delay: .25s, .35s, .25s; }
 .sg-sw3-prin li > p { display: none !important; }
 @media (prefers-reduced-motion: reduce) { .sg-sw3-prin li, .sg-sw3-prin__body, .sg-sw3-prin li span.sg-sw3-prin__t { transition: none !important; } }
+/* Principper uden slider (17. nov., tilbage til statisk) */
+.sg-sw3-prin0 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.sg-sw3-prin0 li { display: flex; flex-direction: column; gap: 16px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.2); }
+.sg-sw3-prin0 span { font-family: "General Sans", -apple-system, system-ui, sans-serif; font-size: 30px; font-weight: 500; line-height: 1; color: #fff; }
+.sg-sw3-prin0 p { margin: 0; font-size: 17px !important; line-height: 1.45 !important; color: rgba(255,255,255,.9) !important; }
+@media (max-width: 1100px) { .sg-sw3-prin0 { grid-template-columns: repeat(3, 1fr); row-gap: 36px; } }
+@media (max-width: 960px) { .sg-sw3-prin0 { grid-template-columns: 1fr; row-gap: 28px; } }

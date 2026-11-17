@@ -2,13 +2,7 @@
 /* Sådan arbejder vi – forslag v3 (vises på /saadan-arbejder-vi/?ny=1, 17. nov. 2026).
    Struktur: metoder (påstand) → borgerforløbet (4 trin) → principper (mørkt bånd) → konsulenterne (uddannelse + supervision) → jobcentre (handling).
    Teksten er den eksisterende, delt op og let forkortet; ingen nye fakta. */
-$principles = [
-  ['Mød mennesket, hvor det er', 'Vi suspenderer vores forforståelse og møder mennesket med summen af sin fortid, nutid og drømme.'],
-  ['Tro på borgeren', 'Tro flytter ikke bjerge alene. Intet sker af sig selv, så troen skal altid følges af handling.'],
-  ['Se borgerens ressourcer', 'Vi har blik for borgerens ressourcer og kortlægger sammen kompetencer og drømme for fremtiden.'],
-  ['Indgyd håb', 'Vi indgyder håb og går aldrig efter et quickfix. Målet er altid et varigt, nyt ståsted i livet.'],
-  ['Place then train', 'Vi arbejder efter ”place then train” og altid henimod løntimer, uddannelse eller selvhjulpenhed.'],
-];
+$principles = ['Suspender din forforståelse og mød mennesket, hvor det er', 'Tro på borgeren', 'Hav blik for borgerens ressourcer', 'Indgyd borgeren håb', 'Vi tror på og arbejder efter ”place then train”-modellen'];
 $steps = [
   ['user', 'Egen konsulent', 'Vi tror på trygge relationer, så borgeren får sin egen konsulent tilknyttet.'],
   ['map', 'Fælles kortlægning', 'Sammen kortlægger de borgerens kompetencer, ressourcer og drømme for fremtiden.'],
@@ -54,29 +48,11 @@ $steps = [
         <h2 class="sg-h2" id="sgPrinTitle">Principperne, vi arbejder efter</h2>
         <p>Det vigtigste er konsulentens mindset: at tro på borgeren og vedkommendes muligheder for fremtiden.</p>
       </div>
-      <ol class="sg-sw3-prin" data-sg-prin>
+      <ol class="sg-sw3-prin0">
         <?php foreach ($principles as $i => $pr) : ?>
-        <li class="<?php echo $i === 0 ? 'is-active' : ''; ?>">
-          <button type="button" aria-expanded="<?php echo $i === 0 ? 'true' : 'false'; ?>"><span class="sg-sw3-prin__bar" aria-hidden="true"><i></i></span><span class="sg-sw3-prin__no"><?php echo sprintf('%02d', $i + 1); ?></span><span class="sg-sw3-prin__t"><?php echo esc_html($pr[0]); ?></span></button>
-          <div class="sg-sw3-prin__body"><p><?php echo esc_html($pr[1]); ?></p></div>
-        </li>
+        <li><span><?php echo sprintf('%02d', $i + 1); ?></span><p><?php echo esc_html($pr); ?></p></li>
         <?php endforeach; ?>
       </ol>
-      <script>
-      (function(){
-        var ol=document.querySelector('[data-sg-prin]'); if(!ol) return;
-        var items=[].slice.call(ol.children), cur=0, started=false;
-        var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        function go(n){ items.forEach(function(li,i){ var on=i===n; li.classList.toggle('is-active',on); li.querySelector('button').setAttribute('aria-expanded',on?'true':'false'); var bar=li.querySelector('i'); bar.style.animation='none'; bar.offsetWidth; bar.style.animation=''; }); cur=n; }
-        items.forEach(function(li,i){
-          li.querySelector('button').addEventListener('click',function(){ go(i); });
-          li.querySelector('i').addEventListener('animationend',function(){ if(li.classList.contains('is-active')) go((cur+1)%items.length); });
-        });
-        if(reduce){ ol.classList.add('is-static'); return; }
-        var io=new IntersectionObserver(function(es){ es.forEach(function(e){ ol.classList.toggle('is-running', e.isIntersecting); if(e.isIntersecting && !started){ started=true; go(0); } }); },{threshold:.35});
-        io.observe(ol);
-      })();
-      </script>
     </div>
   </div>
 </section>
