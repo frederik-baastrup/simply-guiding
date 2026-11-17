@@ -4131,3 +4131,11 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 @media (max-width: 960px) { .sg-gk3-days__grid { display: block; } .sg-gk3-ticket { margin-top: 40px; padding: 28px; } }
 .sg-gk3-cta .sg-gk-ico { background: var(--sg-cta) !important; color: #fff !important; }
 .sg-gk3-fid__goal svg { width: 20px !important; fill: none !important; }
+/* Faktakortet lyst, så det ikke står mørkt lige før det mørke målgruppe-bånd */
+.sg-gk3-ticket { background: #F1F4F2 !important; color: #212121; }
+.sg-gk3-ticket__mark { stroke: var(--sg-cta); opacity: .3; }
+.sg-gk3-ticket__label { color: var(--sg-cta) !important; }
+.sg-gk3-ticket li, .sg-gk3-ticket li:last-child { border-color: rgba(10,47,42,.12) !important; }
+.sg-gk3-ticket .sg-gk-ico { background: var(--sg-cta) !important; color: #fff !important; }
+.sg-gk3-ticket strong { color: #212121; }
+.sg-gk3-ticket small { color: #212121; opacity: .75; }
