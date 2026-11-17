@@ -3536,3 +3536,7 @@ samme tekst ---------- */
 .sg-cinfo--v2 .sg-cinfo__l { margin: 0 0 6px !important; font-size: 12px !important; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--sg-cta) !important; }
 .sg-cinfo--v2 .sg-cinfo__k { margin: 0 0 4px !important; font-size: 19px !important; font-weight: 500; line-height: 1.3; color: #212121 !important; overflow-wrap: anywhere; }
 .sg-cinfo--v2 .sg-cinfo__card > p:last-child { margin: 0 !important; font-size: 14px !important; color: #555 !important; }
+/* Jobcenter-panel: centreret tekst og knapper */
+.sg-sw3-partner__txt, .sg-sw2-panel__txt { text-align: center; }
+.sg-sw3-partner__txt .sg-sw-btns, .sg-sw2-panel__txt .sg-sw-btns { justify-content: center; }
+.sg-sw3-partner__txt h2, .sg-sw3-partner__txt > p, .sg-sw2-panel__txt h2, .sg-sw2-panel__txt > p { text-wrap: balance; }
