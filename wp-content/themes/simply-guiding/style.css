@@ -4033,3 +4033,11 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-mini li::before { left: 22px !important; top: 20px !important; width: 38px; height: 38px; border-radius: 50%; background: #2C654E; color: #fff !important; display: grid; place-items: center; font-size: 14px !important; font-weight: 600 !important; line-height: 1; }
 .sg-gk3-mini li:hover { border-color: rgba(10,47,42,.3) !important; }
 @media (max-width: 960px) { .sg-gk3-format__img { margin: 0 0 32px !important; } }
+/* Lysegrøn boks under sub-hero: indholdet flugter med resten af siden (boksen har 18 px margin) */
+.sg-hero-wrap:has(.sg-hero--sub) ~ section:first-of-type:not(.sg-final) > .sg-wrap,
+.sg-hero-wrap:has(.sg-hero--sub) ~ section.sg-gk-facts:first-of-type + section > .sg-wrap {
+  --w: min(calc(100% + 36px), calc(var(--sg-max) + 36px));
+  max-width: none; width: var(--w); margin-left: calc((100% - var(--w)) / 2); margin-right: 0;
+}
+/* Metode-intro: mindre overskrift, så den balancerer med teksten */
+.sg-sw3-intro .sg-h2 { font-size: clamp(28px, 2.4vw, 34px) !important; line-height: 1.2 !important; max-width: 16em; }
