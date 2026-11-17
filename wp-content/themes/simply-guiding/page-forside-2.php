@@ -20,7 +20,7 @@ get_header(); ?>
     <nav class="sg-topbar__links" aria-label="Sekundær">
       <a href="/blog/">Viden</a>
       <a href="/cases/">Succeshistorier</a>
-      <a href="/hvad-er-ips/">Hvad er IPS?</a>
+      <a href="/hvad-er-ips/">Hvad er IPS</a>
     </nav>
   </div>
 </div>
@@ -67,7 +67,7 @@ get_header(); ?>
       <div class="sg-mobile-extra">
         <a href="/blog/">Viden</a>
         <a href="/cases/">Succeshistorier</a>
-        <a href="/hvad-er-ips/">Hvad er IPS?</a>
+        <a href="/hvad-er-ips/">Hvad er IPS</a>
       </div>
     </nav>
 
@@ -302,7 +302,7 @@ get_header(); ?>
           </nav>
           <nav class="sg-footer__col" aria-label="Simply Guiding">
             <p class="sg-footer__head">Simply Guiding</p>
-            <ul class="sg-footer__list"><li><a href="/saadan-arbejder-vi/">Metode</a></li><li><a href="/cases/">Succeshistorier</a></li><li><a href="/blog/">Viden</a></li><li><a href="/om-os/">Om SG</a></li><li><a href="/hvad-er-ips/">Hvad er IPS?</a></li><li><a href="/kontakt/">Kontakt</a></li></ul>
+            <ul class="sg-footer__list"><li><a href="/saadan-arbejder-vi/">Metode</a></li><li><a href="/cases/">Succeshistorier</a></li><li><a href="/blog/">Viden</a></li><li><a href="/om-os/">Om SG</a></li><li><a href="/hvad-er-ips/">Hvad er IPS</a></li><li><a href="/kontakt/">Kontakt</a></li></ul>
           </nav>
           </div>
       </div>

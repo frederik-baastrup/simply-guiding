@@ -15,7 +15,7 @@
       <a href="/blog/">Viden</a>
       <a href="/loesninger/">Løsninger</a>
       <a href="/cases/">Succeshistorier</a>
-      <a href="/hvad-er-ips/">Hvad er IPS?</a>
+      <a href="/hvad-er-ips/">Hvad er IPS</a>
     </nav>
   </div>
 </div>
@@ -56,7 +56,7 @@
         <a href="/blog/">Viden</a>
         <a href="/loesninger/">Løsninger</a>
         <a href="/cases/">Succeshistorier</a>
-        <a href="/hvad-er-ips/">Hvad er IPS?</a>
+        <a href="/hvad-er-ips/">Hvad er IPS</a>
       </div>
     </nav>
 
