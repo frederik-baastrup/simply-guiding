@@ -41,6 +41,8 @@ $sol = [
   </div>
 </section>
 
+<figure class="sg-wide-img" aria-hidden="true"><img src="<?php echo esc_url($u); ?>/assets/samtale-vindue.jpg" alt="" loading="lazy"></figure>
+
 <section class="sg-ls-sol" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
