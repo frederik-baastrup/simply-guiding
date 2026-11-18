@@ -4252,3 +4252,15 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-kpi__num { color: var(--sg-cta) !important; -webkit-text-fill-color: var(--sg-cta) !important; }
 .sg-kpi__num { color: #1E9C7C !important; -webkit-text-fill-color: #1E9C7C !important; }
 .sg-footer__about { max-width: 27.5rem !important; }
+/* Tak-side: tekst til venstre, Marlene til højre (som afslutnings-CTA'en), indsats-kort under */
+.sg-hero--thanks { position: relative; overflow: hidden; }
+.sg-hero--thanks .sg-split__copy { text-align: left !important; align-items: flex-start !important; margin: 0 !important; max-width: 640px !important; }
+.sg-hero--thanks .sg-hero__actions { justify-content: flex-start !important; }
+.sg-hero--thanks .sg-split { justify-content: flex-start !important; }
+.sg-thanks__person { position: absolute; right: max(calc((100% - var(--sg-max)) / 2 + 120px), 6%); bottom: 0; height: 88%; width: auto; max-height: 640px; pointer-events: none; }
+.sg-thanks__name { position: absolute; right: max(calc((100% - var(--sg-max)) / 2 + 40px), 3%); bottom: 48px; z-index: 2; }
+.sg-thanks__back { display: inline-flex; align-items: center; gap: 10px; }
+.sg-thanks__back svg { width: 18px; height: 18px; transition: transform .25s ease; }
+.sg-thanks__back:hover svg { transform: translateX(-4px); }
+.sg-hero--thanks + * , .sg-hero-wrap:has(.sg-hero--thanks) + .sg-ind { margin-top: 112px; }
+@media (max-width: 960px) { .sg-thanks__person, .sg-thanks__name { display: none; } }

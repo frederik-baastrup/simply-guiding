@@ -112,7 +112,7 @@ function sg_form_handle() {
     }
     $subject = $type === 'grundkursus' ? 'Tilmelding: Grundkursus i IPS' : 'Ny henvendelse fra simplyguiding.dk';
     wp_mail(SG_FORM_TO, $subject, implode("\n", $lines) . "\n\nSendt fra: " . $back, ['Reply-To: ' . $email]);
-    wp_safe_redirect(home_url('/tak/')); exit;
+    wp_safe_redirect(add_query_arg('fra', rawurlencode(strtok($back, '#')), home_url('/tak/'))); exit;
 }
 add_action('admin_post_nopriv_sg_form', 'sg_form_handle');
 add_action('admin_post_sg_form', 'sg_form_handle');
