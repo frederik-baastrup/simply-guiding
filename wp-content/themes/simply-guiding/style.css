@@ -4219,3 +4219,5 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-cform--v3 .sg-field input, .sg-cform--v3 .sg-field textarea { background: #F7F8F7 !important; border-color: transparent !important; }
 .sg-cform--v3 .sg-field input:focus, .sg-cform--v3 .sg-field textarea:focus { background: #fff !important; border-color: var(--sg-cta) !important; box-shadow: 0 0 0 3px rgba(0,114,93,.1) !important; }
 @media (max-width: 960px) { .sg-cform__mark { display: none; } }
+.sg-os-values__badge { bottom: 140px !important; }
+.sg-ls-sol--dark + .sg-quote { padding-top: 112px !important; }
