@@ -4295,3 +4295,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-ar-how .sg-gk-topics__grid li::after { position: static !important; order: -2; font-size: 32px !important; line-height: 1 !important; letter-spacing: -.02em; margin-bottom: 20px; }
 .sg-ar-how .sg-gk-topics__grid li::before { position: static !important; order: -1; width: 100% !important; height: 3px !important; margin-bottom: 26px; background: linear-gradient(var(--sg-cta), var(--sg-cta)) 0 0 / 56px 3px no-repeat, linear-gradient(rgba(10,47,42,.12), rgba(10,47,42,.12)) 0 2px / 100% 1px no-repeat !important; }
 .sg-ar-how .sg-gk-topics__grid li h3 { margin-top: 0 !important; }
+.sg-ar-how .sg-gk-topics__grid li::before { order: 99 !important; margin: auto 0 0 !important; } .sg-ar-how .sg-gk-topics__grid li > p { margin-bottom: 26px !important; } .sg-ar-how .sg-gk-topics__grid { align-items: stretch !important; }
