@@ -22,6 +22,5 @@ if ($fra && untrailingslashit($fra) === untrailingslashit(home_url())) $fra = ''
     </p>
   </section>
 </div>
-<?php get_template_part('template-parts/ind-cards'); ?>
 <?php get_template_part('template-parts/site-footer'); ?>
 <?php get_footer(); ?>

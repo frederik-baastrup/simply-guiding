@@ -4268,3 +4268,14 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-hero--thanks .sg-pill { align-self: flex-start; margin-left: 0 !important; margin-right: auto !important; }
 .sg-hero--thanks .sg-split__copy > * { margin-left: 0 !important; margin-right: 0 !important; text-align: left !important; }
 .sg-hero--thanks { display: flex !important; align-items: center; } .sg-hero--thanks .sg-split { padding-top: 80px !important; }
+/* Tak-side v2: hvid baggrund, Marlene står til højre helt ned til footeren, tekst centreret lodret */
+.sg-hero--thanks { background: #fff !important; background-image: none !important; color: #212121; min-height: calc(100vh - 34px) !important; border-radius: 0 !important; margin: 0 !important; }
+.sg-hero--thanks::before, .sg-hero--thanks::after { display: none !important; }
+.sg-hero--thanks h1 { color: #0A2F2A !important; -webkit-text-fill-color: #0A2F2A !important; }
+.sg-hero--thanks .sg-hero__lead { color: #212121 !important; }
+.sg-hero--thanks .sg-pill { color: var(--sg-cta) !important; border-color: rgba(0,114,93,.35) !important; }
+.sg-hero--thanks .sg-btn--ghost { color: #0A2F2A !important; border-color: rgba(10,47,42,.25) !important; }
+.sg-hero--thanks .sg-split { padding-top: 0 !important; }
+.sg-thanks__person { height: 86% !important; max-height: 760px !important; }
+.sg-hero-wrap:has(.sg-hero--thanks) { margin-bottom: 0 !important; padding: 0 !important; background: #fff; }
+.sg-hero-wrap:has(.sg-hero--thanks) + .sg-footer, .sg-hero-wrap:has(.sg-hero--thanks) ~ footer { margin-top: 0 !important; }
