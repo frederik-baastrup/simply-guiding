@@ -4280,3 +4280,8 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-hero-wrap:has(.sg-hero--thanks) { margin-bottom: 0 !important; padding: 0 !important; background: #fff; }
 .sg-hero-wrap:has(.sg-hero--thanks) + .sg-footer, .sg-hero-wrap:has(.sg-hero--thanks) ~ footer { margin-top: 0 !important; }
 .sg-hero-wrap:has(.sg-hero--thanks) .sg-nav, .sg-hero-wrap:has(.sg-hero--thanks) ~ * .sg-nav { box-shadow: 0 0 0 1px rgba(10,47,42,.1); }
+/* Tre måder: grøn i stedet for gul */
+@media (min-width: 961px) {
+  .sg-gk3-format__txt .sg-gk-label { color: #7FD1B9 !important; }
+  .sg-gk3-format .sg-gk3-mini li::before { background: #1E9C7C !important; color: #fff !important; }
+}
