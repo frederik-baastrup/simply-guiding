@@ -120,6 +120,14 @@
     }
 
     // FAQ: ét spørgsmål åbent ad gangen
+    // Første spørgsmål i hver FAQ er altid åbent, når siden indlæses
+    var faqLists = [];
+    [].forEach.call(document.querySelectorAll('.sg-faq__item'), function (it) { if (faqLists.indexOf(it.parentElement) < 0) faqLists.push(it.parentElement); });
+    faqLists.forEach(function (list) {
+      if (list.querySelector('.sg-faq__item.is-open')) return;
+      var first = list.querySelector('.sg-faq__item');
+      first.classList.add('is-open'); var q = first.querySelector('.sg-faq__q'); if (q) q.setAttribute('aria-expanded', 'true');
+    });
     [].forEach.call(document.querySelectorAll('.sg-faq__q'), function (btn) {
       btn.addEventListener('click', function () {
         var item = btn.closest('.sg-faq__item');
