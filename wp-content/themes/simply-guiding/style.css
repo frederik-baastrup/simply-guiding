@@ -4301,3 +4301,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-ar-how .sg-gk-topics__grid li::before { order: -1 !important; margin: 0 0 24px !important; }
 .sg-ar-how .sg-gk-topics__grid li > p { margin-bottom: 0 !important; }
 .sg-ls-over + .sg-wide-img { margin-top: 112px; } .sg-wide-img + .sg-ls-sol { padding-top: 112px !important; } @media (max-width: 960px) { .sg-ls-over + .sg-wide-img { margin-top: 72px; } .sg-wide-img + .sg-ls-sol { padding-top: 72px !important; } }
+.sg-os-values__badge { display: none !important; }
