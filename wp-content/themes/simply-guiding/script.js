@@ -31,6 +31,14 @@
         for (var j = 0; j < els.length; j++) {
           if (header.contains(els[j])) continue;
           if (els[j].closest(DARK)) return true;
+          // Generelt: find første ikke-gennemsigtige baggrund og tjek om den er mørk
+          for (var n = els[j]; n && n !== document.documentElement; n = n.parentElement) {
+            var bg = getComputedStyle(n).backgroundColor, m = bg.match(/rgba?\(([\d.]+), ([\d.]+), ([\d.]+)(?:, ([\d.]+))?/);
+            if (m && (m[4] === undefined || parseFloat(m[4]) > 0.5)) {
+              return (0.2126 * m[1] + 0.7152 * m[2] + 0.0722 * m[3]) < 110;
+            }
+            if (n.tagName === 'VIDEO' || n.tagName === 'IMG') return true;
+          }
           break;
         }
       }
