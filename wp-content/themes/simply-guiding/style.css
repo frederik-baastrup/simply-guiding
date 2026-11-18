@@ -4246,3 +4246,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 /* Kontaktformular: samme 8 px luft mellem den mørke og den hvide boks som rundt om dem; runde hjørner på begge */
 .sg-cform--v3 .sg-cform__grid { column-gap: 8px !important; gap: 8px !important; border-radius: calc(var(--sg-radius-sm) + 8px) !important; }
 .sg-cform--v3 .sg-cform__intro, .sg-cform--v3 .sg-cform__box { border-radius: var(--sg-radius-sm) !important; }
+section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-principles li { padding: 18px 24px !important; gap: 18px !important; }
