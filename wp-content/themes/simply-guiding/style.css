@@ -4222,3 +4222,9 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-os-values__badge { bottom: 140px !important; }
 .sg-ls-sol--dark + .sg-quote { padding-top: 112px !important; }
 .sg-sw3-flow__img { grid-column: 1 / 7 !important; } .sg-sw3-flow__main { grid-column: 8 / 13 !important; }
+/* Hvad er IPS – tjeklister som hvide kort (samme greb som "Tre måder at lære på"), så de ikke ligner linje-kolonnerne nedenunder */
+.sg-pdetail__body .sg-principles:not(.sg-story__essence .sg-principles) { display: grid; gap: 10px; margin-top: 32px !important; }
+.sg-pdetail__body .sg-principles:not(.sg-story__essence .sg-principles) li { align-items: center !important; padding: 18px 22px !important; border: 1px solid rgba(10,47,42,.1) !important; border-radius: 12px; background: #fff; }
+.sg-pdetail__body .sg-principles:not(.sg-story__essence .sg-principles) li:last-child { border-bottom: 1px solid rgba(10,47,42,.1) !important; }
+.sg-pdetail__body .sg-principles:not(.sg-story__essence .sg-principles) li::before { display: none !important; }
+.sg-pdetail__body .sg-principles:not(.sg-story__essence .sg-principles) li svg { width: 32px !important; height: 32px !important; padding: 7px; margin: 0 !important; }
