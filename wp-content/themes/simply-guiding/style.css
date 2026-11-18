@@ -4285,3 +4285,7 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
   .sg-gk3-format__txt .sg-gk-label { color: #7FD1B9 !important; }
   .sg-gk3-format .sg-gk3-mini li::before { background: #1E9C7C !important; color: #fff !important; }
 }
+/* Priskort: subtil lysegrøn baggrund med svag topografi og blød glød */
+.sg-gk3-price--3 .sg-gk3-price__card, .sg-gk3-price--3 .sg-gk3-price__card:first-child { background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(30,156,124,.10), transparent 60%), #F4F7F5 !important; border-color: rgba(10,47,42,.08) !important; }
+.sg-gk3-price--3 .sg-gk3-price__card::after { content: ""; position: absolute; inset: 0; background: url("assets/pattern.png") center / 601px repeat; opacity: .05; pointer-events: none; mix-blend-mode: multiply; }
+.sg-gk3-price--3 .sg-gk3-price__card > * { position: relative; z-index: 1; }
