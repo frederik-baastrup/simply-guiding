@@ -4251,3 +4251,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-kpi__num { color: #7FD1B9 !important; -webkit-text-fill-color: #7FD1B9 !important; }
 .sg-kpi__num { color: var(--sg-cta) !important; -webkit-text-fill-color: var(--sg-cta) !important; }
 .sg-kpi__num { color: #1E9C7C !important; -webkit-text-fill-color: #1E9C7C !important; }
+.sg-footer__about { max-width: 27.5rem !important; }
