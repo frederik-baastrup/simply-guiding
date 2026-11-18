@@ -60,6 +60,8 @@ $topics = [
   </div>
 </section>
 
+<figure class="sg-wide-img" aria-hidden="true"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/gen-gruppearbejde.jpg" alt="" loading="lazy"></figure>
+
 <!-- 3. Sådan foregår det -->
 <section class="sg-gk3-days" aria-labelledby="gkFormatTitle">
   <div class="sg-wrap sg-gk3-days__grid">
