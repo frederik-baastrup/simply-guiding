@@ -4195,3 +4195,8 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-gk3-ticket strong { font-family: inherit !important; font-weight: 500 !important; font-size: 24px !important; letter-spacing: 0; }
 .sg-gk3-price__incl .sg-gk3-price__who { color: #7FD1B9 !important; } .sg-gk3-price__incl svg { color: #7FD1B9 !important; }
 .sg-sw3-team + .sg-sw3-proof2 { padding-top: 0 !important; }
+/* Tro → Handling → Faglighed: roligere – grøn i stedet for gul, normal skrift i stedet for versaler */
+.sg-os-belief__chain li { font-size: 16px; letter-spacing: 0; text-transform: none; color: rgba(255,255,255,.85); }
+.sg-os-belief__chain li::before { border-color: #7FD1B9; }
+.sg-os-belief__chain li:first-child::before { background: #7FD1B9; }
+.sg-os-belief__chain li + li::after { background: linear-gradient(90deg, rgba(127,209,185,.12), rgba(127,209,185,.55)); }
