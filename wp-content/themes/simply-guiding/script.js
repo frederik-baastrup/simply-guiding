@@ -307,33 +307,45 @@
     window.addEventListener('resize', spy);
   })();
 
-/* Tælle-animation på nøgletal (fx 25+, 1.500+, 10+) når de kommer til syne */
+/* Tælle-animation på nøgletal: starter så snart tallene kommer ind i billedet, glider blødt op og tæller med forskudt start */
 (function () {
-  var els = document.querySelectorAll('.sg-kpi__num, .sg-sw3-proof2__stats strong, .sg-figures .sg-stat__num');
+  var els = [].slice.call(document.querySelectorAll('.sg-kpi__num, .sg-sw3-proof2__stats strong, .sg-figures .sg-stat__num'));
   if (!els.length || !('IntersectionObserver' in window)) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   function fmt(n, dots) { var s = String(n); return dots ? s.replace(/\B(?=(\d{3})+(?!\d))/g, '.') : s; }
+  function ease(p) { return p === 1 ? 1 : 1 - Math.pow(2, -10 * p); } // ease-out expo: hurtig start, blød landing
+  var groups = new Map();
   els.forEach(function (el) {
-    var txt = el.textContent.trim(), m0 = txt.match(/^(\+?)([\d.]+)(.*)$/), m = m0 && [m0[0], m0[2], m0[3]], prefix = m0 ? m0[1] : '';
-    if (!m) return;
-    var target = parseInt(m[1].replace(/\./g, ''), 10), suffix = m[2], dots = m[1].indexOf('.') > -1;
+    var m0 = el.textContent.trim().match(/^(\+?)([\d.]+)(.*)$/);
+    if (!m0) return;
+    var data = { el: el, prefix: m0[1], target: parseInt(m0[2].replace(/\./g, ''), 10), suffix: m0[3], dots: m0[2].indexOf('.') > -1, final: el.textContent };
     el.style.minWidth = el.offsetWidth + 'px';
-    el.textContent = prefix + fmt(0, dots) + suffix;
+    el.style.display = el.style.display || '';
+    el.style.opacity = '0'; el.style.transform = 'translateY(14px)';
+    el.style.transition = 'opacity .6s ease, transform .8s cubic-bezier(.22,.61,.36,1)';
+    var key = el.closest('section') || document.body;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(data);
+  });
+  groups.forEach(function (list, sec) {
     var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        io.disconnect();
-        var t0 = null, dur = 1800;
-        function step(t) {
-          if (!t0) t0 = t;
-          var p = Math.min(1, (t - t0) / dur), ease = 1 - Math.pow(1 - p, 3);
-          el.textContent = prefix + fmt(Math.round(target * ease), dots) + suffix;
-          if (p < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
+      if (!es.some(function (e) { return e.isIntersecting; })) return;
+      io.disconnect();
+      list.forEach(function (d, k) {
+        setTimeout(function () {
+          d.el.textContent = d.prefix + fmt(0, d.dots) + d.suffix;
+          d.el.style.opacity = '1'; d.el.style.transform = 'none';
+          var t0 = null, dur = 2200;
+          (function step(t) {
+            if (!t0) t0 = t;
+            var p = Math.min(1, (t - t0) / dur);
+            d.el.textContent = p >= 1 ? d.final : d.prefix + fmt(Math.round(d.target * ease(p)), d.dots) + d.suffix;
+            if (p < 1) requestAnimationFrame(step);
+          })(performance.now());
+        }, k * 160);
       });
-    }, { threshold: .4 });
-    io.observe(el);
+    }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
+    list.forEach(function (d) { io.observe(d.el); });
   });
 })();
 
