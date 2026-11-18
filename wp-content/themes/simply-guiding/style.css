@@ -4264,3 +4264,6 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-thanks__back:hover svg { transform: translateX(-4px); }
 .sg-hero--thanks + * , .sg-hero-wrap:has(.sg-hero--thanks) + .sg-ind { margin-top: 112px; }
 @media (max-width: 960px) { .sg-thanks__person, .sg-thanks__name { display: none; } }
+.sg-hero--thanks .sg-split { display: block !important; width: 100%; max-width: calc(var(--sg-max) + 36px); margin: 0 auto; padding-inline: var(--sg-gutter) !important; box-sizing: border-box; }
+.sg-hero--thanks .sg-pill { align-self: flex-start; margin-left: 0 !important; margin-right: auto !important; }
+.sg-hero--thanks .sg-split__copy > * { margin-left: 0 !important; margin-right: 0 !important; text-align: left !important; }
