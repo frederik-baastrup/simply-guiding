@@ -30,6 +30,7 @@
         var els = document.elementsFromPoint(pts[i][0], pts[i][1]);
         for (var j = 0; j < els.length; j++) {
           if (header.contains(els[j])) continue;
+          if (els[j].closest('.sg-hero--thanks')) return false;
           if (els[j].closest(DARK)) return true;
           // Generelt: find første ikke-gennemsigtige baggrund og tjek om den er mørk
           for (var n = els[j]; n && n !== document.documentElement; n = n.parentElement) {

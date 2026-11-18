@@ -4279,3 +4279,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-thanks__person { height: 86% !important; max-height: 760px !important; }
 .sg-hero-wrap:has(.sg-hero--thanks) { margin-bottom: 0 !important; padding: 0 !important; background: #fff; }
 .sg-hero-wrap:has(.sg-hero--thanks) + .sg-footer, .sg-hero-wrap:has(.sg-hero--thanks) ~ footer { margin-top: 0 !important; }
+.sg-hero-wrap:has(.sg-hero--thanks) .sg-nav, .sg-hero-wrap:has(.sg-hero--thanks) ~ * .sg-nav { box-shadow: 0 0 0 1px rgba(10,47,42,.1); }
