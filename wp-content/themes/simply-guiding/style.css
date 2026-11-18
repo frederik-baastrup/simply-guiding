@@ -4267,3 +4267,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-hero--thanks .sg-split { display: block !important; width: 100%; max-width: calc(var(--sg-max) + 36px); margin: 0 auto; padding-inline: var(--sg-gutter) !important; box-sizing: border-box; }
 .sg-hero--thanks .sg-pill { align-self: flex-start; margin-left: 0 !important; margin-right: auto !important; }
 .sg-hero--thanks .sg-split__copy > * { margin-left: 0 !important; margin-right: 0 !important; text-align: left !important; }
+.sg-hero--thanks { display: flex !important; align-items: center; } .sg-hero--thanks .sg-split { padding-top: 80px !important; }
