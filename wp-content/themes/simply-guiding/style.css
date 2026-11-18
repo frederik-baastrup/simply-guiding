@@ -4203,3 +4203,6 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 .sg-os-values--v2 { padding-block: 160px !important; } @media (max-width: 960px) { .sg-os-values--v2 { padding-block: 88px !important; } }
 .sg-wide-img + .sg-gk3-days { padding-top: 112px !important; } @media (max-width: 960px) { .sg-wide-img + .sg-gk3-days { padding-top: 72px !important; } }
 .sg-gk3-prog + .sg-wide-img { margin-top: 0 !important; }
+/* FAQ: ingen tekst-forskydning ved hover; mere luft under svaret (også efter punktlister) */
+.sg-faq__item:hover .sg-faq__q { padding-left: 0 !important; }
+.sg-faq__a > div > ul, .sg-faq__a > div > ol { margin: 0 !important; padding-bottom: 28px !important; }
