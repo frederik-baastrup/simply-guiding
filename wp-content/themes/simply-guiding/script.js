@@ -403,3 +403,12 @@
   window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
   upd();
 })();
+
+/* Fidelity-tidslinje: tegn stregen, når den kommer til syne */
+(function () {
+  var el = document.querySelector('.sg-gk3-fid__steps--line');
+  if (!el) return;
+  if (!('IntersectionObserver' in window)) { el.classList.add('is-in'); return; }
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { el.classList.add('is-in'); io.disconnect(); } }); }, { threshold: .35 });
+  io.observe(el);
+})();
