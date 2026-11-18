@@ -4221,3 +4221,4 @@ html { scroll-behavior: smooth !important; scroll-padding-top: 90px; }
 @media (max-width: 960px) { .sg-cform__mark { display: none; } }
 .sg-os-values__badge { bottom: 140px !important; }
 .sg-ls-sol--dark + .sg-quote { padding-top: 112px !important; }
+.sg-sw3-flow__img { grid-column: 1 / 7 !important; } .sg-sw3-flow__main { grid-column: 8 / 13 !important; }
