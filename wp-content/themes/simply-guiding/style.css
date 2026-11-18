@@ -4289,3 +4289,9 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-gk3-price--3 .sg-gk3-price__card, .sg-gk3-price--3 .sg-gk3-price__card:first-child { background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(30,156,124,.10), transparent 60%), #F4F7F5 !important; border-color: rgba(10,47,42,.08) !important; }
 .sg-gk3-price--3 .sg-gk3-price__card::after { content: ""; position: absolute; inset: 0; background: url("assets/pattern.png") center / 601px repeat; opacity: .05; pointer-events: none; mix-blend-mode: multiply; }
 .sg-gk3-price--3 .sg-gk3-price__card > * { position: relative; z-index: 1; }
+/* Områdesider – "Sådan går vi til ...": tal øverst, streg under, ingen ikoner */
+.sg-ar-how .sg-gk-topics__grid li { display: flex !important; flex-direction: column; padding-top: 0 !important; border-top: 0 !important; }
+.sg-ar-how .sg-gk-topics__grid li .sg-gk-ico { display: none !important; }
+.sg-ar-how .sg-gk-topics__grid li::after { position: static !important; order: -2; font-size: 32px !important; line-height: 1 !important; letter-spacing: -.02em; margin-bottom: 20px; }
+.sg-ar-how .sg-gk-topics__grid li::before { position: static !important; order: -1; width: 100% !important; height: 3px !important; margin-bottom: 26px; background: linear-gradient(var(--sg-cta), var(--sg-cta)) 0 0 / 56px 3px no-repeat, linear-gradient(rgba(10,47,42,.12), rgba(10,47,42,.12)) 0 2px / 100% 1px no-repeat !important; }
+.sg-ar-how .sg-gk-topics__grid li h3 { margin-top: 0 !important; }
