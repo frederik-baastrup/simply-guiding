@@ -41,7 +41,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-ls-sol" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
+<section class="sg-ls-sol sg-ls-sol--flip" id="beskaeftigelsesindsatser" aria-labelledby="sgSol1">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
       <img src="<?php echo esc_url($u); ?>/assets/drivhus.jpg" alt="Kvinde potter planter i et drivhus" loading="lazy">
@@ -58,7 +58,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-ls-sol sg-ls-sol--flip" id="ungeindsatser" aria-labelledby="sgSol2">
+<section class="sg-ls-sol" id="ungeindsatser" aria-labelledby="sgSol2">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
       <img src="<?php echo esc_url($u); ?>/assets/loesninger-unge-v2.jpg" alt="Ung i praktik" loading="lazy">
@@ -76,7 +76,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-ls-sol" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
+<section class="sg-ls-sol sg-ls-sol--flip" id="forsikrings-og-pensionsindsatser" aria-labelledby="sgSol3">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
       <img src="<?php echo esc_url($u); ?>/assets/loesninger-forsikring-v2.jpg" alt="Forsikrings- og pensionsindsats" loading="lazy">
@@ -95,7 +95,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-ls-sol sg-ls-sol--flip" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
+<section class="sg-ls-sol" id="boern-unge-og-familieindsatser" aria-labelledby="sgSol4">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
       <img src="<?php echo esc_url($u); ?>/assets/loesninger-boern-unge-v2.jpg" alt="Børne-, unge- og familieindsats" loading="lazy">
@@ -112,7 +112,7 @@ $sol = [
   </div>
 </section>
 
-<section class="sg-ls-sol sg-ls-sol--dark" id="academy" aria-labelledby="sgSol5">
+<section class="sg-ls-sol sg-ls-sol--dark sg-ls-sol--flip" id="academy" aria-labelledby="sgSol5">
   <div class="sg-wrap sg-ls-sol__grid">
     <figure class="sg-ls-sol__media">
       <img src="<?php echo esc_url($u); ?>/assets/gen-supervision.jpg" alt="Supervision med en erfaren supervisor og tre konsulenter" loading="lazy">
