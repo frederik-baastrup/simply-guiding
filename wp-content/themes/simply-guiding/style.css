@@ -4302,3 +4302,5 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-ar-how .sg-gk-topics__grid li > p { margin-bottom: 0 !important; }
 .sg-ls-over + .sg-wide-img { margin-top: 112px; } .sg-wide-img + .sg-ls-sol { padding-top: 112px !important; } @media (max-width: 960px) { .sg-ls-over + .sg-wide-img { margin-top: 72px; } .sg-wide-img + .sg-ls-sol { padding-top: 72px !important; } }
 .sg-os-values__badge { display: none !important; }
+.sg-ls-sol__badge { bottom: 110px !important; }
+.sg-ls-sol--dark .sg-ls-sol__badge svg, .sg-ls-sol--dark .sg-ls-sol__badge svg path { fill: #F2AE45 !important; }
