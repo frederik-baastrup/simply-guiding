@@ -4307,3 +4307,4 @@ section.sg-sol .sg-sol__copy ul.sg-principles li, .sg-pdetail__body ul.sg-princi
 .sg-ls-sol--dark + .sg-quote { padding-top: 160px !important; }
 .sg-ls-sol--dark .sg-ls-sol__badge { background: #F2AE45 !important; } .sg-ls-sol--dark .sg-ls-sol__badge svg, .sg-ls-sol--dark .sg-ls-sol__badge svg path { fill: #fff !important; }
 .sg-story__essence .sg-principles li svg { color: #7FD1B9 !important; stroke: #7FD1B9 !important; } .sg-story__essence .sg-principles li svg * { stroke: #7FD1B9 !important; }
+.sg-gk3-band--who .sg-gk3-band__label { color: #F2AE45 !important; }
