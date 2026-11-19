@@ -52,7 +52,6 @@ get_template_part('template-parts/stats', null, ['title' => 'En stærk og erfare
   <div class="sg-wrap sg-gk-split">
     <div class="sg-gk-split__side">
       <h2 class="sg-os-belief__title" id="sgBeliefTitle">Tro kan ikke flytte bjerge alene</h2>
-      <ol class="sg-os-belief__chain" aria-label="Tro, handling og faglighed"><li>Tro</li><li>Handling</li><li>Faglighed</li></ol>
     </div>
     <div class="sg-gk-split__main">
       <p>Vi tror på, at alle mennesker har muligheder og potentiale. Vi begrænser os ikke af kassetænkning eller diagnoser. Vi tror også på, at det enkelte menneske nogle gange skal have et kærligt skub i den rigtige retning.</p>
